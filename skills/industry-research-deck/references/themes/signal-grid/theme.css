@@ -1,4 +1,12 @@
-/* Signal Grid 0.4 — editorial operating-review system. */
+/* Signal Grid 0.4.1 — editorial operating-review system. */
+@font-face {
+  font-family: "Smiley Sans";
+  src: url("./assets/fonts/SmileySans-Oblique.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
 body[data-theme="signal-grid"] {
   --signal-lime: #b9f227;
   --signal-violet: #5c63e8;
@@ -61,11 +69,13 @@ body[data-theme="signal-grid"] .slide__source {
 body[data-theme="signal-grid"] .object--text[data-role="deck-title"],
 body[data-theme="signal-grid"] .object--text[data-role="slide-assertion"],
 body[data-theme="signal-grid"] .object--text[data-role="decision-statement"] {
-  font-family: "Arial Narrow", "Aptos Display", "PingFang SC", "Noto Sans CJK SC", sans-serif !important;
+  font-family: "Smiley Sans", "PingFang SC", "Noto Sans CJK SC", sans-serif !important;
   color: var(--signal-ink);
-  font-weight: 900 !important;
-  line-height: .94 !important;
-  letter-spacing: -.055em !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 1.06 !important;
+  letter-spacing: -.018em !important;
+  font-synthesis: none;
   text-wrap: balance;
 }
 
@@ -79,9 +89,19 @@ body[data-theme="signal-grid"] .object--text[data-role="decision-context"] {
 
 body[data-theme="signal-grid"] .object--text[data-role="decision-brief"] {
   color: #5d6069;
+  font-size: 19px !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+  letter-spacing: 0 !important;
+  text-wrap: pretty;
+}
+
+body[data-theme="signal-grid"] .object--text[data-role="evidence-interpretation"],
+body[data-theme="signal-grid"] .object--text[data-role="next-evidence"] {
+  color: #555861;
   font-size: 20px !important;
   font-weight: 500 !important;
-  line-height: 1.45 !important;
+  line-height: 1.55 !important;
   letter-spacing: 0 !important;
   text-wrap: pretty;
 }
@@ -252,14 +272,12 @@ body[data-theme="signal-grid"] .group__stage:last-child { border-right: 0; }
 /* Product roadmap expression: assertion field + asymmetric decision evidence. */
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover {
   background:
-    radial-gradient(circle at 82% 18%, var(--signal-lime) 0 176px, transparent 178px),
-    radial-gradient(circle at 72% 78%, var(--signal-violet) 0 226px, transparent 228px),
-    radial-gradient(circle at 91% 72%, #ffd9be 0 18px, #ff742f 108px, #d84a2f 206px, transparent 208px),
+    radial-gradient(circle at 70% 92%, var(--signal-violet) 0 224px, transparent 226px),
     linear-gradient(90deg, #fff 0 58%, var(--signal-ink) 58% 100%);
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover::before {
-  left: 118px;
+  left: 120px;
   top: 104px;
   width: 52px;
   height: 14px;
@@ -267,7 +285,7 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--c
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .slide__eyebrow {
-  left: 184px;
+  left: 196px;
   top: 104px;
 }
 
@@ -279,23 +297,66 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--c
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="deck-title"] {
-  left: 118px !important;
-  top: 256px !important;
+  left: 120px !important;
+  top: 252px !important;
   width: 900px !important;
-  height: 300px !important;
-  font-size: 100px !important;
+  height: 320px !important;
+  overflow: visible;
+  font-size: 96px !important;
+  line-height: 1.08 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="deck-title"]::before,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="deck-title"]::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="deck-title"]::before {
+  left: 1100px;
+  top: -180px;
+  width: 560px;
+  height: 420px;
+  border-radius: 40px;
+  background:
+    linear-gradient(rgba(13, 14, 16, .08) 1px, transparent 1px) 0 0 / 56px 56px,
+    linear-gradient(90deg, rgba(13, 14, 16, .08) 1px, transparent 1px) 0 0 / 56px 56px,
+    var(--signal-lime);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="deck-title"]::after {
+  left: 1100px;
+  top: 466px;
+  width: 560px;
+  height: 268px;
+  border-radius: 40px;
+  background:
+    radial-gradient(circle at 72% 34%, #ffe0c7 0 14px, rgba(255, 224, 199, .72) 54px, transparent 118px),
+    radial-gradient(circle at 18% 72%, #ff742f 0 42px, #d84a2f 172px, #aa2e1d 280px);
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="decision-context"] {
-  left: 122px !important;
-  top: 640px !important;
+  left: 120px !important;
+  top: 648px !important;
   width: 760px !important;
-  height: 64px !important;
+  height: 72px !important;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(13, 14, 16, .20);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover .object--text[data-role="decision-brief"] {
+  left: 120px !important;
+  top: 804px !important;
+  width: 760px !important;
+  height: 96px !important;
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--data .slide__eyebrow,
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .slide__eyebrow {
-  left: 178px;
+  left: 200px;
   top: 102px;
   z-index: 3;
 }
@@ -319,11 +380,18 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--c
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--data .object--text[data-role="slide-assertion"] {
   left: 104px !important;
-  top: 190px !important;
+  top: 198px !important;
   width: 590px !important;
-  height: 310px !important;
-  font-size: 64px !important;
-  line-height: 1.01 !important;
+  height: 330px !important;
+  font-size: 58px !important;
+  line-height: 1.12 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--data .object--text[data-role="evidence-interpretation"] {
+  left: 104px !important;
+  top: 570px !important;
+  width: 560px !important;
+  height: 150px !important;
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--data .object--metric[data-role="primary-metric"] {
@@ -379,12 +447,12 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--d
   left: 104px;
   bottom: 104px;
   z-index: 3;
+  padding-top: 18px;
+  border-top: 1px solid rgba(13, 14, 16, .18);
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing {
   background:
-    radial-gradient(circle at 84% 21%, var(--signal-lime) 0 172px, transparent 174px),
-    radial-gradient(circle at 79% 78%, var(--signal-violet) 0 232px, transparent 234px),
     linear-gradient(90deg, #fff 0 63%, var(--signal-ink) 63% 100%);
 }
 
@@ -399,28 +467,67 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--c
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-title"] {
   left: 104px !important;
-  top: 188px !important;
+  top: 198px !important;
   width: 520px !important;
   height: 48px !important;
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-statement"] {
   left: 104px !important;
-  top: 310px !important;
+  top: 324px !important;
   width: 950px !important;
-  height: 340px !important;
-  font-size: 80px !important;
-  line-height: .98 !important;
+  height: 370px !important;
+  overflow: visible;
+  font-size: 74px !important;
+  line-height: 1.10 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-statement"]::before,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-statement"]::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-statement"]::before {
+  left: 1120px;
+  top: -252px;
+  width: 560px;
+  height: 360px;
+  border-radius: 40px;
+  background:
+    linear-gradient(rgba(13, 14, 16, .08) 1px, transparent 1px) 0 0 / 56px 56px,
+    linear-gradient(90deg, rgba(13, 14, 16, .08) 1px, transparent 1px) 0 0 / 56px 56px,
+    var(--signal-lime);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-statement"]::after {
+  left: 1120px;
+  top: 442px;
+  width: 560px;
+  height: 250px;
+  border-radius: 40px;
+  background: var(--signal-violet);
 }
 
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="decision-owner"] {
   left: 104px !important;
-  top: 838px !important;
+  top: 772px !important;
   width: 860px !important;
-  height: 66px !important;
+  height: 62px !important;
   padding-top: 20px;
   border-top: 1px solid rgba(13, 14, 16, .24);
   font-size: 20px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing .object--text[data-role="next-evidence"] {
+  left: 104px !important;
+  top: 870px !important;
+  width: 850px !important;
+  height: 74px !important;
+  font-size: 18px !important;
 }
 
 body[data-theme="signal-grid"] .object--text[data-role="decision-title"] {

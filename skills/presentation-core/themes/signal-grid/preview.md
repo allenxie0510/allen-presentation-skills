@@ -1,7 +1,8 @@
 # Signal Grid / 信号网格
 
 编辑感、决策型、低噪声的产品经营网格。以黑白灰建立证据层级，Signal Lime
-只标记真正改变资源配置的行动信号，低饱和紫蓝用于已验证结构与基准。
+只标记真正改变资源配置的行动信号，低饱和紫蓝用于已验证结构与基准。标题使用
+内嵌开源中文字体 Smiley Sans，离线 HTML 无需依赖用户本机字体。
 
 优先用于：Product Roadmap Review、Industry Research Deck。
 

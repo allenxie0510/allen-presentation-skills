@@ -357,7 +357,28 @@ def load_theme_styles(theme: dict[str, Any] | None, theme_path: Path | None) -> 
         raise ValueError("theme stylesheet escapes the theme directory")
     if not path.is_file():
         raise ValueError(f"theme stylesheet not found: {stylesheet}")
-    return path.read_text(encoding="utf-8")
+    css = path.read_text(encoding="utf-8")
+
+    def inline_local_asset(match: re.Match[str]) -> str:
+        source = match.group("source").strip()
+        if source.startswith(("data:", "#")):
+            return match.group(0)
+        if re.match(r"^[a-z][a-z0-9+.-]*:", source, re.IGNORECASE):
+            raise ValueError(f"remote or protocol theme asset is not offline-safe: {source}")
+        asset = (path.parent / source).resolve()
+        if root != asset and root not in asset.parents:
+            raise ValueError(f"theme asset escapes the theme directory: {source}")
+        if not asset.is_file():
+            raise ValueError(f"theme asset not found: {source}")
+        mime = mimetypes.guess_type(asset.name)[0] or "application/octet-stream"
+        encoded = base64.b64encode(asset.read_bytes()).decode("ascii")
+        return f'url("data:{mime};base64,{encoded}")'
+
+    return re.sub(
+        r"url\(\s*(?P<quote>['\"]?)(?P<source>[^'\")]+)(?P=quote)\s*\)",
+        inline_local_asset,
+        css,
+    )
 
 
 def render_document(

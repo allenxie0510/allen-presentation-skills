@@ -5,7 +5,7 @@ renderer and Chromium. They are not mockups. Every scenario uses one three-slide
 IR across its three recommended themes so visual selection does not accidentally
 change the story or evidence.
 
-Signal Grid is currently `0.4.0`; the other five draft themes remain `0.3.0`.
+Signal Grid is currently `0.4.1`; the other five draft themes remain `0.3.0`.
 
 | Scenario | Default | Alternative 1 | Alternative 2 |
 |---|---|---|---|

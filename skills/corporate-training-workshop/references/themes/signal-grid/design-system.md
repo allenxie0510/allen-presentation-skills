@@ -1,4 +1,4 @@
-# Signal Grid 0.4 design system
+# Signal Grid 0.4.1 design system
 
 Signal Grid is an editorial operating-review system for product decisions. It
 translates evidence, trade-offs, commitment, and uncertainty into a small number
@@ -55,12 +55,15 @@ the others remain small semantic annotations.
 
 ### Typography
 
-- Display: a heavy condensed grotesk when available; use `Arial Narrow`,
-  `Aptos Display`, or another licensed local equivalent for Latin, with a heavy
-  CJK sans fallback. Exact font matching is not claimed.
-- Hero: 88–116 px, weight 850–900, line height 0.90–0.98, tight tracking, two to
-  four short lines.
-- Slide assertion: 48–64 px, weight 800–900, line height 1.02–1.10.
+- Display: embed the unmodified Smiley Sans 2.0.1 (`得意黑`) WOFF2 supplied in
+  `assets/fonts/`. It is licensed under SIL OFL 1.1; keep
+  `assets/fonts/OFL-1.1.txt` with every redistributed theme pack. Use it only for
+  short display titles, never body copy. The renderer must inline it as a data
+  URL so exported HTML remains self-contained and offline-safe.
+- Hero: 88–104 px, regular Smiley Sans, line height 1.04–1.10, tracking between
+  -0.01 and -0.025 em, two to four short lines.
+- Slide assertion: 48–60 px, line height 1.08–1.14. A minimum 12 px optical gap
+  must remain between Chinese line boxes after visual inspection.
 - Body: 24–30 px, line height 1.35–1.5, maximum 55 Latin characters or 30 CJK
   characters per line.
 - Metric: 84–132 px with tabular numerals when available.
@@ -68,6 +71,8 @@ the others remain small semantic annotations.
   slide fit.
 - Use sentence case for prose. Uppercase is reserved for short navigation,
   status, and evidence labels.
+- Align title, context, interpretation, owner, and source to one of the authored
+  panel baselines; near-alignment within 2–12 px is a defect, not visual nuance.
 
 ### Image behavior
 

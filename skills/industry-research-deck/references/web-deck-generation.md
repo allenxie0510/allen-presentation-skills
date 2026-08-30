@@ -65,6 +65,9 @@ render.
 - Do not invent images, logos, metrics, quotes, approvals, or sources.
 - Use relative local images or data URLs. Remote images require explicit
   `--allow-remote-assets` because they break offline delivery.
+- Theme stylesheets may reference local fonts or other assets inside their own
+  theme directory. The renderer inlines them as data URLs and rejects missing,
+  remote, protocol-based, or path-escaping theme assets.
 - Draft design systems may be used for prototypes only with
   `--allow-draft-design`; do not describe them as approved.
 - A rendered file is not verified until it has passed schema validation and
