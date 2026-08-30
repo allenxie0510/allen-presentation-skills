@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: executive-night, name: Executive Night, name_zh: 董事会夜幕, version: "0.3.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 克制、权威、适合关键决策
+  mood: [institutional, calm, premium]
+  tone: [boardroom, strategic, formal]
+  formality: high
+  density: medium
+best_for: [product-roadmap-review, industry-research-deck, speech-pitch-deck]
+avoid_for: [playful-training]
+colors:
+  canvas: "#07111F"
+  surface: "#101E30"
+  text_primary: "#F5F0E4"
+  text_secondary: "#AAB7C6"
+  accent_primary: "#C8A96B"
+  accent_secondary: "#6CA8FF"
+  positive: "#59C39A"
+  negative: "#FF786E"
+  rule: "rgba(245,240,228,.18)"
+stylesheet: theme.css

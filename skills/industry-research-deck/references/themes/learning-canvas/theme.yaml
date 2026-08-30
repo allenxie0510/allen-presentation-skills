@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: learning-canvas, name: Learning Canvas, name_zh: 学习画布, version: "0.3.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用清晰步骤支持练习与迁移
+  mood: [friendly, structured, active]
+  tone: [instructional, practical, encouraging]
+  formality: medium
+  density: medium
+best_for: [corporate-training-workshop]
+avoid_for: [investor-roadshow]
+colors:
+  canvas: "#F4F7F2"
+  surface: "#FFFFFF"
+  text_primary: "#17302B"
+  text_secondary: "#62716C"
+  accent_primary: "#F08A42"
+  accent_secondary: "#2C7A68"
+  positive: "#2C7A68"
+  negative: "#B8493F"
+  rule: "rgba(23,48,43,.17)"
+stylesheet: theme.css

@@ -1,0 +1,7 @@
+body[data-theme="artifact-editorial"] .slide { background: linear-gradient(90deg, rgba(217,78,52,.08) 0 30%, transparent 30%), var(--deck-canvas); }
+body[data-theme="artifact-editorial"] .slide::before { left: 84px; top: 76px; width: 2px; height: 928px; background: var(--deck-text); }
+body[data-theme="artifact-editorial"] .slide::after { font-family: Georgia, serif; font-size: 24px; }
+body[data-theme="artifact-editorial"] .slide__eyebrow { font-family: Georgia, "Times New Roman", serif; font-style: italic; text-transform: none; letter-spacing: .03em; }
+body[data-theme="artifact-editorial"] .object--metric,
+body[data-theme="artifact-editorial"] .group__stage { border: 0; background: var(--deck-surface); box-shadow: 0 14px 40px rgba(33,29,26,.08); }
+body[data-theme="artifact-editorial"] .slide--cover { background: linear-gradient(90deg, #d94e34 0 18%, #eee7dc 18%); }

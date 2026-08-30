@@ -1,4 +1,4 @@
-schema_version: "0.1"
+schema_version: "0.2"
 scenario:
   id: board-review
   name: Board Review
@@ -36,6 +36,16 @@ required_archetypes:
   - variance-analysis
   - risk
   - decision-required
+theme_recommendations:
+  default: executive-night
+  alternatives: [signal-grid, evidence-ledger]
+  selection_note: Select by meeting formality and evidence density.
+component_recipes:
+  executive-summary: {archetype: statement, layout_variant: statement-left, purpose: Summarize the operating judgment, required_roles: [slide-assertion]}
+  kpi-scorecard: {archetype: data, layout_variant: kpi-scorecard, purpose: Show board-level signals, required_roles: [primary-metric]}
+  variance-analysis: {archetype: chart, layout_variant: variance-bars, purpose: Explain material variance, required_roles: [variance-chart]}
+  risk: {archetype: data, layout_variant: evidence-ledger, purpose: Surface material risk, required_roles: [risk-items]}
+  decision-required: {archetype: closing, layout_variant: closing-decision, purpose: Name the required board decision, required_roles: [decision-statement]}
 anti_patterns:
   - decorative-data
   - vague-headlines

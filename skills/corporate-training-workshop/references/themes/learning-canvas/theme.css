@@ -1,0 +1,9 @@
+body[data-theme="learning-canvas"] .slide { background: radial-gradient(circle at 92% 12%, rgba(240,138,66,.16), transparent 24%), var(--deck-canvas); }
+body[data-theme="learning-canvas"] .slide::before { width: 76px; background: var(--deck-accent-2); }
+body[data-theme="learning-canvas"] .slide::after { right: auto; left: 24px; top: 42px; color: white; }
+body[data-theme="learning-canvas"] .slide__eyebrow { color: var(--deck-accent-2); }
+body[data-theme="learning-canvas"] .group__stage { border: 0; border-radius: 18px; background: var(--deck-surface); box-shadow: 0 10px 28px rgba(23,48,43,.08); }
+body[data-theme="learning-canvas"] .group__stage:nth-child(odd) { border-top: 10px solid var(--deck-accent); }
+body[data-theme="learning-canvas"] .object--metric { border: 0; border-radius: 20px; box-shadow: 0 10px 28px rgba(23,48,43,.08); }
+body[data-theme="learning-canvas"] .slide--closing { background: linear-gradient(125deg, #2c7a68 0 38%, #f4f7f2 38%); }
+body[data-theme="learning-canvas"] .slide--closing .object--text { color: #ffffff; }

@@ -32,6 +32,7 @@ SCHEMA_FILES = {
     "design-system": SCHEMA_DIR / "design-system.schema.json",
     "editor-permissions": SCHEMA_DIR / "editor-permissions.schema.json",
     "scenario": SCHEMA_DIR / "scenario.schema.json",
+    "theme": SCHEMA_DIR / "theme.schema.json",
 }
 
 
@@ -220,6 +221,17 @@ def validate_permission_semantics(path: Path, model: dict[str, Any]) -> list[Val
     return issues
 
 
+def validate_theme_semantics(path: Path, theme: dict[str, Any]) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    theme_id = theme.get("meta", {}).get("id")
+    if theme_id != path.parent.name:
+        issues.append(ValidationIssue(relative(path), "theme id must match its directory name"))
+    stylesheet = theme.get("stylesheet")
+    if isinstance(stylesheet, str) and not (path.parent / stylesheet).is_file():
+        issues.append(ValidationIssue(relative(path), f"missing theme stylesheet: {stylesheet}"))
+    return issues
+
+
 def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
     schemas = {name: load_json(path) for name, path in SCHEMA_FILES.items()}
     issues: list[ValidationIssue] = []
@@ -259,6 +271,12 @@ def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
         issues.extend(validate_instance(path, fixture, schemas["editor-permissions"], registry))
         issues.extend(validate_permission_semantics(path, fixture))
 
+    theme_files = sorted((SKILL_DIR / "themes").glob("*/theme.yaml"))
+    for path in theme_files:
+        fixture = load_yaml(path)
+        issues.extend(validate_instance(path, fixture, schemas["theme"], registry))
+        issues.extend(validate_theme_semantics(path, fixture))
+
     ir_files = sorted((FIXTURE_DIR / "ir").glob("*.yaml"))
     for path in ir_files:
         fixture = load_yaml(path)
@@ -272,6 +290,7 @@ def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
         "scenario_fixtures": len(scenario_files),
         "design_system_fixtures": len(design_files),
         "permission_fixtures": len(permission_files),
+        "theme_fixtures": len(theme_files),
         "ir_fixtures": len(ir_files),
     }
     return issues, counts
@@ -311,6 +330,7 @@ def main() -> int:
             f"{counts['scenario_fixtures']} scenarios, "
             f"{counts['design_system_fixtures']} design systems, "
             f"{counts['permission_fixtures']} permission models, and "
+            f"{counts['theme_fixtures']} themes, and "
             f"{counts['ir_fixtures']} Presentation IR fixtures."
         )
     return 1 if issues else 0

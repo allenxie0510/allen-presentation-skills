@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "draft"
   risk: "local-write"
-  version: "0.2.0"
+  version: "0.3.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/product-roadmap-review"
@@ -58,11 +58,13 @@ When the user asks for an actual presentation, read
 1. Create schema-valid Presentation IR using an outcome scorecard, opportunity
    evidence, trade-off comparison, confidence-aware Now / Next / Later sequence,
    dependency map, and explicit decision close where the evidence supports them.
-2. Use [references/allen-signal-grid.yaml](references/allen-signal-grid.yaml) as
-   the bundled draft design system unless the user supplies a brand system.
+2. Read `references/theme-selection.md` and `references/themes/index.yaml`, then
+   compare the three real-render previews in `assets/theme-previews/`. Default
+   to Signal Grid; offer Executive Night and Evidence Ledger when their fit is stronger.
 3. Render with `python scripts/render-html.py <deck>.ir.yaml --design
    references/allen-signal-grid.yaml --output <deck>.html
-   --allow-draft-design`.
+   --allow-draft-design --theme references/themes/signal-grid/theme.yaml
+   --allow-draft-theme`.
 4. Open and inspect every slide. Repair the IR and render again if anything is
    clipped, crowded, ambiguous, or visually repetitive.
 

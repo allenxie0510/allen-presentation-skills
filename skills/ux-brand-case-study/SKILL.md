@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "draft"
   risk: "local-write"
-  version: "0.2.0"
+  version: "0.3.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/ux-brand-case-study"
@@ -54,11 +54,13 @@ consequential iterations, system decisions, annotated artifacts, fair comparison
 outcomes, attribution, and reflection. Use only permitted images; embed local
 assets so the result remains self-contained.
 
-Use [references/allen-signal-grid.yaml](references/allen-signal-grid.yaml) as the
-bundled draft design system unless the user supplies a brand system. Render with
+Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
+the three real-render previews in `assets/theme-previews/`, then default to
+Artifact Editorial; offer Signal Grid and Stage Contrast when their fit is stronger. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
---allow-draft-design`, then open and inspect every slide. Repair the IR and
+--allow-draft-design --theme references/themes/artifact-editorial/theme.yaml
+--allow-draft-theme`, then open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, weakly annotated, or visually
 repetitive.
 

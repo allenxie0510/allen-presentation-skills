@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:allen-ai-skills:presentation-core:scenario:0.1",
+  "$id": "urn:allen-ai-skills:presentation-core:scenario:0.2",
   "title": "Professional Presentation Scenario",
   "description": "Communication logic for a professional presentation scenario, independent of industry and visual style.",
   "type": "object",
@@ -16,10 +16,12 @@
     "density",
     "preferred_grammar",
     "required_archetypes",
+    "theme_recommendations",
+    "component_recipes",
     "anti_patterns"
   ],
   "properties": {
-    "schema_version": {"const": "0.1"},
+    "schema_version": {"const": "0.2"},
     "scenario": {
       "type": "object",
       "additionalProperties": false,
@@ -93,6 +95,27 @@
       "uniqueItems": true,
       "items": {"$ref": "#/$defs/slug"}
     },
+    "theme_recommendations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default", "alternatives", "selection_note"],
+      "properties": {
+        "default": {"$ref": "#/$defs/slug"},
+        "alternatives": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/slug"}
+        },
+        "selection_note": {"type": "string", "minLength": 1}
+      }
+    },
+    "component_recipes": {
+      "type": "object",
+      "minProperties": 2,
+      "additionalProperties": {"$ref": "#/$defs/componentRecipe"}
+    },
     "anti_patterns": {
       "type": "array",
       "minItems": 1,
@@ -126,6 +149,22 @@
         "quote",
         "image-led"
       ]
+    },
+    "componentRecipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archetype", "layout_variant", "purpose", "required_roles"],
+      "properties": {
+        "archetype": {"$ref": "#/$defs/slug"},
+        "layout_variant": {"$ref": "#/$defs/slug"},
+        "purpose": {"type": "string", "minLength": 1},
+        "required_roles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/slug"}
+        }
+      }
     }
   }
 }

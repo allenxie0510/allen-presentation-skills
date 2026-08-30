@@ -1,4 +1,4 @@
-schema_version: "0.1"
+schema_version: "0.2"
 scenario:
   id: investor-pitch
   name: Investor Pitch
@@ -38,6 +38,18 @@ required_archetypes:
   - traction
   - market
   - ask
+theme_recommendations:
+  default: stage-contrast
+  alternatives: [executive-night, artifact-editorial]
+  selection_note: Select by venue, proof density, and spoken-delivery mode.
+component_recipes:
+  cover: {archetype: cover, layout_variant: cover-offset, purpose: Open with the proposition, required_roles: [deck-title]}
+  problem: {archetype: comparison, layout_variant: split-comparison, purpose: Make the customer problem concrete, required_roles: [problem, stakes]}
+  insight: {archetype: statement, layout_variant: statement-left, purpose: State the differentiated insight, required_roles: [core-idea]}
+  solution: {archetype: image, layout_variant: annotated-artifact, purpose: Demonstrate the solution, required_roles: [demonstration]}
+  traction: {archetype: data, layout_variant: metric-and-context, purpose: Show verified pull, required_roles: [primary-metric]}
+  market: {archetype: chart, layout_variant: range-bars, purpose: Bound the opportunity honestly, required_roles: [range-chart]}
+  ask: {archetype: closing, layout_variant: closing-decision, purpose: Name the next investment step, required_roles: [decision-statement]}
 anti_patterns:
   - feature-dump
   - unsupported-market-size

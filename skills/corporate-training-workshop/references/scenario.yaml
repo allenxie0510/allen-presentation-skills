@@ -1,8 +1,8 @@
-schema_version: "0.1"
+schema_version: "0.2"
 scenario:
   id: corporate-training-workshop
   name: Corporate Training Workshop
-  version: "0.2.0"
+  version: "0.3.0"
 communication_job:
   primary: Enable adult learners to perform a defined workplace behavior through relevant explanation, practice, feedback, and transfer support.
   success_condition: Learners can demonstrate the target capability, plan workplace application, and generate evidence for learning and transfer evaluation.
@@ -50,6 +50,22 @@ required_archetypes:
   - action-plan
   - transfer-commitment
   - evaluation
+theme_recommendations:
+  default: learning-canvas
+  alternatives: [signal-grid, artifact-editorial]
+  selection_note: Use Learning Canvas for facilitation clarity, Signal Grid for analytical capability building, and Artifact Editorial for reflective or creative workshops.
+component_recipes:
+  relevance-opening: {archetype: cover, layout_variant: cover-indexed, purpose: Connect the workshop to a real performance need, required_roles: [deck-title, performance-need, relevance]}
+  learning-outcomes: {archetype: statement, layout_variant: statement-bracketed, purpose: State observable learner performance, required_roles: [observable-outcomes, success-evidence]}
+  workshop-agenda: {archetype: timeline, layout_variant: phased-roadmap, purpose: Show the learning arc and protected practice time, required_roles: [agenda-phases, timing, practice-time]}
+  mental-model: {archetype: process, layout_variant: linear-process, purpose: Explain the smallest useful model, required_roles: [model-stages, decision-points]}
+  worked-example: {archetype: two-column, layout_variant: two-column-emphasis, purpose: Demonstrate the model on a realistic case, required_roles: [example-input, worked-steps, example-output]}
+  activity-brief: {archetype: process, layout_variant: learning-loop, purpose: "Give objective, steps, timebox, output, and fallback", required_roles: [activity-objective, instructions, timer, expected-output]}
+  debrief: {archetype: quote, layout_variant: reflection-quote, purpose: Convert practice experience into transferable insight, required_roles: [debrief-question, learner-evidence, principle]}
+  knowledge-check: {archetype: comparison, layout_variant: tradeoff-matrix, purpose: Assess a decision or application, required_roles: [check-prompt, options, feedback-rule]}
+  action-plan: {archetype: timeline, layout_variant: milestone-evidence, purpose: Plan application with evidence and timing, required_roles: [next-action, workplace-context, success-evidence]}
+  transfer-commitment: {archetype: closing, layout_variant: closing-commitment, purpose: Make workplace transfer specific and owned, required_roles: [commitment, owner, review-date]}
+  evaluation: {archetype: data, layout_variant: evidence-ledger, purpose: "Distinguish reaction, learning, behavior, and results evidence", required_roles: [evaluation-levels, measures, limitations]}
 anti_patterns:
   - lecture-only
   - content-dump

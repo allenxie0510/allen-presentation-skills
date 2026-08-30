@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.1",
+  "generated_from": "Presentation IR → HTML → Chromium",
+  "scenarios": [
+    {
+      "id": "product-roadmap-review",
+      "themes": [
+        {
+          "id": "signal-grid",
+          "contact_sheet": "product-roadmap-review/signal-grid.webp",
+          "screenshots": [
+            "product-roadmap-review/signal-grid-01-cover.webp",
+            "product-roadmap-review/signal-grid-02-core.webp",
+            "product-roadmap-review/signal-grid-03-closing.webp"
+          ]
+        },
+        {
+          "id": "executive-night",
+          "contact_sheet": "product-roadmap-review/executive-night.webp",
+          "screenshots": [
+            "product-roadmap-review/executive-night-01-cover.webp",
+            "product-roadmap-review/executive-night-02-core.webp",
+            "product-roadmap-review/executive-night-03-closing.webp"
+          ]
+        },
+        {
+          "id": "evidence-ledger",
+          "contact_sheet": "product-roadmap-review/evidence-ledger.webp",
+          "screenshots": [
+            "product-roadmap-review/evidence-ledger-01-cover.webp",
+            "product-roadmap-review/evidence-ledger-02-core.webp",
+            "product-roadmap-review/evidence-ledger-03-closing.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry-research-deck",
+      "themes": [
+        {
+          "id": "evidence-ledger",
+          "contact_sheet": "industry-research-deck/evidence-ledger.webp",
+          "screenshots": [
+            "industry-research-deck/evidence-ledger-01-cover.webp",
+            "industry-research-deck/evidence-ledger-02-core.webp",
+            "industry-research-deck/evidence-ledger-03-closing.webp"
+          ]
+        },
+        {
+          "id": "executive-night",
+          "contact_sheet": "industry-research-deck/executive-night.webp",
+          "screenshots": [
+            "industry-research-deck/executive-night-01-cover.webp",
+            "industry-research-deck/executive-night-02-core.webp",
+            "industry-research-deck/executive-night-03-closing.webp"
+          ]
+        },
+        {
+          "id": "signal-grid",
+          "contact_sheet": "industry-research-deck/signal-grid.webp",
+          "screenshots": [
+            "industry-research-deck/signal-grid-01-cover.webp",
+            "industry-research-deck/signal-grid-02-core.webp",
+            "industry-research-deck/signal-grid-03-closing.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speech-pitch-deck",
+      "themes": [
+        {
+          "id": "stage-contrast",
+          "contact_sheet": "speech-pitch-deck/stage-contrast.webp",
+          "screenshots": [
+            "speech-pitch-deck/stage-contrast-01-cover.webp",
+            "speech-pitch-deck/stage-contrast-02-core.webp",
+            "speech-pitch-deck/stage-contrast-03-closing.webp"
+          ]
+        },
+        {
+          "id": "executive-night",
+          "contact_sheet": "speech-pitch-deck/executive-night.webp",
+          "screenshots": [
+            "speech-pitch-deck/executive-night-01-cover.webp",
+            "speech-pitch-deck/executive-night-02-core.webp",
+            "speech-pitch-deck/executive-night-03-closing.webp"
+          ]
+        },
+        {
+          "id": "artifact-editorial",
+          "contact_sheet": "speech-pitch-deck/artifact-editorial.webp",
+          "screenshots": [
+            "speech-pitch-deck/artifact-editorial-01-cover.webp",
+            "speech-pitch-deck/artifact-editorial-02-core.webp",
+            "speech-pitch-deck/artifact-editorial-03-closing.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ux-brand-case-study",
+      "themes": [
+        {
+          "id": "artifact-editorial",
+          "contact_sheet": "ux-brand-case-study/artifact-editorial.webp",
+          "screenshots": [
+            "ux-brand-case-study/artifact-editorial-01-cover.webp",
+            "ux-brand-case-study/artifact-editorial-02-core.webp",
+            "ux-brand-case-study/artifact-editorial-03-closing.webp"
+          ]
+        },
+        {
+          "id": "signal-grid",
+          "contact_sheet": "ux-brand-case-study/signal-grid.webp",
+          "screenshots": [
+            "ux-brand-case-study/signal-grid-01-cover.webp",
+            "ux-brand-case-study/signal-grid-02-core.webp",
+            "ux-brand-case-study/signal-grid-03-closing.webp"
+          ]
+        },
+        {
+          "id": "stage-contrast",
+          "contact_sheet": "ux-brand-case-study/stage-contrast.webp",
+          "screenshots": [
+            "ux-brand-case-study/stage-contrast-01-cover.webp",
+            "ux-brand-case-study/stage-contrast-02-core.webp",
+            "ux-brand-case-study/stage-contrast-03-closing.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corporate-training-workshop",
+      "themes": [
+        {
+          "id": "learning-canvas",
+          "contact_sheet": "corporate-training-workshop/learning-canvas.webp",
+          "screenshots": [
+            "corporate-training-workshop/learning-canvas-01-cover.webp",
+            "corporate-training-workshop/learning-canvas-02-core.webp",
+            "corporate-training-workshop/learning-canvas-03-closing.webp"
+          ]
+        },
+        {
+          "id": "signal-grid",
+          "contact_sheet": "corporate-training-workshop/signal-grid.webp",
+          "screenshots": [
+            "corporate-training-workshop/signal-grid-01-cover.webp",
+            "corporate-training-workshop/signal-grid-02-core.webp",
+            "corporate-training-workshop/signal-grid-03-closing.webp"
+          ]
+        },
+        {
+          "id": "artifact-editorial",
+          "contact_sheet": "corporate-training-workshop/artifact-editorial.webp",
+          "screenshots": [
+            "corporate-training-workshop/artifact-editorial-01-cover.webp",
+            "corporate-training-workshop/artifact-editorial-02-core.webp",
+            "corporate-training-workshop/artifact-editorial-03-closing.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

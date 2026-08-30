@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: artifact-editorial, name: Artifact Editorial, name_zh: 作品集画册, version: "0.3.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让作品、证据与设计判断共同叙事
+  mood: [editorial, tactile, crafted]
+  tone: [design-led, reflective, authored]
+  formality: medium
+  density: medium
+best_for: [ux-brand-case-study, speech-pitch-deck, corporate-training-workshop]
+avoid_for: [financial-control-room]
+colors:
+  canvas: "#EEE7DC"
+  surface: "#FBF7F0"
+  text_primary: "#211D1A"
+  text_secondary: "#6D625A"
+  accent_primary: "#D94E34"
+  accent_secondary: "#4E6A58"
+  positive: "#47745D"
+  negative: "#A23C32"
+  rule: "rgba(33,29,26,.20)"
+stylesheet: theme.css

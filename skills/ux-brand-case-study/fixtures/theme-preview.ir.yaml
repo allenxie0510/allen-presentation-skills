@@ -1,0 +1,49 @@
+schema_version: "0.1"
+deck:
+  id: preview-ux-brand-case
+  title: UX Brand Case Study
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: ux-brand-case-study, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium
+  mode: hybrid
+  metadata: {author: Allen Skill Hub, confidential: false, created_at: null, updated_at: null, source_note: Synthetic theme preview; project and outcomes are illustrative.}
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Establish the challenge and design role.
+    grammar: narrative
+    assertion: {text: 把复杂的企业采购，重构为可以被信任的选择, status: provisional}
+    narrative_role: {section: case-summary, sequence: opening}
+    layout_variant: cover-offset
+    permission_profile: content-style
+    objects:
+      - {id: s01-title, type: text, role: deck-title, content: {text: "把复杂的企业采购，\n重构为可以被信任的选择"}, frame: {x: 180, y: 220, w: 1390, h: 290}, style: {token: typography.hero, variant: null, overrides: {font_size: 80}}, editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}}
+      - {id: s01-role, type: text, role: role-summary, content: {text: Lead Product Designer · Research / Service / System}, frame: {x: 185, y: 650, w: 1100, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}
+  - id: s02
+    archetype: comparison
+    purpose: Show how evidence changed the design decision.
+    grammar: comparison
+    assertion: {text: 用户不缺筛选项，他们缺的是可解释的推荐依据, status: provisional}
+    narrative_role: {section: insight-to-decision, sequence: explanation}
+    layout_variant: before-after
+    permission_profile: content-style
+    objects:
+      - {id: s02-title, type: text, role: slide-assertion, content: {text: 用户不缺筛选项，他们缺的是可解释的推荐依据}, frame: {x: 150, y: 105, w: 1500, h: 130}, style: {token: typography.slide_title, variant: null}, editable: *edit}
+      - {id: s02-before, type: shape, role: before-state, content: {text: "BEFORE\n42 个筛选项\n没有决策解释"}, frame: {x: 150, y: 340, w: 650, h: 390}, style: {token: typography.body, variant: null, overrides: {padding: 56, font_size: 38}}, editable: *edit}
+      - {id: s02-after, type: shape, role: after-state, content: {text: "AFTER\n3 条推荐路径\n证据与取舍可追溯"}, frame: {x: 970, y: 340, w: 650, h: 390}, style: {token: typography.body, variant: null, overrides: {padding: 56, font_size: 38, border_color: "#D94E34"}}, editable: *edit}
+      - {id: s02-learning, type: text, role: learning, content: {text: 研究洞察 → 解释原则 → 推荐组件}, frame: {x: 520, y: 810, w: 760, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}
+  - id: s03
+    archetype: closing
+    purpose: Report outcome and honest attribution.
+    grammar: narrative
+    assertion: {text: 设计让决策更快，但信任来自产品、销售与数据团队共同完成, status: provisional}
+    narrative_role: {section: reflection, sequence: closing}
+    layout_variant: closing-commitment
+    permission_profile: content-style
+    objects:
+      - {id: s03-label, type: text, role: reflection, content: {text: REFLECTION}, frame: {x: 150, y: 130, w: 500, h: 60}, style: {token: typography.caption, variant: null}, editable: *edit}
+      - {id: s03-title, type: text, role: decision-statement, content: {text: "设计让决策更快。\n信任由跨团队共同完成。"}, frame: {x: 150, y: 300, w: 1470, h: 330}, style: {token: typography.hero, variant: null, overrides: {font_size: 78}}, editable: *edit}
+      - {id: s03-note, type: text, role: unresolved-question, content: {text: 下一步 · 验证推荐解释在续约阶段是否仍然有效}, frame: {x: 150, y: 760, w: 1200, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}

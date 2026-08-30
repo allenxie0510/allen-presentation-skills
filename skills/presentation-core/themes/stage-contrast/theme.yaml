@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: stage-contrast, name: Stage Contrast, name_zh: 舞台对比, version: "0.3.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 为现场表达保留记忆点
+  mood: [dramatic, focused, cinematic]
+  tone: [spoken, persuasive, bold]
+  formality: medium
+  density: low
+best_for: [speech-pitch-deck, ux-brand-case-study]
+avoid_for: [dense-research-appendix]
+colors:
+  canvas: "#08090B"
+  surface: "#15171C"
+  text_primary: "#FAF8F2"
+  text_secondary: "#A7AAB2"
+  accent_primary: "#FF4D2E"
+  accent_secondary: "#8B5CF6"
+  positive: "#5FE1A2"
+  negative: "#FF6666"
+  rule: "rgba(250,248,242,.18)"
+stylesheet: theme.css

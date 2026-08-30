@@ -1,0 +1,50 @@
+schema_version: "0.1"
+deck:
+  id: preview-product-roadmap
+  title: Product Roadmap Review
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: product-roadmap-review, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium-high
+  mode: presenting-first
+  metadata: {author: Allen Skill Hub, confidential: false, created_at: null, updated_at: null, source_note: Synthetic theme preview; values are illustrative.}
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Frame the roadmap decision.
+    grammar: narrative
+    assertion: {text: 下一季度，我们优先解决激活，不继续堆功能, status: provisional}
+    narrative_role: {section: decision-frame, sequence: opening}
+    layout_variant: cover-offset
+    permission_profile: content-style
+    objects:
+      - &title {id: s01-title, type: text, role: deck-title, content: {text: "下一季度，\n我们优先解决激活"}, frame: {x: 150, y: 230, w: 1260, h: 260}, style: {token: typography.hero, variant: null}, editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}}
+      - {id: s01-context, type: text, role: decision-context, content: {text: 产品路线图评审 · Outcome over output}, frame: {x: 155, y: 610, w: 980, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}
+  - id: s02
+    archetype: data
+    purpose: Compare the outcome signals that determine priority.
+    grammar: evidence
+    assertion: {text: 激活率是增长链路中唯一持续恶化的关键环节, status: provisional}
+    narrative_role: {section: outcome-evidence, sequence: evidence}
+    layout_variant: kpi-scorecard
+    permission_profile: content-style
+    evidence: [{id: ev-product-preview, claim: Illustrative product metrics, source_type: placeholder, source: 主题预览示例}]
+    objects:
+      - {id: s02-title, type: text, role: slide-assertion, content: {text: 激活率是增长链路中唯一持续恶化的关键环节}, frame: {x: 150, y: 120, w: 1480, h: 120}, style: {token: typography.slide_title, variant: null}, editable: *edit}
+      - {id: s02-activation, type: metric, role: risk-metric, content: {label: 激活率, value: "41%", period: 本季度, delta: "−8pp"}, frame: {x: 150, y: 350, w: 470, h: 300}, style: {token: components.metric.delta-stat, variant: delta-stat}, editable: *edit}
+      - {id: s02-retention, type: metric, role: primary-metric, content: {label: 次月留存, value: "72%", period: 本季度, delta: "+2pp"}, frame: {x: 725, y: 350, w: 470, h: 300}, style: {token: components.metric.hero-number, variant: hero-number}, editable: *edit}
+      - {id: s02-revenue, type: metric, role: positive-metric, content: {label: 扩展收入, value: "18%", period: 同比, delta: "+5pp"}, frame: {x: 1300, y: 350, w: 470, h: 300}, style: {token: components.metric.compact-stat, variant: compact-stat}, editable: *edit}
+  - id: s03
+    archetype: closing
+    purpose: Ask for a specific prioritization decision.
+    grammar: decision
+    assertion: {text: 将 60% 产品能力投入激活链路，并冻结两个低证据项目, status: provisional}
+    narrative_role: {section: explicit-decision, sequence: closing}
+    layout_variant: closing-decision
+    permission_profile: content-style
+    objects:
+      - {id: s03-label, type: text, role: decision-title, content: {text: DECISION / 01}, frame: {x: 150, y: 120, w: 520, h: 70}, style: {token: typography.caption, variant: null}, editable: *edit}
+      - {id: s03-decision, type: text, role: decision-statement, content: {text: "将 60% 产品能力投入激活链路，\n冻结两个低证据项目"}, frame: {x: 150, y: 300, w: 1430, h: 330}, style: {token: typography.hero, variant: null, overrides: {font_size: 72}}, editable: *edit}
+      - {id: s03-owner, type: text, role: decision-owner, content: {text: Owner · VP Product  /  Review · 6 weeks}, frame: {x: 150, y: 750, w: 1100, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}

@@ -1,0 +1,49 @@
+schema_version: "0.1"
+deck:
+  id: preview-speech-pitch
+  title: Speech Pitch Deck
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: speech-pitch-deck, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: low
+  mode: presenting-first
+  metadata: {author: Allen Skill Hub, confidential: false, created_at: null, updated_at: null, source_note: Synthetic theme preview; proof point is illustrative.}
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Open with a memorable tension.
+    grammar: narrative
+    assertion: {text: AI 不是替你工作，而是缩短你做出判断的距离, status: provisional}
+    narrative_role: {section: opening-hook, sequence: opening}
+    layout_variant: cover-offset
+    permission_profile: content-style
+    objects:
+      - {id: s01-title, type: text, role: deck-title, content: {text: "AI 不替你判断。\n它缩短判断的距离。"}, frame: {x: 150, y: 240, w: 1450, h: 280}, style: {token: typography.hero, variant: null, overrides: {font_size: 96}}, editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}}
+      - {id: s01-context, type: text, role: opening-tension, content: {text: 一场关于人与 AI 协作边界的演讲}, frame: {x: 155, y: 660, w: 980, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}
+  - id: s02
+    archetype: data
+    purpose: Anchor the proposition in one proof point.
+    grammar: evidence
+    assertion: {text: 最好的协作不是生成更多，而是减少无效循环, status: provisional}
+    narrative_role: {section: proof, sequence: evidence}
+    layout_variant: metric-and-context
+    permission_profile: content-style
+    evidence: [{id: ev-speech-preview, claim: Illustrative experiment result, source_type: placeholder, source: 主题预览示例}]
+    objects:
+      - {id: s02-title, type: text, role: slide-assertion, content: {text: 最好的协作不是生成更多，而是减少无效循环}, frame: {x: 150, y: 110, w: 1480, h: 130}, style: {token: typography.slide_title, variant: null}, editable: *edit}
+      - {id: s02-metric, type: metric, role: primary-metric, content: {label: 决策迭代时间, value: "−37%", period: 6 周试点, delta: 方向性证据}, frame: {x: 150, y: 350, w: 620, h: 330}, style: {token: components.metric.hero-number, variant: hero-number}, editable: *edit}
+      - {id: s02-context, type: text, role: evidence-context, content: {text: "当 AI 先整理分歧、证据与假设，\n团队把时间留给真正需要人负责的选择。"}, frame: {x: 930, y: 390, w: 700, h: 220}, style: {token: typography.body, variant: null, overrides: {font_size: 34}}, editable: *edit}
+  - id: s03
+    archetype: closing
+    purpose: Make the next action explicit and call back the opening.
+    grammar: decision
+    assertion: {text: 下周，选一个反复拉扯的决策，让 AI 先整理证据, status: provisional}
+    narrative_role: {section: explicit-ask, sequence: closing}
+    layout_variant: closing-commitment
+    permission_profile: content-style
+    objects:
+      - {id: s03-label, type: text, role: callback, content: {text: ONE ACTION}, frame: {x: 150, y: 130, w: 500, h: 60}, style: {token: typography.caption, variant: null}, editable: *edit}
+      - {id: s03-ask, type: text, role: decision-statement, content: {text: "选一个反复拉扯的决策，\n让 AI 先整理证据。"}, frame: {x: 150, y: 300, w: 1450, h: 340}, style: {token: typography.hero, variant: null, overrides: {font_size: 82}}, editable: *edit}
+      - {id: s03-close, type: text, role: commitment, content: {text: 人继续负责判断。}, frame: {x: 150, y: 760, w: 900, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}

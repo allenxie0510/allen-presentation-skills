@@ -1,6 +1,6 @@
 interface:
   display_name: "Industry Research Deck"
   short_description: "Evidence-led industry research web decks."
-  default_prompt: "Use $industry-research-deck to turn my market question and sources into a defensible executive industry study, then generate its validated IR and self-contained HTML deck."
+  default_prompt: "Use $industry-research-deck to turn my market question and sources into a defensible executive industry study, show the three recommended theme previews, then generate its validated IR and self-contained themed HTML deck."
 policy:
   allow_implicit_invocation: true

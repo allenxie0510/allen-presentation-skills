@@ -1,6 +1,6 @@
 interface:
   display_name: "Product Roadmap Review"
   short_description: "Outcome-led product roadmap web decks."
-  default_prompt: "Use $product-roadmap-review to turn my product evidence and roadmap questions into an outcome-led leadership review, then generate its validated IR and self-contained HTML deck."
+  default_prompt: "Use $product-roadmap-review to turn my product evidence and roadmap questions into an outcome-led leadership review, show the three recommended theme previews, then generate its validated IR and self-contained themed HTML deck."
 policy:
   allow_implicit_invocation: true

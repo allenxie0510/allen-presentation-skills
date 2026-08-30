@@ -1,0 +1,6 @@
+body[data-theme="evidence-ledger"] .slide { background: repeating-linear-gradient(0deg, transparent 0 47px, rgba(23,27,34,.045) 47px 48px), var(--deck-canvas); }
+body[data-theme="evidence-ledger"] .slide::before { width: 5px; background: var(--deck-text); }
+body[data-theme="evidence-ledger"] .slide__eyebrow { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--deck-accent); }
+body[data-theme="evidence-ledger"] .object--metric { border-radius: 0; border: 1px solid var(--deck-text); box-shadow: 8px 8px 0 var(--deck-rule); }
+body[data-theme="evidence-ledger"] .table__row--head { background: var(--deck-text); color: var(--deck-canvas); }
+body[data-theme="evidence-ledger"] .slide__source { padding-top: 10px; border-top: 1px solid var(--deck-text); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }

@@ -72,13 +72,16 @@ def schema_registry(schemas: list[dict[str, Any]]) -> Registry:
     return Registry().with_resources(resources)
 
 
-def validate(ir: dict[str, Any], design: dict[str, Any]) -> list[str]:
+def validate(ir: dict[str, Any], design: dict[str, Any], theme: dict[str, Any] | None = None) -> list[str]:
     ir_schema = load_schema("presentation-ir.schema.json")
     design_schema = load_schema("design-system.schema.json")
     editor_schema = load_schema("editor-permissions.schema.json")
-    registry = schema_registry([ir_schema, design_schema, editor_schema])
+    theme_schema = load_schema("theme.schema.json")
+    registry = schema_registry([ir_schema, design_schema, editor_schema, theme_schema])
     issues = []
     checks = (("IR", ir, ir_schema), ("design", design, design_schema))
+    if theme is not None:
+        checks += (("theme", theme, theme_schema),)
     for label, instance, schema in checks:
         validator = Draft202012Validator(schema, registry=registry, format_checker=FormatChecker())
         for error in sorted(validator.iter_errors(instance), key=lambda item: list(item.absolute_path)):
@@ -91,6 +94,8 @@ def validate(ir: dict[str, Any], design: dict[str, Any]) -> list[str]:
         issues.append("IR design_system.id does not match the supplied design system")
     if design_ref.get("version") != design_meta.get("version"):
         issues.append("IR design_system.version does not match the supplied design system")
+    if theme is not None and theme.get("design_system", {}).get("id") != design_meta.get("id"):
+        issues.append("theme design_system.id does not match the supplied design system")
 
     object_ids: set[str] = set()
     for slide_index, slide in enumerate(ir.get("slides", [])):
@@ -324,8 +329,8 @@ def render_object(obj: dict[str, Any], design: dict[str, Any], base_dir: Path, a
     return f"<div {attributes}>{inner}</div>"
 
 
-def css_variables(design: dict[str, Any]) -> str:
-    colors = design["colors"]
+def css_variables(design: dict[str, Any], theme: dict[str, Any] | None = None) -> str:
+    colors = theme["colors"] if theme is not None else design["colors"]
     values = {
         "--deck-canvas": colors["canvas"],
         "--deck-surface": colors["surface"],
@@ -340,7 +345,29 @@ def css_variables(design: dict[str, Any]) -> str:
     return ":root{" + ";".join(f"{key}:{value}" for key, value in values.items()) + "}"
 
 
-def render_document(ir: dict[str, Any], design: dict[str, Any], ir_path: Path, allow_remote: bool) -> str:
+def load_theme_styles(theme: dict[str, Any] | None, theme_path: Path | None) -> str:
+    if theme is None or theme_path is None:
+        return ""
+    stylesheet = theme.get("stylesheet")
+    if not isinstance(stylesheet, str):
+        raise ValueError("theme stylesheet must be a relative CSS path")
+    root = theme_path.resolve().parent
+    path = (root / stylesheet).resolve()
+    if root != path.parent and root not in path.parents:
+        raise ValueError("theme stylesheet escapes the theme directory")
+    if not path.is_file():
+        raise ValueError(f"theme stylesheet not found: {stylesheet}")
+    return path.read_text(encoding="utf-8")
+
+
+def render_document(
+    ir: dict[str, Any],
+    design: dict[str, Any],
+    ir_path: Path,
+    allow_remote: bool,
+    theme: dict[str, Any] | None = None,
+    theme_path: Path | None = None,
+) -> str:
     base_css = (ASSET_DIR / "base.css").read_text(encoding="utf-8")
     runtime_js = (ASSET_DIR / "runtime.js").read_text(encoding="utf-8")
     slide_html = []
@@ -359,10 +386,14 @@ def render_document(ir: dict[str, Any], design: dict[str, Any], ir_path: Path, a
         source_html = f'<div class="slide__source">Source: {html.escape(" · ".join(sources))}</div>' if sources else ""
         notes = html.escape(str(slide.get("speaker_notes") or ""), quote=True)
         section = slide.get("narrative_role", {}).get("section", "")
+        grammar = slide.get("grammar", "")
+        variant = slide.get("layout_variant", "")
         slide_html.append(
             f'<section id="{html.escape(slide["id"], quote=True)}" '
             f'class="slide slide--{html.escape(slide["archetype"], quote=True)}{" active" if index == 0 else ""}" '
             f'data-sequence="{index + 1:02d}" data-notes="{notes}" '
+            f'data-grammar="{html.escape(grammar, quote=True)}" '
+            f'data-layout="{html.escape(variant, quote=True)}" '
             f'aria-label="Slide {index + 1}: {html.escape(slide["assertion"]["text"], quote=True)}">'
             f'<div class="slide__eyebrow">{html.escape(str(section).replace("-", " "))}</div>'
             + "".join(objects)
@@ -371,6 +402,8 @@ def render_document(ir: dict[str, Any], design: dict[str, Any], ir_path: Path, a
         )
 
     deck = ir["deck"]
+    theme_id = theme.get("meta", {}).get("id", "base") if theme else "base"
+    theme_styles = load_theme_styles(theme, theme_path)
     return f'''<!doctype html>
 <html lang="{html.escape(deck["language"], quote=True)}">
 <head>
@@ -379,11 +412,12 @@ def render_document(ir: dict[str, Any], design: dict[str, Any], ir_path: Path, a
   <meta name="generator" content="Allen Presentation Core">
   <title>{html.escape(deck["title"])}</title>
   <style>
-{css_variables(design)}
 {base_css}
+{css_variables(design, theme)}
+{theme_styles}
   </style>
 </head>
-<body>
+<body data-theme="{html.escape(str(theme_id), quote=True)}" data-scenario="{html.escape(deck['scenario']['id'], quote=True)}">
   <main class="deck-viewport" aria-label="{html.escape(deck["title"], quote=True)}">
     <div class="deck-stage" data-deck-id="{html.escape(deck["id"], quote=True)}">
       {''.join(slide_html)}
@@ -413,13 +447,16 @@ def main() -> int:
     parser.add_argument("--design", required=True, type=Path, help="design-system YAML or JSON")
     parser.add_argument("--output", required=True, type=Path, help="output HTML path")
     parser.add_argument("--allow-draft-design", action="store_true")
+    parser.add_argument("--theme", type=Path, help="optional theme-pack YAML")
+    parser.add_argument("--allow-draft-theme", action="store_true")
     parser.add_argument("--allow-remote-assets", action="store_true")
     args = parser.parse_args()
 
     try:
         ir = load_structured(args.ir)
         design = load_structured(args.design)
-        issues = validate(ir, design)
+        theme = load_structured(args.theme) if args.theme else None
+        issues = validate(ir, design, theme)
         if issues:
             for issue in issues:
                 print(f"ERROR {issue}", file=sys.stderr)
@@ -431,7 +468,20 @@ def main() -> int:
                 file=sys.stderr,
             )
             return 1
-        rendered = render_document(ir, design, args.ir.resolve(), args.allow_remote_assets)
+        if theme is not None and theme["meta"]["status"] != "approved" and not args.allow_draft_theme:
+            print(
+                f"ERROR theme is {theme['meta']['status']}; pass --allow-draft-theme for a labeled prototype",
+                file=sys.stderr,
+            )
+            return 1
+        rendered = render_document(
+            ir,
+            design,
+            args.ir.resolve(),
+            args.allow_remote_assets,
+            theme,
+            args.theme.resolve() if args.theme else None,
+        )
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(rendered, encoding="utf-8")
     except (OSError, ValueError, json.JSONDecodeError, yaml.YAMLError) as exc:
@@ -440,7 +490,8 @@ def main() -> int:
 
     print(
         f"Rendered {len(ir['slides'])} slides to {args.output} "
-        f"with {design['meta']['id']} {design['meta']['version']} ({design['meta']['status']})."
+        f"with {design['meta']['id']} {design['meta']['version']} ({design['meta']['status']})"
+        + (f" and theme {theme['meta']['id']} {theme['meta']['version']} ({theme['meta']['status']})." if theme else ".")
     )
     return 0
 

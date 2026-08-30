@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "draft"
   risk: "local-write"
-  version: "0.2.0"
+  version: "0.3.0"
   origin: "personal"
   importance: "flagship"
   visibility: "public"
@@ -23,10 +23,11 @@ PPTX, or other output is a projection of that model, never the canonical state.
 
 ## Current release boundary
 
-Version 0.2.0 adds a deterministic Presentation IR → self-contained HTML
-renderer, fixed-stage browser runtime, inline text refinement, speaker notes,
-HTML download, and browser-print PDF. The IR remains canonical: browser edits do
-not automatically round-trip into IR, and native PPTX export is not implemented.
+Version 0.3.0 adds six selectable draft theme packs, scenario component recipes,
+scenario-first theme recommendations, and real-render preview generation on top
+of the deterministic Presentation IR → self-contained HTML renderer. The IR
+remains canonical: browser edits do not automatically round-trip into IR, and
+native PPTX export is not implemented.
 Do not imply those two capabilities exist.
 
 Read [references/architecture.md](references/architecture.md) for new presentation
@@ -45,13 +46,17 @@ systems, renderer/editor work, or changes that affect more than one schema.
 - For a visual system derived from references, use
   [schemas/design-system.schema.json](schemas/design-system.schema.json). Mark new
   systems `draft`; only a designer may promote one to `approved`.
+- For theme selection, read `themes/index.yaml` first. Load only shortlisted
+  `preview.md` files, then the selected `theme.yaml` and `theme.css`. Do not read
+  every full theme before the scenario and shortlist are known.
 - For Allen design-system anatomy and scenario expression profiles, read
   [references/allen-design-system.md](references/allen-design-system.md).
 - For an actual browser deck, read
   [references/web-deck-generation.md](references/web-deck-generation.md), create
   a valid IR, and render with `scripts/render-html.py`. Use the draft
   `fixtures/design-systems/allen-signal-grid.yaml` only with explicit draft
-  allowance and never describe it as approved.
+  allowance and never describe it or any bundled theme as approved. Pass the
+  selected theme with `--theme themes/<id>/theme.yaml --allow-draft-theme`.
 - For editing behavior, apply
   [schemas/editor-permissions.schema.json](schemas/editor-permissions.schema.json).
   Default to protected slots and require an explicit unlock before freeform layout.

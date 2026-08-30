@@ -1,0 +1,9 @@
+body[data-theme="signal-grid"] .slide {
+  background: linear-gradient(90deg, transparent 0 118px, var(--deck-rule) 118px 119px, transparent 119px), var(--deck-canvas);
+}
+body[data-theme="signal-grid"] .slide::before { width: 18px; background: var(--deck-accent); }
+body[data-theme="signal-grid"] .slide--cover::before,
+body[data-theme="signal-grid"] .slide--closing::before { width: 42px; }
+body[data-theme="signal-grid"] .slide--cover { background: linear-gradient(118deg, transparent 0 72%, rgba(49,94,251,.12) 72%), var(--deck-canvas); }
+body[data-theme="signal-grid"] .object--metric { box-shadow: 10px 10px 0 rgba(49,94,251,.08); }
+body[data-theme="signal-grid"] .object--group .group__stage:nth-child(2) { border-top: 10px solid var(--deck-accent); }

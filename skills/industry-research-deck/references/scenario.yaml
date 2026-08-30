@@ -1,8 +1,8 @@
-schema_version: "0.1"
+schema_version: "0.2"
 scenario:
   id: industry-research-deck
   name: Industry Research Deck
-  version: "0.2.0"
+  version: "0.3.0"
 communication_job:
   primary: Build a defensible view of an industry so leaders can choose where, whether, and how to act.
   success_condition: The audience can trace material claims to compatible evidence, understand uncertainty and market structure, and choose a strategic response.
@@ -50,6 +50,21 @@ required_archetypes:
   - scenario-matrix
   - strategic-implications
   - source-notes
+theme_recommendations:
+  default: evidence-ledger
+  alternatives: [executive-night, signal-grid]
+  selection_note: Use Evidence Ledger for source-dense research, Executive Night for senior decisions, and Signal Grid for faster strategic working sessions.
+component_recipes:
+  research-question: {archetype: cover, layout_variant: cover-indexed, purpose: "State the decision question, scope, and as-of date", required_roles: [deck-title, decision-context, as-of-date]}
+  market-definition: {archetype: two-column, layout_variant: two-column-emphasis, purpose: "Define inclusions, exclusions, geography, customer, and unit", required_roles: [definition, inclusions, exclusions]}
+  market-size-range: {archetype: chart, layout_variant: range-bars, purpose: Show compatible sizing estimates as a range, required_roles: [range-chart, method-note, source-note]}
+  value-chain: {archetype: process, layout_variant: linear-process, purpose: "Map participants, value creation, and profit pools", required_roles: [value-chain-stages, economics, implication]}
+  competitive-landscape: {archetype: comparison, layout_variant: benchmark-table, purpose: Compare competitors on decision-relevant dimensions, required_roles: [competitors, comparison-axis, implication]}
+  industry-structure: {archetype: two-column, layout_variant: two-column-balanced, purpose: "Explain structure, substitutes, barriers, and power", required_roles: [structure-evidence, interpretation]}
+  driver-analysis: {archetype: process, layout_variant: causal-chain, purpose: Connect change drivers to measurable effects, required_roles: [drivers, causal-links, leading-indicators]}
+  scenario-matrix: {archetype: comparison, layout_variant: tradeoff-matrix, purpose: Compare plausible futures and signposts, required_roles: [scenario-axes, scenario-cells, signposts]}
+  strategic-implications: {archetype: closing, layout_variant: closing-decision, purpose: Convert research into options and a named decision, required_roles: [implications, options, decision-statement]}
+  source-notes: {archetype: data, layout_variant: evidence-ledger, purpose: "Preserve claim, source, date, definition, and confidence", required_roles: [source-ledger, confidence-label]}
 anti_patterns:
   - framework-collage
   - incompatible-market-sizing

@@ -1,0 +1,8 @@
+body[data-theme="executive-night"] .slide { background: radial-gradient(circle at 82% 18%, rgba(108,168,255,.12), transparent 28%), var(--deck-canvas); }
+body[data-theme="executive-night"] .slide::before { width: 8px; background: var(--deck-accent); }
+body[data-theme="executive-night"] .slide::after { color: var(--deck-accent); }
+body[data-theme="executive-night"] .slide__eyebrow { color: var(--deck-accent); }
+body[data-theme="executive-night"] .object--metric,
+body[data-theme="executive-night"] .group__stage { background: rgba(16,30,48,.9); border-color: rgba(200,169,107,.34); }
+body[data-theme="executive-night"] .object--metric { border-top: 1px solid var(--deck-accent) !important; }
+body[data-theme="executive-night"] .slide--closing { background: linear-gradient(135deg, #07111f 0 65%, #172a43 65%); }

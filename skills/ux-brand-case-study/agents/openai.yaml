@@ -1,6 +1,6 @@
 interface:
   display_name: "Ux Brand Case Study"
   short_description: "Evidence-led UX and brand case web decks."
-  default_prompt: "Use $ux-brand-case-study to turn my project artifacts, reasoning, role, and outcomes into a credible design case study, then generate its validated IR and self-contained HTML deck."
+  default_prompt: "Use $ux-brand-case-study to turn my project artifacts, reasoning, role, and outcomes into a credible design case study, show the three recommended theme previews, then generate its validated IR and self-contained themed HTML deck."
 policy:
   allow_implicit_invocation: true

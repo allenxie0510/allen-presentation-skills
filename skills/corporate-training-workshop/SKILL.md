@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "draft"
   risk: "local-write"
-  version: "0.2.0"
+  version: "0.3.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop"
@@ -58,11 +58,13 @@ outcomes, model, worked example, activity brief, practice, feedback, assessment,
 transfer, and commitment. Put facilitator detail in notes rather than crowding
 participant-facing slides.
 
-Use [references/allen-signal-grid.yaml](references/allen-signal-grid.yaml) as the
-bundled draft design system unless the user supplies a brand system. Render with
+Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
+the three real-render previews in `assets/theme-previews/`, then default to
+Learning Canvas; offer Signal Grid and Artifact Editorial when their fit is stronger. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
---allow-draft-design`, then open and inspect every slide. Repair the IR and
+--allow-draft-design --theme references/themes/learning-canvas/theme.yaml
+--allow-draft-theme`, then open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, unclear during facilitation, or
 visually repetitive.
 

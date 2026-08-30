@@ -1,0 +1,8 @@
+body[data-theme="stage-contrast"] .slide { background: radial-gradient(circle at 80% 70%, rgba(139,92,246,.2), transparent 34%), var(--deck-canvas); }
+body[data-theme="stage-contrast"] .slide::before { width: 0; }
+body[data-theme="stage-contrast"] .slide::after { top: auto; bottom: 42px; }
+body[data-theme="stage-contrast"] .slide__eyebrow { color: var(--deck-accent); }
+body[data-theme="stage-contrast"] .object--metric { border: 0; background: transparent; padding-left: 0; }
+body[data-theme="stage-contrast"] .metric__value { font-size: 118px; color: var(--deck-accent); }
+body[data-theme="stage-contrast"] .slide--cover { background: linear-gradient(112deg, #08090b 0 68%, #ff4d2e 68%); }
+body[data-theme="stage-contrast"] .slide--closing { background: linear-gradient(112deg, #8b5cf6 0 32%, #08090b 32%); }

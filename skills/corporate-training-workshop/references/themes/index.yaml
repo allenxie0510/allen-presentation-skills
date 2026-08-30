@@ -1,0 +1,79 @@
+schema_version: "0.1"
+selection_policy:
+  order: scenario-first-then-theme
+  preview_count: 3
+  preview_sequence: [cover, core-component, closing]
+  disclosure: Read this index first, inspect only shortlisted preview.md files, then load only the selected theme.yaml and theme.css.
+themes:
+  - id: signal-grid
+    name: Signal Grid
+    name_zh: 信号网格
+    tagline: 用清晰信号推动判断
+    mood: [decisive, analytical, warm]
+    tone: [executive, product, evidence-led]
+    formality: high
+    density: medium-high
+    best_for: [product-roadmap-review, industry-research-deck]
+    avoid_for: [ceremonial-event]
+    preview: signal-grid/preview.md
+    theme: signal-grid/theme.yaml
+  - id: executive-night
+    name: Executive Night
+    name_zh: 董事会夜幕
+    tagline: 克制、权威、适合关键决策
+    mood: [institutional, calm, premium]
+    tone: [boardroom, strategic, formal]
+    formality: high
+    density: medium
+    best_for: [product-roadmap-review, industry-research-deck, speech-pitch-deck]
+    avoid_for: [playful-training]
+    preview: executive-night/preview.md
+    theme: executive-night/theme.yaml
+  - id: evidence-ledger
+    name: Evidence Ledger
+    name_zh: 证据账本
+    tagline: 让来源、范围与不确定性可追溯
+    mood: [rigorous, editorial, documentary]
+    tone: [research, analytical, precise]
+    formality: high
+    density: high
+    best_for: [industry-research-deck, product-roadmap-review]
+    avoid_for: [minimal-keynote]
+    preview: evidence-ledger/preview.md
+    theme: evidence-ledger/theme.yaml
+  - id: stage-contrast
+    name: Stage Contrast
+    name_zh: 舞台对比
+    tagline: 为现场表达保留记忆点
+    mood: [dramatic, focused, cinematic]
+    tone: [spoken, persuasive, bold]
+    formality: medium
+    density: low
+    best_for: [speech-pitch-deck, ux-brand-case-study]
+    avoid_for: [dense-research-appendix]
+    preview: stage-contrast/preview.md
+    theme: stage-contrast/theme.yaml
+  - id: artifact-editorial
+    name: Artifact Editorial
+    name_zh: 作品集画册
+    tagline: 让作品、证据与设计判断共同叙事
+    mood: [editorial, tactile, crafted]
+    tone: [design-led, reflective, authored]
+    formality: medium
+    density: medium
+    best_for: [ux-brand-case-study, speech-pitch-deck, corporate-training-workshop]
+    avoid_for: [financial-control-room]
+    preview: artifact-editorial/preview.md
+    theme: artifact-editorial/theme.yaml
+  - id: learning-canvas
+    name: Learning Canvas
+    name_zh: 学习画布
+    tagline: 用清晰步骤支持练习与迁移
+    mood: [friendly, structured, active]
+    tone: [instructional, practical, encouraging]
+    formality: medium
+    density: medium
+    best_for: [corporate-training-workshop]
+    avoid_for: [investor-roadshow]
+    preview: learning-canvas/preview.md
+    theme: learning-canvas/theme.yaml

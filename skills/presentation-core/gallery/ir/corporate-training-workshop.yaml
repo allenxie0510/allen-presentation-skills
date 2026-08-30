@@ -1,0 +1,48 @@
+schema_version: "0.1"
+deck:
+  id: preview-training-workshop
+  title: Corporate Training Workshop
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: corporate-training-workshop, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium
+  mode: presenting-first
+  metadata: {author: Allen Skill Hub, confidential: false, created_at: null, updated_at: null, source_note: Synthetic theme preview.}
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Connect the workshop to a real performance need.
+    grammar: narrative
+    assertion: {text: 用 90 分钟，把模糊反馈变成可执行的下一步, status: provisional}
+    narrative_role: {section: relevance-opening, sequence: opening}
+    layout_variant: cover-indexed
+    permission_profile: content-style
+    objects:
+      - {id: s01-title, type: text, role: deck-title, content: {text: "把模糊反馈，\n变成可执行的下一步"}, frame: {x: 170, y: 230, w: 1340, h: 280}, style: {token: typography.hero, variant: null, overrides: {font_size: 88}}, editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}}
+      - {id: s01-context, type: text, role: performance-need, content: {text: 经理人工作坊 · 90 分钟 · 现场练习}, frame: {x: 175, y: 650, w: 1000, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}
+  - id: s02
+    archetype: process
+    purpose: Give a complete practice loop.
+    grammar: process
+    assertion: {text: 一次有效练习必须包含示范、尝试、反馈与迁移, status: supported}
+    narrative_role: {section: practice, sequence: explanation}
+    layout_variant: learning-loop
+    permission_profile: content-style
+    objects:
+      - {id: s02-title, type: text, role: slide-assertion, content: {text: 一次有效练习必须包含示范、尝试、反馈与迁移}, frame: {x: 160, y: 105, w: 1500, h: 130}, style: {token: typography.slide_title, variant: null}, editable: *edit}
+      - {id: s02-loop, type: group, role: model-stages, content: {stages: [看示范, 做一次, 收反馈, 带回工作]}, frame: {x: 160, y: 365, w: 1580, h: 260}, style: {token: components.process.learning-loop, variant: learning-loop}, editable: *edit}
+      - {id: s02-time, type: text, role: timer, content: {text: 4 人一组 · 18 分钟 · 输出一份下周可使用的反馈脚本}, frame: {x: 320, y: 760, w: 1260, h: 80}, style: {token: typography.body, variant: null, overrides: {text_align: center}}, editable: *edit}
+  - id: s03
+    archetype: closing
+    purpose: Make transfer specific and owned.
+    grammar: decision
+    assertion: {text: 48 小时内，用这套结构完成一次真实反馈, status: provisional}
+    narrative_role: {section: transfer-commitment, sequence: closing}
+    layout_variant: closing-commitment
+    permission_profile: content-style
+    objects:
+      - {id: s03-label, type: text, role: commitment, content: {text: YOUR COMMITMENT}, frame: {x: 160, y: 130, w: 600, h: 60}, style: {token: typography.caption, variant: null}, editable: *edit}
+      - {id: s03-title, type: text, role: decision-statement, content: {text: "48 小时内，\n完成一次真实反馈。"}, frame: {x: 160, y: 310, w: 1390, h: 320}, style: {token: typography.hero, variant: null, overrides: {font_size: 86}}, editable: *edit}
+      - {id: s03-proof, type: text, role: success-evidence, content: {text: 带回下一次 1:1 复盘：对方是否知道下一步做什么？}, frame: {x: 160, y: 760, w: 1280, h: 80}, style: {token: typography.body, variant: null}, editable: *edit}

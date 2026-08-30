@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:allen-ai-skills:presentation-core:design-system:0.2",
+  "$id": "urn:allen-ai-skills:presentation-core:design-system:0.3",
   "title": "Professional Presentation Design System",
   "description": "Designer-curated rules for expressing information across professional presentation archetypes.",
   "type": "object",
@@ -23,7 +23,7 @@
     "archetypes"
   ],
   "properties": {
-    "schema_version": {"const": "0.2"},
+    "schema_version": {"const": "0.3"},
     "meta": {
       "type": "object",
       "additionalProperties": false,

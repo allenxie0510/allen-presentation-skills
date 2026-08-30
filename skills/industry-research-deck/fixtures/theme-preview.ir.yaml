@@ -1,0 +1,49 @@
+schema_version: "0.1"
+deck:
+  id: preview-industry-research
+  title: Industry Research Deck
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: industry-research-deck, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: high
+  mode: hybrid
+  metadata: {author: Allen Skill Hub, confidential: false, created_at: null, updated_at: null, source_note: Synthetic theme preview; market figures are illustrative.}
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Define the market decision question.
+    grammar: narrative
+    assertion: {text: 企业 AI Agent 市场是否已进入可规模化采购阶段？, status: provisional}
+    narrative_role: {section: research-question, sequence: opening}
+    layout_variant: cover-indexed
+    permission_profile: content-style
+    objects:
+      - {id: s01-title, type: text, role: deck-title, content: {text: "企业 AI Agent 市场\n是否已进入规模化采购阶段？"}, frame: {x: 150, y: 220, w: 1420, h: 280}, style: {token: typography.hero, variant: null, overrides: {font_size: 82}}, editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}}
+      - {id: s01-context, type: text, role: as-of-date, content: {text: 中国市场 · 中大型企业 · 截至 2026 Q2}, frame: {x: 155, y: 650, w: 1000, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}
+  - id: s02
+    archetype: chart
+    purpose: Reconcile market estimates as a range.
+    grammar: evidence
+    assertion: {text: 可服务市场存在 2.4× 口径差，不能用单点预测决策, status: provisional}
+    narrative_role: {section: market-sizing, sequence: evidence}
+    layout_variant: range-bars
+    permission_profile: content-style
+    evidence: [{id: ev-market-preview, claim: Illustrative market-sizing range, source_type: placeholder, source: 主题预览示例}]
+    objects:
+      - {id: s02-title, type: text, role: slide-assertion, content: {text: 可服务市场存在 2.4× 口径差，不能用单点预测决策}, frame: {x: 150, y: 105, w: 1500, h: 130}, style: {token: typography.slide_title, variant: null}, editable: *edit}
+      - {id: s02-chart, type: chart, role: range-chart, content: {categories: [窄口径, 基准口径, 宽口径], series: [{name: 2028 TAM, values: [48, 76, 116]}]}, frame: {x: 180, y: 330, w: 1120, h: 480}, style: {token: components.chart.range-bars, variant: range-bars}, editable: *edit}
+      - {id: s02-note, type: text, role: method-note, content: {text: "差异来自：部署模式、软件与服务边界、企业规模门槛。\n决策应使用范围与触发条件，而不是平均值。"}, frame: {x: 1400, y: 380, w: 360, h: 260}, style: {token: typography.body, variant: null, overrides: {font_size: 24}}, editable: *edit}
+  - id: s03
+    archetype: closing
+    purpose: Convert the research into a strategic choice.
+    grammar: decision
+    assertion: {text: 先进入高合规、高重复任务的两个垂直场景, status: provisional}
+    narrative_role: {section: implications, sequence: closing}
+    layout_variant: closing-decision
+    permission_profile: content-style
+    objects:
+      - {id: s03-label, type: text, role: decision-title, content: {text: STRATEGIC IMPLICATION}, frame: {x: 150, y: 130, w: 700, h: 60}, style: {token: typography.caption, variant: null}, editable: *edit}
+      - {id: s03-decision, type: text, role: decision-statement, content: {text: "先进入高合规、\n高重复任务的两个垂直场景"}, frame: {x: 150, y: 300, w: 1430, h: 330}, style: {token: typography.hero, variant: null, overrides: {font_size: 76}}, editable: *edit}
+      - {id: s03-next, type: text, role: next-evidence, content: {text: 下一证据 · 10 家设计伙伴的付费试点与安全审查周期}, frame: {x: 150, y: 760, w: 1250, h: 70}, style: {token: typography.body, variant: null}, editable: *edit}

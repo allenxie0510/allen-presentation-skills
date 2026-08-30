@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: evidence-ledger, name: Evidence Ledger, name_zh: 证据账本, version: "0.3.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让来源、范围与不确定性可追溯
+  mood: [rigorous, editorial, documentary]
+  tone: [research, analytical, precise]
+  formality: high
+  density: high
+best_for: [industry-research-deck, product-roadmap-review]
+avoid_for: [minimal-keynote]
+colors:
+  canvas: "#F7F4EC"
+  surface: "#FFFEFA"
+  text_primary: "#171B22"
+  text_secondary: "#59616D"
+  accent_primary: "#2356D8"
+  accent_secondary: "#9A4D2E"
+  positive: "#1D7655"
+  negative: "#A33A32"
+  rule: "rgba(23,27,34,.25)"
+stylesheet: theme.css

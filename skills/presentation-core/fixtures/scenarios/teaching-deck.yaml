@@ -1,4 +1,4 @@
-schema_version: "0.1"
+schema_version: "0.2"
 scenario:
   id: teaching-deck
   name: Teaching Deck
@@ -37,6 +37,17 @@ required_archetypes:
   - misconception-check
   - practice
   - recap
+theme_recommendations:
+  default: learning-canvas
+  alternatives: [signal-grid, artifact-editorial]
+  selection_note: Select by learner context and facilitation style.
+component_recipes:
+  learning-objectives: {archetype: statement, layout_variant: statement-bracketed, purpose: State observable outcomes, required_roles: [observable-outcomes]}
+  concept-model: {archetype: process, layout_variant: linear-process, purpose: Explain the mental model, required_roles: [model-stages]}
+  worked-example: {archetype: two-column, layout_variant: two-column-emphasis, purpose: Demonstrate application, required_roles: [worked-steps]}
+  misconception-check: {archetype: comparison, layout_variant: tradeoff-matrix, purpose: Diagnose common misuse, required_roles: [check-prompt]}
+  practice: {archetype: process, layout_variant: learning-loop, purpose: Guide learner practice, required_roles: [instructions]}
+  recap: {archetype: closing, layout_variant: closing-commitment, purpose: Transfer learning to work, required_roles: [commitment]}
 anti_patterns:
   - definition-wall
   - unexplained-jargon
