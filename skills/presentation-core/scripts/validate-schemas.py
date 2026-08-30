@@ -33,6 +33,8 @@ SCHEMA_FILES = {
     "editor-permissions": SCHEMA_DIR / "editor-permissions.schema.json",
     "scenario": SCHEMA_DIR / "scenario.schema.json",
     "theme": SCHEMA_DIR / "theme.schema.json",
+    "design-direction": SCHEMA_DIR / "design-direction.schema.json",
+    "design-review": SCHEMA_DIR / "design-review.schema.json",
 }
 
 
@@ -232,6 +234,45 @@ def validate_theme_semantics(path: Path, theme: dict[str, Any]) -> list[Validati
     return issues
 
 
+def validate_direction_semantics(path: Path, direction: dict[str, Any]) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    routes = direction.get("routes", [])
+    route_ids = [route.get("id") for route in routes if isinstance(route.get("id"), str)]
+    route_roles = [route.get("role") for route in routes if isinstance(route.get("role"), str)]
+    for duplicate in sorted(duplicate_values(route_ids)):
+        issues.append(ValidationIssue(relative(path), f"duplicate direction route id: {duplicate}"))
+    if set(route_roles) != {"clarity-baseline", "context-translation", "authored-leap"}:
+        issues.append(ValidationIssue(relative(path), "direction routes must cover all three FRAME roles"))
+    selection = direction.get("selection", {})
+    selected = selection.get("selected_route")
+    if selected is not None and selected not in route_ids:
+        issues.append(ValidationIssue(relative(path), f"selected route does not exist: {selected}"))
+    if selection.get("status") in {"user-approved", "designer-approved"} and not selection.get("user_quote"):
+        issues.append(ValidationIssue(relative(path), "approved direction requires recorded approval language"))
+    return issues
+
+
+def validate_review_semantics(path: Path, review: dict[str, Any]) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    weights = [dimension.get("weight") for dimension in review.get("dimensions", {}).values()]
+    if all(isinstance(value, (int, float)) for value in weights) and sum(weights) != 100:
+        issues.append(ValidationIssue(relative(path), "design-review dimension weights must sum to 100"))
+    dimensions = list(review.get("dimensions", {}).values())
+    if dimensions and all(isinstance(item.get("score"), (int, float)) for item in dimensions):
+        calculated = sum(item["score"] * item["weight"] for item in dimensions) / 10
+        reported = review.get("weighted_score")
+        if isinstance(reported, (int, float)) and abs(calculated - reported) > 0.11:
+            issues.append(ValidationIssue(relative(path), f"weighted score should be {calculated:.1f}, got {reported}"))
+    hard_pass = all(gate.get("passed") is True for gate in review.get("hard_gates", {}).values())
+    scores = [item.get("score", 0) for item in dimensions]
+    expected = "approval-candidate" if hard_pass and review.get("weighted_score", 0) >= 85 and all(score >= 8 for score in scores) else (
+        "refine" if hard_pass and review.get("weighted_score", 0) >= 75 else "return-to-routes"
+    )
+    if review.get("verdict") != expected:
+        issues.append(ValidationIssue(relative(path), f"review verdict should be {expected}"))
+    return issues
+
+
 def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
     schemas = {name: load_json(path) for name, path in SCHEMA_FILES.items()}
     issues: list[ValidationIssue] = []
@@ -277,6 +318,18 @@ def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
         issues.extend(validate_instance(path, fixture, schemas["theme"], registry))
         issues.extend(validate_theme_semantics(path, fixture))
 
+    direction_files = sorted((FIXTURE_DIR / "design-directions").glob("*.yaml"))
+    for path in direction_files:
+        fixture = load_yaml(path)
+        issues.extend(validate_instance(path, fixture, schemas["design-direction"], registry))
+        issues.extend(validate_direction_semantics(path, fixture))
+
+    review_files = sorted((FIXTURE_DIR / "design-reviews").glob("*.yaml"))
+    for path in review_files:
+        fixture = load_yaml(path)
+        issues.extend(validate_instance(path, fixture, schemas["design-review"], registry))
+        issues.extend(validate_review_semantics(path, fixture))
+
     ir_files = sorted((FIXTURE_DIR / "ir").glob("*.yaml"))
     for path in ir_files:
         fixture = load_yaml(path)
@@ -291,6 +344,8 @@ def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
         "design_system_fixtures": len(design_files),
         "permission_fixtures": len(permission_files),
         "theme_fixtures": len(theme_files),
+        "direction_fixtures": len(direction_files),
+        "review_fixtures": len(review_files),
         "ir_fixtures": len(ir_files),
     }
     return issues, counts
@@ -331,6 +386,8 @@ def main() -> int:
             f"{counts['design_system_fixtures']} design systems, "
             f"{counts['permission_fixtures']} permission models, and "
             f"{counts['theme_fixtures']} themes, and "
+            f"{counts['direction_fixtures']} design directions, "
+            f"{counts['review_fixtures']} design reviews, and "
             f"{counts['ir_fixtures']} Presentation IR fixtures."
         )
     return 1 if issues else 0

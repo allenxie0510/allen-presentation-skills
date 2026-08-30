@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: editorial-evidence, name: Editorial Evidence, name_zh: 编辑式证据, version: "0.1.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用严格编辑结构呈现路线图证据
+  mood: [editorial, rigorous]
+  tone: [executive, evidence-led]
+  formality: high
+  density: medium-high
+best_for: [product-roadmap-review]
+avoid_for: [ceremonial-event]
+colors:
+  canvas: "#F3F1EC"
+  surface: "#FFFFFF"
+  text_primary: "#111111"
+  text_secondary: "#686762"
+  accent_primary: "#B9F227"
+  accent_secondary: "#5C63E8"
+  positive: "#12805C"
+  negative: "#D84A2F"
+  rule: "rgba(17,17,17,.22)"
+stylesheet: theme.css

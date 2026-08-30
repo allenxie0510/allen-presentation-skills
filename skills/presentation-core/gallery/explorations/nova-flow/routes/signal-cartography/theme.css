@@ -1,0 +1,35 @@
+body[data-theme="signal-cartography"] {
+  --deck-canvas:#f1f1f3; --deck-surface:#fff; --deck-text:#0b0c0e; --deck-muted:#656871;
+  --deck-rule:rgba(11,12,14,.18); --deck-accent:#b9f227; --route:#0b0c0e;
+  font-family:"PingFang SC","Noto Sans CJK SC",Arial,sans-serif;
+}
+body[data-theme="signal-cartography"] .slide { background:var(--deck-canvas); }
+body[data-theme="signal-cartography"] .slide::before { content:""; left:64px; top:64px; width:8px; height:952px; background:linear-gradient(var(--deck-accent) 0 28%,var(--route) 28% 74%,#5c63e8 74%); border-radius:4px; }
+body[data-theme="signal-cartography"] .slide::after { right:64px; top:52px; min-width:50px; height:28px; display:grid; place-items:center; border:1px solid var(--route); border-radius:999px; font-size:12px; font-weight:700; }
+body[data-theme="signal-cartography"] .slide__eyebrow { left:104px; top:55px; font-size:13px; letter-spacing:.15em; }
+body[data-theme="signal-cartography"] .object--text[data-role="deck-title"],
+body[data-theme="signal-cartography"] .object--text[data-role="slide-assertion"],
+body[data-theme="signal-cartography"] .object--text[data-role="decision-statement"] { font-family:"Arial Narrow","PingFang SC",sans-serif; font-weight:850!important; line-height:1.02!important; letter-spacing:-.045em!important; }
+body[data-theme="signal-cartography"] .object--text[data-role="deck-title"]::before,
+body[data-theme="signal-cartography"] .object--text[data-role="slide-assertion"]::before,
+body[data-theme="signal-cartography"] .object--text[data-role="decision-statement"]::before { content:""; position:absolute; left:-44px; top:18px; width:16px; height:16px; border-radius:50%; background:var(--deck-accent); box-shadow:0 0 0 8px var(--deck-canvas); }
+body[data-theme="signal-cartography"] .slide--cover { background:linear-gradient(90deg,#f1f1f3 0 60%,#0b0c0e 60%); }
+body[data-theme="signal-cartography"] .slide--cover .object--text[data-role="deck-title"] { left:120px!important; top:236px!important; width:930px!important; height:390px!important; font-size:94px!important; }
+body[data-theme="signal-cartography"] .slide--cover .object--text[data-role="decision-context"] { left:120px!important; top:700px!important; width:850px!important; }
+body[data-theme="signal-cartography"] .slide--cover .object--text[data-role="decision-brief"] { left:120px!important; top:800px!important; width:800px!important; }
+body[data-theme="signal-cartography"] .slide--cover .object--text[data-role="concept-disclosure"] { left:120px!important; top:950px!important; width:820px!important; font-size:11px!important; }
+body[data-theme="signal-cartography"] .slide--cover .object--image { left:1192px!important; top:112px!important; width:664px!important; height:856px!important; border-radius:34px!important; }
+body[data-theme="signal-cartography"] .slide--cover .object--text[data-role="image-caption"] { left:1232px!important; top:904px!important; width:570px!important; color:#fff; font-size:12px!important; }
+body[data-theme="signal-cartography"] .slide--data .object--text[data-role="slide-assertion"] { left:120px!important; top:182px!important; width:620px!important; height:300px!important; font-size:62px!important; }
+body[data-theme="signal-cartography"] .slide--data .object--text[data-role="evidence-interpretation"] { left:120px!important; top:556px!important; width:570px!important; font-size:21px!important; line-height:1.5!important; }
+body[data-theme="signal-cartography"] .slide--data::after { box-shadow:-1110px 432px 0 -8px var(--deck-accent); }
+body[data-theme="signal-cartography"] .object--metric { padding:38px 42px; border:0; border-radius:30px; background:#fff; box-shadow:inset 0 0 0 1px rgba(11,12,14,.06); }
+body[data-theme="signal-cartography"] .metric__value { align-self:end; font-size:100px; font-weight:900; letter-spacing:-.07em; }
+body[data-theme="signal-cartography"] .slide--data .object--metric[data-role="risk-metric"] { background:linear-gradient(90deg,var(--deck-accent) 0 14px,#fff 14px); }
+body[data-theme="signal-cartography"] .slide--closing .object--text[data-role="decision-statement"] { left:120px!important; top:290px!important; width:960px!important; height:430px!important; font-size:72px!important; }
+body[data-theme="signal-cartography"] .slide--closing .object--text[data-role="decision-owner"] { left:120px!important; }
+body[data-theme="signal-cartography"] .slide--closing .object--text[data-role="next-evidence"] { left:120px!important; }
+body[data-theme="signal-cartography"] .slide--closing .object--image { left:1190px!important; width:666px!important; border-radius:32px!important; }
+body[data-theme="signal-cartography"] .slide--closing .object--image[data-role="nova-usability-photo"] { top:64px!important; height:540px!important; }
+body[data-theme="signal-cartography"] .slide--closing .object--image[data-role="nova-workflow-photo"] { top:628px!important; height:388px!important; }
+body[data-theme="signal-cartography"] .slide--closing .object--text[data-role="evidence-photo-caption"] { left:1230px!important; width:560px!important; color:#fff; font-size:12px!important; }

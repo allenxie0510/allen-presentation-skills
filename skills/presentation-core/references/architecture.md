@@ -9,6 +9,14 @@ single platform prompt into the product architecture.
 
 ## Canonical pipeline
 
+When visual language is new or substantially revised, insert the Allen FRAME
+direction loop between scenario/story resolution and design-system authoring:
+
+`context → concept thesis → three controlled routes → rendered comparison → art direction → review → design system`
+
+Existing approved themes may skip the route loop; draft themes retain their
+draft status until rendered review evidence exists.
+
 ```text
 Brief
 → Scenario and optional industry context

@@ -1,0 +1,96 @@
+schema_version: "0.1"
+project:
+  id: nova-flow-signal-grid
+  theme: signal-grid
+  theme_version: "0.5.0"
+  scenario: product-roadmap-review
+  status: review
+foundation:
+  context_status: synthetic-concept
+  concept_thesis: 将新用户首次工作流中分散而隐形的摩擦，转化为团队能够看见、比较并采取行动的运营信号。
+  visual_motif: 信号从纪实物证中被识别，穿过网格形成决策路径，并在结尾收敛为明确的资源配置动作。
+  replaceability_test: 移除文字后仍应看见发现、校准与决策的递进；若只剩通用办公照和指标卡，则概念失败。
+  principles:
+    - id: evidence-before-decoration
+      source: NOVA Flow activation storyline and presentation evidence contract
+      intent: 让图片、数字和组件都承担决策证据而不是填充版面。
+      observable_signal: 每张图片有证据型图注，每个强调色对应一个状态或行动。
+      failure_case: 随机办公人物、无来源指标和可被删除而不影响理解的装饰卡片。
+      override_boundary: 纯章节过渡页可以只承担节奏，但不能伪装成证据页。
+    - id: documentary-continuity
+      source: User request for realistic imagery and editorial documentary practice
+      intent: 用一致的团队、空间和光线建立一个可信的概念项目世界。
+      observable_signal: 人物身份、服装、材料、光线和颗粒跨镜头连续，同时机位和行为明显变化。
+      failure_case: 同一姿势重复、塑料皮肤、畸形手部、假 UI、无意义握手和摆拍微笑。
+      override_boundary: 用户提供真实项目素材时，真实证据优先并替换合成概念图。
+    - id: signal-with-restraint
+      source: Signal Grid decision semantics and the supplied editorial reference
+      intent: 让高饱和色只标记资源配置变化，使视觉重点与决策重点一致。
+      observable_signal: 单页通常只有一个高饱和信号色，黑白灰承担主要阅读结构。
+      failure_case: 荧光色铺满卡片、渐变球体或多个强调色同时争夺注意力。
+      override_boundary: 舞台型情绪峰值页可扩大信号色，但必须保持文字可读和语义单一。
+comparison_control:
+  content_id: nova-flow-roadmap-preview
+  asset_set_id: nova-flow-documentary-v2
+  canvas: {width: 1920, height: 1080}
+  same_content: true
+  same_assets: true
+routes:
+  - id: editorial-evidence
+    role: clarity-baseline
+    name: Editorial Evidence / 编辑式证据
+    intent: 用严格分栏、强结论标题和克制图片建立最清楚的管理层阅读路径。
+    audience_effect: 先理解结论，再检查证据，最后确认行动。
+    axes:
+      grid: 严格十二栏与连续边线，图片作为证据栏。
+      typography: 窄体中文标题配中性正文，层级清晰克制。
+      imagery: 固定比例的纪实证据窗，不跨越主要网格线。
+      rhythm: 安静封面、密集证据、清晰决定三段式。
+      material_color: 纸白、墨黑和极少量信号绿，接近编辑印刷品。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: 验证编辑身份和第一阅读入口, preview: gallery/explorations/nova-flow/previews/editorial-evidence-identity.webp}
+      - {id: reasoning, archetype: data, validation_goal: 验证高密度指标仍保持单一结论, preview: gallery/explorations/nova-flow/previews/editorial-evidence-reasoning.webp}
+      - {id: decision, archetype: closing, validation_goal: 验证决定与下一证据是否清晰, preview: gallery/explorations/nova-flow/previews/editorial-evidence-decision.webp}
+    risks: [过于像研究报告，人物和项目温度不足]
+  - id: operational-documentary
+    role: context-translation
+    name: Operational Documentary / 运营纪实
+    intent: 把团队行为、用户观察和工作流物证作为路线图决策的主要叙事材料。
+    audience_effect: 感到决策来自真实工作现场，而不是会议室里的抽象指标。
+    axes:
+      grid: 大幅不对称图片与窄证据栏交替。
+      typography: 编辑杂志式标题与低调证据说明形成反差。
+      imagery: 人物、环境与细节三种镜头承担不同证据角色。
+      rhythm: 图片建立情境，数据暂停，物证推动决定。
+      material_color: 中性工作室色调配酸性绿色环境锚点。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: 验证人物情境与标题是否相互增强, preview: gallery/explorations/nova-flow/previews/operational-documentary-identity.webp}
+      - {id: reasoning, archetype: data, validation_goal: 验证无图页面能否形成分析停顿, preview: gallery/explorations/nova-flow/previews/operational-documentary-reasoning.webp}
+      - {id: decision, archetype: closing, validation_goal: 验证物证图片能否支持资源配置决定, preview: gallery/explorations/nova-flow/previews/operational-documentary-decision.webp}
+    risks: [合成照片若过度摆拍会损害可信度]
+  - id: signal-cartography
+    role: authored-leap
+    name: Signal Cartography / 信号图谱
+    intent: 把发现、摩擦、校准和行动组织成跨页连续的信号路径，同时保留纪实证据。
+    audience_effect: 记住一条从现场证据收敛到资源决定的可视化路径。
+    axes:
+      grid: 断续轨道跨越非对称面板并在关键点对齐。
+      typography: 标题沿信号节点落位，数字成为路径上的峰值。
+      imagery: 图片被裁为观察窗口，焦点与信号节点对齐。
+      rhythm: 路径在封面出现、数据页中断、决定页重新收敛。
+      material_color: 冷纸灰和深墨为底，信号绿只出现在路径与决定节点。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: 验证信号路径是否来自内容而非装饰, preview: gallery/explorations/nova-flow/previews/signal-cartography-identity.webp}
+      - {id: reasoning, archetype: data, validation_goal: 验证路径能否组织指标因果而不暗示虚假因果, preview: gallery/explorations/nova-flow/previews/signal-cartography-reasoning.webp}
+      - {id: decision, archetype: closing, validation_goal: 验证路径是否在行动上形成明确终点, preview: gallery/explorations/nova-flow/previews/signal-cartography-decision.webp}
+    risks: [轨道母题若过强会退化为装饰性科技线条]
+selection:
+  status: provisional
+  selected_route: operational-documentary
+  decided_by: Allen FRAME design lead
+  decision_rationale: 三方向真实渲染显示运营纪实在人物情境、跨页节奏和决策可读性之间最平衡；编辑式证据温度不足，信号图谱的长轨道容易退化为装饰。最终方向以运营纪实为主体，仅保留有语义的信号编号与行动标记。
+  user_quote: null
+  decided_at: "2026-08-30T21:00:00+08:00"

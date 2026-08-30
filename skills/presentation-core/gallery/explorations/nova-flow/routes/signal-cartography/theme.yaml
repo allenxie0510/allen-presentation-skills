@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: signal-cartography, name: Signal Cartography, name_zh: 信号图谱, version: "0.1.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让现场证据沿信号路径收敛为行动
+  mood: [authored, progressive]
+  tone: [executive, evidence-led]
+  formality: high
+  density: medium-high
+best_for: [product-roadmap-review]
+avoid_for: [ceremonial-event]
+colors:
+  canvas: "#F1F1F3"
+  surface: "#FFFFFF"
+  text_primary: "#0B0C0E"
+  text_secondary: "#656871"
+  accent_primary: "#B9F227"
+  accent_secondary: "#5C63E8"
+  positive: "#12805C"
+  negative: "#D84A2F"
+  rule: "rgba(11,12,14,.18)"
+stylesheet: theme.css

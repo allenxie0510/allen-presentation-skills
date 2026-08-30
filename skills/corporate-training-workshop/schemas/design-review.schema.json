@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:allen-ai-skills:presentation-core:design-review:0.1",
+  "title": "Allen FRAME Design Review",
+  "description": "A concept gate, hard gates, and five-lens presentation design review.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "subject", "concept_gate", "hard_gates", "dimensions", "weighted_score", "verdict", "keep", "fix", "quick_wins"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["theme", "version", "direction", "reviewed_artifacts", "reviewer", "reviewed_at"],
+      "properties": {
+        "theme": {"$ref": "#/$defs/slug"},
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "direction": {"$ref": "#/$defs/slug"},
+        "reviewed_artifacts": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+        "reviewer": {"type": "string", "minLength": 2},
+        "reviewed_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "concept_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["concept", "content_origin", "replaceability_result", "score", "passed"],
+      "properties": {
+        "concept": {"type": "string", "minLength": 16},
+        "content_origin": {"type": "string", "minLength": 12},
+        "replaceability_result": {"type": "string", "minLength": 12},
+        "score": {"type": "number", "minimum": 0, "maximum": 10},
+        "passed": {"type": "boolean"}
+      }
+    },
+    "hard_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bounds", "readability", "truth", "image_integrity", "accessibility", "provenance", "visual_inspection"],
+      "properties": {
+        "bounds": {"$ref": "#/$defs/gate"},
+        "readability": {"$ref": "#/$defs/gate"},
+        "truth": {"$ref": "#/$defs/gate"},
+        "image_integrity": {"$ref": "#/$defs/gate"},
+        "accessibility": {"$ref": "#/$defs/gate"},
+        "provenance": {"$ref": "#/$defs/gate"},
+        "visual_inspection": {"$ref": "#/$defs/gate"}
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["philosophy_narrative", "hierarchy_rhythm", "craft_system", "communication_evidence", "authorship_originality"],
+      "properties": {
+        "philosophy_narrative": {"$ref": "#/$defs/dimension"},
+        "hierarchy_rhythm": {"$ref": "#/$defs/dimension"},
+        "craft_system": {"$ref": "#/$defs/dimension"},
+        "communication_evidence": {"$ref": "#/$defs/dimension"},
+        "authorship_originality": {"$ref": "#/$defs/dimension"}
+      }
+    },
+    "weighted_score": {"type": "number", "minimum": 0, "maximum": 100},
+    "verdict": {"enum": ["return-to-routes", "refine", "approval-candidate"]},
+    "keep": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 6}},
+    "fix": {"type": "array", "items": {"$ref": "#/$defs/fix"}},
+    "quick_wins": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "string", "minLength": 6}}
+  },
+  "$defs": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "evidence"],
+      "properties": {
+        "passed": {"type": "boolean"},
+        "evidence": {"type": "string", "minLength": 4}
+      }
+    },
+    "dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "weight", "finding"],
+      "properties": {
+        "score": {"type": "number", "minimum": 0, "maximum": 10},
+        "weight": {"type": "integer", "minimum": 1, "maximum": 100},
+        "finding": {"type": "string", "minLength": 8}
+      }
+    },
+    "fix": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["severity", "issue", "action", "verification"],
+      "properties": {
+        "severity": {"enum": ["fatal", "important", "optimization"]},
+        "issue": {"type": "string", "minLength": 6},
+        "action": {"type": "string", "minLength": 6},
+        "verification": {"type": "string", "minLength": 6}
+      }
+    }
+  }
+}

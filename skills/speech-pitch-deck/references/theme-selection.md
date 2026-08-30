@@ -13,9 +13,14 @@ evidence, conclusion, or scenario narrative.
 6. Load only the selected `theme.yaml` and `theme.css`, then render with
    `--theme <path>/theme.yaml --allow-draft-theme`.
 
-All six bundled themes are draft in version 0.3.0. Do not describe them as
+All six bundled themes are draft in version 0.4.0. Do not describe them as
 approved or as copied from another presentation system. They share the Allen
 Presentation Design System contract while keeping independent visual expression.
+
+Theme selection compares existing expressions. Theme creation or a major visual
+redesign is a different workflow: read `allen-frame-method.md`, render three
+controlled routes, and record the resulting direction and review before adding a
+new gallery candidate.
 
 ## Scenario defaults
 

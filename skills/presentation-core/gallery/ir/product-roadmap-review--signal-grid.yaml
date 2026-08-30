@@ -30,39 +30,39 @@ slides:
         type: text
         role: deck-title
         content: {text: "下一季度，\nNOVA Flow\n优先解决激活"}
-        frame: {x: 120, y: 242, w: 900, h: 380}
-        style: {token: typography.hero, variant: null}
+        frame: {x: 1260, y: 176, w: 540, h: 450}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 76, line_height: 1.08}}
         editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}
       - id: s01-context
         type: text
         role: decision-context
         content: {text: NOVA Flow · 产品路线图评审 / Q4}
-        frame: {x: 120, y: 684, w: 820, h: 72}
+        frame: {x: 1260, y: 704, w: 520, h: 72}
         style: {token: typography.body, variant: null}
         editable: *edit
       - id: s01-brief
         type: text
         role: decision-brief
         content: {text: 目标不是增加功能，而是让新用户在首次会话中完成一个可感知的工作流。}
-        frame: {x: 120, y: 798, w: 820, h: 104}
+        frame: {x: 1260, y: 790, w: 500, h: 104}
         style: {token: typography.body, variant: null}
         editable: *edit
       - id: s01-disclosure
         type: text
         role: concept-disclosure
         content: {text: SYNTHETIC CONCEPT PROJECT · 概念项目，场景与数据仅用于主题演示}
-        frame: {x: 120, y: 944, w: 820, h: 30}
-        style: {token: typography.caption, variant: null}
+        frame: {x: 1260, y: 944, w: 520, h: 44}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11, line_height: 1.3}}
         editable: *edit
       - id: s01-photo
         type: image
         role: nova-cover-photo
         content:
-          src: ../assets/nova-flow/nova-cover-team.webp
-          alt: NOVA Flow 产品团队在工作室中梳理首次工作流
+          src: ../assets/nova-flow/nova-cover-team-v2.webp
+          alt: NOVA Flow 三人产品团队在工作室中共同梳理首次工作流证据
           fit: cover
-          position: center 48%
-        frame: {x: 1140, y: 64, w: 716, h: 952}
+          position: center 52%
+        frame: {x: 64, y: 96, w: 1110, h: 920}
         style: {token: image.documentary, variant: nova-portrait}
         constraints: {min_w: 640, min_h: 800, snap_to_grid: true, preserve_aspect_ratio: false}
         editable: *edit
@@ -70,7 +70,7 @@ slides:
         type: text
         role: image-caption
         content: {text: 01 / DISCOVERY  ·  用户首次任务研究}
-        frame: {x: 1184, y: 938, w: 600, h: 34}
+        frame: {x: 104, y: 932, w: 560, h: 34}
         style: {token: typography.caption, variant: photo-overlay}
         editable: *edit
 
@@ -134,39 +134,39 @@ slides:
         type: text
         role: decision-title
         content: {text: DECISION / 01}
-        frame: {x: 104, y: 198, w: 520, h: 48}
+        frame: {x: 104, y: 112, w: 520, h: 40}
         style: {token: typography.caption, variant: null}
         editable: *edit
       - id: s03-decision
         type: text
         role: decision-statement
         content: {text: "将 60% 产品能力\n投入首次工作流，\n冻结两个低证据项目"}
-        frame: {x: 104, y: 306, w: 950, h: 410}
+        frame: {x: 104, y: 180, w: 1080, h: 340}
         style: {token: typography.hero, variant: null, overrides: {font_size: 70}}
         editable: *edit
       - id: s03-owner
         type: text
         role: decision-owner
         content: {text: Owner · VP Product  /  Review · 6 weeks}
-        frame: {x: 104, y: 772, w: 860, h: 62}
+        frame: {x: 104, y: 570, w: 860, h: 62}
         style: {token: typography.body, variant: null}
         editable: *edit
       - id: s03-next
         type: text
         role: next-evidence
         content: {text: 下一证据 · 12 场任务测试 + 激活 cohort 回升至 50%}
-        frame: {x: 104, y: 870, w: 850, h: 74}
+        frame: {x: 104, y: 668, w: 850, h: 74}
         style: {token: typography.body, variant: null}
         editable: *edit
       - id: s03-photo-session
         type: image
         role: nova-usability-photo
         content:
-          src: ../assets/nova-flow/nova-usability-session.webp
-          alt: NOVA Flow 团队观察首次任务可用性测试
+          src: ../assets/nova-flow/nova-usability-session-v2.webp
+          alt: NOVA Flow 研究员在侧面记录参与者完成首次任务时的停顿
           fit: cover
-          position: 62% 48%
-        frame: {x: 1190, y: 64, w: 666, h: 540}
+          position: center 44%
+        frame: {x: 104, y: 772, w: 840, h: 244}
         style: {token: image.documentary, variant: nova-landscape}
         constraints: {min_w: 620, min_h: 420, snap_to_grid: true, preserve_aspect_ratio: false}
         editable: *edit
@@ -174,18 +174,18 @@ slides:
         type: text
         role: evidence-photo-caption
         content: {text: 观察证据 · 用户需要明确的“下一步”}
-        frame: {x: 1230, y: 532, w: 560, h: 34}
+        frame: {x: 136, y: 946, w: 760, h: 34}
         style: {token: typography.caption, variant: photo-overlay}
         editable: *edit
       - id: s03-photo-detail
         type: image
         role: nova-workflow-photo
         content:
-          src: ../assets/nova-flow/nova-workflow-detail.webp
-          alt: NOVA Flow 团队重新排列工作流步骤与完成信号
+          src: ../assets/nova-flow/nova-workflow-detail-v2.webp
+          alt: NOVA Flow 团队用纸质线框物证重新排列步骤并标记完成信号
           fit: cover
-          position: center 58%
-        frame: {x: 1190, y: 628, w: 666, h: 388}
+          position: center 54%
+        frame: {x: 968, y: 772, w: 888, h: 244}
         style: {token: image.documentary, variant: nova-detail}
         constraints: {min_w: 620, min_h: 340, snap_to_grid: true, preserve_aspect_ratio: false}
         editable: *edit
@@ -193,6 +193,6 @@ slides:
         type: text
         role: evidence-photo-caption
         content: {text: 工作流证据 · 完成信号必须提前出现}
-        frame: {x: 1230, y: 944, w: 560, h: 34}
+        frame: {x: 1000, y: 946, w: 808, h: 34}
         style: {token: typography.caption, variant: photo-overlay}
         editable: *edit

@@ -14,11 +14,19 @@ studio, natural overcast light, black and neutral materials, and a single
 acid-lime environmental accent. No logos, readable UI, or audience-facing text
 were requested inside the generated images.
 
+The exact production prompt set and narrative role for each v2 image are recorded
+in [PROMPTS.md](PROMPTS.md). The original generated PNGs remain in the generation
+runtime; the published assets are quality-92 WebP derivatives.
+
 | File | Narrative role | Source type | SHA-256 |
 |---|---|---|---|
-| `nova-cover-team.webp` | Cover context: team reviewing a first-run workflow | Synthetic generated image | `720b866a72bf717978d0651e3bf37aef102d35b4e345605d481b62dc5c4f7a9b` |
-| `nova-usability-session.webp` | Decision evidence: observing a first-task usability session | Synthetic generated image | `c7b7b3513f989dbfbdced9e3a8e74f25beb3887958a1f0a20bd84013b6446209` |
-| `nova-workflow-detail.webp` | Decision evidence: sequencing and completion-signal detail | Synthetic generated image | `d3a2d3afe4594d3a840df06ca78f172a18043846b4a9dc85830da1ada23260c4` |
+| `nova-cover-team-v2.webp` | Cover context: three-person team aligning on first-run workflow evidence | Synthetic generated image | `e8cbf0de908b7776b9bfb5848f871dc23eef00018e640a6b93bb79167d582e7b` |
+| `nova-usability-session-v2.webp` | Decision evidence: participant pauses while a researcher observes and records | Synthetic generated image | `c2ea54517df453a4219faea37cb6d9ee2c0da0258e26ee34e38812267763b514` |
+| `nova-workflow-detail-v2.webp` | Decision evidence: hands resequence physical workflow artifacts and mark completion | Synthetic generated image | `ce41cfa636c4fafa189bb8b6728f509adad164089bab970eb57d076299964ce1` |
+
+The unversioned three images are retained as the first exploration set. They are
+not referenced by the published 0.5.0 preview because their repeated cast pose,
+camera height, and card-sorting action did not create enough narrative range.
 
 ## Reuse boundary
 

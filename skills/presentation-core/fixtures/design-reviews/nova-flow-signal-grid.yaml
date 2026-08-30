@@ -1,0 +1,63 @@
+schema_version: "0.1"
+subject:
+  theme: signal-grid
+  version: "0.5.0"
+  direction: operational-documentary
+  reviewed_artifacts:
+    - gallery/explorations/nova-flow/previews/direction-board.webp
+    - gallery/previews/product-roadmap-review/signal-grid-01-cover.webp
+    - gallery/previews/product-roadmap-review/signal-grid-02-core.webp
+    - gallery/previews/product-roadmap-review/signal-grid-03-closing.webp
+    - gallery/explorations/nova-flow/image-qa-report.md
+  reviewer: Allen FRAME design lead
+  reviewed_at: "2026-08-30T22:30:00+08:00"
+concept_gate:
+  concept: 把首次工作流中的隐形摩擦转化为可见的运营证据，并让证据收敛为资源配置决定。
+  content_origin: 来自 NOVA Flow 激活下降、首次价值时间和下一证据要求的叙事链。
+  replaceability_result: 移除标题后仍能从团队对齐、用户观察和工作流物证读出发现到行动的递进，不是可任意换名的办公模板。
+  score: 8.7
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: Gallery renderer and 1920×1080 frame QA completed without overflow.}
+  readability: {passed: true, evidence: "Full-size screenshots inspected; display, body, caption, and metric levels remain legible."}
+  truth: {passed: true, evidence: Visible synthetic-project disclosure and placeholder evidence source are retained.}
+  image_integrity: {passed: true, evidence: "Three v2 sources passed anatomy, material, continuity, crop, and narrative-role inspection."}
+  accessibility: {passed: true, evidence: Signal status is paired with words and values; color is not the only meaning carrier.}
+  provenance: {passed: true, evidence: "SOURCES.md, PROMPTS.md, hashes, font OFL, and reuse boundary are present."}
+  visual_inspection: {passed: true, evidence: "Three direction routes, production full-size frames, and contact sheet were inspected."}
+dimensions:
+  philosophy_narrative:
+    score: 8.7
+    weight: 20
+    finding: Documentary actions and captions connect directly to the activation decision rather than filling rectangles.
+  hierarchy_rhythm:
+    score: 8.6
+    weight: 25
+    finding: Image-led context, analytical pause, and evidence-backed decision create a deliberate 1/0/2 cadence.
+  craft_system:
+    score: 8.4
+    weight: 20
+    finding: Embedded Chinese display type, aligned baselines, crop positions, panel radii, and caption insets are controlled.
+  communication_evidence:
+    score: 8.7
+    weight: 20
+    finding: Every photo and metric has a named evidence job, and the closing slide states owner, review window, and next proof.
+  authorship_originality:
+    score: 8.1
+    weight: 15
+    finding: Operational-documentary evidence is distinctive for roadmap reviews, while semantic signal marks remain restrained.
+weighted_score: 85.3
+verdict: approval-candidate
+keep:
+  - Keep the large documentary field separated from the written decision field.
+  - Keep the 1/0/2 image cadence and evidence-oriented captions.
+  - Keep acid lime limited to completion, decision, or next-action signals.
+fix:
+  - severity: optimization
+    issue: Synthetic wardrobe remains predominantly charcoal across the sequence.
+    action: Replace with real project evidence or introduce one neutral wardrobe layer when generating a future concept set.
+    verification: Inspect the next contact sheet for cast continuity without a monochrome uniform effect.
+quick_wins:
+  - Recheck every replacement image at its final authored crop before export.
+  - Preserve the visible synthetic disclosure whenever this concept preview is reused.
+  - Compare the full-size slides and contact sheet after any typography or image change.

@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:allen-ai-skills:presentation-core:design-direction:0.1",
+  "title": "Allen FRAME Design Direction Record",
+  "description": "A controlled three-route visual exploration using the same content and assets.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "foundation", "comparison_control", "routes", "selection"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "theme", "theme_version", "scenario", "status"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "theme": {"$ref": "#/$defs/slug"},
+        "theme_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "scenario": {"$ref": "#/$defs/slug"},
+        "status": {"enum": ["draft", "review", "archived"]}
+      }
+    },
+    "foundation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["context_status", "concept_thesis", "visual_motif", "replaceability_test", "principles"],
+      "properties": {
+        "context_status": {"enum": ["verified", "partial", "synthetic-concept"]},
+        "concept_thesis": {"type": "string", "minLength": 24},
+        "visual_motif": {"type": "string", "minLength": 12},
+        "replaceability_test": {"type": "string", "minLength": 12},
+        "principles": {
+          "type": "array",
+          "minItems": 3,
+          "items": {"$ref": "#/$defs/principle"}
+        }
+      }
+    },
+    "comparison_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content_id", "asset_set_id", "canvas", "same_content", "same_assets"],
+      "properties": {
+        "content_id": {"$ref": "#/$defs/slug"},
+        "asset_set_id": {"$ref": "#/$defs/slug"},
+        "canvas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["width", "height"],
+          "properties": {
+            "width": {"const": 1920},
+            "height": {"const": 1080}
+          }
+        },
+        "same_content": {"const": true},
+        "same_assets": {"const": true}
+      }
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/route"}
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "selected_route", "decided_by", "decision_rationale", "user_quote"],
+      "properties": {
+        "status": {"enum": ["pending", "provisional", "user-approved", "designer-approved"]},
+        "selected_route": {"type": ["string", "null"], "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "decided_by": {"type": ["string", "null"]},
+        "decision_rationale": {"type": ["string", "null"]},
+        "user_quote": {"type": ["string", "null"]},
+        "decided_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    }
+  },
+  "$defs": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "principle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "intent", "observable_signal", "failure_case", "override_boundary"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "source": {"type": "string", "minLength": 4},
+        "intent": {"type": "string", "minLength": 8},
+        "observable_signal": {"type": "string", "minLength": 8},
+        "failure_case": {"type": "string", "minLength": 8},
+        "override_boundary": {"type": "string", "minLength": 8}
+      }
+    },
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "archetype", "validation_goal", "preview"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "archetype": {"$ref": "#/$defs/slug"},
+        "validation_goal": {"type": "string", "minLength": 8},
+        "preview": {"type": ["string", "null"]}
+      }
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "name", "intent", "audience_effect", "axes", "changed_axes", "frames", "risks"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "role": {"enum": ["clarity-baseline", "context-translation", "authored-leap"]},
+        "name": {"type": "string", "minLength": 2},
+        "intent": {"type": "string", "minLength": 12},
+        "audience_effect": {"type": "string", "minLength": 8},
+        "axes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["grid", "typography", "imagery", "rhythm", "material_color"],
+          "properties": {
+            "grid": {"type": "string", "minLength": 6},
+            "typography": {"type": "string", "minLength": 6},
+            "imagery": {"type": "string", "minLength": 6},
+            "rhythm": {"type": "string", "minLength": 6},
+            "material_color": {"type": "string", "minLength": 6}
+          }
+        },
+        "changed_axes": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {"enum": ["grid", "typography", "imagery", "rhythm", "material_color"]}
+        },
+        "frames": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {"$ref": "#/$defs/frame"}
+        },
+        "risks": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 6}}
+      }
+    }
+  }
+}

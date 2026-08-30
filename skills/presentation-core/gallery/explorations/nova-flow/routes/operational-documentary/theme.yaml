@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: operational-documentary, name: Operational Documentary, name_zh: 运营纪实, version: "0.1.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让现场行为与物证主导路线图叙事
+  mood: [documentary, human]
+  tone: [editorial, product]
+  formality: high
+  density: medium
+best_for: [product-roadmap-review]
+avoid_for: [financial-control-room]
+colors:
+  canvas: "#EAE9E5"
+  surface: "#FFFFFF"
+  text_primary: "#0D0E10"
+  text_secondary: "#656760"
+  accent_primary: "#B9F227"
+  accent_secondary: "#5C63E8"
+  positive: "#12805C"
+  negative: "#D84A2F"
+  rule: "rgba(13,14,16,.2)"
+stylesheet: theme.css

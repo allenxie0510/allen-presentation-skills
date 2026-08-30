@@ -1,0 +1,11 @@
+{
+  "id": "nova-flow-signal-grid",
+  "ir": "../../ir/product-roadmap-review--signal-grid.yaml",
+  "design": "../../../fixtures/design-systems/allen-signal-grid.yaml",
+  "slide_labels": ["identity", "reasoning", "decision"],
+  "routes": [
+    {"id": "editorial-evidence", "name": "Editorial Evidence / 编辑式证据", "theme": "routes/editorial-evidence/theme.yaml"},
+    {"id": "operational-documentary", "name": "Operational Documentary / 运营纪实", "theme": "routes/operational-documentary/theme.yaml"},
+    {"id": "signal-cartography", "name": "Signal Cartography / 信号图谱", "theme": "routes/signal-cartography/theme.yaml"}
+  ]
+}

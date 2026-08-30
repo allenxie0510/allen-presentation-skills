@@ -9,6 +9,10 @@ Status: `draft`. The supplied visual reference informed composition, spacing,
 contrast, and typographic attitude only. Do not copy its content, imagery, exact
 palette, or layout mechanically.
 
+The 0.5.0 NOVA Flow expression was selected provisionally through the Allen FRAME
+three-route process. Read [art-direction.md](art-direction.md) for the comparison
+result, chosen direction, crop contract, cadence, and anti-patterns.
+
 ## 1. Intent and boundary
 
 - Primary job: help product and executive teams approve, change, stop, or

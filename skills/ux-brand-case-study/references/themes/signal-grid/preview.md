@@ -9,6 +9,10 @@
 不得作为真实案例使用。需要摄影或产品证据时继续读取
 [image-realism-qa.md](image-realism-qa.md)。
 
+该版本通过 Allen FRAME 对同一内容生成三套真实方向样张，暂定
+Operational Documentary / 运营纪实为主体。选择本主题进行新项目时，继续读取
+[art-direction.md](art-direction.md)，但不得把暂定方向描述为用户已批准。
+
 优先用于：Product Roadmap Review、Industry Research Deck。
 
 选择本主题后，继续读取 [design-system.md](design-system.md)、`theme.yaml` 与

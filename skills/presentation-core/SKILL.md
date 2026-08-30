@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "draft"
   risk: "local-write"
-  version: "0.3.0"
+  version: "0.4.0"
   origin: "personal"
   importance: "flagship"
   visibility: "public"
@@ -23,11 +23,13 @@ PPTX, or other output is a projection of that model, never the canonical state.
 
 ## Current release boundary
 
-Version 0.3.0 adds six selectable draft theme packs, scenario component recipes,
-scenario-first theme recommendations, and real-render preview generation on top
-of the deterministic Presentation IR → self-contained HTML renderer. The IR
-remains canonical: browser edits do not automatically round-trip into IR, and
-native PPTX export is not implemented.
+Version 0.4.0 adds the Allen FRAME aesthetic-direction method: traceable design
+principles, controlled three-route exploration, rendered representative frames,
+an art-direction contract, and a concept gate plus five-lens review. Six draft
+theme packs and real-render previews remain available on top of the deterministic
+Presentation IR → self-contained HTML renderer. The IR remains canonical:
+browser edits do not automatically round-trip into IR, and native PPTX export is
+not implemented.
 Do not imply those two capabilities exist.
 
 Read [references/architecture.md](references/architecture.md) for new presentation
@@ -46,6 +48,13 @@ systems, renderer/editor work, or changes that affect more than one schema.
 - For a visual system derived from references, use
   [schemas/design-system.schema.json](schemas/design-system.schema.json). Mark new
   systems `draft`; only a designer may promote one to `approved`.
+- For a new theme, a major visual redesign, or an ambiguous high-fidelity
+  direction, read [references/allen-frame-method.md](references/allen-frame-method.md).
+  Record three structurally distinct routes with
+  [schemas/design-direction.schema.json](schemas/design-direction.schema.json),
+  render the same representative content for each route, and review the selected
+  route with [schemas/design-review.schema.json](schemas/design-review.schema.json).
+  Do not describe an agent-selected route as user-approved.
 - For theme selection, read `themes/index.yaml` first. Load only shortlisted
   `preview.md` files, then the selected `theme.yaml`, `theme.css`, and its
   `design-system.md` when present. Do not read every full theme before the
@@ -73,8 +82,9 @@ Resolve in this order:
 3. Storyline and evidence standard.
 4. Slide grammar and archetypes.
 5. Brand constraints.
-6. Approved design system.
-7. Renderer-specific implementation.
+6. FRAME direction exploration when the visual premise is new or unresolved.
+7. Approved design system.
+8. Renderer-specific implementation.
 
 Do not select a visual preset before the communication job is clear. Prefer an
 assertion-led slide sequence; every substantive slide should have a purpose and a
@@ -94,6 +104,10 @@ claim or audience job that can be evaluated.
 - Never claim an exact font match without evidence. Record its class,
   characteristics, and substitutes when identification is uncertain.
 - Do not fabricate claims, numbers, sources, or approval status.
+- Do not imitate a named designer or studio. Transfer a documented principle and
+  record the signature expression that must not be copied.
+- Treat aesthetic rules as standards only when source, intent, observable signal,
+  failure case, and override boundary are recorded.
 - Keep process notes, prompt scaffolds, and internal commentary out of
   audience-facing slide content.
 
@@ -105,9 +119,11 @@ For planning or generation work, produce:
 2. the selected scenario and rationale;
 3. an assertion-led storyline;
 4. a valid Presentation IR;
-5. the approved design-system selection, or a clearly labeled draft;
-6. a validation result;
-7. rendered self-contained HTML when requested, followed by browser visual
+5. a FRAME direction record and review when the task creates or substantially
+   changes visual language;
+6. the approved design-system selection, or a clearly labeled draft;
+7. a validation result;
+8. rendered self-contained HTML when requested, followed by browser visual
    inspection; otherwise stop at the validated IR.
 
 Use the fixtures under `fixtures/` as structural examples, not as content or

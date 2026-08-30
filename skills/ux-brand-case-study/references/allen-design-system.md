@@ -63,6 +63,11 @@ They change emphasis, not the underlying evidence standard.
 
 ## Design review checklist
 
+For a new theme or major redesign, this checklist is only the correctness layer.
+Run the full concept gate and five-lens review in
+[allen-frame-method.md](allen-frame-method.md) before calling the system an
+approval candidate.
+
 - Can the storyline still be understood with decoration removed?
 - Does every substantive slide have one assertion or audience job?
 - Does the visual mapping match the reasoning grammar?

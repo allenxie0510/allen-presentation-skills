@@ -43,9 +43,10 @@ objects appear in it.
 
 - Alternate image-led and analytical pages when the storyline benefits from a
   pause. The NOVA Flow three-page preview intentionally uses `1 / 0 / 2` images.
-- Repeated image wells share the exact left edge and width. Use a 24 px inter-slot
-  gap and keep outer panel margins on the 8 px grid.
-- A cover photo occupies 35–42% of the slide width; evidence images must remain
+- Repeated horizontal evidence wells share the exact baseline and height. Use a
+  24 px inter-slot gap and keep outer panel margins on the 8 px grid.
+- A cover photo occupies 50–60% of the slide width in the selected Operational
+  Documentary direction; evidence images must remain
   large enough to inspect rather than becoming decorative thumbnails.
 
 ## 6. Automated gallery gate
@@ -54,7 +55,7 @@ objects appear in it.
 
 - the three-slide image rhythm is not `1 / 0 / 2`;
 - any image lacks alt text, explicit crop position, or minimum source resolution;
-- the closing evidence slots do not share a left edge and width or their gap is
+- the closing evidence slots do not share a baseline and height or their gap is
   not 24 px;
 - the cover image does not occupy its authored slot; or
 - the synthetic concept disclosure is missing.

@@ -711,9 +711,147 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--c
   line-height: 1.11 !important;
 }
 
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-title"] {
+  left: 104px !important;
+  top: 112px !important;
+  width: 520px !important;
+  height: 40px !important;
+}
+
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-statement"]::before,
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-statement"]::after {
   content: none;
+}
+
+/* FRAME-selected NOVA Flow direction: Operational Documentary. */
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) {
+  background: var(--signal-canvas);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"])::before,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"])::before {
+  left: 64px;
+  top: 46px;
+  width: 120px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--signal-lime);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"])::after,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"])::after {
+  right: 64px;
+  top: 40px;
+  min-width: 46px;
+  height: 28px;
+  border-color: rgba(13, 14, 16, .52);
+  background: transparent;
+  color: var(--signal-ink);
+  backdrop-filter: none;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .slide__eyebrow,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .slide__eyebrow {
+  left: 204px;
+  top: 42px;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .slide__eyebrow::before {
+  content: none;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--image[data-role="nova-cover-photo"] {
+  left: 64px !important;
+  top: 96px !important;
+  width: 1110px !important;
+  height: 920px !important;
+  border-radius: 32px;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="deck-title"] {
+  left: 1260px !important;
+  top: 176px !important;
+  width: 540px !important;
+  height: 450px !important;
+  font-size: 76px !important;
+  line-height: 1.08 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="decision-context"] {
+  left: 1260px !important;
+  top: 704px !important;
+  width: 520px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="decision-brief"] {
+  left: 1260px !important;
+  top: 790px !important;
+  width: 500px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="concept-disclosure"] {
+  left: 1260px !important;
+  top: 956px !important;
+  width: 520px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="image-caption"] {
+  left: 104px !important;
+  top: 932px !important;
+  width: 560px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) {
+  background: var(--signal-canvas);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-statement"] {
+  left: 104px !important;
+  top: 180px !important;
+  width: 1080px !important;
+  height: 340px !important;
+  font-size: 70px !important;
+  line-height: 1.11 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-owner"] {
+  left: 104px !important;
+  top: 570px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="next-evidence"] {
+  left: 104px !important;
+  top: 668px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--image {
+  top: 772px !important;
+  height: 244px !important;
+  border-radius: 28px;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--image[data-role="nova-usability-photo"] {
+  left: 104px !important;
+  width: 840px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--image[data-role="nova-workflow-photo"] {
+  left: 968px !important;
+  width: 888px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="evidence-photo-caption"] {
+  top: 946px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="evidence-photo-caption"]:nth-last-child(3) {
+  left: 136px !important;
+  width: 760px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="evidence-photo-caption"]:last-child {
+  left: 1000px !important;
+  width: 808px !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

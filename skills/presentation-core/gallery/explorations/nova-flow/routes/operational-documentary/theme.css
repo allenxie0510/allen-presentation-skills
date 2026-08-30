@@ -1,0 +1,34 @@
+body[data-theme="operational-documentary"] {
+  --deck-canvas:#eae9e5; --deck-surface:#fff; --deck-text:#0d0e10; --deck-muted:#656760;
+  --deck-rule:rgba(13,14,16,.2); --deck-accent:#b9f227;
+  font-family:"PingFang SC","Noto Sans CJK SC",Arial,sans-serif;
+}
+body[data-theme="operational-documentary"] .slide { background:var(--deck-canvas); }
+body[data-theme="operational-documentary"] .slide::before { left:64px; top:46px; width:120px; height:8px; border-radius:4px; background:var(--deck-accent); }
+body[data-theme="operational-documentary"] .slide::after { right:64px; top:40px; min-width:46px; height:28px; display:grid; place-items:center; border:1px solid var(--deck-text); border-radius:999px; font-size:12px; }
+body[data-theme="operational-documentary"] .slide__eyebrow { left:204px; top:42px; font-size:13px; letter-spacing:.12em; }
+body[data-theme="operational-documentary"] .object--text[data-role="deck-title"],
+body[data-theme="operational-documentary"] .object--text[data-role="slide-assertion"],
+body[data-theme="operational-documentary"] .object--text[data-role="decision-statement"] { font-family:"Arial Narrow","PingFang SC",sans-serif; font-weight:800!important; line-height:1.04!important; letter-spacing:-.04em!important; }
+body[data-theme="operational-documentary"] .slide--cover .object--image { left:64px!important; top:96px!important; width:1110px!important; height:920px!important; border-radius:30px!important; }
+body[data-theme="operational-documentary"] .slide--cover::before,
+body[data-theme="operational-documentary"] .slide--cover .slide__eyebrow { z-index:6; }
+body[data-theme="operational-documentary"] .slide--cover .object--text[data-role="deck-title"] { left:1260px!important; top:176px!important; width:540px!important; height:450px!important; font-size:76px!important; }
+body[data-theme="operational-documentary"] .slide--cover .object--text[data-role="decision-context"] { left:1260px!important; top:704px!important; width:520px!important; font-size:19px!important; }
+body[data-theme="operational-documentary"] .slide--cover .object--text[data-role="decision-brief"] { left:1260px!important; top:790px!important; width:500px!important; font-size:18px!important; }
+body[data-theme="operational-documentary"] .slide--cover .object--text[data-role="concept-disclosure"] { left:1260px!important; top:956px!important; width:520px!important; font-size:11px!important; }
+body[data-theme="operational-documentary"] .slide--cover .object--text[data-role="image-caption"] { left:104px!important; top:932px!important; width:560px!important; color:#fff; font-size:13px!important; }
+body[data-theme="operational-documentary"] .slide--data .object--text[data-role="slide-assertion"] { left:104px!important; top:180px!important; width:620px!important; height:300px!important; font-size:60px!important; }
+body[data-theme="operational-documentary"] .slide--data .object--text[data-role="evidence-interpretation"] { left:104px!important; top:560px!important; width:570px!important; font-size:21px!important; line-height:1.5!important; }
+body[data-theme="operational-documentary"] .object--metric { padding:38px 40px; border:0; border-radius:28px; background:#fff; }
+body[data-theme="operational-documentary"] .metric__value { align-self:end; font-size:96px; font-weight:900; letter-spacing:-.07em; }
+body[data-theme="operational-documentary"] .slide--data .object--metric[data-role="risk-metric"] { background:linear-gradient(90deg,var(--deck-accent) 0 14px,#fff 14px); }
+body[data-theme="operational-documentary"] .slide--closing .object--text[data-role="decision-statement"] { left:104px!important; top:180px!important; width:1080px!important; height:340px!important; font-size:70px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--text[data-role="decision-owner"] { left:104px!important; top:570px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--text[data-role="next-evidence"] { left:104px!important; top:668px!important; width:820px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--image { top:772px!important; height:244px!important; border-radius:28px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--image[data-role="nova-usability-photo"] { left:104px!important; width:840px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--image[data-role="nova-workflow-photo"] { left:968px!important; width:888px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--text[data-role="evidence-photo-caption"] { top:946px!important; color:#fff; font-size:12px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--text[data-role="evidence-photo-caption"]:nth-last-child(3) { left:136px!important; }
+body[data-theme="operational-documentary"] .slide--closing .object--text[data-role="evidence-photo-caption"]:last-child { left:1000px!important; }
