@@ -1,0 +1,60 @@
+schema_version: "0.1"
+scenario:
+  id: corporate-training-workshop
+  name: Corporate Training Workshop
+  version: "0.2.0"
+communication_job:
+  primary: Enable adult learners to perform a defined workplace behavior through relevant explanation, practice, feedback, and transfer support.
+  success_condition: Learners can demonstrate the target capability, plan workplace application, and generate evidence for learning and transfer evaluation.
+audience:
+  - adult-learners
+  - managers
+  - facilitators
+  - learning-sponsors
+decision_types:
+  - practice
+  - apply
+  - commit
+  - improve
+  - transfer
+storyline_patterns:
+  - relevance-model-practice-feedback-application
+  - problem-example-rule-practice-reflection
+  - experience-concept-experiment-commitment
+evidence_standard:
+  level: high
+  claim_policy: Distinguish training need, learning objective, participation, learner performance, transfer behavior, and business result; do not infer one level from another.
+  source_policy: Preserve needs-analysis method, learner context, content authority, assessment criteria, timing, sample, and evaluation limitations.
+density:
+  default: medium
+  range:
+    - low
+    - medium
+preferred_grammar:
+  - assertion
+  - evidence
+  - comparison
+  - process
+  - hierarchy
+  - narrative
+  - decision
+required_archetypes:
+  - relevance-opening
+  - learning-outcomes
+  - workshop-agenda
+  - mental-model
+  - worked-example
+  - activity-brief
+  - debrief
+  - knowledge-check
+  - action-plan
+  - transfer-commitment
+  - evaluation
+anti_patterns:
+  - lecture-only
+  - content-dump
+  - vague-objective
+  - activity-without-debrief
+  - satisfaction-only-evaluation
+  - training-for-nontraining-gap
+default_permission_profile: content-style

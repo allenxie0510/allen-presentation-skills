@@ -1,0 +1,60 @@
+schema_version: "0.1"
+scenario:
+  id: industry-research-deck
+  name: Industry Research Deck
+  version: "0.2.0"
+communication_job:
+  primary: Build a defensible view of an industry so leaders can choose where, whether, and how to act.
+  success_condition: The audience can trace material claims to compatible evidence, understand uncertainty and market structure, and choose a strategic response.
+audience:
+  - executives
+  - strategy-leaders
+  - product-leaders
+  - investors
+decision_types:
+  - enter
+  - prioritize
+  - position
+  - invest
+  - monitor
+storyline_patterns:
+  - question-method-findings-implications
+  - hypothesis-evidence-counterevidence-conclusion
+  - structure-dynamics-scenarios-action
+evidence_standard:
+  level: high
+  claim_policy: Separate observed facts, estimates, assumptions, interpretations, scenarios, and recommendations; expose counterevidence and uncertainty.
+  source_policy: Prefer primary and official sources; preserve definition, date, geography, unit, sample, and method; triangulate material claims with compatible evidence.
+density:
+  default: high
+  range:
+    - medium-high
+    - high
+preferred_grammar:
+  - assertion
+  - evidence
+  - trend
+  - comparison
+  - causality
+  - hierarchy
+  - relationship
+  - decision
+required_archetypes:
+  - research-question
+  - market-definition
+  - market-size-range
+  - value-chain
+  - competitive-landscape
+  - industry-structure
+  - driver-analysis
+  - scenario-matrix
+  - strategic-implications
+  - source-notes
+anti_patterns:
+  - framework-collage
+  - incompatible-market-sizing
+  - unsourced-cagr
+  - single-metric-competition
+  - trend-list-without-implication
+  - false-precision
+default_permission_profile: content-style

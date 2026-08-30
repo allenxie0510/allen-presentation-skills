@@ -1,0 +1,205 @@
+schema_version: "0.1"
+deck:
+  id: board-q3-review
+  title: Q3 Board Review
+  language: en-US
+  aspect_ratio: "16:9"
+  canvas:
+    width: 1920
+    height: 1080
+  scenario:
+    id: board-review
+    version: "0.1"
+  industry:
+    id: technology
+    version: "0.1"
+  brand: null
+  design_system:
+    id: allen-signal-grid
+    version: "0.1"
+  density: high
+  mode: reading-first
+  metadata:
+    author: null
+    confidential: true
+    created_at: null
+    updated_at: null
+    source_note: Synthetic fixture; all metrics are placeholders.
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Establish the reporting period and board context.
+    grammar: narrative
+    assertion:
+      text: Q3 Board Review
+      status: supported
+    narrative_role:
+      section: opening
+      sequence: opening
+    layout_variant: cover-offset
+    permission_profile: content-only
+    evidence: []
+    speaker_notes: null
+    objects:
+      - id: s01-title
+        type: text
+        role: deck-title
+        slot_kind: authored-slot
+        content:
+          text: Q3 Board Review
+        frame: {x: 120, y: 220, w: 1180, h: 180}
+        style:
+          token: typography.hero
+          variant: null
+        constraints:
+          min_w: 720
+          max_w: 1320
+          min_h: 120
+          max_h: 260
+          snap_to_grid: true
+          preserve_aspect_ratio: false
+        editable: &content_only
+          content: true
+          image_replace: true
+          data: true
+          style: locked
+          position: false
+          resize: false
+          delete: false
+          unlock_required: true
+      - id: s01-context
+        type: text
+        role: deck-context
+        slot_kind: authored-slot
+        content:
+          text: Performance, enterprise conversion, and decisions required
+        frame: {x: 120, y: 450, w: 980, h: 90}
+        style:
+          token: typography.body
+          variant: null
+        editable: *content_only
+  - id: s02
+    archetype: data
+    purpose: Surface the three signals requiring board attention.
+    grammar: evidence
+    assertion:
+      text: Revenue grew, but enterprise conversion weakened.
+      status: placeholder
+    narrative_role:
+      section: performance
+      sequence: evidence
+    layout_variant: kpi-scorecard
+    permission_profile: content-only
+    evidence:
+      - id: ev-revenue
+        claim: Revenue growth rate for the reporting period.
+        source_type: placeholder
+        source: null
+        accessed_at: null
+      - id: ev-conversion
+        claim: Enterprise conversion change for the reporting period.
+        source_type: placeholder
+        source: null
+        accessed_at: null
+    speaker_notes: Replace placeholder metrics and connect each to its definition and reporting source.
+    objects:
+      - id: s02-title
+        type: text
+        role: slide-assertion
+        slot_kind: authored-slot
+        content:
+          text: Revenue grew, but enterprise conversion weakened.
+        frame: {x: 120, y: 84, w: 1500, h: 130}
+        style:
+          token: typography.slide_title
+          variant: null
+        editable: *content_only
+      - id: s02-revenue
+        type: metric
+        role: primary-metric
+        slot_kind: authored-slot
+        content:
+          label: Revenue growth
+          value: "TBD"
+          period: Q3
+        frame: {x: 120, y: 330, w: 460, h: 250}
+        style:
+          token: components.metric.hero-number
+          variant: hero-number
+        editable: *content_only
+      - id: s02-conversion
+        type: metric
+        role: risk-metric
+        slot_kind: authored-slot
+        content:
+          label: Enterprise conversion
+          value: "TBD"
+          period: Q3
+        frame: {x: 680, y: 330, w: 460, h: 250}
+        style:
+          token: components.metric.delta-stat
+          variant: delta-stat
+        editable: *content_only
+      - id: s02-retention
+        type: metric
+        role: supporting-metric
+        slot_kind: authored-slot
+        content:
+          label: Net retention
+          value: "TBD"
+          period: Q3
+        frame: {x: 1240, y: 330, w: 460, h: 250}
+        style:
+          token: components.metric.compact-stat
+          variant: compact-stat
+        editable: *content_only
+  - id: s03
+    archetype: closing
+    purpose: Make the channel investment decision explicit.
+    grammar: decision
+    assertion:
+      text: Decide whether to continue enterprise-channel investment under revised conversion gates.
+      status: provisional
+    narrative_role:
+      section: decisions
+      sequence: decision
+    layout_variant: closing-decision
+    permission_profile: content-only
+    evidence: []
+    speaker_notes: Replace the provisional decision with the actual options, owner, and deadline.
+    objects:
+      - id: s03-title
+        type: text
+        role: decision-title
+        slot_kind: authored-slot
+        content:
+          text: Decision required
+        frame: {x: 120, y: 100, w: 760, h: 100}
+        style:
+          token: typography.slide_title
+          variant: null
+        editable: *content_only
+      - id: s03-decision
+        type: text
+        role: decision-statement
+        slot_kind: authored-slot
+        content:
+          text: Continue enterprise-channel investment only if revised conversion gates are met.
+        frame: {x: 120, y: 300, w: 1420, h: 330}
+        style:
+          token: typography.hero
+          variant: null
+          overrides:
+            font_size: 72
+        editable: *content_only
+      - id: s03-owner
+        type: text
+        role: decision-owner
+        slot_kind: authored-slot
+        content:
+          text: Owner and decision deadline — TBD
+        frame: {x: 120, y: 700, w: 900, h: 70}
+        style:
+          token: typography.body
+          variant: null
+        editable: *content_only

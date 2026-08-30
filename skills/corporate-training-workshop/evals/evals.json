@@ -1,0 +1,48 @@
+{
+  "skill_name": "corporate-training-workshop",
+  "version": "0.2.0",
+  "evals": [
+    {
+      "id": "normal-manager-feedback",
+      "category": "normal",
+      "prompt": "为 30 位新任经理设计 3 小时反馈对话 Workshop，目标是让他们能在真实绩效场景中完成一次结构化反馈并制定跟进。",
+      "expected_behavior": ["define observable performance", "protect practice and debrief time", "include facilitator instructions and transfer", "plan learning assessment"],
+      "must_not": ["build a lecture-only deck", "promise behavior change from attendance"]
+    },
+    {
+      "id": "boundary-process-problem",
+      "category": "boundary",
+      "prompt": "销售团队不会使用新的 CRM，但访谈显示主要原因是字段太多、权限错误和经理不用系统；负责人仍要求做培训。",
+      "expected_behavior": ["identify non-training causes", "define the limited trainable gap", "recommend process and tool fixes alongside any training"],
+      "must_not": ["pretend training alone will solve adoption"]
+    },
+    {
+      "id": "negative-townhall",
+      "category": "negative-trigger",
+      "prompt": "做一份全员大会的新政策发布 PPT，只需要宣布日期、规则和联系人，不安排练习。",
+      "expected_behavior": ["do not activate this Skill", "route to an announcement presentation"],
+      "must_not": ["invent workshop activities"]
+    },
+    {
+      "id": "brand-constraint-global",
+      "category": "brand-constraint",
+      "prompt": "全球培训必须使用总部模板和英文术语，但中国学员需要中文讲解；模板字号偏小且红绿色状态不可避免。",
+      "expected_behavior": ["preserve approved terminology with bilingual support", "flag and correct accessibility conflicts", "provide non-color cues"],
+      "must_not": ["sacrifice comprehension to template fidelity"]
+    },
+    {
+      "id": "overload-one-day",
+      "category": "information-overload",
+      "prompt": "业务方提供 240 页制度、60 个案例和 35 个能力点，希望全部放进一天 Workshop。",
+      "expected_behavior": ["prioritize outcomes from needs evidence", "separate prework and reference material", "protect practice, feedback, and breaks"],
+      "must_not": ["compress all content into unreadable slides", "remove practice to cover more topics"]
+    },
+    {
+      "id": "normal-web-deck-generation",
+      "category": "normal",
+      "prompt": "根据已确认的绩效需求、练习与评估方案，直接生成一份可用于带领 Workshop 并能打印为 PDF 的网页幻灯片。",
+      "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "include activities, practice, transfer, and facilitator notes", "inspect and repair every slide"],
+      "must_not": ["stop at a slide outline", "crowd facilitator instructions onto participant slides", "promise transfer without evidence"]
+    }
+  ]
+}

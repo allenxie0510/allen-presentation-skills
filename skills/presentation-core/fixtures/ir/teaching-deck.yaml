@@ -1,0 +1,198 @@
+schema_version: "0.1"
+deck:
+  id: rag-for-product-managers
+  title: RAG for Product Managers
+  language: en-US
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario:
+    id: teaching-deck
+    version: "0.1"
+  industry:
+    id: technology
+    version: "0.1"
+  brand: null
+  design_system:
+    id: allen-signal-grid
+    version: "0.1"
+  density: medium
+  mode: presenting-first
+  metadata:
+    author: null
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Synthetic teaching fixture; technical claims require source review before delivery.
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Set the learner promise and audience boundary.
+    grammar: narrative
+    assertion:
+      text: Understand when retrieval improves an AI product—and when it does not.
+      status: supported
+    narrative_role:
+      section: opening
+      sequence: opening
+    layout_variant: cover-offset
+    permission_profile: content-only
+    evidence: []
+    speaker_notes: null
+    objects:
+      - id: s01-title
+        type: text
+        role: learning-promise
+        slot_kind: authored-slot
+        content:
+          text: Understand when retrieval improves an AI product—and when it does not.
+        frame: {x: 120, y: 220, w: 1380, h: 300}
+        style:
+          token: typography.hero
+          variant: null
+          overrides:
+            font_size: 86
+        editable: &content_only
+          content: true
+          image_replace: true
+          data: true
+          style: locked
+          position: false
+          resize: false
+          delete: false
+          unlock_required: true
+      - id: s01-audience
+        type: text
+        role: audience-context
+        slot_kind: authored-slot
+        content:
+          text: A 40-minute practical introduction for non-technical product managers
+        frame: {x: 120, y: 650, w: 1100, h: 100}
+        style:
+          token: typography.body
+          variant: null
+        editable: *content_only
+  - id: s02
+    archetype: process
+    purpose: Give learners a usable causal model of retrieval-augmented generation.
+    grammar: process
+    assertion:
+      text: RAG retrieves relevant context before the model generates an answer.
+      status: supported
+    narrative_role:
+      section: mental-model
+      sequence: explanation
+    layout_variant: linear-process
+    permission_profile: content-only
+    evidence:
+      - id: ev-rag-model
+        claim: Retrieval supplies context to the generation step.
+        source_type: placeholder
+        source: null
+        accessed_at: null
+    speaker_notes: Cite an authoritative technical source and explain that production systems may add routing, reranking, and evaluation.
+    objects:
+      - id: s02-title
+        type: text
+        role: slide-assertion
+        slot_kind: authored-slot
+        content:
+          text: RAG retrieves relevant context before the model generates an answer.
+        frame: {x: 120, y: 84, w: 1500, h: 130}
+        style:
+          token: typography.slide_title
+          variant: null
+        editable: *content_only
+      - id: s02-process
+        type: group
+        role: process-model
+        slot_kind: authored-slot
+        content:
+          stages:
+            - Retrieve
+            - Select context
+            - Generate
+            - Evaluate
+        frame: {x: 160, y: 330, w: 1500, h: 300}
+        style:
+          token: archetypes.process.linear-process
+          variant: linear-process
+        editable: *content_only
+        children:
+          - s02-retrieve
+          - s02-context
+          - s02-generate
+          - s02-evaluate
+      - id: s02-retrieve
+        type: text
+        role: process-stage
+        slot_kind: authored-slot
+        content: {text: Retrieve}
+        frame: {x: 180, y: 410, w: 260, h: 90}
+        style: {token: typography.body, variant: null}
+        editable: *content_only
+      - id: s02-context
+        type: text
+        role: process-stage
+        slot_kind: authored-slot
+        content: {text: Select context}
+        frame: {x: 560, y: 410, w: 300, h: 90}
+        style: {token: typography.body, variant: null}
+        editable: *content_only
+      - id: s02-generate
+        type: text
+        role: process-stage
+        slot_kind: authored-slot
+        content: {text: Generate}
+        frame: {x: 980, y: 410, w: 260, h: 90}
+        style: {token: typography.body, variant: null}
+        editable: *content_only
+      - id: s02-evaluate
+        type: text
+        role: process-stage
+        slot_kind: authored-slot
+        content: {text: Evaluate}
+        frame: {x: 1380, y: 410, w: 240, h: 90}
+        style: {token: typography.body, variant: null}
+        editable: *content_only
+  - id: s03
+    archetype: comparison
+    purpose: Check whether learners can distinguish retrieval problems from other failure modes.
+    grammar: comparison
+    assertion:
+      text: Retrieval helps missing-context problems, not every model-quality problem.
+      status: supported
+    narrative_role:
+      section: practice
+      sequence: recap
+    layout_variant: split-comparison
+    permission_profile: content-only
+    evidence: []
+    speaker_notes: Ask learners to classify a new case before revealing the right-hand explanation.
+    objects:
+      - id: s03-title
+        type: text
+        role: slide-assertion
+        slot_kind: authored-slot
+        content:
+          text: Retrieval helps missing-context problems, not every model-quality problem.
+        frame: {x: 120, y: 84, w: 1500, h: 130}
+        style: {token: typography.slide_title, variant: null}
+        editable: *content_only
+      - id: s03-use
+        type: text
+        role: positive-case
+        slot_kind: authored-slot
+        content:
+          text: Use RAG when the answer depends on changing or private source material.
+        frame: {x: 120, y: 330, w: 720, h: 260}
+        style: {token: typography.body, variant: null}
+        editable: *content_only
+      - id: s03-avoid
+        type: text
+        role: negative-case
+        slot_kind: authored-slot
+        content:
+          text: Do not expect RAG alone to fix weak reasoning, poor instructions, or missing product policy.
+        frame: {x: 1020, y: 330, w: 720, h: 260}
+        style: {token: typography.body, variant: null}
+        editable: *content_only

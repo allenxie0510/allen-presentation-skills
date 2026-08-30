@@ -1,0 +1,46 @@
+schema_version: "0.1"
+scenario:
+  id: investor-pitch
+  name: Investor Pitch
+  version: "0.1"
+communication_job:
+  primary: Build sufficient conviction and curiosity to earn the next investment decision step.
+  success_condition: Investors understand the problem, differentiated insight, evidence of pull, business potential, and explicit ask.
+audience:
+  - early-stage-investors
+  - investment-partners
+decision_types:
+  - continue-diligence
+  - schedule-partner-meeting
+  - decline
+storyline_patterns:
+  - problem-insight-proof-opportunity-ask
+evidence_standard:
+  level: high
+  claim_policy: Separate verified traction from hypotheses and label missing evidence rather than inventing metrics.
+  source_policy: Trace traction, market, and customer claims to user-provided or cited sources.
+density:
+  default: medium
+  range:
+    - low
+    - medium
+preferred_grammar:
+  - narrative
+  - assertion
+  - evidence
+  - comparison
+  - trend
+required_archetypes:
+  - cover
+  - problem
+  - insight
+  - solution
+  - traction
+  - market
+  - ask
+anti_patterns:
+  - feature-dump
+  - unsupported-market-size
+  - generic-disruption-claim
+  - crowded-roadmap
+default_permission_profile: content-style

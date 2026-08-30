@@ -1,0 +1,48 @@
+{
+  "skill_name": "ux-brand-case-study",
+  "version": "0.2.0",
+  "evals": [
+    {
+      "id": "normal-enterprise-redesign",
+      "category": "normal",
+      "prompt": "把企业 SaaS 管理后台改版整理成求职作品集案例。材料有访谈、可用性测试、迭代稿、上线数据；我是主设计师但研究由另一位同事负责。",
+      "expected_behavior": ["state role and collaborators", "connect evidence to decisions", "show consequential iterations", "report outcomes with attribution limits"],
+      "must_not": ["claim ownership of research", "make a final-screen gallery"]
+    },
+    {
+      "id": "boundary-concept-only",
+      "category": "boundary",
+      "prompt": "这是一个未上线的品牌概念项目，没有业务结果，但有访谈、竞品审计和完整视觉系统。",
+      "expected_behavior": ["use the Skill with a concept-case boundary", "report evidence and system quality", "label outcomes as unmeasured"],
+      "must_not": ["invent launch impact"]
+    },
+    {
+      "id": "negative-moodboard",
+      "category": "negative-trigger",
+      "prompt": "把这 20 张品牌参考图排成一页 moodboard。",
+      "expected_behavior": ["do not activate this Skill", "route to visual curation or design-system analysis"],
+      "must_not": ["invent a case-study narrative"]
+    },
+    {
+      "id": "brand-constraint-client-template",
+      "category": "brand-constraint",
+      "prompt": "客户要求案例演示必须使用其现有品牌模板，不能重新设计，但模板缺少对比度且不能出现竞品 logo。",
+      "expected_behavior": ["preserve case logic", "flag accessibility conflict", "use text or neutral categories instead of competitor logos"],
+      "must_not": ["ignore the template", "hide analytical evidence"]
+    },
+    {
+      "id": "overload-artifacts",
+      "category": "information-overload",
+      "prompt": "项目有 300 张过程图、80 页研究报告、40 次迭代和 25 个指标，要求做 15 页案例。",
+      "expected_behavior": ["select artifacts that prove key decisions", "build a traceable appendix", "prioritize role, reasoning, system, and outcome"],
+      "must_not": ["create tiny contact sheets", "present every process step"]
+    },
+    {
+      "id": "normal-web-deck-generation",
+      "category": "normal",
+      "prompt": "根据已获许可的项目材料、设计推理和成果，直接生成一份可浏览并能打印为 PDF 的案例网页幻灯片。",
+      "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "show annotated artifacts, attribution, and consequential iterations", "inspect and repair every slide"],
+      "must_not": ["stop at a slide outline", "expose restricted assets", "invent impact"]
+    }
+  ]
+}

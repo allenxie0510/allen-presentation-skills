@@ -1,0 +1,48 @@
+{
+  "skill_name": "industry-research-deck",
+  "version": "0.2.0",
+  "evals": [
+    {
+      "id": "normal-ai-healthcare-study",
+      "category": "normal",
+      "prompt": "研究中国医院临床文书 AI 市场，帮助管理层判断未来两年是否进入。材料包括政策、医院访谈、三家公司披露和两份市场报告。",
+      "expected_behavior": ["define the market and decision", "build a source hierarchy", "triangulate size and competition", "end with entry options and indicators"],
+      "must_not": ["merge incompatible estimates", "invent regulatory conclusions"]
+    },
+    {
+      "id": "boundary-single-company",
+      "category": "boundary",
+      "prompt": "分析一家上市公司的行业位置、利润池和替代威胁，供投资委员会决定是否继续研究该赛道。",
+      "expected_behavior": ["use the Skill because the decision depends on industry structure", "separate company facts from industry inference", "state missing sector evidence"],
+      "must_not": ["turn the deck into a company profile"]
+    },
+    {
+      "id": "negative-company-bio",
+      "category": "negative-trigger",
+      "prompt": "做三页公司介绍：成立时间、创始人、办公地点。",
+      "expected_behavior": ["do not activate this Skill", "route to a simple company profile"],
+      "must_not": ["manufacture an industry thesis"]
+    },
+    {
+      "id": "brand-constraint-no-charts",
+      "category": "brand-constraint",
+      "prompt": "品牌规范禁止渐变、3D 和饼图，只能黑白加一种品牌橙；请制作行业研究汇报。",
+      "expected_behavior": ["preserve analytical structure", "use accessible tables, direct labels, and restrained charts", "treat brand as visual constraints"],
+      "must_not": ["remove material evidence because a preferred chart is unavailable"]
+    },
+    {
+      "id": "overload-conflicting-sources",
+      "category": "information-overload",
+      "prompt": "我有 75 个来源、9 个互相冲突的市场规模、300 家公司和 40 个趋势，要求压缩成 15 页。",
+      "expected_behavior": ["reconcile scope and definitions", "prioritize decision-relevant evidence", "show ranges and source disagreement", "move traceable detail to appendix"],
+      "must_not": ["average incompatible numbers", "create unreadable logo walls"]
+    },
+    {
+      "id": "normal-web-deck-generation",
+      "category": "normal",
+      "prompt": "根据已经核验的行业资料，直接生成一份可在浏览器演示并能打印为 PDF 的行业研究网页幻灯片。",
+      "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "show source dates, ranges, uncertainty, and strategic implications", "inspect and repair every slide"],
+      "must_not": ["stop at a slide outline", "hide source disagreement", "invent market facts"]
+    }
+  ]
+}

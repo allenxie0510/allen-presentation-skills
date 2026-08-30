@@ -1,0 +1,6 @@
+interface:
+  display_name: "Corporate Training Workshop"
+  short_description: "Applied corporate workshop web decks."
+  default_prompt: "Use $corporate-training-workshop to turn my performance need into an applied workshop with practice, facilitation, and evaluation, then generate its validated IR and self-contained HTML deck."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,40 @@
+{
+  "skill_name": "presentation-core",
+  "evals": [
+    {
+      "id": "board-review",
+      "prompt": "把这份季度经营数据整理成董事会汇报。董事会需要判断是否继续加码企业客户渠道，并明确下季度风险升级事项。",
+      "expected_output": "The Skill should normalize the decision job, choose board-review logic, build an assertion-led evidence-to-explanation-to-decision storyline, emit schema-valid 1920×1080 Presentation IR, and validate it before rendering."
+    },
+    {
+      "id": "investor-pitch",
+      "prompt": "为一家刚完成产品验证的 AI 工作流公司设计一份种子轮融资演示，听众是早期基金，目标是获得下一次合伙人会议。",
+      "expected_output": "The Skill should prioritize persuasion and narrative momentum, choose investor-pitch, keep density controlled, distinguish claims from missing evidence, and produce valid IR without inventing metrics."
+    },
+    {
+      "id": "teaching-deck",
+      "prompt": "做一份给非技术产品经理的 40 分钟课程，帮助他们理解 RAG 的工作原理并能判断什么时候不该用 RAG。",
+      "expected_output": "The Skill should choose teaching-deck, define learning outcomes and misconception checks, create a cognitive progression with recap or practice moments, and output valid IR."
+    },
+    {
+      "id": "design-system-from-references",
+      "prompt": "根据我提供的 4 张视觉参考建立一套适合研究报告的演示设计系统。无法确认字体时不要猜。",
+      "expected_output": "The Skill should analyze composition, grid, hierarchy, spacing, typography behavior, imagery, data language, and archetypes; label the result draft; record uncertain font classes and substitutes; and require designer review before approval."
+    },
+    {
+      "id": "negative-simple-conversion",
+      "prompt": "把这个 PPTX 转成 PDF，内容和版式都不要改。",
+      "expected_output": "The Skill should not activate because this is a direct format conversion without scenario, storyline, IR, or design-system decisions."
+    },
+    {
+      "id": "negative-isolated-edit",
+      "prompt": "把第 3 页标题字号从 30 改成 32。",
+      "expected_output": "The Skill should not activate for an isolated cosmetic edit that does not require professional presentation architecture."
+    },
+    {
+      "id": "render-web-deck",
+      "prompt": "根据已经确认的董事会故事线生成一个可在浏览器播放、可修改文字并可打印为 PDF 的网页 PPT。",
+      "expected_output": "The Skill should produce schema-valid IR, select or label a draft design system honestly, render a fixed 1920×1080 self-contained HTML deck, visually inspect it, and explain navigation, inline editing, HTML download, notes, and print. It must not claim native PPTX export or automatic edit-to-IR synchronization."
+    }
+  ]
+}

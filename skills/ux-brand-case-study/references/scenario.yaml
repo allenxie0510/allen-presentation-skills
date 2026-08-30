@@ -1,0 +1,61 @@
+schema_version: "0.1"
+scenario:
+  id: ux-brand-case-study
+  name: UX and Brand Case Study
+  version: "0.2.0"
+communication_job:
+  primary: Demonstrate design judgment, system thinking, collaboration, and credible impact so an audience can trust, hire, approve, or select the work.
+  success_condition: The audience can connect the challenge and evidence to design choices, distinguish individual and team contributions, and judge outcomes with limitations visible.
+audience:
+  - hiring-managers
+  - prospective-clients
+  - design-leaders
+  - product-executives
+decision_types:
+  - hire
+  - select
+  - approve
+  - trust
+  - invest
+storyline_patterns:
+  - context-evidence-decision-outcome-reflection
+  - challenge-insight-system-application-impact
+  - before-diagnosis-iteration-after
+evidence_standard:
+  level: high
+  claim_policy: Distinguish artifact, observation, research finding, design rationale, team contribution, individual contribution, proxy outcome, and measured impact.
+  source_policy: Preserve research method, sample, artifact provenance, outcome period, attribution limits, permissions, and confidentiality constraints.
+density:
+  default: medium
+  range:
+    - medium
+    - medium-high
+preferred_grammar:
+  - assertion
+  - evidence
+  - comparison
+  - causality
+  - process
+  - relationship
+  - narrative
+  - image-led
+required_archetypes:
+  - case-summary
+  - challenge-and-stakes
+  - role-and-constraints
+  - research-evidence
+  - insight-to-decision
+  - iteration
+  - system-overview
+  - application-gallery
+  - before-after
+  - outcomes
+  - reflection
+anti_patterns:
+  - beauty-gallery
+  - process-theater
+  - false-attribution
+  - nda-leakage
+  - final-mockups-only
+  - vanity-metrics
+default_permission_profile: content-style

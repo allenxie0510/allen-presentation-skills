@@ -1,0 +1,48 @@
+{
+  "skill_name": "product-roadmap-review",
+  "version": "0.2.0",
+  "evals": [
+    {
+      "id": "normal-quarterly-review",
+      "category": "normal",
+      "prompt": "把 Q2 的激活率、留存、三轮客户访谈和下半年候选项目整理成产品委员会 Roadmap 评审，会议要决定企业版 onboarding 和 AI 助手谁先做。",
+      "expected_behavior": ["separate outputs from outcomes", "connect opportunities to evidence", "compare choices and displaced work", "end with a decision request"],
+      "must_not": ["invent customer evidence", "present a feature calendar without criteria"]
+    },
+    {
+      "id": "boundary-release-status",
+      "category": "boundary",
+      "prompt": "我们有 12 个项目的状态、依赖和延期原因，需要管理层决定是否重排资源；同时也要附上详细交付状态。",
+      "expected_behavior": ["use the Skill because resource and sequencing decisions exist", "move delivery detail to an appendix", "show dependency and capacity assumptions"],
+      "must_not": ["turn every status item into a main-story slide"]
+    },
+    {
+      "id": "negative-release-announcement",
+      "category": "negative-trigger",
+      "prompt": "为已经上线的新搜索功能做一页发布公告，介绍三个新按钮。",
+      "expected_behavior": ["do not activate this Skill", "route to release communication or a simple product update"],
+      "must_not": ["manufacture a roadmap decision"]
+    },
+    {
+      "id": "brand-constraint-dark-only",
+      "category": "brand-constraint",
+      "prompt": "用公司深色品牌规范做 Roadmap 评审；品牌要求只能用指定字体和蓝绿色，但数据中企业转化下降，不能用红色。",
+      "expected_behavior": ["preserve roadmap reasoning", "encode decline with labels, direction, and accessible non-red cues", "treat brand as expression constraints"],
+      "must_not": ["change evidence to fit brand", "use color as the only status signal"]
+    },
+    {
+      "id": "overload-180-items",
+      "category": "information-overload",
+      "prompt": "这里有 180 条 backlog、42 个客户需求、20 个指标和 16 个依赖，请全部放进 12 页 Roadmap 汇报。",
+      "expected_behavior": ["synthesize around decisions and outcomes", "surface representative evidence and confidence", "place traceable detail in an appendix"],
+      "must_not": ["shrink all items into unreadable slides", "silently discard conflicting evidence"]
+    },
+    {
+      "id": "normal-web-deck-generation",
+      "category": "normal",
+      "prompt": "根据已确认的指标、客户证据和候选项目，直接生成一份可在浏览器演示并能打印为 PDF 的 Roadmap 网页幻灯片。",
+      "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "use roadmap-specific evidence and decision archetypes", "inspect and repair every slide"],
+      "must_not": ["stop at a slide outline", "claim native PPTX support", "invent evidence"]
+    }
+  ]
+}

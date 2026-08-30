@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:allen-ai-skills:presentation-core:editor-permissions:0.1",
+  "title": "Professional Presentation Editor Permissions",
+  "description": "Design-safe permission profiles for authored slots and freeform objects.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "default_profile", "profiles", "advanced_mode"],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "default_profile": {
+      "enum": ["locked", "content-only", "content-style", "freeform"]
+    },
+    "profiles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locked", "content-only", "content-style", "freeform"],
+      "properties": {
+        "locked": {"$ref": "#/$defs/objectPermission"},
+        "content-only": {"$ref": "#/$defs/objectPermission"},
+        "content-style": {"$ref": "#/$defs/objectPermission"},
+        "freeform": {"$ref": "#/$defs/objectPermission"}
+      }
+    },
+    "advanced_mode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unlock_action", "relock_supported", "locked_layers", "warnings"],
+      "properties": {
+        "unlock_action": {"type": "string", "minLength": 1},
+        "relock_supported": {"type": "boolean"},
+        "locked_layers": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["background", "decoration", "master-chrome", "layout-guides"]
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["off-grid", "token-override", "hierarchy-change", "unsafe-delete"]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "styleMode": {
+      "enum": ["locked", "limited", "full"]
+    },
+    "objectPermission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "content",
+        "image_replace",
+        "data",
+        "style",
+        "position",
+        "resize",
+        "delete",
+        "unlock_required"
+      ],
+      "properties": {
+        "content": {"type": "boolean"},
+        "image_replace": {"type": "boolean"},
+        "data": {"type": "boolean"},
+        "style": {"$ref": "#/$defs/styleMode"},
+        "position": {"type": "boolean"},
+        "resize": {"type": "boolean"},
+        "delete": {"type": "boolean"},
+        "unlock_required": {"type": "boolean"}
+      }
+    }
+  }
+}

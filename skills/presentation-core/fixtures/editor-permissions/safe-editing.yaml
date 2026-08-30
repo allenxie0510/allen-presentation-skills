@@ -1,0 +1,52 @@
+schema_version: "0.1"
+default_profile: content-only
+profiles:
+  locked:
+    content: false
+    image_replace: false
+    data: false
+    style: locked
+    position: false
+    resize: false
+    delete: false
+    unlock_required: true
+  content-only:
+    content: true
+    image_replace: true
+    data: true
+    style: locked
+    position: false
+    resize: false
+    delete: false
+    unlock_required: true
+  content-style:
+    content: true
+    image_replace: true
+    data: true
+    style: limited
+    position: false
+    resize: false
+    delete: false
+    unlock_required: true
+  freeform:
+    content: true
+    image_replace: true
+    data: true
+    style: full
+    position: true
+    resize: true
+    delete: true
+    unlock_required: false
+advanced_mode:
+  unlock_action: Unlock Layout
+  relock_supported: true
+  locked_layers:
+    - background
+    - decoration
+    - master-chrome
+    - layout-guides
+  warnings:
+    - off-grid
+    - token-override
+    - hierarchy-change
+    - unsafe-delete

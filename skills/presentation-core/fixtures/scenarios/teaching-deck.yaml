@@ -1,0 +1,45 @@
+schema_version: "0.1"
+scenario:
+  id: teaching-deck
+  name: Teaching Deck
+  version: "0.1"
+communication_job:
+  primary: Move learners from prior knowledge to a usable mental model and observable application.
+  success_condition: Learners can explain the concept, apply it to a new case, and identify a common misuse.
+audience:
+  - adult-learners
+  - practitioners
+decision_types:
+  - explain
+  - apply
+  - diagnose
+storyline_patterns:
+  - activate-model-practice-check-transfer
+evidence_standard:
+  level: moderate
+  claim_policy: Use accurate definitions, representative examples, and explicit boundaries for simplified models.
+  source_policy: Cite non-trivial claims and distinguish teaching analogies from literal mechanisms.
+density:
+  default: medium
+  range:
+    - low
+    - medium
+preferred_grammar:
+  - narrative
+  - process
+  - comparison
+  - causality
+  - evidence
+required_archetypes:
+  - learning-objectives
+  - concept-model
+  - worked-example
+  - misconception-check
+  - practice
+  - recap
+anti_patterns:
+  - definition-wall
+  - unexplained-jargon
+  - decorative-quiz
+  - answer-before-thinking
+default_permission_profile: content-only

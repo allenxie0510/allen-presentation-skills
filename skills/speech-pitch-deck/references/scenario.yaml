@@ -1,0 +1,59 @@
+schema_version: "0.1"
+scenario:
+  id: speech-pitch-deck
+  name: Speech and Pitch Deck
+  version: "0.2.0"
+communication_job:
+  primary: Move a live audience toward a memorable belief, follow-up, approval, adoption, or investment action.
+  success_condition: The audience can state the core idea, recall the strongest proof, and understand the next action after the speaker finishes.
+audience:
+  - conference-audience
+  - investors
+  - customers
+  - executive-stakeholders
+decision_types:
+  - believe
+  - support
+  - meet
+  - adopt
+  - invest
+storyline_patterns:
+  - one-idea-tension-resolution-action
+  - problem-insight-proof-future-ask
+  - proposition-why-now-proof-ask
+evidence_standard:
+  level: high
+  claim_policy: Distinguish story, observation, verified fact, estimate, demonstration, testimonial, and aspiration; fact-check every material claim.
+  source_policy: Preserve sources for factual claims and permissions for testimonials or media; identify missing proof rather than inventing it.
+density:
+  default: low
+  range:
+    - low
+    - medium
+preferred_grammar:
+  - assertion
+  - evidence
+  - trend
+  - comparison
+  - narrative
+  - quote
+  - image-led
+  - decision
+required_archetypes:
+  - opening-hook
+  - core-idea
+  - problem-stakes
+  - insight
+  - proof
+  - demonstration
+  - future-state
+  - explicit-ask
+  - closing-callback
+anti_patterns:
+  - biography-first
+  - agenda-first
+  - slide-as-script
+  - unsupported-superlative
+  - buried-ask
+  - dense-explainer
+default_permission_profile: content-style

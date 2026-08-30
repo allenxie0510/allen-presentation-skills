@@ -1,0 +1,229 @@
+schema_version: "0.2"
+meta:
+  id: allen-signal-grid
+  name: Allen Signal Grid
+  version: "0.1"
+  status: draft
+  provenance: designer-curated
+  reviewed_by: null
+  reviewed_at: null
+intent:
+  tone: [decisive, analytical, authored]
+  formality: high
+  energy: medium
+  density: medium-high
+best_for:
+  - product-review
+  - industry-research
+  - business-pitch
+  - design-case-study
+  - corporate-learning
+avoid_for:
+  - ceremonial-event
+  - decorative-gallery
+visual_dna:
+  composition:
+    symmetry: asymmetric
+    whitespace: balanced
+    hierarchy: sharp
+    rhythm: signal-pause-evidence
+  grid:
+    columns: 12
+    gutter: 24
+    margin_left: 120
+    margin_right: 120
+    margin_top: 84
+    margin_bottom: 72
+  color_behavior:
+    strategy: warm-neutral-with-dual-signal-accents
+    approximate_ratio:
+      background: 0.74
+      neutral: 0.20
+      accent: 0.06
+  spacing_rhythm:
+    base_unit: 12
+    steps: [12, 24, 36, 48, 72, 96]
+  image_behavior:
+    crop: evidence-first
+    treatment: natural-with-structured-caption
+    corner_radius: 0
+colors:
+  canvas: "#F3F0E8"
+  surface: "#FFFFFF"
+  text_primary: "#171A1F"
+  text_secondary: "#5E6672"
+  accent_primary: "#F15A32"
+  accent_secondary: "#315EFB"
+  positive: "#13795B"
+  negative: "#B42318"
+  rule: "rgba(23,26,31,.18)"
+typography:
+  hero:
+    family_class: humanist-sans-cjk
+    preferred_family: Noto Sans CJK SC
+    fallback: [Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif]
+    weight: 700
+    size: 110
+    line_height: 0.98
+    tracking: -0.035
+    max_line_length: 24
+    behavior: [short-lines, decisive-breaks]
+  slide_title:
+    family_class: humanist-sans-cjk
+    preferred_family: Noto Sans CJK SC
+    fallback: [Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif]
+    weight: 700
+    size: 52
+    line_height: 1.08
+    tracking: -0.025
+    max_line_length: 44
+    behavior: [assertion-led, one-or-two-lines]
+  body:
+    family_class: humanist-sans-cjk
+    preferred_family: Noto Sans CJK SC
+    fallback: [Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif]
+    weight: 400
+    size: 27
+    line_height: 1.46
+    tracking: 0
+    max_line_length: 60
+    behavior: [compact-paragraphs, strong-labels]
+  caption:
+    family_class: humanist-sans-cjk
+    preferred_family: Noto Sans CJK SC
+    fallback: [Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif]
+    weight: 500
+    size: 18
+    line_height: 1.35
+    tracking: 0.01
+    max_line_length: 76
+    behavior: [muted, source-friendly]
+  metric:
+    family_class: grotesk-numeric
+    preferred_family: Aptos Display
+    fallback: [Helvetica Neue, Arial, sans-serif]
+    weight: 700
+    size: 84
+    line_height: 0.95
+    tracking: -0.04
+    max_line_length: 12
+    behavior: [tabular-when-available, direct-label]
+font_identification:
+  exact_match: null
+  class: humanist-sans-cjk
+  characteristics: [open-counters, compact, calm-at-small-sizes]
+  recommended_substitutes: [Source Han Sans SC, PingFang SC, Microsoft YaHei]
+motifs:
+  signal-rail:
+    usage: section-and-priority-marker
+    width: 18
+    color: accent-primary
+  evidence-rule:
+    usage: assertion-to-evidence-separator
+    weight: 1
+    color: rule
+  indexed-module:
+    usage: navigation-and-sequence
+    shape: square
+  decision-bracket:
+    usage: options-and-explicit-ask
+    weight: 2
+components:
+  metric:
+    variants: [hero-number, compact-stat, delta-stat]
+    rules:
+      - Pair every value with its definition, period, and source.
+      - Use accent color only for the signal that changes a decision.
+  quote:
+    variants: [evidence-quote, reflection-quote]
+    rules:
+      - Keep only the fragment needed to support the decision.
+      - Always show attribution and evidence status.
+  chart:
+    variants: [direct-label-line, variance-bars, benchmark-dots, range-bars]
+    rules:
+      - Put the conclusion in the slide assertion, not in a legend.
+      - Label the decision-relevant series directly and show uncertainty.
+data_visualization:
+  label_strategy: Direct labels and decision annotations; values carry units and periods.
+  legend_strategy: Legends are a fallback and stay adjacent to the plotted evidence.
+  axis_strategy: Use the minimum honest axis needed; never crop a scale to exaggerate change.
+  uncertainty: Prefer ranges, scenarios, confidence labels, and source disagreements.
+motion:
+  level: restrained
+  duration_ms: 260
+  stagger_ms: 45
+  entry: Reveal in narrative order with opacity and no more than 18 pixels of translation.
+  reduced_motion: Render the final state without transforms or stagger.
+accessibility:
+  min_body_size: 24
+  min_caption_size: 16
+  color_not_only: true
+  contrast_target: AA
+  reading_order: Assertion, evidence, interpretation, source, then navigation chrome.
+runtime:
+  canvas: {width: 1920, height: 1080}
+  scaling: uniform-fixed-stage
+  output: self-contained-html
+  offline_safe: true
+archetypes:
+  cover:
+    grammar: [narrative, assertion]
+    hierarchy: [title, decision-context, date]
+    editable_slots: [title, decision-context, date]
+    variants: [cover-signal-rail, cover-indexed, cover-offset]
+  section:
+    grammar: [hierarchy]
+    hierarchy: [section-number, section-title, framing-line]
+    editable_slots: [section-title, framing-line]
+    variants: [section-index, section-rule]
+  statement:
+    grammar: [assertion, causality]
+    hierarchy: [assertion, qualifier]
+    editable_slots: [assertion, qualifier]
+    variants: [statement-left, statement-bracketed]
+  two-column:
+    grammar: [comparison, evidence]
+    hierarchy: [assertion, left-content, right-content]
+    editable_slots: [assertion, left-content, right-content]
+    variants: [two-column-balanced, two-column-emphasis]
+  comparison:
+    grammar: [comparison, decision]
+    hierarchy: [assertion, comparison-axis, evidence, implication]
+    editable_slots: [assertion, left-label, right-label, evidence, implication]
+    variants: [split-comparison, benchmark-table, before-after, tradeoff-matrix]
+  data:
+    grammar: [evidence, trend]
+    hierarchy: [assertion, primary-metric, supporting-metrics, source]
+    editable_slots: [assertion, metrics, source]
+    variants: [kpi-scorecard, metric-and-context, evidence-ledger]
+  chart:
+    grammar: [trend, comparison, evidence]
+    hierarchy: [assertion, chart, annotation, source]
+    editable_slots: [assertion, chart-data, annotation, source]
+    variants: [line-chart, variance-bars, benchmark-dots, range-bars]
+  timeline:
+    grammar: [process, narrative, decision]
+    hierarchy: [assertion, phases, confidence, gate]
+    editable_slots: [assertion, phases, confidence, gate]
+    variants: [now-next-later, phased-roadmap, milestone-evidence]
+  process:
+    grammar: [process, causality]
+    hierarchy: [assertion, stages, decision-points, outcome]
+    editable_slots: [assertion, stages, decision-points, outcome]
+    variants: [linear-process, causal-chain, learning-loop]
+  quote:
+    grammar: [quote, evidence]
+    hierarchy: [quote, attribution, evidence-status, implication]
+    editable_slots: [quote, attribution, evidence-status, implication]
+    variants: [evidence-quote, reflection-quote]
+  image:
+    grammar: [image-led, narrative, evidence]
+    hierarchy: [image, assertion, annotation, caption]
+    editable_slots: [image, assertion, annotation, caption]
+    variants: [image-full-bleed, annotated-artifact, before-after-image]
+  closing:
+    grammar: [decision, narrative]
+    hierarchy: [decision, owner, next-evidence, deadline]
+    editable_slots: [decision, owner, next-evidence, deadline]
+    variants: [closing-decision, closing-commitment]

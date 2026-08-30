@@ -1,0 +1,6 @@
+interface:
+  display_name: "Speech Pitch Deck"
+  short_description: "Memorable keynote and pitch web decks."
+  default_prompt: "Use $speech-pitch-deck to turn my idea, proof, audience, and ask into a memorable live presentation, then generate its validated IR and self-contained HTML deck."
+policy:
+  allow_implicit_invocation: true

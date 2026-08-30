@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "presentation-core",
+      "path": "skills/presentation-core",
+      "version": "0.2.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/presentation-core"
+    },
+    {
+      "name": "product-roadmap-review",
+      "path": "skills/product-roadmap-review",
+      "version": "0.2.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/product-roadmap-review"
+    },
+    {
+      "name": "industry-research-deck",
+      "path": "skills/industry-research-deck",
+      "version": "0.2.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/industry-research-deck"
+    },
+    {
+      "name": "speech-pitch-deck",
+      "path": "skills/speech-pitch-deck",
+      "version": "0.2.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/speech-pitch-deck"
+    },
+    {
+      "name": "ux-brand-case-study",
+      "path": "skills/ux-brand-case-study",
+      "version": "0.2.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/ux-brand-case-study"
+    },
+    {
+      "name": "corporate-training-workshop",
+      "path": "skills/corporate-training-workshop",
+      "version": "0.2.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop"
+    }
+  ]
+}

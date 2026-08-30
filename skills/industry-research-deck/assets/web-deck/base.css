@@ -1,0 +1,384 @@
+:root {
+  --deck-canvas: #f3f0e8;
+  --deck-surface: #ffffff;
+  --deck-text: #171a1f;
+  --deck-muted: #5e6672;
+  --deck-accent: #f15a32;
+  --deck-accent-2: #315efb;
+  --deck-positive: #13795b;
+  --deck-negative: #b42318;
+  --deck-rule: rgba(23, 26, 31, 0.18);
+  --deck-shadow: 0 30px 90px rgba(12, 18, 28, 0.22);
+  --deck-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #11151b;
+  color: var(--deck-text);
+}
+
+body {
+  font-family: "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+button { font: inherit; }
+
+.deck-viewport {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.08), transparent 28%),
+    #11151b;
+}
+
+.deck-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  transform-origin: 0 0;
+  background: var(--deck-canvas);
+  box-shadow: var(--deck-shadow);
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 0 118px, var(--deck-rule) 118px 119px, transparent 119px),
+    var(--deck-canvas);
+  transition: opacity 260ms var(--deck-ease), visibility 260ms;
+}
+
+.slide.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 100%;
+  background: var(--deck-accent);
+}
+
+.slide::after {
+  content: attr(data-sequence);
+  position: absolute;
+  right: 72px;
+  top: 42px;
+  color: var(--deck-muted);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.slide--cover {
+  background:
+    linear-gradient(118deg, transparent 0 72%, color-mix(in srgb, var(--deck-accent) 13%, transparent) 72%),
+    var(--deck-canvas);
+}
+
+.slide--cover::before,
+.slide--closing::before { width: 42px; }
+
+.slide--section::before { background: var(--deck-accent-2); }
+
+.slide__eyebrow {
+  position: absolute;
+  left: 120px;
+  top: 44px;
+  max-width: 1100px;
+  color: var(--deck-muted);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.slide__source {
+  position: absolute;
+  left: 120px;
+  right: 120px;
+  bottom: 38px;
+  color: var(--deck-muted);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.object {
+  position: absolute;
+  overflow: hidden;
+  transform-origin: center;
+}
+
+.object--text {
+  display: flex;
+  align-items: flex-start;
+  white-space: pre-wrap;
+  text-wrap: balance;
+}
+
+.object--text[data-role*="body"],
+.object--text[data-role*="context"],
+.object--text[data-role*="qualifier"] { text-wrap: pretty; }
+
+.object--metric {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: stretch;
+  padding: 34px 38px;
+  border: 1px solid var(--deck-rule);
+  background: color-mix(in srgb, var(--deck-surface) 92%, transparent);
+}
+
+.metric__label {
+  color: var(--deck-muted);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.metric__value {
+  align-self: center;
+  color: var(--deck-text);
+  font-size: 82px;
+  font-weight: 760;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.metric__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--deck-muted);
+  font-size: 18px;
+}
+
+.object--metric[data-role*="risk"] { border-top: 10px solid var(--deck-negative); }
+.object--metric[data-role*="primary"] { border-top: 10px solid var(--deck-accent-2); }
+.object--metric[data-role*="positive"] { border-top: 10px solid var(--deck-positive); }
+
+.object--shape { border: 1px solid var(--deck-rule); }
+.object--divider { background: var(--deck-rule); }
+
+.object--image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.object--table {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--deck-text);
+  font-size: 20px;
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  border-bottom: 1px solid var(--deck-rule);
+}
+
+.table__cell { padding: 17px 18px; }
+.table__row--head { font-weight: 750; background: rgba(255, 255, 255, 0.5); }
+
+.object--group {
+  display: flex;
+  align-items: stretch;
+  gap: 22px;
+  overflow: visible;
+}
+
+.group__stage {
+  position: relative;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  border: 1px solid var(--deck-rule);
+  background: var(--deck-surface);
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.group__stage:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  z-index: 2;
+  color: var(--deck-accent);
+  transform: translate(50%, -50%);
+}
+
+.object--chart {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  padding: 30px 24px 42px;
+  border-left: 1px solid var(--deck-rule);
+  border-bottom: 1px solid var(--deck-rule);
+  overflow: visible;
+}
+
+.chart__group {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+
+.chart__bar {
+  width: min(54px, 38%);
+  min-height: 3px;
+  background: var(--series-color, var(--deck-accent-2));
+  position: relative;
+}
+
+.chart__value {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  color: var(--deck-text);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.chart__category {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 12px);
+  transform: translateX(-50%);
+  color: var(--deck-muted);
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.deck-ui {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 13px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+  background: rgba(12, 16, 22, 0.72);
+  color: rgba(255,255,255,.88);
+  font-size: 13px;
+  backdrop-filter: blur(14px);
+  transform: translateX(-50%);
+  transition: opacity 180ms ease;
+}
+
+.deck-ui button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.deck-ui__progress {
+  width: 92px;
+  height: 3px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: rgba(255,255,255,.18);
+}
+
+.deck-ui__progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--deck-accent);
+  transition: width 220ms var(--deck-ease);
+}
+
+.notes-panel {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1100;
+  width: min(480px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  display: none;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(12, 16, 22, 0.92);
+  color: white;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  box-shadow: 0 20px 80px rgba(0,0,0,.35);
+}
+
+.notes-panel.visible { display: block; }
+
+body.editing .object[data-editable="true"] {
+  outline: 3px solid color-mix(in srgb, var(--deck-accent-2) 65%, transparent);
+  outline-offset: 5px;
+  cursor: text;
+}
+
+[contenteditable="true"]:focus {
+  outline-color: var(--deck-accent) !important;
+  background: rgba(255,255,255,.48);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media print {
+  @page { size: 16in 9in; margin: 0; }
+  html, body { width: auto; height: auto; overflow: visible; background: white; }
+  .deck-viewport { position: static; overflow: visible; background: white; }
+  .deck-stage { position: static; width: 1920px; height: auto; transform: none !important; box-shadow: none; }
+  .slide {
+    position: relative;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+    page-break-after: always;
+    break-after: page;
+  }
+  .deck-ui, .notes-panel { display: none !important; }
+}

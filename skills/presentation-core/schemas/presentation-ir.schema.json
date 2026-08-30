@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:allen-ai-skills:presentation-core:presentation-ir:0.1",
+  "title": "Professional Presentation IR",
+  "description": "Canonical, renderer-independent representation of a professional presentation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "deck", "slides"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "deck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "language",
+        "aspect_ratio",
+        "canvas",
+        "scenario",
+        "design_system",
+        "density",
+        "mode",
+        "metadata"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/stableId"},
+        "title": {"type": "string", "minLength": 1},
+        "language": {"type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"},
+        "aspect_ratio": {"const": "16:9"},
+        "canvas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["width", "height"],
+          "properties": {
+            "width": {"const": 1920},
+            "height": {"const": 1080}
+          }
+        },
+        "scenario": {"$ref": "#/$defs/versionedRef"},
+        "industry": {"$ref": "#/$defs/optionalRef"},
+        "brand": {"$ref": "#/$defs/optionalRef"},
+        "design_system": {"$ref": "#/$defs/versionedRef"},
+        "density": {"enum": ["low", "medium", "medium-high", "high"]},
+        "mode": {"enum": ["reading-first", "presenting-first", "hybrid"]},
+        "metadata": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["author", "confidential", "created_at", "updated_at"],
+          "properties": {
+            "author": {"type": ["string", "null"]},
+            "confidential": {"type": "boolean"},
+            "created_at": {"type": ["string", "null"], "format": "date-time"},
+            "updated_at": {"type": ["string", "null"], "format": "date-time"},
+            "source_note": {"type": ["string", "null"]}
+          }
+        }
+      }
+    },
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/slide"}
+    }
+  },
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "versionedRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?$"}
+      }
+    },
+    "optionalRef": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/versionedRef"}
+      ]
+    },
+    "grammar": {
+      "enum": [
+        "assertion",
+        "evidence",
+        "trend",
+        "comparison",
+        "causality",
+        "process",
+        "hierarchy",
+        "relationship",
+        "decision",
+        "narrative",
+        "quote",
+        "image-led"
+      ]
+    },
+    "slide": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "archetype",
+        "purpose",
+        "grammar",
+        "assertion",
+        "narrative_role",
+        "layout_variant",
+        "permission_profile",
+        "objects"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/stableId"},
+        "archetype": {"$ref": "#/$defs/slug"},
+        "purpose": {"type": "string", "minLength": 1},
+        "grammar": {"$ref": "#/$defs/grammar"},
+        "assertion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["text", "status"],
+          "properties": {
+            "text": {"type": "string", "minLength": 1},
+            "status": {"enum": ["supported", "provisional", "placeholder"]}
+          }
+        },
+        "narrative_role": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["section", "sequence"],
+          "properties": {
+            "section": {"$ref": "#/$defs/slug"},
+            "sequence": {"enum": ["opening", "context", "evidence", "explanation", "decision", "recap", "closing"]}
+          }
+        },
+        "layout_variant": {"$ref": "#/$defs/slug"},
+        "permission_profile": {"enum": ["locked", "content-only", "content-style", "freeform"]},
+        "evidence": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/evidence"}
+        },
+        "speaker_notes": {"type": ["string", "null"]},
+        "objects": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/object"}
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "claim", "source_type", "source"],
+      "properties": {
+        "id": {"$ref": "#/$defs/stableId"},
+        "claim": {"type": "string", "minLength": 1},
+        "source_type": {"enum": ["user-provided", "internal", "external", "placeholder"]},
+        "source": {"type": ["string", "null"]},
+        "accessed_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "role", "content", "frame", "style", "editable"],
+      "properties": {
+        "id": {"$ref": "#/$defs/stableId"},
+        "type": {
+          "enum": ["text", "image", "shape", "metric", "chart", "table", "divider", "icon", "group"]
+        },
+        "role": {"$ref": "#/$defs/slug"},
+        "slot_kind": {"enum": ["authored-slot", "freeform-object"]},
+        "content": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": true
+        },
+        "frame": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["x", "y", "w", "h"],
+          "properties": {
+            "x": {"type": "number", "minimum": 0, "maximum": 1920},
+            "y": {"type": "number", "minimum": 0, "maximum": 1080},
+            "w": {"type": "number", "exclusiveMinimum": 0, "maximum": 1920},
+            "h": {"type": "number", "exclusiveMinimum": 0, "maximum": 1080},
+            "rotation": {"type": "number", "minimum": -360, "maximum": 360}
+          }
+        },
+        "style": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["token"],
+          "properties": {
+            "token": {"type": "string", "minLength": 1},
+            "variant": {"type": ["string", "null"]},
+            "overrides": {
+              "type": "object",
+              "additionalProperties": {"type": ["string", "number", "boolean"]}
+            }
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "min_w": {"type": "number", "exclusiveMinimum": 0},
+            "max_w": {"type": "number", "exclusiveMinimum": 0},
+            "min_h": {"type": "number", "exclusiveMinimum": 0},
+            "max_h": {"type": "number", "exclusiveMinimum": 0},
+            "snap_to_grid": {"type": "boolean"},
+            "preserve_aspect_ratio": {"type": "boolean"}
+          }
+        },
+        "editable": {
+          "$ref": "urn:allen-ai-skills:presentation-core:editor-permissions:0.1#/$defs/objectPermission"
+        },
+        "children": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/stableId"}
+        }
+      }
+    }
+  }
+}

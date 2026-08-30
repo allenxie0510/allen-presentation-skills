@@ -1,0 +1,44 @@
+schema_version: "0.1"
+scenario:
+  id: board-review
+  name: Board Review
+  version: "0.1"
+communication_job:
+  primary: Enable board-level understanding, prioritization, and explicit decisions.
+  success_condition: Directors can distinguish performance signals, causes, risks, and decisions requiring action.
+audience:
+  - board
+  - executives
+decision_types:
+  - approve
+  - prioritize
+  - escalate
+storyline_patterns:
+  - performance-to-explanation-to-action
+evidence_standard:
+  level: high
+  claim_policy: Every material assertion is tied to a defined metric, comparison, or documented operating fact.
+  source_policy: Record the reporting period, metric definition, and source for every board-relevant number.
+density:
+  default: high
+  range:
+    - medium-high
+    - high
+preferred_grammar:
+  - assertion
+  - trend
+  - comparison
+  - causality
+  - decision
+required_archetypes:
+  - executive-summary
+  - kpi-scorecard
+  - variance-analysis
+  - risk
+  - decision-required
+anti_patterns:
+  - decorative-data
+  - vague-headlines
+  - unexplained-metrics
+  - hidden-decision
+default_permission_profile: content-only

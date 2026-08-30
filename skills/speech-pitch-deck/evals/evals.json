@@ -1,0 +1,48 @@
+{
+  "skill_name": "speech-pitch-deck",
+  "version": "0.2.0",
+  "evals": [
+    {
+      "id": "normal-seed-pitch",
+      "category": "normal",
+      "prompt": "为一款已经有 20 家付费客户的 AI 设计协作产品准备 8 分钟种子轮路演，目标是获得合伙人会议。",
+      "expected_behavior": ["state the proposition clearly", "select memorable proof", "build a spoken pitch arc", "end with a concrete follow-up ask"],
+      "must_not": ["invent traction", "put the script on slides"]
+    },
+    {
+      "id": "boundary-internal-keynote",
+      "category": "boundary",
+      "prompt": "CEO 在年度会上做 20 分钟演讲，需要让员工理解战略转向并承诺改变工作方式，但不需要投资决策。",
+      "expected_behavior": ["select keynote mode", "define the belief and behavior shift", "use credible internal proof and an action close"],
+      "must_not": ["force an investor deck structure"]
+    },
+    {
+      "id": "negative-read-only-report",
+      "category": "negative-trigger",
+      "prompt": "把 60 页年度报告排版成供董事会会前阅读的 PDF，不需要现场演讲。",
+      "expected_behavior": ["do not activate this Skill", "route to a reading-first report workflow"],
+      "must_not": ["strip necessary detail to mimic a keynote"]
+    },
+    {
+      "id": "brand-constraint-minimal",
+      "category": "brand-constraint",
+      "prompt": "按品牌规范制作发布会演讲：每页最多 12 个字，只用黑白和品牌红，禁止图表动画。",
+      "expected_behavior": ["preserve the audience shift and proof", "move detail to spoken notes", "use static direct-labeled evidence where needed"],
+      "must_not": ["remove necessary evidence", "violate legibility or contrast"]
+    },
+    {
+      "id": "overload-founder-material",
+      "category": "information-overload",
+      "prompt": "创始人给了 90 个产品功能、45 张截图、30 个指标和完整人生经历，要求全部放进 10 分钟路演。",
+      "expected_behavior": ["select the few remembered points", "prioritize decision-relevant proof", "move detail to appendix or Q&A backup"],
+      "must_not": ["shrink everything onto slides", "lead with an irrelevant biography"]
+    },
+    {
+      "id": "normal-web-deck-generation",
+      "category": "normal",
+      "prompt": "根据已经确认的主张、证据和行动号召，直接生成一份可现场演讲并能打印为 PDF 的网页幻灯片。",
+      "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "use low-density speech pacing and speaker notes", "inspect and repair every slide"],
+      "must_not": ["stop at a slide outline", "place the whole script on slides", "invent proof"]
+    }
+  ]
+}

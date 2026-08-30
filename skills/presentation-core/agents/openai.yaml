@@ -1,0 +1,6 @@
+interface:
+  display_name: "Professional Presentation Core"
+  short_description: "Plan and render scenario-aware professional web presentations."
+  default_prompt: "Use $presentation-core to turn my brief into a validated, assertion-led Presentation IR and self-contained HTML deck."
+policy:
+  allow_implicit_invocation: true

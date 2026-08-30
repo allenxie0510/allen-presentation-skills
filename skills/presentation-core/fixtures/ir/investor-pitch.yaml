@@ -1,0 +1,166 @@
+schema_version: "0.1"
+deck:
+  id: seed-investor-pitch
+  title: AI Workflow Company — Seed Pitch
+  language: en-US
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario:
+    id: investor-pitch
+    version: "0.1"
+  industry:
+    id: technology
+    version: "0.1"
+  brand: null
+  design_system:
+    id: allen-signal-grid
+    version: "0.1"
+  density: medium
+  mode: presenting-first
+  metadata:
+    author: null
+    confidential: true
+    created_at: null
+    updated_at: null
+    source_note: Synthetic fixture; company and traction statements are placeholders.
+slides:
+  - id: s01
+    archetype: cover
+    purpose: State the company thesis in one line.
+    grammar: assertion
+    assertion:
+      text: The operating layer for repeatable AI workflows.
+      status: provisional
+    narrative_role:
+      section: opening
+      sequence: opening
+    layout_variant: cover-offset
+    permission_profile: content-style
+    evidence: []
+    speaker_notes: null
+    objects:
+      - id: s01-title
+        type: text
+        role: company-thesis
+        slot_kind: authored-slot
+        content:
+          text: The operating layer for repeatable AI workflows.
+        frame: {x: 120, y: 220, w: 1320, h: 260}
+        style:
+          token: typography.hero
+          variant: null
+          overrides:
+            font_size: 96
+        editable: &content_style
+          content: true
+          image_replace: true
+          data: true
+          style: limited
+          position: false
+          resize: false
+          delete: false
+          unlock_required: true
+      - id: s01-round
+        type: text
+        role: funding-context
+        slot_kind: authored-slot
+        content:
+          text: Seed round · Confidential
+        frame: {x: 120, y: 760, w: 680, h: 60}
+        style:
+          token: typography.caption
+          variant: null
+        editable: *content_style
+  - id: s02
+    archetype: statement
+    purpose: Frame the operational problem behind unreliable AI pilots.
+    grammar: causality
+    assertion:
+      text: Teams can demo AI workflows, but they cannot operate them reliably.
+      status: provisional
+    narrative_role:
+      section: problem
+      sequence: context
+    layout_variant: statement-left
+    permission_profile: content-style
+    evidence: []
+    speaker_notes: Validate the problem with customer evidence before using this claim externally.
+    objects:
+      - id: s02-statement
+        type: text
+        role: problem-assertion
+        slot_kind: authored-slot
+        content:
+          text: Teams can demo AI workflows, but they cannot operate them reliably.
+        frame: {x: 120, y: 210, w: 1360, h: 300}
+        style:
+          token: typography.hero
+          variant: null
+          overrides:
+            font_size: 88
+        editable: *content_style
+      - id: s02-qualifier
+        type: text
+        role: problem-qualifier
+        slot_kind: authored-slot
+        content:
+          text: Ownership, evaluation, exception handling, and iteration remain fragmented.
+        frame: {x: 120, y: 610, w: 1080, h: 120}
+        style:
+          token: typography.body
+          variant: null
+        editable: *content_style
+  - id: s03
+    archetype: data
+    purpose: Show verified product pull without overstating traction.
+    grammar: evidence
+    assertion:
+      text: Product validation is visible; scale evidence is still being collected.
+      status: provisional
+    narrative_role:
+      section: proof
+      sequence: evidence
+    layout_variant: metric-and-context
+    permission_profile: content-style
+    evidence:
+      - id: ev-design-partners
+        claim: Number of active design partners.
+        source_type: placeholder
+        source: null
+        accessed_at: null
+    speaker_notes: Replace every placeholder with verified company data or remove the metric.
+    objects:
+      - id: s03-title
+        type: text
+        role: slide-assertion
+        slot_kind: authored-slot
+        content:
+          text: Product validation is visible; scale evidence is still being collected.
+        frame: {x: 120, y: 84, w: 1500, h: 140}
+        style:
+          token: typography.slide_title
+          variant: null
+        editable: *content_style
+      - id: s03-partners
+        type: metric
+        role: traction-metric
+        slot_kind: authored-slot
+        content:
+          label: Active design partners
+          value: "TBD"
+        frame: {x: 120, y: 350, w: 560, h: 260}
+        style:
+          token: components.metric.hero-number
+          variant: hero-number
+        editable: *content_style
+      - id: s03-next-proof
+        type: text
+        role: evidence-boundary
+        slot_kind: authored-slot
+        content:
+          text: Next proof point — repeat use across a complete operating cycle.
+        frame: {x: 820, y: 370, w: 820, h: 180}
+        style:
+          token: typography.body
+          variant: null
+        editable: *content_style

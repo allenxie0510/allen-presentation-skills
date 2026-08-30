@@ -1,0 +1,58 @@
+schema_version: "0.1"
+scenario:
+  id: product-roadmap-review
+  name: Product Roadmap Review
+  version: "0.2.0"
+communication_job:
+  primary: Help product leadership choose outcomes, opportunities, priorities, sequencing, and commitments under uncertainty.
+  success_condition: The audience can approve, change, stop, or sequence work with the evidence, trade-offs, dependencies, and confidence visible.
+audience:
+  - product-leadership
+  - engineering-leadership
+  - design-leadership
+  - executive-stakeholders
+decision_types:
+  - approve
+  - prioritize
+  - sequence
+  - stop
+  - escalate
+storyline_patterns:
+  - outcome-evidence-choice-commitment
+  - progress-learning-adjustment
+  - opportunity-options-priority
+evidence_standard:
+  level: high
+  claim_policy: Distinguish shipped output, observed product outcome, customer evidence, experiment result, forecast, and assumption.
+  source_policy: Preserve source, period, cohort, sample, metric definition, and confidence for material claims; triangulate customer and product evidence where possible.
+density:
+  default: high
+  range:
+    - medium-high
+    - high
+preferred_grammar:
+  - assertion
+  - evidence
+  - trend
+  - comparison
+  - causality
+  - process
+  - relationship
+  - decision
+required_archetypes:
+  - decision-summary
+  - outcome-scorecard
+  - now-next-later-roadmap
+  - opportunity-solution-tree
+  - tradeoff-matrix
+  - dependency-map
+  - risk-register
+  - decision-required
+anti_patterns:
+  - feature-list-as-strategy
+  - output-as-outcome
+  - false-date-certainty
+  - priority-without-criteria
+  - hidden-dependency
+  - backlog-tour
+default_permission_profile: content-style

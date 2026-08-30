@@ -1,0 +1,44 @@
+name: Validate public presentation Skills
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install validation dependencies
+        run: pip install PyYAML jsonschema
+      - name: Validate presentation core
+        run: python skills/presentation-core/scripts/validate-schemas.py
+      - name: Validate scenario Skills
+        run: |
+          for skill in \
+            product-roadmap-review \
+            industry-research-deck \
+            speech-pitch-deck \
+            ux-brand-case-study \
+            corporate-training-workshop
+          do
+            python "skills/$skill/scripts/validate.py"
+          done
+      - name: Render all core fixtures
+        run: |
+          for ir in skills/presentation-core/fixtures/ir/*.yaml
+          do
+            output="$RUNNER_TEMP/$(basename "$ir" .yaml).html"
+            python skills/presentation-core/scripts/render-html.py "$ir" \
+              --design skills/presentation-core/fixtures/design-systems/allen-signal-grid.yaml \
+              --output "$output" \
+              --allow-draft-design
+          done

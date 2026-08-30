@@ -1,0 +1,404 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:allen-ai-skills:presentation-core:design-system:0.2",
+  "title": "Professional Presentation Design System",
+  "description": "Designer-curated rules for expressing information across professional presentation archetypes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "meta",
+    "intent",
+    "best_for",
+    "avoid_for",
+    "visual_dna",
+    "colors",
+    "typography",
+    "motifs",
+    "components",
+    "data_visualization",
+    "motion",
+    "accessibility",
+    "runtime",
+    "archetypes"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "version", "status", "provenance"],
+      "properties": {
+        "id": {"$ref": "#/$defs/slug"},
+        "name": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?$"},
+        "status": {"enum": ["draft", "review", "approved", "deprecated"]},
+        "provenance": {"enum": ["ai-derived-candidate", "designer-curated", "designer-reviewed-ai-assisted"]},
+        "reviewed_by": {"type": ["string", "null"]},
+        "reviewed_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tone", "formality", "energy", "density"],
+      "properties": {
+        "tone": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "formality": {"enum": ["low", "medium", "high"]},
+        "energy": {"enum": ["low", "medium", "high"]},
+        "density": {"enum": ["low", "medium", "medium-high", "high"]}
+      }
+    },
+    "best_for": {"$ref": "#/$defs/slugList"},
+    "avoid_for": {"$ref": "#/$defs/slugList"},
+    "visual_dna": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["composition", "grid", "color_behavior", "spacing_rhythm", "image_behavior"],
+      "properties": {
+        "composition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["symmetry", "whitespace", "hierarchy", "rhythm"],
+          "properties": {
+            "symmetry": {"enum": ["symmetric", "asymmetric", "mixed"]},
+            "whitespace": {"enum": ["compact", "balanced", "generous"]},
+            "hierarchy": {"enum": ["soft", "moderate", "sharp"]},
+            "rhythm": {"type": "string", "minLength": 1}
+          }
+        },
+        "grid": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["columns", "gutter", "margin_left", "margin_right", "margin_top", "margin_bottom"],
+          "properties": {
+            "columns": {"type": "integer", "minimum": 2, "maximum": 24},
+            "gutter": {"type": "number", "minimum": 0, "maximum": 192},
+            "margin_left": {"type": "number", "minimum": 0, "maximum": 480},
+            "margin_right": {"type": "number", "minimum": 0, "maximum": 480},
+            "margin_top": {"type": "number", "minimum": 0, "maximum": 270},
+            "margin_bottom": {"type": "number", "minimum": 0, "maximum": 270}
+          }
+        },
+        "color_behavior": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "approximate_ratio"],
+          "properties": {
+            "strategy": {"type": "string", "minLength": 1},
+            "approximate_ratio": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["background", "neutral", "accent"],
+              "properties": {
+                "background": {"type": "number", "minimum": 0, "maximum": 1},
+                "neutral": {"type": "number", "minimum": 0, "maximum": 1},
+                "accent": {"type": "number", "minimum": 0, "maximum": 1}
+              }
+            }
+          }
+        },
+        "spacing_rhythm": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["base_unit", "steps"],
+          "properties": {
+            "base_unit": {"type": "number", "exclusiveMinimum": 0},
+            "steps": {
+              "type": "array",
+              "minItems": 4,
+              "items": {"type": "number", "exclusiveMinimum": 0}
+            }
+          }
+        },
+        "image_behavior": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["crop", "treatment", "corner_radius"],
+          "properties": {
+            "crop": {"type": "string", "minLength": 1},
+            "treatment": {"type": "string", "minLength": 1},
+            "corner_radius": {"type": "number", "minimum": 0}
+          }
+        }
+      }
+    },
+    "colors": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/colorValue"},
+      "required": [
+        "canvas",
+        "surface",
+        "text_primary",
+        "text_secondary",
+        "accent_primary",
+        "positive",
+        "negative",
+        "rule"
+      ],
+      "properties": {
+        "canvas": {"$ref": "#/$defs/colorValue"},
+        "surface": {"$ref": "#/$defs/colorValue"},
+        "text_primary": {"$ref": "#/$defs/colorValue"},
+        "text_secondary": {"$ref": "#/$defs/colorValue"},
+        "accent_primary": {"$ref": "#/$defs/colorValue"},
+        "positive": {"$ref": "#/$defs/colorValue"},
+        "negative": {"$ref": "#/$defs/colorValue"},
+        "rule": {"$ref": "#/$defs/colorValue"}
+      }
+    },
+    "typography": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/typeRole"},
+      "required": ["hero", "slide_title", "body", "caption", "metric"],
+      "properties": {
+        "hero": {"$ref": "#/$defs/typeRole"},
+        "slide_title": {"$ref": "#/$defs/typeRole"},
+        "body": {"$ref": "#/$defs/typeRole"},
+        "caption": {"$ref": "#/$defs/typeRole"},
+        "metric": {"$ref": "#/$defs/typeRole"}
+      }
+    },
+    "font_identification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exact_match", "class", "characteristics", "recommended_substitutes"],
+      "properties": {
+        "exact_match": {"type": ["string", "null"]},
+        "class": {"type": "string", "minLength": 1},
+        "characteristics": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "recommended_substitutes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "motifs": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "minProperties": 1,
+        "additionalProperties": {"type": ["string", "number", "boolean"]}
+      }
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/component"},
+      "required": ["metric", "quote", "chart"],
+      "properties": {
+        "metric": {"$ref": "#/$defs/component"},
+        "quote": {"$ref": "#/$defs/component"},
+        "chart": {"$ref": "#/$defs/component"}
+      }
+    },
+    "data_visualization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label_strategy", "legend_strategy", "axis_strategy", "uncertainty"],
+      "properties": {
+        "label_strategy": {"type": "string", "minLength": 1},
+        "legend_strategy": {"type": "string", "minLength": 1},
+        "axis_strategy": {"type": "string", "minLength": 1},
+        "uncertainty": {"type": "string", "minLength": 1}
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "duration_ms", "stagger_ms", "entry", "reduced_motion"],
+      "properties": {
+        "level": {"enum": ["none", "restrained", "expressive"]},
+        "duration_ms": {"type": "integer", "minimum": 0, "maximum": 3000},
+        "stagger_ms": {"type": "integer", "minimum": 0, "maximum": 1000},
+        "entry": {"type": "string", "minLength": 1},
+        "reduced_motion": {"type": "string", "minLength": 1}
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min_body_size", "min_caption_size", "color_not_only", "contrast_target", "reading_order"],
+      "properties": {
+        "min_body_size": {"type": "number", "minimum": 16},
+        "min_caption_size": {"type": "number", "minimum": 12},
+        "color_not_only": {"const": true},
+        "contrast_target": {"enum": ["AA", "AAA"]},
+        "reading_order": {"type": "string", "minLength": 1}
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canvas", "scaling", "output", "offline_safe"],
+      "properties": {
+        "canvas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["width", "height"],
+          "properties": {
+            "width": {"const": 1920},
+            "height": {"const": 1080}
+          }
+        },
+        "scaling": {"const": "uniform-fixed-stage"},
+        "output": {"const": "self-contained-html"},
+        "offline_safe": {"type": "boolean"}
+      }
+    },
+    "archetypes": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/archetype"},
+      "required": [
+        "cover",
+        "section",
+        "statement",
+        "two-column",
+        "comparison",
+        "data",
+        "chart",
+        "timeline",
+        "process",
+        "quote",
+        "image",
+        "closing"
+      ],
+      "properties": {
+        "cover": {"$ref": "#/$defs/archetype"},
+        "section": {"$ref": "#/$defs/archetype"},
+        "statement": {"$ref": "#/$defs/archetype"},
+        "two-column": {"$ref": "#/$defs/archetype"},
+        "comparison": {"$ref": "#/$defs/archetype"},
+        "data": {"$ref": "#/$defs/archetype"},
+        "chart": {"$ref": "#/$defs/archetype"},
+        "timeline": {"$ref": "#/$defs/archetype"},
+        "process": {"$ref": "#/$defs/archetype"},
+        "quote": {"$ref": "#/$defs/archetype"},
+        "image": {"$ref": "#/$defs/archetype"},
+        "closing": {"$ref": "#/$defs/archetype"}
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "slugList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/slug"}
+    },
+    "colorValue": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 64
+    },
+    "typeRole": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["family_class", "preferred_family", "fallback", "weight", "size", "line_height", "tracking"],
+      "properties": {
+        "family_class": {"type": "string", "minLength": 1},
+        "preferred_family": {"type": ["string", "null"]},
+        "fallback": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "weight": {"type": "integer", "minimum": 100, "maximum": 900, "multipleOf": 100},
+        "size": {"type": "number", "exclusiveMinimum": 0},
+        "line_height": {"type": "number", "minimum": 0.7, "maximum": 2.5},
+        "tracking": {"type": "number", "minimum": -0.2, "maximum": 0.5},
+        "max_line_length": {"type": "integer", "minimum": 10, "maximum": 120},
+        "behavior": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variants", "rules"],
+      "properties": {
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/slug"}
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "archetype": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["grammar", "hierarchy", "editable_slots", "variants"],
+      "properties": {
+        "grammar": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "assertion",
+              "evidence",
+              "trend",
+              "comparison",
+              "causality",
+              "process",
+              "hierarchy",
+              "relationship",
+              "decision",
+              "narrative",
+              "quote",
+              "image-led"
+            ]
+          }
+        },
+        "hierarchy": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "editable_slots": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/slug"}
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/slug"}
+        },
+        "avoid": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}
