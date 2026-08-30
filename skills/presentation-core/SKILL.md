@@ -47,8 +47,9 @@ systems, renderer/editor work, or changes that affect more than one schema.
   [schemas/design-system.schema.json](schemas/design-system.schema.json). Mark new
   systems `draft`; only a designer may promote one to `approved`.
 - For theme selection, read `themes/index.yaml` first. Load only shortlisted
-  `preview.md` files, then the selected `theme.yaml` and `theme.css`. Do not read
-  every full theme before the scenario and shortlist are known.
+  `preview.md` files, then the selected `theme.yaml`, `theme.css`, and its
+  `design-system.md` when present. Do not read every full theme before the
+  scenario and shortlist are known.
 - For Allen design-system anatomy and scenario expression profiles, read
   [references/allen-design-system.md](references/allen-design-system.md).
 - For an actual browser deck, read

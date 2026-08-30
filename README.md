@@ -14,7 +14,8 @@
 
 ## Presentation Theme Gallery · 演示主题画廊
 
-以下六套 `0.3.0` 主题目前均为**草稿**。画廊按场景展示 15 组真实渲染结果；
+以下六套主题目前均为**草稿**；Signal Grid 已升级为 `0.4.0`，其余主题仍为
+`0.3.0`。画廊按场景展示 15 组真实渲染结果；
 每组依次为封面页、核心组件页和收尾页，并使用同一份场景 Presentation IR，
 便于比较主题差异，而不是比较内容差异。
 
@@ -30,7 +31,7 @@
   <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/product-roadmap-review/signal-grid-03-closing.webp" width="32.5%" alt="产品路线图评审，信号网格主题，收尾页" />
 </p>
 
-> 温暖中性色、橙色行动信号与蓝色证据结构，适合产品和经营判断。
+> 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
 
 #### [Executive Night · 董事会夜幕](skills/presentation-core/themes/executive-night/)
 
@@ -84,7 +85,7 @@
   <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/industry-research-deck/signal-grid-03-closing.webp" width="32.5%" alt="行业研究演示，信号网格主题，收尾页" />
 </p>
 
-> 温暖中性色、橙色行动信号与蓝色证据结构，适合产品和经营判断。
+> 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
 
 ### Speech Pitch Deck · 演讲与路演
 
@@ -142,7 +143,7 @@
   <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-grid-03-closing.webp" width="32.5%" alt="UX 与品牌案例，信号网格主题，收尾页" />
 </p>
 
-> 温暖中性色、橙色行动信号与蓝色证据结构，适合产品和经营判断。
+> 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
 
 #### [Stage Contrast · 舞台对比](skills/presentation-core/themes/stage-contrast/)
 
@@ -176,7 +177,7 @@
   <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/signal-grid-03-closing.webp" width="32.5%" alt="企业培训与工作坊，信号网格主题，收尾页" />
 </p>
 
-> 温暖中性色、橙色行动信号与蓝色证据结构，适合产品和经营判断。
+> 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
 
 #### [Artifact Editorial · 作品集画册](skills/presentation-core/themes/artifact-editorial/)
 

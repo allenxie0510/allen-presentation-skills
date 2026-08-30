@@ -1,22 +1,22 @@
 schema_version: "0.1"
-meta: {id: signal-grid, name: Signal Grid, name_zh: 信号网格, version: "0.3.0", status: draft, provenance: designer-curated}
+meta: {id: signal-grid, name: Signal Grid, name_zh: 信号网格, version: "0.4.0", status: draft, provenance: designer-curated}
 design_system: {id: allen-signal-grid, minimum_version: "0.1"}
 intent:
-  tagline: 用清晰信号推动判断
-  mood: [decisive, analytical, warm]
-  tone: [executive, product, evidence-led]
+  tagline: 把证据、取舍与行动压缩成清晰信号
+  mood: [decisive, editorial, progressive]
+  tone: [executive, product, evidence-led, authored]
   formality: high
   density: medium-high
 best_for: [product-roadmap-review, industry-research-deck]
 avoid_for: [ceremonial-event]
 colors:
-  canvas: "#F3F0E8"
+  canvas: "#F4F4F6"
   surface: "#FFFFFF"
-  text_primary: "#171A1F"
-  text_secondary: "#5E6672"
-  accent_primary: "#F15A32"
-  accent_secondary: "#315EFB"
-  positive: "#13795B"
-  negative: "#B42318"
-  rule: "rgba(23,26,31,.18)"
+  text_primary: "#0D0E10"
+  text_secondary: "#666871"
+  accent_primary: "#B9F227"
+  accent_secondary: "#5C63E8"
+  positive: "#12805C"
+  negative: "#D84A2F"
+  rule: "rgba(13,14,16,.16)"
 stylesheet: theme.css

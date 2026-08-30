@@ -8,9 +8,9 @@ themes:
   - id: signal-grid
     name: Signal Grid
     name_zh: 信号网格
-    tagline: 用清晰信号推动判断
-    mood: [decisive, analytical, warm]
-    tone: [executive, product, evidence-led]
+    tagline: 把证据、取舍与行动压缩成清晰信号
+    mood: [decisive, editorial, progressive]
+    tone: [executive, product, evidence-led, authored]
     formality: high
     density: medium-high
     best_for: [product-roadmap-review, industry-research-deck]
