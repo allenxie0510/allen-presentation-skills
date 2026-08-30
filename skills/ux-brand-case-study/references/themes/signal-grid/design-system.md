@@ -1,4 +1,4 @@
-# Signal Grid 0.4.1 design system
+# Signal Grid 0.5.0 design system
 
 Signal Grid is an editorial operating-review system for product decisions. It
 translates evidence, trade-offs, commitment, and uncertainty into a small number
@@ -84,6 +84,20 @@ the others remain small semantic annotations.
 - Crop decisively to 4:3, 3:2, or a tall evidence rail. Use a 28–36 px radius
   when the image is a panel; use square corners for annotated artifacts.
 - Captions state what the image proves, not what it depicts.
+- Every image object sets `fit` and an explicit, visually inspected `position`;
+  renderer-default centering is not an authored crop.
+- Use an image rhythm across a short sequence rather than filling every page:
+  the NOVA Flow preview uses `1 / 0 / 2` image slots for context, analytical
+  pause, and decision evidence.
+- A cover image slot may occupy 35–42% of the canvas width. Repeated evidence
+  slots share an exact left edge and width, with a 24 px gap on the 8 px rhythm.
+- Generated concept imagery must be labeled as synthetic, keep provenance beside
+  the assets, and never be presented as a real customer or research session.
+
+For asset qualification, crop inspection, disclosure, and delivery checks, read
+[image-realism-qa.md](image-realism-qa.md). The bundled NOVA Flow asset manifest
+lives at `gallery/assets/nova-flow/SOURCES.md` in `presentation-core` and at
+`assets/nova-flow/SOURCES.md` in the standalone Product Roadmap Review Skill.
 
 ## 3. Product-roadmap components
 
@@ -159,4 +173,6 @@ the others remain small semantic annotations.
   every signal has a non-color cue.
 - Reject a render if it contains clipped text, equal-weight card repetition,
   more than two competing focal points, unexplained decorative gradients,
-  or an action signal unsupported by evidence.
+  an action signal unsupported by evidence, an unqualified stock image, a
+  generated scene without disclosure, or a default-centered crop that weakens
+  the subject.

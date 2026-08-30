@@ -1,4 +1,4 @@
-/* Signal Grid 0.4.1 — editorial operating-review system. */
+/* Signal Grid 0.5.0 — editorial operating-review system. */
 @font-face {
   font-family: "Smiley Sans";
   src: url("./assets/fonts/SmileySans-Oblique.woff2") format("woff2");
@@ -94,6 +94,45 @@ body[data-theme="signal-grid"] .object--text[data-role="decision-brief"] {
   line-height: 1.55 !important;
   letter-spacing: 0 !important;
   text-wrap: pretty;
+}
+
+body[data-theme="signal-grid"] .object--image[data-role^="nova-"] {
+  overflow: hidden;
+  border-radius: 36px;
+  background: #d9d9dc;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .16);
+}
+
+body[data-theme="signal-grid"] .object--image[data-role^="nova-"] img {
+  filter: saturate(.88) contrast(1.025);
+  transform: scale(1.002);
+}
+
+body[data-theme="signal-grid"] .object--text[data-role="image-caption"],
+body[data-theme="signal-grid"] .object--text[data-role="evidence-photo-caption"] {
+  z-index: 4;
+  align-items: center;
+  width: max-content !important;
+  max-width: 580px;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, .26);
+  border-radius: 999px;
+  background: rgba(13, 14, 16, .72);
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: .06em !important;
+  backdrop-filter: blur(8px);
+}
+
+body[data-theme="signal-grid"] .object--text[data-role="concept-disclosure"] {
+  align-items: center;
+  color: #777a83;
+  font-size: 13px !important;
+  font-weight: 650 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .075em !important;
 }
 
 body[data-theme="signal-grid"] .object--text[data-role="evidence-interpretation"],
@@ -408,6 +447,13 @@ body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--d
   height: 444px !important;
 }
 
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--data .object--metric[data-role="supporting-metric"] {
+  left: 1340px !important;
+  top: 64px !important;
+  width: 516px !important;
+  height: 444px !important;
+}
+
 body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--data .object--metric[data-role="risk-metric"] {
   left: 824px !important;
   top: 534px !important;
@@ -565,6 +611,109 @@ body[data-theme="signal-grid"] .object--metric[data-role="decision-review"] .met
 body[data-theme="signal-grid"] .object--metric[data-role="decision-review"] .metric__meta span:last-child {
   border-color: rgba(255, 255, 255, .42);
   color: var(--signal-lime);
+}
+
+/* NOVA Flow concept-project preview: image evidence replaces decorative fields. */
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) {
+  background: var(--signal-ink);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"])::before {
+  left: 64px;
+  top: 64px;
+  width: 1052px;
+  height: 952px;
+  border-radius: 36px;
+  background: #fff;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"])::after {
+  right: 92px;
+  top: 92px;
+  border-color: rgba(255, 255, 255, .52);
+  background: rgba(13, 14, 16, .28);
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .slide__eyebrow {
+  left: 196px;
+  top: 104px;
+  z-index: 3;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .slide__eyebrow::before {
+  content: "";
+  position: absolute;
+  left: -76px;
+  top: 1px;
+  width: 52px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--signal-lime);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="deck-title"] {
+  left: 120px !important;
+  top: 236px !important;
+  width: 900px !important;
+  height: 392px !important;
+  font-size: 88px !important;
+  line-height: 1.08 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="deck-title"]::before,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="deck-title"]::after {
+  content: none;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="decision-context"] {
+  left: 120px !important;
+  top: 684px !important;
+  width: 820px !important;
+  height: 72px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="decision-brief"] {
+  left: 120px !important;
+  top: 798px !important;
+  width: 820px !important;
+  height: 104px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--cover:has(.object--image[data-role="nova-cover-photo"]) .object--text[data-role="concept-disclosure"] {
+  left: 120px !important;
+  top: 944px !important;
+  width: 820px !important;
+  height: 30px !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) {
+  background: var(--signal-ink);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"])::after {
+  right: 92px;
+  left: auto;
+  top: 92px;
+  border-color: rgba(255, 255, 255, .52);
+  background: rgba(13, 14, 16, .28);
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-statement"] {
+  left: 104px !important;
+  top: 306px !important;
+  width: 950px !important;
+  height: 410px !important;
+  font-size: 70px !important;
+  line-height: 1.11 !important;
+}
+
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-statement"]::before,
+body[data-theme="signal-grid"][data-scenario="product-roadmap-review"] .slide--closing:has(.object--image[data-role="nova-usability-photo"]) .object--text[data-role="decision-statement"]::after {
+  content: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

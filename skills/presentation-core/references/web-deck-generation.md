@@ -65,6 +65,9 @@ render.
 - Do not invent images, logos, metrics, quotes, approvals, or sources.
 - Use relative local images or data URLs. Remote images require explicit
   `--allow-remote-assets` because they break offline delivery.
+- For photographic image objects, set both `fit` and an explicit `position` in
+  IR. The renderer maps them to `object-fit` and `object-position`; default
+  centering is a fallback, not an authored crop.
 - Theme stylesheets may reference local fonts or other assets inside their own
   theme directory. The renderer inlines them as data URLs and rejects missing,
   remote, protocol-based, or path-escaping theme assets.

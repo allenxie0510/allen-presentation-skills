@@ -300,7 +300,11 @@ def render_object(obj: dict[str, Any], design: dict[str, Any], base_dir: Path, a
         src = embed_image(str(content.get("src", "")), base_dir, allow_remote)
         alt = html.escape(str(content.get("alt", "")), quote=True)
         fit = html.escape(str(content.get("fit", "cover")), quote=True)
-        inner = f'<img src="{html.escape(src, quote=True)}" alt="{alt}" style="object-fit:{fit}">'
+        position = html.escape(str(content.get("position", "center center")), quote=True)
+        inner = (
+            f'<img src="{html.escape(src, quote=True)}" alt="{alt}" '
+            f'style="object-fit:{fit};object-position:{position}">'
+        )
     elif object_type == "table":
         columns = content.get("columns", [])
         rows = content.get("rows", [])
