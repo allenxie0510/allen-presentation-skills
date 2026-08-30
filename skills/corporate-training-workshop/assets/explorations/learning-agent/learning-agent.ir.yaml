@@ -1,0 +1,184 @@
+schema_version: "0.1"
+deck:
+  id: learning-agent-direction-study
+  title: Learning Agent
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: corporate-training-workshop, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium
+  mode: presenting-first
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Synthetic Learning Agent direction study; no real client or measured outcome.
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Connect Agent learning to accountable workplace delegation.
+    grammar: narrative
+    assertion: {text: 把会聊天的 AI，变成能完成工作的协作者, status: provisional}
+    narrative_role: {section: relevance-opening, sequence: opening}
+    layout_variant: cover-indexed
+    permission_profile: content-style
+    objects:
+      - &title
+        id: s01-title
+        type: text
+        role: deck-title
+        content: {text: "LEARNING\nAGENT"}
+        frame: {x: 760, y: 170, w: 1000, h: 270}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 108}}
+        editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}
+      - id: s01-promise
+        type: text
+        role: learning-promise
+        content: {text: "把会聊天的 AI，\n变成能完成工作的协作者。"}
+        frame: {x: 760, y: 485, w: 920, h: 180}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 47}}
+        editable: *edit
+      - id: s01-context
+        type: text
+        role: workshop-context
+        content: {text: 企业员工工作坊 · AI Agent 顾问 · 90 MIN}
+        frame: {x: 760, y: 765, w: 800, h: 58}
+        style: {token: typography.body, variant: null, overrides: {font_size: 20}}
+        editable: *edit
+      - id: s01-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC CONCEPT · 仅用于视觉方向评审}
+        frame: {x: 760, y: 950, w: 660, h: 30}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit
+      - id: s01-photo
+        type: image
+        role: workshop-wide-photo
+        content:
+          src: assets/photos/learning-agent-workshop-wide.webp
+          alt: Learning Agent 概念工作坊中，顾问与企业员工围绕任务卡进行讨论
+          fit: cover
+          position: center center
+        frame: {x: 0, y: 0, w: 680, h: 1080}
+        style: {token: image.documentary, variant: workshop-wide}
+        constraints: {min_w: 640, min_h: 800, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s01-caption
+        type: text
+        role: photo-caption
+        content: {text: 01 / PRACTICE BEFORE PROMISE}
+        frame: {x: 44, y: 1004, w: 520, h: 32}
+        style: {token: typography.caption, variant: photo-overlay, overrides: {font_size: 12}}
+        editable: *edit
+
+  - id: s02
+    archetype: process
+    purpose: Explain the smallest useful Agent delegation model.
+    grammar: process
+    assertion: {text: Agent 的关键不是更会回答，而是能在边界内持续行动, status: provisional}
+    narrative_role: {section: mental-model, sequence: explanation}
+    layout_variant: learning-loop
+    permission_profile: content-style
+    objects:
+      - id: s02-kicker
+        type: text
+        role: model-kicker
+        content: {text: AGENT ≠ CHATBOT}
+        frame: {x: 112, y: 116, w: 640, h: 52}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 18}}
+        editable: *edit
+      - id: s02-title
+        type: text
+        role: slide-assertion
+        content: {text: "Agent 的关键不是更会回答，\n而是能在边界内持续行动。"}
+        frame: {x: 112, y: 190, w: 1510, h: 190}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 54}}
+        editable: *edit
+      - id: s02-loop
+        type: group
+        role: delegation-stages
+        content: {stages: ["01\n定目标", "02\n给上下文", "03\n让它行动", "04\n人来验收"]}
+        frame: {x: 112, y: 500, w: 1696, h: 250}
+        style: {token: components.process.learning-loop, variant: delegation-loop}
+        editable: *edit
+      - id: s02-boundary
+        type: text
+        role: human-boundary
+        content: {text: 人类保留：授权边界 · 来源检查 · 异常处理 · 最终责任}
+        frame: {x: 112, y: 850, w: 1450, h: 80}
+        style: {token: typography.body, variant: null, overrides: {font_size: 23}}
+        editable: *edit
+      - id: s02-note
+        type: text
+        role: model-note
+        content: {text: 这是一套概念教学模型，不代表特定 Agent 产品能力。}
+        frame: {x: 112, y: 960, w: 920, h: 34}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 12}}
+        editable: *edit
+
+  - id: s03
+    archetype: closing
+    purpose: Launch a realistic practice that ends in a reusable work artifact.
+    grammar: decision
+    assertion: {text: 把一次会前准备，真正交给 Agent, status: provisional}
+    narrative_role: {section: activity-brief, sequence: decision}
+    layout_variant: closing-commitment
+    permission_profile: content-style
+    objects:
+      - id: s03-label
+        type: text
+        role: activity-label
+        content: {text: PRACTICE 01 · 12 MIN}
+        frame: {x: 112, y: 108, w: 520, h: 52}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 17}}
+        editable: *edit
+      - id: s03-title
+        type: text
+        role: practice-title
+        content: {text: "把一次会前准备，\n真正交给 Agent。"}
+        frame: {x: 112, y: 190, w: 920, h: 190}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 59}}
+        editable: *edit
+      - id: s03-photo
+        type: image
+        role: practice-detail-photo
+        content:
+          src: assets/photos/learning-agent-practice-detail.webp
+          alt: 同一组学员在桌面上排列 Agent 委托步骤卡
+          fit: cover
+          position: center center
+        frame: {x: 1010, y: 92, w: 798, h: 600}
+        style: {token: image.documentary, variant: practice-detail}
+        constraints: {min_w: 680, min_h: 480, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s03-steps
+        type: group
+        role: practice-steps
+        content: {stages: ["输入\n目标与资料", "执行\n产出会前简报", "验收\n来源与边界"]}
+        frame: {x: 112, y: 535, w: 800, h: 260}
+        style: {token: components.process.activity, variant: practice-steps}
+        editable: *edit
+      - id: s03-output
+        type: text
+        role: expected-output
+        content: {text: 输出 · 一张可复用的 Agent 委托卡}
+        frame: {x: 112, y: 875, w: 780, h: 66}
+        style: {token: typography.body, variant: null, overrides: {font_size: 23}}
+        editable: *edit
+      - id: s03-fallback
+        type: text
+        role: facilitator-fallback
+        content: {text: 无可用 Agent 时：用纸卡模拟输入、行动与验收。}
+        frame: {x: 1010, y: 842, w: 798, h: 84}
+        style: {token: typography.body, variant: null, overrides: {font_size: 20}}
+        editable: *edit
+      - id: s03-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC WORKSHOP SCENE · 概念练习，非真实项目记录}
+        frame: {x: 1010, y: 955, w: 798, h: 30}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit

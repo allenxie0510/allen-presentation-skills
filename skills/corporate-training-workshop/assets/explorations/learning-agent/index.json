@@ -1,0 +1,12 @@
+{
+  "id": "learning-agent",
+  "ir": "learning-agent.ir.yaml",
+  "design": "../../../references/allen-signal-grid.yaml",
+  "slide_labels": ["identity", "reasoning", "practice"],
+  "routes": [
+    {"id": "learning-blueprint", "name": "Learning Blueprint / 学习蓝图", "theme": "routes/learning-blueprint/theme.yaml"},
+    {"id": "workshop-cut", "name": "Workshop Cut / 现场切片", "theme": "routes/workshop-cut/theme.yaml"},
+    {"id": "delegation-protocol", "name": "Delegation Protocol / 委托协议", "theme": "routes/delegation-protocol/theme.yaml"}
+  ]
+}
+

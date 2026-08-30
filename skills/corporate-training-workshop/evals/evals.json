@@ -43,6 +43,27 @@
       "prompt": "根据已确认的绩效需求、练习与评估方案，直接生成一份可用于带领 Workshop 并能打印为 PDF 的网页幻灯片。",
       "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "include activities, practice, transfer, and facilitator notes", "inspect and repair every slide"],
       "must_not": ["stop at a slide outline", "crowd facilitator instructions onto participant slides", "promise transfer without evidence"]
+    },
+    {
+      "id": "routing-existing-theme-direct",
+      "category": "normal",
+      "prompt": "使用已经选定的 Learning Canvas 主题，把这份真实的新经理反馈培训资料直接做成完整网页 Workshop。",
+      "expected_behavior": ["use the selected existing theme", "generate the complete workshop", "preserve evidence and facilitation requirements"],
+      "must_not": ["create three new FRAME directions", "pause for a second theme-selection round"]
+    },
+    {
+      "id": "routing-frame-three-directions",
+      "category": "normal",
+      "prompt": "这是一个新的安全领导力培训项目。请按 Allen FRAME，使用同一内容和素材先做三个结构明显不同的视觉方向，暂时不要完成整套模板。",
+      "expected_behavior": ["normalize one shared brief and asset set", "render clarity baseline, context translation, and authored leap", "show representative frames for fair comparison", "stop for user selection or mixing"],
+      "must_not": ["change content between routes", "complete the full deck before selection", "mark an agent preference as user-approved"]
+    },
+    {
+      "id": "routing-real-project-generalization",
+      "category": "normal",
+      "prompt": "用我们真实的门店服务补救培训项目测试 Learning Agent 候选视觉方向的泛化性。先做基线压力测试，不要直接重设计，也不要覆盖正式主题。",
+      "expected_behavior": ["verify a real-project input package", "freeze the candidate version", "render five representative stress frames", "separate content substitution, slot gaps, and conceptual mismatch", "return a keep-break-adapt report"],
+      "must_not": ["reuse Learning Agent sample claims", "invent business results or learner evidence", "hide failures with page-specific styling", "overwrite the official theme"]
     }
   ]
 }

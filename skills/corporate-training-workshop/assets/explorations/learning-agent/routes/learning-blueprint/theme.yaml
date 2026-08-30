@@ -1,0 +1,23 @@
+schema_version: "0.1"
+meta: {id: learning-blueprint, name: Learning Blueprint, name_zh: 学习蓝图, version: "0.4.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用清晰色块与远距排版建立最可靠的培训阅读路径
+  mood: [direct, energetic, legible]
+  tone: [instructional, confident, practical]
+  formality: medium
+  density: medium
+best_for: [corporate-training-workshop]
+avoid_for: [reflective-essay]
+colors:
+  canvas: "#F3F4EE"
+  surface: "#FFFFFB"
+  text_primary: "#111827"
+  text_secondary: "#59616F"
+  accent_primary: "#1455FF"
+  accent_secondary: "#B6F44A"
+  positive: "#237A57"
+  negative: "#C24737"
+  rule: "rgba(17,24,39,.18)"
+stylesheet: theme.css
+

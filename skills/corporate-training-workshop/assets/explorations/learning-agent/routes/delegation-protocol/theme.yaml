@@ -1,0 +1,23 @@
+schema_version: "0.1"
+meta: {id: delegation-protocol, name: Delegation Protocol, name_zh: 委托协议, version: "0.4.0", status: draft, provenance: designer-curated}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 把 Agent 教学写成一份可执行、可验收的工作协议
+  mood: [precise, authored, kinetic]
+  tone: [operational, provocative, accountable]
+  formality: high
+  density: medium
+best_for: [corporate-training-workshop]
+avoid_for: [wellbeing-retreat]
+colors:
+  canvas: "#090C13"
+  surface: "#101725"
+  text_primary: "#F7F8FB"
+  text_secondary: "#B9C1D1"
+  accent_primary: "#2E5BFF"
+  accent_secondary: "#BCF64A"
+  positive: "#47C892"
+  negative: "#F06454"
+  rule: "rgba(247,248,251,.22)"
+stylesheet: theme.css
+

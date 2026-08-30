@@ -1,0 +1,108 @@
+schema_version: "0.1"
+project:
+  id: learning-agent
+  theme: learning-agent
+  theme_version: "0.4.0"
+  scenario: corporate-training-workshop
+  status: review
+foundation:
+  context_status: synthetic-concept
+  concept_thesis: 把 Agent 从抽象的 AI 能力转译为一套员工可以练习、委托并验收的工作协议，使学习行为而不是科技想象成为视觉主体。
+  visual_motif: 目标、上下文、行动与人类验收组成四个可追踪的委托检查点，并在现场任务卡中获得真实物证。
+  replaceability_test: 移除标题后仍应看见员工在完成一次可验收的工作委托；若只剩蓝色科技背景、办公人物与通用卡片，则概念失败。
+  principles:
+    - id: cobalt-as-orientation
+      source: User reference attachments 1-3 and meeting-room delivery context
+      intent: 用单一强品牌色标记章节、当前步骤与练习动作，而不是营造模糊科技氛围。
+      observable_signal: 钴蓝形成有边界的标题场、教学阶段或操作区域，酸性绿只标记学习动作或人类检查点。
+      failure_case: 蓝色渐变铺满页面，荧光色与装饰符号同时争夺注意力。
+      override_boundary: 反思、证据与说明页面可以以中性背景为主，品牌色只做定位。
+    - id: practice-is-evidence
+      source: Corporate training performance contract and user reference 2
+      intent: 让人物照片证明员工正在执行学习任务，而不是为页面提供企业氛围。
+      observable_signal: 照片中可见任务卡、讨论、记录与委托排序，人物目光和手部行为与练习一致。
+      failure_case: 摆拍微笑、握手、看镜头或与课程目标无关的办公照。
+      override_boundary: 解释 Agent 机制的推理页可无照片，以保护模型清晰度。
+    - id: ordinary-variation-is-credible
+      source: User review of the first synthetic image set and enterprise employee context
+      intent: 用真实办公环境中的材质与服装差异建立可信度，避免单色美术指导制造的宣传照感。
+      observable_signal: 浅至中等木色桌面、有人使用痕迹的培训室，以及蓝灰、陶土、深青绿、暖灰褐和灰紫等彼此不同的低饱和服装同时可见。
+      failure_case: 黑桌面、几乎所有人物穿黑色或深海军蓝、无使用痕迹的灰色空间，或像统一制服的协调着装。
+      override_boundary: 真实客户空间、安全制服或明确品牌着装规范优先于当前概念项目配色。
+    - id: checkpoints-not-magic
+      source: Learning Agent observable outcome and anti-generic AI requirement
+      intent: 让 Agent 被理解为有目标、边界、工具和人类责任的工作循环。
+      observable_signal: 四个检查点与人类验收边界可在模型和练习页中被指认。
+      failure_case: 机器人、发光球、神经网络、漂浮界面或无法解释的科技线条。
+      override_boundary: 用户选择具体 Agent 产品后，可以用真实产品界面替换抽象步骤，但必须保留权限和验收信息。
+    - id: compression-with-breath
+      source: User reference attachments 1 and 3 plus meeting-room readability
+      intent: 用短而有力的标题建立现场能量，同时为中文说明和练习指令保留呼吸感。
+      observable_signal: 标题压缩、正文舒展，单页只有一个主要断句和一条清晰行动路径。
+      failure_case: 所有文字都使用窄体大写、行距拥挤或密度平均。
+      override_boundary: 无障碍说明、操作步骤和来源文字优先使用更宽松的字号与行距。
+comparison_control:
+  content_id: learning-agent-direction-study
+  asset_set_id: learning-agent-documentary-v1
+  canvas: {width: 1920, height: 1080}
+  same_content: true
+  same_assets: true
+routes:
+  - id: learning-blueprint
+    role: clarity-baseline
+    name: Learning Blueprint / 学习蓝图
+    intent: 以强色块、远距大字和严格线性步骤建立最清晰、最容易主持的培训表达。
+    audience_effect: 学员能迅速知道正在学什么、当前走到哪一步以及需要输出什么。
+    axes:
+      grid: 大色块与水平教学步骤构成清晰的前后景，避免悬浮卡片。
+      typography: 高压缩大标题配宽松中文说明，强调远距可读性。
+      imagery: 封面使用垂直现场窗，练习页以大幅证据图和直角裁切呈现。
+      rhythm: 强品牌开场、安静模型、明确练习三段式。
+      material_color: 纸灰和纯白承载说明，钴蓝标记章节，酸性绿标记检查点。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: 验证远距标题与培训能量是否清晰, preview: assets/explorations/learning-agent/previews/learning-blueprint-identity.webp}
+      - {id: reasoning, archetype: process, validation_goal: 验证四步模型能否在会议室中被快速理解, preview: assets/explorations/learning-agent/previews/learning-blueprint-reasoning.webp}
+      - {id: practice, archetype: closing, validation_goal: 验证练习指令、照片与输出是否形成一条行动路径, preview: assets/explorations/learning-agent/previews/learning-blueprint-practice.webp}
+    risks: [大面积纯色若跨页过度使用会使课程节奏单一]
+  - id: workshop-cut
+    role: context-translation
+    name: Workshop Cut / 现场切片
+    intent: 将参考中的企业培训摄影与编辑排版原则转译为人与练习交替出现的现场叙事。
+    audience_effect: 学员感到课程来自真实工作活动，而不是一套关于 AI 的抽象宣讲。
+    axes:
+      grid: 大幅不对称照片、圆角证据窗与跨页色带交替。
+      typography: 编辑式大标题与低调说明并置，避免所有页同一分栏。
+      imagery: 同一团队以环境镜头和任务细节镜头承担不同教学证据。
+      rhythm: 人物建立相关性，模型形成停顿，练习重新回到现场。
+      material_color: 冷白与浅蓝承载内容，钴蓝形成章节切口，绿只标记验收。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: 验证纪实人物与课程命题是否相互增强, preview: assets/explorations/learning-agent/previews/workshop-cut-identity.webp}
+      - {id: reasoning, archetype: process, validation_goal: 验证蓝白场切换是否支持而非打断模型理解, preview: assets/explorations/learning-agent/previews/workshop-cut-reasoning.webp}
+      - {id: practice, archetype: closing, validation_goal: 验证现场细节能否成为练习证据而非装饰, preview: assets/explorations/learning-agent/previews/workshop-cut-practice.webp}
+    risks: [照片质量不足或人物行为不明确时会退化为培训模板]
+  - id: delegation-protocol
+    role: authored-leap
+    name: Delegation Protocol / 委托协议
+    intent: 从 Agent 的权限与验收逻辑生成协议式视觉语法，让每次学习动作都像一份可追踪工作委托。
+    audience_effect: 学员记住 Agent 不是魔法工具，而是一项需要边界、检查点和责任人的工作安排。
+    axes:
+      grid: 深色协议底板、硬边分区与编号检查点形成操作记录。
+      typography: 超大压缩命题与等宽操作说明建立命令和记录的层级。
+      imagery: 纪实照片被裁成现场物证窗口并降低饱和度，不承担科技想象。
+      rhythm: 协议签入、四步执行、练习验收逐步加速并在输出处收口。
+      material_color: 深墨和纯钴蓝构成工作协议，酸性绿只代表人类验收和完成。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: 验证协议概念是否清晰且不滑向科技风, preview: assets/explorations/learning-agent/previews/delegation-protocol-identity.webp}
+      - {id: reasoning, archetype: process, validation_goal: 验证检查点语法能否准确解释 Agent 行动边界, preview: assets/explorations/learning-agent/previews/delegation-protocol-reasoning.webp}
+      - {id: practice, archetype: closing, validation_goal: 验证深色协议语言能否保持练习指令可用, preview: assets/explorations/learning-agent/previews/delegation-protocol-practice.webp}
+    risks: [深色与编号过强时可能让入门培训显得过于技术化或压迫]
+selection:
+  status: pending
+  selected_route: null
+  decided_by: null
+  decision_rationale: null
+  user_quote: null
+  decided_at: null

@@ -34,6 +34,38 @@ analysis, objectives, adult learning, practice, transfer, and evaluation. Read
 [references/slide-grammar.md](references/slide-grammar.md) for activity and
 instructional visual mapping.
 
+## Choose the operating mode
+
+Identify the mode before making slides. Read
+[references/generalization-testing.md](references/generalization-testing.md)
+when the user asks how to invoke the Skill, requests three design directions,
+or wants to test a direction with a real project.
+
+1. **Generate with an existing theme** — use when the user selects a bundled
+   theme or asks for a workshop deck without requesting a new visual language.
+   Show the three recommended theme previews only when a theme still needs to
+   be selected. Then generate the complete workshop. Do not run a new
+   three-route design exploration by default.
+2. **Explore three FRAME directions** — use when the user explicitly asks for
+   Allen FRAME, three visibly different directions, a new theme, or a major
+   redesign; also use it when high-fidelity references are supplied but the
+   visual premise is genuinely unresolved. Read
+   [references/allen-frame-method.md](references/allen-frame-method.md). Keep
+   content, assets, canvas, and evidence constant; render a clarity baseline,
+   context translation, and authored leap. Stop after representative frames
+   and wait for the user to select or mix directions. Do not silently continue
+   to the full deck or describe an agent choice as user-approved.
+3. **Test generalization with a real project** — use only when the user asks for
+   a real-project test, generalization test, transfer test, or stress test.
+   Freeze the candidate direction, replace the concept content with supplied
+   real evidence, and render the five stress frames defined in the testing
+   guide before completing the deck. Keep the baseline pass isolated from the
+   official theme and do not add design rules slide by slide to hide failures.
+
+The three existing theme previews and the three FRAME directions are different
+decisions. Theme previews choose among already bundled systems; FRAME directions
+create or substantially redesign a system.
+
 ## Design backward from performance
 
 1. Define observable workplace behavior and success evidence.

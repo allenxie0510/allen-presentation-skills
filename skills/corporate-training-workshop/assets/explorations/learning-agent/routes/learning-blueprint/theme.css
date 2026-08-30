@@ -1,0 +1,39 @@
+body[data-theme="learning-blueprint"] { --blue:#1455ff; --lime:#b6f44a; --ink:#111827; font-family:"Noto Sans SC","Source Han Sans CN",sans-serif; }
+body[data-theme="learning-blueprint"] .slide { background:#f3f4ee; }
+body[data-theme="learning-blueprint"] .slide::before { left:54px; top:48px; width:66px; height:12px; background:var(--blue); }
+body[data-theme="learning-blueprint"] .slide::after { right:58px; top:40px; font-weight:800; color:var(--ink); }
+body[data-theme="learning-blueprint"] .slide__eyebrow { left:145px; top:40px; color:var(--ink); font-size:13px; letter-spacing:.14em; }
+body[data-theme="learning-blueprint"] .object--text[data-role="deck-title"],
+body[data-theme="learning-blueprint"] .object--text[data-role="slide-assertion"],
+body[data-theme="learning-blueprint"] .object--text[data-role="practice-title"] { font-family:"Noto Sans SC","Source Han Sans CN",sans-serif; font-weight:900!important; line-height:1.02!important; letter-spacing:-.055em!important; }
+body[data-theme="learning-blueprint"] .slide--cover { background:var(--blue); color:#fff; }
+body[data-theme="learning-blueprint"] .slide--cover::before { left:760px; background:var(--lime); }
+body[data-theme="learning-blueprint"] .slide--cover::after,
+body[data-theme="learning-blueprint"] .slide--cover .slide__eyebrow { color:#fff; }
+body[data-theme="learning-blueprint"] .slide--cover .object--image { left:0!important; top:0!important; width:680px!important; height:1080px!important; border-radius:0!important; }
+body[data-theme="learning-blueprint"] .slide--cover .object--text { color:#fff; }
+body[data-theme="learning-blueprint"] .slide--cover [data-role="deck-title"] { left:760px!important; top:150px!important; width:1010px!important; height:280px!important; font-size:112px!important; }
+body[data-theme="learning-blueprint"] .slide--cover [data-role="learning-promise"] { left:760px!important; top:500px!important; width:900px!important; font-size:44px!important; line-height:1.28!important; }
+body[data-theme="learning-blueprint"] .slide--cover [data-role="workshop-context"] { left:760px!important; top:778px!important; }
+body[data-theme="learning-blueprint"] .slide--cover [data-role="concept-disclosure"] { left:760px!important; top:958px!important; opacity:.78; }
+body[data-theme="learning-blueprint"] .slide--cover [data-role="photo-caption"] { left:38px!important; top:1000px!important; color:#fff; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="model-kicker"] { color:var(--blue); font-weight:800; letter-spacing:.12em; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="slide-assertion"] { font-size:60px!important; width:1560px!important; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="delegation-stages"] { gap:0; border:2px solid var(--ink); }
+body[data-theme="learning-blueprint"] .slide--process [data-role="delegation-stages"] .group__stage { border:0; border-right:2px solid var(--ink); background:#fff; font-size:31px; line-height:1.35; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="delegation-stages"] .group__stage:nth-child(2),
+body[data-theme="learning-blueprint"] .slide--process [data-role="delegation-stages"] .group__stage:nth-child(4) { background:var(--blue); color:#fff; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="delegation-stages"] .group__stage:last-child { border-right:0; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="delegation-stages"] .group__stage::after { display:none; }
+body[data-theme="learning-blueprint"] .slide--process [data-role="human-boundary"] { padding:16px 24px; border-left:14px solid var(--lime); background:#fff; font-weight:700; }
+body[data-theme="learning-blueprint"] .slide--closing { background:#fff; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="activity-label"] { color:var(--blue); font-weight:900; letter-spacing:.11em; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="practice-title"] { color:var(--ink); }
+body[data-theme="learning-blueprint"] .slide--closing .object--image { border-radius:0!important; border:12px solid var(--blue); }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="practice-steps"] { display:grid; grid-template-columns:1fr; gap:10px; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="practice-steps"] .group__stage { place-items:start; padding:18px 24px; border:0; background:#f0f1ed; font-size:22px; text-align:left; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="practice-steps"] .group__stage:nth-child(2) { background:var(--blue); color:#fff; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="practice-steps"] .group__stage::after { display:none; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="expected-output"] { padding-top:14px; border-top:8px solid var(--lime); font-weight:800; }
+body[data-theme="learning-blueprint"] .slide--closing [data-role="facilitator-fallback"] { top:770px!important; padding:22px 26px; background:var(--blue); color:#fff; }
+
