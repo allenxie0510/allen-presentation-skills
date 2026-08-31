@@ -1,0 +1,43 @@
+schema_version: "0.1"
+subject:
+  theme: learning-agent
+  version: "0.5.1"
+  direction: opc-system-thinking
+  reviewed_artifacts:
+    - assets/examples/opc-system-thinking-0.5.1/previews/contact-sheet.png
+    - assets/examples/opc-system-thinking-0.5.1/opc-system-thinking-0.5.1.pptx
+    - references/themes/learning-agent/art-direction.md
+    - references/native-pptx-generation.md
+  reviewer: Codex visual QA with Allen Xie final-delivery approval
+  reviewed_at: "2026-08-31T13:40:00+08:00"
+concept_gate:
+  concept: 把一人公司的系统思维表达为可观察的经营回路，让角色、节奏、瓶颈、杠杆和反馈成为学习者可以操作的工作物证。
+  content_origin: 用户提供的 OPC 培训内容、Learning Agent 设计系统、六张连续生成的合成办公纪实图和本轮逐页修复记录。
+  replaceability_result: 移除项目标题后仍能从六个经营回路、瓶颈诊断、杠杆矩阵、练习和30天迁移识别系统思维主题，而非通用培训模板。
+  score: 9.0
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: 12页通过程序化边界与溢出检查，并逐页复核内部碰撞、边缘安全区和对象裁切。}
+  readability: {passed: true, evidence: 1280×720全尺寸检查标题、正文、练习步骤和结尾承诺，保持会议室可读层级。}
+  truth: {passed: true, evidence: 概念项目、合成人物与未验证成果均明确标注，未伪造真实客户、评价、界面或经营结果。}
+  image_integrity: {passed: true, evidence: 六张图保持同一国际化虚构团队、明亮工作室、自然光、服装与办公材质；按槽位比例检查后，人物、板书和标签均完整，未保留空白装饰贴纸。}
+  accessibility: {passed: true, evidence: 钴蓝与酸性绿同时由标题、编号、位置和形状表达，关键信息不只依赖颜色。}
+  provenance: {passed: true, evidence: 合成图片、字体与内容状态均记录在SOURCES.md及每页演讲者备注的Sources区块。}
+  visual_inspection: {passed: true, evidence: 已检查12页联系表与每张全尺寸渲染，并对六个图片槽、板书文字、空白贴纸、人物连续性和最终裁切逐项复检。}
+dimensions:
+  philosophy_narrative: {score: 9.0, weight: 20, finding: 经营回路和可执行反馈贯穿叙事，视觉不是附加装饰。}
+  hierarchy_rhythm: {score: 8.8, weight: 25, finding: 安静断言、工作模型、人物峰值和行动承诺形成清晰跨页节奏。}
+  craft_system: {score: 8.7, weight: 20, finding: 字体、栅格、间距、裁切、圆角和颜色角色在12页内一致且保持变化。}
+  communication_evidence: {score: 8.9, weight: 20, finding: 图片、模型、练习、反馈与迁移均有明确教学任务，证据状态可追踪。}
+  authorship_originality: {score: 8.6, weight: 15, finding: 把一人公司抽象成经营回路与工作物证，避免SaaS卡片墙和通用AI装饰。}
+weighted_score: 88.1
+verdict: approval-candidate
+keep:
+  - 保留安静—工作—峰值的节奏、经营回路语法和真实工作物证优先原则。
+  - 保留人物、空间、光线与衣着连续但不单调的纪实摄影规则。
+  - 保留原生可编辑对象、逐页Sources备注和联系表视觉验收。
+fix: []
+quick_wins:
+  - 真实项目应优先替换为获授权的团队、流程、工作空间和业务物证照片。
+  - 交付前在目标会议室设备上验证中文字体替换、投影对比度和备注可见性。
+  - 首次真实授课后把节奏、练习和迁移失败沉淀为新的回归评测。

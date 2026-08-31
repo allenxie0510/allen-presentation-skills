@@ -35,6 +35,7 @@ SCHEMA_FILES = {
     "theme": SCHEMA_DIR / "theme.schema.json",
     "design-direction": SCHEMA_DIR / "design-direction.schema.json",
     "design-review": SCHEMA_DIR / "design-review.schema.json",
+    "native-pptx-profile": SCHEMA_DIR / "native-pptx-profile.schema.json",
 }
 
 
@@ -273,6 +274,23 @@ def validate_review_semantics(path: Path, review: dict[str, Any]) -> list[Valida
     return issues
 
 
+def validate_native_pptx_profile_semantics(
+    path: Path, profile: dict[str, Any]
+) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    meta = profile.get("meta", {})
+    if meta.get("status") == "approved" and (
+        not meta.get("reviewed_by") or not meta.get("reviewed_at")
+    ):
+        issues.append(
+            ValidationIssue(
+                relative(path),
+                "approved native PPTX profiles require reviewed_by and reviewed_at",
+            )
+        )
+    return issues
+
+
 def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
     schemas = {name: load_json(path) for name, path in SCHEMA_FILES.items()}
     issues: list[ValidationIssue] = []
@@ -330,6 +348,12 @@ def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
         issues.extend(validate_instance(path, fixture, schemas["design-review"], registry))
         issues.extend(validate_review_semantics(path, fixture))
 
+    native_pptx_profile_files = sorted((FIXTURE_DIR / "native-pptx-profiles").glob("*.yaml"))
+    for path in native_pptx_profile_files:
+        fixture = load_yaml(path)
+        issues.extend(validate_instance(path, fixture, schemas["native-pptx-profile"], registry))
+        issues.extend(validate_native_pptx_profile_semantics(path, fixture))
+
     ir_files = sorted((FIXTURE_DIR / "ir").glob("*.yaml"))
     for path in ir_files:
         fixture = load_yaml(path)
@@ -346,6 +370,7 @@ def run_validation() -> tuple[list[ValidationIssue], dict[str, int]]:
         "theme_fixtures": len(theme_files),
         "direction_fixtures": len(direction_files),
         "review_fixtures": len(review_files),
+        "native_pptx_profile_fixtures": len(native_pptx_profile_files),
         "ir_fixtures": len(ir_files),
     }
     return issues, counts
@@ -388,6 +413,7 @@ def main() -> int:
             f"{counts['theme_fixtures']} themes, and "
             f"{counts['direction_fixtures']} design directions, "
             f"{counts['review_fixtures']} design reviews, and "
+            f"{counts['native_pptx_profile_fixtures']} native PPTX profiles, and "
             f"{counts['ir_fixtures']} Presentation IR fixtures."
         )
     return 1 if issues else 0

@@ -1,0 +1,41 @@
+schema_version: "0.1"
+meta:
+  id: learning-agent-native-pptx
+  version: "0.5.1"
+  status: approved
+  theme: learning-agent
+  renderer: compatible-editable-pptx
+  reviewed_by: Allen Xie
+  reviewed_at: "2026-08-31T13:40:00+08:00"
+canonical_canvas: {width: 1920, height: 1080}
+renderer_canvas: {width: 1280, height: 720}
+grid: {columns: 12, edge_minimum: 64, gap_minimum: 24, alignment_tolerance: 4}
+typography:
+  families: [Noto Sans CJK SC, Arial]
+  minimums: {deck_title: 66, slide_title: 46, midlevel: 32, body: 21, caption: 14}
+  title_line_height: 1.08
+  body_line_height: 1.4
+cadence:
+  energies: [quiet, working, peak]
+  max_same_energy_run: 2
+  max_same_silhouette_run: 2
+  contact_sheet_required: true
+imagery:
+  real_assets_first: true
+  evidence_slots_must_be_filled: true
+  synthetic_must_be_disclosed: true
+  slot_ratio_preflight: true
+  semantic_artifacts_only: true
+  cast_continuity_when_recurring: true
+  required_metadata: [alt, fit, crop_or_position, provenance, disclosure]
+qa:
+  render_every_slide: true
+  inspect_full_size: true
+  inspect_contact_sheet: true
+  check_outside_bounds: true
+  check_internal_overlap: true
+  check_font_substitution: true
+  check_unexpected_wrap: true
+  check_image_crop: true
+  check_in_image_labels: true
+  sources_required: true

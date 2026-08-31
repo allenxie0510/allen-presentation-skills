@@ -1,6 +1,6 @@
 interface:
   display_name: "Corporate Training Workshop"
-  short_description: "Applied corporate workshop web decks."
-  default_prompt: "Use $corporate-training-workshop 0.4.0 to diagnose my real performance need and create a practice-led web workshop with the approved Learning Agent theme, or run FRAME exploration or generalization testing only when I explicitly request it."
+  short_description: "Applied workshop decks in HTML or native PPTX."
+  default_prompt: "Use $corporate-training-workshop 0.5.1 to diagnose my performance need and create a practice-led Learning Agent workshop as HTML or native editable PPTX. Preflight real evidence, create slot-aware and culturally credible team imagery, preserve notes and sources, and release only after render-based visual QA."
 policy:
   allow_implicit_invocation: true

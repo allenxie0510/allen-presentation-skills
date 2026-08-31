@@ -1,18 +1,18 @@
 ---
 name: presentation-core
-description: Plan, structure, and render professional web presentations using scenario-aware communication logic, a canonical Presentation IR, designer-curated design systems, and design-safe editing constraints. Use for board reviews, investor pitches, teaching decks, consulting or research presentations, and reusable presentation-system work. Do not use for simple file conversion or isolated cosmetic edits that do not need storyline or information-architecture decisions.
+description: Plan, structure, and render professional web or native PPTX presentations using scenario-aware communication logic, a canonical Presentation IR, designer-curated design systems, and design-safe editing constraints. Use for board reviews, investor pitches, teaching decks, consulting or research presentations, and reusable presentation-system work. Do not use for simple file conversion or isolated cosmetic edits that do not need storyline or information-architecture decisions.
 license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
   maturity: "draft"
   risk: "local-write"
-  version: "0.4.0"
+  version: "0.5.1"
   origin: "personal"
   importance: "flagship"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/presentation-core"
-  compatibility: "Requires PyYAML and a JSON Schema Draft 2020-12 validator; renders a fixed-stage self-contained HTML deck and uses browser print for PDF."
+  compatibility: "Requires PyYAML and a JSON Schema Draft 2020-12 validator. Bundled runtime renders fixed-stage HTML; native PPTX mode requires a compatible editable-PPTX renderer."
 ---
 
 # Professional Presentation Core
@@ -23,14 +23,15 @@ PPTX, or other output is a projection of that model, never the canonical state.
 
 ## Current release boundary
 
-Version 0.4.0 adds the Allen FRAME aesthetic-direction method: traceable design
-principles, controlled three-route exploration, rendered representative frames,
-an art-direction contract, and a concept gate plus five-lens review. Six draft
-theme packs and real-render previews remain available on top of the deterministic
-Presentation IR → self-contained HTML renderer. The IR remains canonical:
-browser edits do not automatically round-trip into IR, and native PPTX export is
-not implemented.
-Do not imply those two capabilities exist.
+Version 0.5.1 adds a renderer-neutral native PPTX production contract, a
+schema-valid production profile, asset-first image handling, cross-slide cadence,
+room-scale typography, editable-object requirements, and render-based release
+gates. It also requires slot-ratio-aware image generation, meaningful work
+artifacts, and explicit cast, workplace, clothing, and cultural-continuity QA for
+international team photography. The bundled runtime still renders self-contained HTML; native PPTX requires
+a compatible editable-PPTX renderer and is a projection of the canonical IR.
+Browser edits do not automatically round-trip into IR. Do not imply a standalone
+PPTX renderer is bundled when it is not.
 
 Read [references/architecture.md](references/architecture.md) for new presentation
 systems, renderer/editor work, or changes that affect more than one schema.
@@ -67,6 +68,19 @@ systems, renderer/editor work, or changes that affect more than one schema.
   `fixtures/design-systems/allen-signal-grid.yaml` only with explicit draft
   allowance and never describe it or any bundled theme as approved. Pass the
   selected theme with `--theme themes/<id>/theme.yaml --allow-draft-theme`.
+- For an editable native PPTX, read
+  [references/native-pptx-production.md](references/native-pptx-production.md),
+  validate a profile against
+  [schemas/native-pptx-profile.schema.json](schemas/native-pptx-profile.schema.json),
+  and use a compatible PPTX renderer. Preflight evidence and images before
+  composition, record energy and silhouette for every slide, and render every
+  slide for full-size plus contact-sheet inspection before release.
+- For a new scenario template, a major template upgrade, or promotion from a
+  successful deck to a reusable Skill, read
+  [references/scenario-template-production.md](references/scenario-template-production.md).
+  Reuse its production and release gates while redesigning narrative, industry
+  evidence, cultural context, photography, component grammar, and visual rhythm
+  for the new scenario.
 - For editing behavior, apply
   [schemas/editor-permissions.schema.json](schemas/editor-permissions.schema.json).
   Default to protected slots and require an explicit unlock before freeform layout.
@@ -84,7 +98,7 @@ Resolve in this order:
 5. Brand constraints.
 6. FRAME direction exploration when the visual premise is new or unresolved.
 7. Approved design system.
-8. Renderer-specific implementation.
+8. Delivery-format profile and renderer-specific implementation.
 
 Do not select a visual preset before the communication job is clear. Prefer an
 assertion-led slide sequence; every substantive slide should have a purpose and a
@@ -123,8 +137,9 @@ For planning or generation work, produce:
    changes visual language;
 6. the approved design-system selection, or a clearly labeled draft;
 7. a validation result;
-8. rendered self-contained HTML when requested, followed by browser visual
-   inspection; otherwise stop at the validated IR.
+8. rendered self-contained HTML or native editable PPTX when requested and a
+   compatible renderer is available, followed by full visual inspection;
+   otherwise stop at the validated IR and disclose the renderer boundary.
 
 Use the fixtures under `fixtures/` as structural examples, not as content or
 visual templates to copy mechanically.

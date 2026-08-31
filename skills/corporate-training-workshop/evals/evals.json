@@ -1,6 +1,6 @@
 {
   "skill_name": "corporate-training-workshop",
-  "version": "0.4.0",
+  "version": "0.5.1",
   "evals": [
     {
       "id": "normal-manager-feedback",
@@ -64,6 +64,20 @@
       "prompt": "用我们真实的门店服务补救培训项目测试 Learning Agent 候选视觉方向的泛化性。先做基线压力测试，不要直接重设计，也不要覆盖正式主题。",
       "expected_behavior": ["verify a real-project input package", "freeze the candidate version", "render five representative stress frames", "separate content substitution, slot gaps, and conceptual mismatch", "return a keep-break-adapt report"],
       "must_not": ["reuse Learning Agent sample claims", "invent business results or learner evidence", "hide failures with page-specific styling", "overwrite the official theme"]
+    },
+    {
+      "id": "native-pptx-real-project",
+      "category": "normal",
+      "prompt": "把这份真实的一人公司系统思维培训资料修复为可编辑PPTX。沿用Learning Agent品牌调性，补足真实感图片和跨页节奏，检查所有错位，并把来源写入备注。",
+      "expected_behavior": ["confirm native PPTX delivery route", "preflight evidence and image slots before layout", "use varied quiet working and peak silhouettes", "keep text and diagrams editable", "render and inspect every slide at full size and as a contact sheet", "record sources and synthetic-image disclosures in notes"],
+      "must_not": ["reuse sample claims as project evidence", "repeat one left-right layout across the deck", "flatten every slide to a screenshot", "claim completion without a compatible PPTX renderer and visual inspection"]
+    },
+    {
+      "id": "international-team-image-system",
+      "category": "brand-constraint",
+      "prompt": "把培训模板的图片改为真实感强的国际化团队。人物、办公室和服装要连续；白板、贴纸和文字必须与系统思维相关，不能出现空白装饰贴纸。",
+      "expected_behavior": ["define a recurring cast and workplace bible", "generate for each destination image-slot ratio", "preserve equal professional agency across diverse team members", "limit boards and cards to relevant populated work artifacts", "inspect final slide crops for complete labels and identity continuity"],
+      "must_not": ["use tokenistic diversity or matching black suits", "approve uncropped source images without slide-slot review", "leave blank sticky notes or gibberish", "invent real client evidence or fake product UI"]
     }
   ]
 }

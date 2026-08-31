@@ -116,12 +116,16 @@ contain the only copy of the core method.
 - Provide navigation, notes, inline text refinement, HTML download, and print.
 - Define the six-layer Allen design-system contract and one draft foundation.
 - Package the runtime with standalone scenario Skills.
+- Define and validate a renderer-neutral native PPTX production profile with
+  asset, cadence, editability, speaker-note, and render-inspection gates.
+- Define one cross-scenario template production and promotion method while
+  keeping each portable scenario Skill self-contained.
 
 ### Later phases
 
 1. Edit-to-IR synchronization.
 2. Three designer-approved systems and a design-system creator workflow.
-3. Native PPTX export.
+3. Bundled standalone native PPTX renderer and deterministic IR projection.
 4. Broader browser visual regression and cross-format fidelity checks.
 
 Do not migrate large template libraries. Expand the runtime only when a concrete

@@ -1,17 +1,17 @@
 ---
 name: corporate-training-workshop
-description: Plan and render corporate training and workshop web presentations around a verified performance need, observable learning outcomes, adult-learning principles, practice, feedback, transfer to work, facilitation, and evaluation. Use for instructor-led training, leadership workshops, capability building, onboarding workshops, or applied internal courses. Do not use when the problem is not trainable or when only a passive announcement deck is needed.
+description: Plan and render corporate training and workshop presentations as web decks or native editable PPTX around a verified performance need, observable learning outcomes, adult-learning principles, practice, feedback, transfer to work, facilitation, and evaluation. Use for instructor-led training, leadership workshops, capability building, onboarding workshops, or applied internal courses. Do not use when the problem is not trainable or when only a passive announcement deck is needed.
 license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
   maturity: "stable"
   risk: "local-write"
-  version: "0.4.0"
+  version: "0.5.1"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop"
-  compatibility: "Planning is tool-neutral; the bundled PyYAML/jsonschema renderer produces a fixed-stage, self-contained HTML deck with navigation, inline text editing, facilitator notes, download, and print/PDF support."
+  compatibility: "Planning is tool-neutral; bundled PyYAML/jsonschema runtime renders self-contained HTML. Native PPTX mode requires a compatible editable-PPTX renderer."
 ---
 
 # Corporate Training Workshop
@@ -22,11 +22,14 @@ aids, and transfer support are first-class outputs.
 
 ## Current release
 
-Version 0.4.0 adds the approved Learning Agent theme, a 15-slide reference
-workshop, five continuity-controlled documentary image slots, Allen FRAME route
-selection and review records, and explicit direct-generation, direction-
-exploration, and real-project generalization modes. The reference deck is a
-disclosed synthetic concept, not evidence of a real client or measured outcome.
+Version 0.5.1 adds native editable-PPTX production, a validated Learning Agent
+PPTX profile, asset-first documentary image handling, explicit cross-slide
+cadence, render-based quality gates, and a repaired 12-slide OPC system-thinking
+reference package. The Learning Agent native PPTX profile is approved by Allen
+Xie for final delivery. Its revised international-team photo system preserves cast,
+office, clothing, light, role agency, meaningful work artifacts, and slot-safe
+crops across six images. The OPC example and its photographs are disclosed synthetic
+concept material, not evidence of a real client or measured outcome.
 
 ## Confirm training is the right intervention
 
@@ -109,8 +112,24 @@ render again if anything is clipped, crowded, unclear during facilitation, or
 visually repetitive.
 
 The HTML supports navigation, inline text refinement, facilitator notes,
-download, and print/PDF. It does not produce native PPTX or automatically write
-browser edits back into the IR.
+download, and print/PDF. It does not automatically write browser edits back into
+the IR.
+
+## Generate a native PPTX
+
+When the user requests an editable PowerPoint, read
+[references/native-pptx-generation.md](references/native-pptx-generation.md).
+Validate the native profile, preflight all evidence and image slots before layout,
+and use a compatible PPTX renderer. Keep participant content, facilitator notes,
+sources, and disclosures distinct. Use the bundled OPC reference only to learn
+the Learning Agent constraints and cadence; never reuse its project facts or
+synthetic people as evidence.
+
+Render every slide after the final edit. Inspect both a contact sheet and every
+slide full size, then run programmatic overflow and boundary checks. Repair
+internal overlap, weak hierarchy, unexpected wrapping, repeated silhouettes,
+font substitution, arbitrary crops, clipped in-image labels, and blank or
+decorative work artifacts even when no outside-bound warning exists.
 
 ## Output contract
 
@@ -118,7 +137,8 @@ Return the needs diagnosis, learner profile, observable outcomes, agenda with
 timing, learning arc, slide plan, activity briefs, facilitator notes, job aids,
 assessment plan, transfer plan, evaluation plan, accessibility notes, known
 non-training dependencies, schema-valid Presentation IR, and an actual
-self-contained HTML deck when a rendered presentation is requested.
+self-contained HTML deck or native editable PPTX when requested and a compatible
+renderer is available.
 
 Before release, use an environment with the dependencies declared in
 `scripts/requirements.txt`, then run `python scripts/validate.py`. If dependency

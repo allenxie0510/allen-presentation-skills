@@ -1,6 +1,6 @@
 interface:
   display_name: "Professional Presentation Core"
-  short_description: "Plan and render scenario-aware professional web presentations."
-  default_prompt: "Use $presentation-core to classify my presentation scenario, show the recommended real-render theme previews, then turn my brief into a validated, assertion-led Presentation IR and self-contained themed HTML deck."
+  short_description: "Plan and render professional HTML or native PPTX decks."
+  default_prompt: "Use $presentation-core 0.5.1 to classify my presentation scenario and output format, turn my brief into a validated assertion-led Presentation IR, and render either a self-contained themed HTML deck or a native editable PPTX with slot-aware imagery, rhythm, and visual-QA gates."
 policy:
   allow_implicit_invocation: true

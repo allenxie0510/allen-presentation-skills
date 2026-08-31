@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: corporate-training-workshop
   name: Corporate Training Workshop
-  version: "0.4.0"
+  version: "0.5.1"
 communication_job:
   primary: Enable adult learners to perform a defined workplace behavior through relevant explanation, practice, feedback, and transfer support.
   success_condition: Learners can demonstrate the target capability, plan workplace application, and generate evidence for learning and transfer evaluation.
