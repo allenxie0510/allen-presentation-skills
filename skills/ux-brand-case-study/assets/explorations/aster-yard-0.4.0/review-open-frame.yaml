@@ -1,0 +1,48 @@
+schema_version: "0.1"
+subject:
+  theme: aster-yard-direction-study
+  version: "0.4.0"
+  direction: open-frame
+  reviewed_artifacts:
+    - previews/open-frame-01-case-summary.webp
+    - previews/open-frame-02-challenge-role.webp
+    - previews/open-frame-03-evidence-insight.webp
+    - previews/open-frame-04-iteration.webp
+    - previews/open-frame-05-system-application.webp
+    - previews/open-frame-06-outcome-reflection.webp
+  reviewer: Codex visual QA
+  reviewed_at: "2026-08-31T18:20:00+08:00"
+concept_gate:
+  concept: 用开放画幅让人物场景、设计判断和系统物证拥有不同尺度的停顿与记忆点。
+  content_origin: Aster Yard disclosed synthetic concept project and user-provided reference principles.
+  replaceability_result: 大图与留白围绕停留意图、研究现场和触点系统组织，不是任意作品图集。
+  score: 8.5
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: "Chromium DOM bounds check passed on all six frames after the system-page title repair."}
+  readability: {passed: true, evidence: "Assertions and body text remain readable at 1920 × 1080 and contact-sheet scale."}
+  truth: {passed: true, evidence: "Synthetic imagery, placeholder findings, and absent impact remain explicitly labeled."}
+  image_integrity: {passed: true, evidence: "Large image crops retain subjects, hands, artifacts, and alternative text."}
+  accessibility: {passed: true, evidence: "Structure remains understandable through scale, position, rules, and labels without color."}
+  provenance: {passed: true, evidence: "SOURCES.md records prompts, hashes, generation mode, and reuse boundary."}
+  visual_inspection: {passed: true, evidence: "Six full-size frames and the combined direction board were inspected."}
+dimensions:
+  philosophy_narrative: {score: 8.5, weight: 20, finding: "Human context and reflective judgment gain strong presence without turning into a beauty gallery."}
+  hierarchy_rhythm: {score: 8.7, weight: 25, finding: "Wide whitespace creates deliberate breathing between image-led, reasoning, and reflection frames."}
+  craft_system: {score: 8.6, weight: 20, finding: "Long rules, asymmetric columns, and restrained typography hold together across density changes."}
+  communication_evidence: {score: 8.4, weight: 20, finding: "Evidence remains functional, but substantially denser studies will require a secondary compact grammar."}
+  authorship_originality: {score: 8.6, weight: 15, finding: "Architectural whitespace and image behavior create a defensible portfolio voice."}
+weighted_score: 85.65
+verdict: refine
+keep:
+  - Preserve the large contextual imagery and the clean challenge-role separation.
+  - Keep the low-noise reflection page and restrained terracotta directional cues.
+fix:
+  - severity: important
+    issue: High-density research and system appendices may exceed the open frame's capacity.
+    action: Add one compact evidence archetype without turning the route into a uniform grid.
+    verification: Stress-test twelve evidence items, a long Chinese title, and a multi-state UX flow.
+quick_wins:
+  - Define two authored crop families for people and application artifacts.
+  - Add a compact annotation rail for dense UX evidence.
+  - Preserve at least one genuinely open frame between two dense pages.

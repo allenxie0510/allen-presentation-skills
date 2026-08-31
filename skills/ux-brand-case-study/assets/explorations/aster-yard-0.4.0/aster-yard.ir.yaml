@@ -1,0 +1,325 @@
+schema_version: "0.1"
+deck:
+  id: aster-yard-case-direction-study
+  title: Aster Yard UX + Brand Case Study
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: ux-brand-case-study, version: "0.3.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium
+  mode: hybrid
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Synthetic concept project for controlled theme comparison; all findings and outcomes are placeholders.
+
+slides:
+  - id: s01-case-summary
+    archetype: cover
+    purpose: Establish the concept challenge, combined UX and brand scope, role, and disclosure boundary.
+    grammar: narrative
+    assertion: {text: 把一次消费，重构为可持续的社区工作节奏, status: provisional}
+    narrative_role: {section: case-summary, sequence: opening}
+    layout_variant: cover-offset
+    permission_profile: content-style
+    objects:
+      - &title
+        id: s01-title
+        type: text
+        role: deck-title
+        content: {text: "把一次消费，\n重构为可持续的\n社区工作节奏"}
+        frame: {x: 104, y: 196, w: 930, h: 350}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 92, line_height: 0.98}}
+        editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}
+      - id: s01-name
+        type: text
+        role: project-name
+        content: {text: "ASTER YARD / UX + BRAND"}
+        frame: {x: 108, y: 118, w: 700, h: 36}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 16, letter_spacing: 0.12}}
+        editable: *edit
+      - id: s01-role
+        type: text
+        role: role-summary
+        content: {text: "概念案例 · Lead Experience & Brand Designer\n服务策略 / 研究框架 / 体验与品牌系统"}
+        frame: {x: 108, y: 646, w: 760, h: 118}
+        style: {token: typography.body, variant: null, overrides: {font_size: 24, line_height: 1.45}}
+        editable: *edit
+      - id: s01-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: "SYNTHETIC CONCEPT PROJECT · 概念项目；场景、研究线索和结果均为模板演示，不代表真实项目。"}
+        frame: {x: 108, y: 934, w: 850, h: 36}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 13}}
+        editable: *edit
+      - id: s01-photo
+        type: image
+        role: context-photo
+        content:
+          src: assets/aster-yard-context.webp
+          alt: Aster Yard 概念项目中的国际化顾客在咖啡与共享工作空间自然使用不同区域
+          fit: cover
+          position: 50% 48%
+        frame: {x: 1120, y: 96, w: 736, h: 888}
+        style: {token: image.documentary, variant: hero-context}
+        constraints: {min_w: 640, min_h: 600, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s01-caption
+        type: text
+        role: image-caption
+        content: {text: "CONTEXT / 合成概念影像 · 建立空间与使用者世界观"}
+        frame: {x: 1158, y: 918, w: 620, h: 32}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 13}}
+        editable: *edit
+
+  - id: s02-challenge-role
+    archetype: comparison
+    purpose: State the challenge and separate individual responsibility from the concept team and constraints.
+    grammar: comparison
+    assertion: {text: 真正的挑战不是增加座位，而是让不同停留意图被理解, status: provisional}
+    narrative_role: {section: challenge-and-role, sequence: context}
+    layout_variant: split-comparison
+    permission_profile: content-style
+    objects:
+      - <<: *title
+        id: s02-title
+        role: slide-assertion
+        content: {text: "真正的挑战不是增加座位，\n而是让不同停留意图被理解"}
+        frame: {x: 104, y: 140, w: 1140, h: 160}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 58, line_height: 1.08}}
+      - id: s02-challenge
+        type: shape
+        role: challenge-panel
+        content: {text: "CHALLENGE\n点单、找座、工作与参加活动彼此割裂；空间与数字触点没有共同说明‘我现在适合做什么’。"}
+        frame: {x: 104, y: 384, w: 720, h: 386}
+        style: {token: typography.body, variant: null, overrides: {padding: 44, font_size: 27, line_height: 1.5}}
+        editable: *edit
+      - id: s02-role
+        type: shape
+        role: role-panel
+        content: {text: "MY ROLE\n建立研究计划与证据结构；定义服务原则；连接品牌语言、空间线索与数字行为。"}
+        frame: {x: 848, y: 384, w: 468, h: 386}
+        style: {token: typography.body, variant: null, overrides: {padding: 44, font_size: 25, line_height: 1.5}}
+        editable: *edit
+      - id: s02-team
+        type: shape
+        role: team-panel
+        content: {text: "TEAM / CONCEPT\n服务设计、室内、运营与工程角色为概念设定；不得表述为真实协作成果。"}
+        frame: {x: 1340, y: 384, w: 476, h: 386}
+        style: {token: typography.body, variant: null, overrides: {padding: 44, font_size: 25, line_height: 1.5}}
+        editable: *edit
+      - id: s02-constraint
+        type: text
+        role: constraint-note
+        content: {text: "约束 · 高峰时段容量 / 不同停留时长 / 线下人员负担 / 数据与隐私边界"}
+        frame: {x: 104, y: 842, w: 1430, h: 54}
+        style: {token: typography.body, variant: null, overrides: {font_size: 22}}
+        editable: *edit
+
+  - id: s03-evidence-insight
+    archetype: process
+    purpose: Demonstrate the traceable evidence-to-insight-to-principle-to-decision chain with placeholder evidence.
+    grammar: causality
+    assertion: {text: 模板必须让证据改变决策，而不是装饰设计过程, status: provisional}
+    narrative_role: {section: evidence-to-insight, sequence: explanation}
+    layout_variant: causal-chain
+    permission_profile: content-style
+    evidence:
+      - {id: ev-demo, claim: Demonstration-only evidence structure, source_type: placeholder, source: Replace with real method · sample · date · limitation}
+    objects:
+      - <<: *title
+        id: s03-title
+        role: slide-assertion
+        content: {text: "模板必须让证据改变决策，\n而不是装饰设计过程"}
+        frame: {x: 104, y: 112, w: 900, h: 150}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 56, line_height: 1.08}}
+      - id: s03-photo
+        type: image
+        role: research-photo
+        content:
+          src: assets/aster-yard-research.webp
+          alt: 合成的服务设计研究场景，三人围绕有结构的纸质体验卡进行讨论
+          fit: cover
+          position: center 48%
+        frame: {x: 104, y: 332, w: 690, h: 560}
+        style: {token: image.documentary, variant: evidence-context}
+        constraints: {min_w: 620, min_h: 460, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s03-chain
+        type: group
+        role: evidence-chain
+        content:
+          stages:
+            - "EVIDENCE\n占位：行为与方法"
+            - "INSIGHT\n停留意图需要被显性化"
+            - "PRINCIPLE\n先确认节奏，再推荐触点"
+            - "DECISION\n统一空间与数字提示"
+        frame: {x: 842, y: 332, w: 974, h: 242}
+        style: {token: components.process.causal, variant: causal-chain}
+        editable: *edit
+      - id: s03-method
+        type: shape
+        role: evidence-method
+        content: {text: "DEMO EVIDENCE\n真实项目必须替换为：研究方法、样本、日期、原始物证、相反证据与局限。"}
+        frame: {x: 842, y: 628, w: 470, h: 264}
+        style: {token: typography.body, variant: null, overrides: {padding: 34, font_size: 23, line_height: 1.45}}
+        editable: *edit
+      - id: s03-limit
+        type: shape
+        role: evidence-limitation
+        content: {text: "BOUNDARY\n这张图片仅建立研究语境，不证明研究实际发生；页面结论仍为待验证假设。"}
+        frame: {x: 1336, y: 628, w: 480, h: 264}
+        style: {token: typography.body, variant: null, overrides: {padding: 34, font_size: 23, line_height: 1.45}}
+        editable: *edit
+
+  - id: s04-iteration
+    archetype: comparison
+    purpose: Compare three meaningfully different service and brand directions using explicit criteria and learning.
+    grammar: decision
+    assertion: {text: 迭代展示的不是过程长度，而是判断如何变得更准确, status: provisional}
+    narrative_role: {section: iteration, sequence: decision}
+    layout_variant: tradeoff-matrix
+    permission_profile: content-style
+    objects:
+      - <<: *title
+        id: s04-title
+        role: slide-assertion
+        content: {text: "迭代展示的不是过程长度，\n而是判断如何变得更准确"}
+        frame: {x: 104, y: 112, w: 1040, h: 148}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 56, line_height: 1.08}}
+      - id: s04-a
+        type: shape
+        role: iteration-a
+        content: {text: "01 / FAST SEAT\n先找座，再点单\n\n优势：效率直接\n风险：削弱品牌与社区关系"}
+        frame: {x: 104, y: 348, w: 510, h: 456}
+        style: {token: typography.body, variant: null, overrides: {padding: 44, font_size: 25, line_height: 1.48}}
+        editable: *edit
+      - id: s04-b
+        type: shape
+        role: iteration-b
+        content: {text: "02 / GUIDED RHYTHM\n先声明此刻意图\n\n优势：连接空间与服务\n风险：需要克制提问成本"}
+        frame: {x: 638, y: 304, w: 574, h: 544}
+        style: {token: typography.body, variant: null, overrides: {padding: 48, font_size: 28, line_height: 1.48, border_color: "#171A1F"}}
+        editable: *edit
+      - id: s04-c
+        type: shape
+        role: iteration-c
+        content: {text: "03 / OPEN TABLE\n先加入附近活动\n\n优势：社区感最强\n风险：不适合高频独处任务"}
+        frame: {x: 1236, y: 348, w: 510, h: 456}
+        style: {token: typography.body, variant: null, overrides: {padding: 44, font_size: 25, line_height: 1.48}}
+        editable: *edit
+      - id: s04-learning
+        type: text
+        role: iteration-learning
+        content: {text: "PROVISIONAL CHOICE · Guided Rhythm：以意图为共同语言，但必须在真实任务中验证额外一步是否值得。"}
+        frame: {x: 104, y: 914, w: 1580, h: 48}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 18}}
+        editable: *edit
+
+  - id: s05-system-application
+    archetype: image
+    purpose: Show the system as reusable rules across service, identity, space, and digital touchpoints rather than a mockup gallery.
+    grammar: relationship
+    assertion: {text: 同一个“节奏信号”，必须同时约束体验、语言与触点, status: provisional}
+    narrative_role: {section: system-and-application, sequence: explanation}
+    layout_variant: annotated-artifact
+    permission_profile: content-style
+    objects:
+      - <<: *title
+        id: s05-title
+        role: slide-assertion
+        content: {text: "同一个“节奏信号”，\n必须同时约束体验、语言与触点"}
+        frame: {x: 104, y: 110, w: 980, h: 150}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 56, line_height: 1.08}}
+      - id: s05-photo
+        type: image
+        role: application-photo
+        content:
+          src: assets/aster-yard-applications.webp
+          alt: Aster Yard 概念系统在陶瓷杯、会员卡、折页和空间导视上的合成应用场景
+          fit: cover
+          position: center 54%
+        frame: {x: 104, y: 340, w: 920, h: 602}
+        style: {token: image.documentary, variant: application-context}
+        constraints: {min_w: 720, min_h: 520, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s05-system
+        type: group
+        role: system-map
+        content:
+          stages:
+            - "INTENT\n专注 / 会面 / 发现"
+            - "VOICE\n先说明节奏，再给建议"
+            - "SIGNAL\n日升于桌的抽象标记"
+            - "TOUCHPOINT\n空间 / 包装 / 数字"
+        frame: {x: 1080, y: 340, w: 736, h: 268}
+        style: {token: components.process.system, variant: learning-loop}
+        editable: *edit
+      - id: s05-rule-a
+        type: shape
+        role: system-rule-a
+        content: {text: "RULE 01\n每个触点只回答一个当前意图。"}
+        frame: {x: 1080, y: 650, w: 354, h: 210}
+        style: {token: typography.body, variant: null, overrides: {padding: 30, font_size: 22, line_height: 1.4}}
+        editable: *edit
+      - id: s05-rule-b
+        type: shape
+        role: system-rule-b
+        content: {text: "RULE 02\n图像必须证明场景，不做装饰。"}
+        frame: {x: 1460, y: 650, w: 356, h: 210}
+        style: {token: typography.body, variant: null, overrides: {padding: 30, font_size: 22, line_height: 1.4}}
+        editable: *edit
+      - id: s05-caption
+        type: text
+        role: application-caption
+        content: {text: "AI-GENERATED CONCEPT APPLICATION · 仅验证系统延展与图片槽，不代表实际落地"}
+        frame: {x: 1080, y: 906, w: 736, h: 36}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 13}}
+        editable: *edit
+
+  - id: s06-outcome-reflection
+    archetype: closing
+    purpose: Close with honest evidence status, validation plan, contribution boundary, and unresolved questions.
+    grammar: narrative
+    assertion: {text: 现在能证明系统自洽，不能证明它已经改变真实行为, status: provisional}
+    narrative_role: {section: outcome-and-reflection, sequence: closing}
+    layout_variant: closing-commitment
+    permission_profile: content-style
+    objects:
+      - <<: *title
+        id: s06-title
+        role: decision-statement
+        content: {text: "现在能证明系统自洽，\n不能证明它已经改变真实行为。"}
+        frame: {x: 104, y: 170, w: 1110, h: 240}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 76, line_height: 1.02}}
+      - id: s06-known
+        type: shape
+        role: outcome-known
+        content: {text: "KNOWN\n叙事、服务原则、视觉语言和触点规则已形成可测试原型。"}
+        frame: {x: 104, y: 540, w: 500, h: 280}
+        style: {token: typography.body, variant: null, overrides: {padding: 38, font_size: 24, line_height: 1.45}}
+        editable: *edit
+      - id: s06-next
+        type: shape
+        role: outcome-next
+        content: {text: "NEXT EVIDENCE\n真实任务测试、空间观察、员工负担与重复到访行为。"}
+        frame: {x: 630, y: 540, w: 500, h: 280}
+        style: {token: typography.body, variant: null, overrides: {padding: 38, font_size: 24, line_height: 1.45}}
+        editable: *edit
+      - id: s06-reflection
+        type: shape
+        role: reflection
+        content: {text: "REFLECTION\n品牌不是为体验加一层外观；它应让选择、行为和运营拥有同一种语言。"}
+        frame: {x: 1156, y: 540, w: 660, h: 280}
+        style: {token: typography.body, variant: null, overrides: {padding: 38, font_size: 25, line_height: 1.45}}
+        editable: *edit
+      - id: s06-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: "OUTCOME STATUS · CONCEPT ONLY / 无真实用户数据、业务结果、客户批准或奖项"}
+        frame: {x: 104, y: 916, w: 1180, h: 40}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 15}}
+        editable: *edit

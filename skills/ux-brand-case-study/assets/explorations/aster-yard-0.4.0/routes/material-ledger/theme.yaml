@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: material-ledger, name: Material Ledger, name_zh: 材质档案, version: "0.1.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用品牌手册般的编号、纸张与物证让系统判断可追溯
+  mood: [tactile, archival, quiet]
+  tone: [crafted, precise, reflective]
+  formality: high
+  density: medium
+best_for: [brand-system-case-study, identity-guideline-story, portfolio-review]
+avoid_for: [high-energy-launch, dense-operational-dashboard]
+colors:
+  canvas: "#E8E3DB"
+  surface: "#F8F5EF"
+  text_primary: "#23221F"
+  text_secondary: "#706B63"
+  accent_primary: "#7B8064"
+  accent_secondary: "#B27454"
+  positive: "#47715C"
+  negative: "#A04B3D"
+  rule: "rgba(35,34,31,.26)"
+stylesheet: theme.css

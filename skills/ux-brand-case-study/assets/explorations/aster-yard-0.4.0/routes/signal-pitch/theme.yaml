@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: signal-pitch, name: Signal Pitch, name_zh: 信号提案, version: "0.1.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用强对比模块把挑战、证据与选择压缩成清晰信号
+  mood: [decisive, graphic, contemporary]
+  tone: [commercial, design-led, evidence-aware]
+  formality: high
+  density: medium-high
+best_for: [ux-brand-case-study, client-presentation, design-leadership-review]
+avoid_for: [heritage-luxury, meditative-cultural-story]
+colors:
+  canvas: "#F4F3EF"
+  surface: "#FFFFFF"
+  text_primary: "#0D0E0F"
+  text_secondary: "#64645F"
+  accent_primary: "#DDF000"
+  accent_secondary: "#6C63FF"
+  positive: "#237457"
+  negative: "#C7462F"
+  rule: "rgba(13,14,15,.22)"
+stylesheet: theme.css

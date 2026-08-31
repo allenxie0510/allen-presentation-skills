@@ -1,0 +1,19 @@
+{
+  "id": "aster-yard-ux-brand-0.4.0",
+  "ir": "aster-yard.ir.yaml",
+  "design": "../../../references/allen-signal-grid.yaml",
+  "columns": 3,
+  "slide_labels": [
+    "01-case-summary",
+    "02-challenge-role",
+    "03-evidence-insight",
+    "04-iteration",
+    "05-system-application",
+    "06-outcome-reflection"
+  ],
+  "routes": [
+    {"id": "signal-pitch", "name": "Signal Pitch / 信号提案", "theme": "routes/signal-pitch/theme.yaml"},
+    {"id": "material-ledger", "name": "Material Ledger / 材质档案", "theme": "routes/material-ledger/theme.yaml"},
+    {"id": "open-frame", "name": "Open Frame / 开放画幅", "theme": "routes/open-frame/theme.yaml"}
+  ]
+}

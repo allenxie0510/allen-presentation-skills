@@ -1,0 +1,108 @@
+schema_version: "0.1"
+project:
+  id: aster-yard-ux-brand
+  theme: aster-yard-direction-study
+  theme_version: "0.4.0"
+  scenario: ux-brand-case-study
+  status: review
+foundation:
+  context_status: synthetic-concept
+  concept_thesis: 让“停留节奏”成为服务体验、品牌语言、空间线索和数字触点之间可以被看见的共同结构。
+  visual_motif: 从桌面、日升和停留路径提炼出的节奏信号，而不是通用品牌装饰。
+  replaceability_test: 若替换行业后仍只剩漂亮版式，则方向失败；页面必须仍能表达第三空间中的停留意图、场景证据和系统触点。
+  principles:
+    - id: contrast-as-decision
+      source: 用户参考图 1 的高对比商业提案结构
+      intent: 让挑战、角色、证据和暂定选择在会议室中快速可辨。
+      observable_signal: 黑白大面与单一酸性色只强调一个决策相关模块，标题具有明确断句。
+      failure_case: 所有模块都使用高亮色，或把内容做成通用 SaaS 卡片墙。
+      override_boundary: 反思、文化与敏感研究内容需要更安静的材料表达时降低对比。
+    - id: artifacts-as-proof
+      source: 用户参考图 2 和图 3 的品牌手册、编号与物证表达
+      intent: 让品牌规则和案例资产成为可追溯证据，而不是最终效果画廊。
+      observable_signal: 细线、编号、材料表面、应用物证和用途说明共同出现。
+      failure_case: 模仿参考品牌标志、专有构图，或用纸张纹理掩盖证据不足。
+      override_boundary: 纯 UX 行为验证需要任务流优先时，材料语言退居注释层。
+    - id: whitespace-as-sequence
+      source: 用户参考图 4 和图 5 的大图、开放留白与作品集节奏
+      intent: 让重要图片和判断获得停顿，同时维持清晰的案例阅读顺序。
+      observable_signal: 大图与极简标题不竞争，页面在密集证据与开放叙事之间交替。
+      failure_case: 留白变成空洞，正文过小，或每页机械采用相同左右分栏。
+      override_boundary: 研究附录或高密度系统规范需增加信息密度时缩小留白。
+    - id: imagery-with-a-job
+      source: UX Brand Case Study 的证据与归因要求，以及本轮合成影像 QA
+      intent: 确保图片建立场景、研究语境或系统应用，而不是填补版面。
+      observable_signal: 每张图片具有明确槽位、裁切、说明、来源和不能证明什么的边界。
+      failure_case: 通用团队图、无意义贴纸、假界面、乱码或未经披露的合成项目影像。
+      override_boundary: 真实项目提供更有证明力且允许公开的资产时，真实资产优先。
+comparison_control:
+  content_id: aster-yard-six-frame-case
+  asset_set_id: aster-yard-synthetic-image-set-v1
+  canvas: {width: 1920, height: 1080}
+  same_content: true
+  same_assets: true
+routes:
+  - id: signal-pitch
+    role: clarity-baseline
+    name: Signal Pitch / 信号提案
+    intent: 以高对比、模块化和酸性色建立最快速、最具会议室判断力的案例结构。
+    audience_effect: 让客户和设计负责人迅速看见问题、角色、取舍与证据边界。
+    axes:
+      grid: 左侧主叙事与右侧模块区交替，使用不等宽硬边矩形。
+      typography: 高字重无衬线、大幅中文标题、紧凑行距与短标签。
+      imagery: 图片作为大块现场证据，与黑色区域形成强对照。
+      rhythm: 强标题开场，模块化工作页，黑底加酸色反思峰值。
+      material_color: 暖白、深黑与单一酸性黄绿，紫色只保留为次级信号。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: case-summary, archetype: cover, validation_goal: 验证强标题与人物场景能否共同建立案例世界观, preview: previews/signal-pitch-01-case-summary.webp}
+      - {id: evidence-insight, archetype: process, validation_goal: 验证高密度证据链在强对比系统中仍然可读, preview: previews/signal-pitch-03-evidence-insight.webp}
+      - {id: system-application, archetype: image, validation_goal: 验证应用图像、系统规则与组件能够形成清晰主次, preview: previews/signal-pitch-05-system-application.webp}
+    risks:
+      - 酸性色若超过一个核心信号会迅速产生通用潮流模板感。
+      - 强商业语气可能压过反思与研究限制，需要在结尾保留诚实边界。
+  - id: material-ledger
+    role: context-translation
+    name: Material Ledger / 材质档案
+    intent: 将品牌手册的材料感、编号与细线原则转译成能够追溯判断的案例档案。
+    audience_effect: 让评审者感受到系统严谨、工艺精度以及对作品物证的尊重。
+    axes:
+      grid: 页眉索引加档案式分区，模块沿细线与统一基线组织。
+      typography: 中等字重、宽松标题与克制正文，强调编号和术语层级。
+      imagery: 降饱和纪实图与材料应用图像并置，裁切更接近品牌规范档案。
+      rhythm: 安静封面、规则化证据页、中心焦点迭代页和低声量反思。
+      material_color: 暖纸白、石灰灰、苔绿色与陶土棕，纹理仅作为微弱材料信号。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: case-summary, archetype: cover, validation_goal: 验证材料气质不会削弱挑战和角色信息, preview: previews/material-ledger-01-case-summary.webp}
+      - {id: evidence-insight, archetype: process, validation_goal: 验证档案式证据链保持因果清晰且不落入品牌手册拼贴, preview: previews/material-ledger-03-evidence-insight.webp}
+      - {id: system-application, archetype: image, validation_goal: 验证物证、系统与规则能够被同一索引逻辑管理, preview: previews/material-ledger-05-system-application.webp}
+    risks:
+      - 过度安静会降低现场汇报的远距辨识度。
+      - 材料纹理不能替代真实项目资产、来源和决策说明。
+  - id: open-frame
+    role: authored-leap
+    name: Open Frame / 开放画幅
+    intent: 用建筑感大图、极简标题和开放留白构成具有作品集作者感的案例阅读体验。
+    audience_effect: 让招聘经理和设计领导在人的语境、系统判断与个人反思之间建立更强记忆。
+    axes:
+      grid: 大图与不对称开放栏位交替，信息沿长水平线和大面积空白定位。
+      typography: 轻至中等字重的超大标题，与极小索引形成尺度反差。
+      imagery: 图片占据主画幅，注释与规则退到边缘而不覆盖人物或关键物证。
+      rhythm: 大图开场、低密度角色页、证据密集页、开放反思页形成呼吸。
+      material_color: 近白底、黑字与低饱和陶土色箭头，不依赖大色块制造层级。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: case-summary, archetype: cover, validation_goal: 验证大图和超大标题能够平衡且保留披露信息, preview: previews/open-frame-01-case-summary.webp}
+      - {id: evidence-insight, archetype: process, validation_goal: 验证开放留白仍能容纳可追溯证据链, preview: previews/open-frame-03-evidence-insight.webp}
+      - {id: system-application, archetype: image, validation_goal: 验证大图主导时规则和系统不退化为装饰性说明, preview: previews/open-frame-05-system-application.webp}
+    risks:
+      - 高密度研究内容可能突破开放画幅的阅读容量。
+      - 留白必须承载节奏和层级，不能成为信息不足的掩饰。
+selection:
+  status: pending
+  selected_route: null
+  decided_by: null
+  decision_rationale: null
+  user_quote: null
+  decided_at: null

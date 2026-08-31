@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: open-frame, name: Open Frame, name_zh: 开放画幅, version: "0.1.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让大图、极简标题与严格注释形成有呼吸的案例叙事
+  mood: [open, editorial, human]
+  tone: [portfolio, architectural, assured]
+  formality: medium
+  density: medium
+best_for: [ux-brand-case-study, portfolio-interview, image-led-client-review]
+avoid_for: [dense-research-appendix, finance-review]
+colors:
+  canvas: "#F6F6F3"
+  surface: "#FFFFFF"
+  text_primary: "#111214"
+  text_secondary: "#6C6D6A"
+  accent_primary: "#C65E3B"
+  accent_secondary: "#4D6757"
+  positive: "#47715C"
+  negative: "#A04B3D"
+  rule: "rgba(17,18,20,.18)"
+stylesheet: theme.css
