@@ -1,0 +1,28 @@
+schema_version: "0.1"
+meta:
+  id: learning-agent
+  name: Learning Agent
+  name_zh: 学习智能体
+  version: "0.4.0"
+  status: approved
+  provenance: designer-reviewed-ai-assisted
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让真实学习现场与可验收的 Agent 委托交替出现
+  mood: [editorial, human, assured]
+  tone: [facilitative, contemporary, credible]
+  formality: medium
+  density: medium
+best_for: [corporate-training-workshop, agent-literacy-workshop]
+avoid_for: [technical-reference-manual, passive-announcement]
+colors:
+  canvas: "#EAF0F8"
+  surface: "#FFFFFF"
+  text_primary: "#0B1632"
+  text_secondary: "#5A6476"
+  accent_primary: "#164CFF"
+  accent_secondary: "#B8F34D"
+  positive: "#237A57"
+  negative: "#C24737"
+  rule: "rgba(11,22,50,.17)"
+stylesheet: theme.css

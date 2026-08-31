@@ -5,9 +5,9 @@ license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
-  maturity: "draft"
+  maturity: "stable"
   risk: "local-write"
-  version: "0.3.0"
+  version: "0.4.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop"
@@ -19,6 +19,14 @@ metadata:
 Design an experience that helps adults perform differently at work. Slides are
 only one part of the workshop; activities, practice, feedback, facilitation, job
 aids, and transfer support are first-class outputs.
+
+## Current release
+
+Version 0.4.0 adds the approved Learning Agent theme, a 15-slide reference
+workshop, five continuity-controlled documentary image slots, Allen FRAME route
+selection and review records, and explicit direct-generation, direction-
+exploration, and real-project generalization modes. The reference deck is a
+disclosed synthetic concept, not evidence of a real client or measured outcome.
 
 ## Confirm training is the right intervention
 
@@ -92,11 +100,11 @@ participant-facing slides.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
 the three real-render previews in `assets/theme-previews/`, then default to
-Learning Canvas; offer Signal Grid and Artifact Editorial when their fit is stronger. Render with
+Learning Agent; offer Learning Canvas and Artifact Editorial when their fit is stronger. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
---allow-draft-design --theme references/themes/learning-canvas/theme.yaml
---allow-draft-theme`, then open and inspect every slide. Repair the IR and
+--allow-draft-design --theme references/themes/learning-agent/theme.yaml`, then
+open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, unclear during facilitation, or
 visually repetitive.
 

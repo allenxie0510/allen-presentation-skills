@@ -1,0 +1,43 @@
+schema_version: "0.1"
+subject:
+  theme: learning-agent
+  version: "0.4.0"
+  direction: workshop-cut
+  reviewed_artifacts:
+    - assets/examples/learning-agent-0.4.0/previews/contact-sheet.webp
+    - assets/examples/learning-agent-0.4.0/learning-agent.ir.yaml
+    - references/themes/learning-agent/theme.yaml
+    - references/themes/learning-agent/art-direction.md
+  reviewer: Codex FRAME visual QA with Allen Xie release authorization
+  reviewed_at: "2026-08-31T07:55:00+08:00"
+concept_gate:
+  concept: 把 Agent 从通用科技想象转译为员工可以练习、委托并验收的工作协议，让学习行为和工作物证成为视觉主体。
+  content_origin: 可观察学习目标、四步委托循环、工作坊练习与用户对真实办公摄影的连续评审。
+  replaceability_result: 移除标题后仍能从委托卡、现场练习、四步检查点和人类验收识别课程主题，不是可替换品牌名的通用 AI 模板。
+  score: 9.1
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: 15页 IR 通过渲染器边界和文字高度检查，逐页截图未见越界、遮挡或截断。}
+  readability: {passed: true, evidence: 1920×1080 全尺寸与联系表均检查；标题、活动步骤、表格和迁移动作保持会议室层级。}
+  truth: {passed: true, evidence: 概念项目、合成图片和示例模型均显式披露，未伪造客户、评价、通过率或业务成果。}
+  image_integrity: {passed: true, evidence: 五张连续场景照片分别承担相关性、示范、练习与迁移证据，裁切、人物行为、材质和服装通过真实感检查。}
+  accessibility: {passed: true, evidence: 蓝绿信号同时由编号、位置、标签和边框表达，关键信息不只依赖颜色。}
+  provenance: {passed: true, evidence: 图片由内置生成能力制作并记录提示词、SHA-256和合成状态；字体使用开源或系统回退。}
+  visual_inspection: {passed: true, evidence: 已检查15张全尺寸截图及5×3联系表，并复核封面、密集表格、活动页、人物页、迁移页和结尾页。}
+dimensions:
+  philosophy_narrative: {score: 9.2, weight: 20, finding: 视觉语法来自可委托、可验收的学习任务，而不是通用 AI 装饰。}
+  hierarchy_rhythm: {score: 8.8, weight: 25, finding: 白色说明、钴蓝模型、人物练习和结尾承诺形成清晰的安静—工作—峰值节奏。}
+  craft_system: {score: 8.7, weight: 20, finding: 对齐、圆角、图片裁切、标题断句、表格和活动组件在15页中保持一致而不单调。}
+  communication_evidence: {score: 9.1, weight: 20, finding: 每张图片和组件都服务判断、练习、评估或迁移；证据状态和限制可见。}
+  authorship_originality: {score: 8.6, weight: 15, finding: 现场切片与委托检查点形成可解释的专属表达，并避免机器人、发光球和SaaS卡片墙。}
+weighted_score: 88.9
+verdict: approval-candidate
+keep:
+  - 保留纪实人物、任务物证、钴蓝教学定位与酸性绿人类验收的组合。
+  - 保留安静说明页、工作组件页与人物峰值页交替的跨页节奏。
+  - 保留对概念项目、合成图片和能力边界的显式披露。
+fix: []
+quick_wins:
+  - 真实客户项目优先用获授权的现场照片替换示例合成图片。
+  - 根据实际 Agent 产品和企业政策替换能力、权限与风险边界。
+  - 首次真实项目完成后把结构例外与主持失败写入回归评测。

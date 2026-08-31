@@ -100,9 +100,9 @@ routes:
       - {id: practice, archetype: closing, validation_goal: 验证深色协议语言能否保持练习指令可用, preview: assets/explorations/learning-agent/previews/delegation-protocol-practice.webp}
     risks: [深色与编号过强时可能让入门培训显得过于技术化或压迫]
 selection:
-  status: pending
-  selected_route: null
-  decided_by: null
-  decision_rationale: null
-  user_quote: null
-  decided_at: null
+  status: designer-approved
+  selected_route: workshop-cut
+  decided_by: Allen Xie release authorization; Codex FRAME review
+  decision_rationale: Workshop Cut best satisfies the repeated requirement for credible office photography, varied low-saturation wardrobe, human learning behavior, room-distance clarity, and a less technical employee-training tone. The other two routes remain exploration evidence rather than released themes.
+  user_quote: 请发布正式`0.4.0`
+  decided_at: "2026-08-31T07:45:00+08:00"

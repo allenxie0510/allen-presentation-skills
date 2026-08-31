@@ -1,8 +1,10 @@
-# Learning Agent pre-selection QA
+# Learning Agent pre-selection QA — historical record
 
-Status: route comparison, not a formal design-review score. Selection remains
-`pending`; no route is user-approved and no complete 15-slide template has been
-built.
+This file records the route-comparison gate before release. Selection is now
+`designer-approved`: Workshop Cut became the Learning Agent 0.4.0 theme after a
+15-slide build and formal review. See
+`fixtures/design-reviews/learning-agent-0.4.0.yaml` and
+`assets/examples/learning-agent-0.4.0/` for the release evidence.
 
 ## Controlled comparison
 
@@ -48,6 +50,6 @@ built.
 - **Delegation Protocol:** is the most distinctive, but needs lighter quiet pages
   so an introductory employee audience does not experience it as overly technical.
 
-Formal hard-gate review and five-lens scoring start only after the user selects or
-combines a route and representative cover, narrative, data, structure, and ending
-frames exist.
+The formal hard-gate review and five-lens scoring were completed after the
+Workshop Cut selection and representative cover, narrative, data, structure,
+activity, transfer, and ending frames were rendered.

@@ -13,9 +13,10 @@ evidence, conclusion, or scenario narrative.
 6. Load only the selected `theme.yaml` and `theme.css`, then render with
    `--theme <path>/theme.yaml --allow-draft-theme`.
 
-All six bundled themes are draft in version 0.4.0. Do not describe them as
-approved or as copied from another presentation system. They share the Allen
-Presentation Design System contract while keeping independent visual expression.
+Learning Agent 0.4.0 is the approved Corporate Training Workshop default. The
+other six bundled themes remain draft and must not be described as approved or
+as copied from another presentation system. All share the Allen Presentation
+Design System contract while keeping independent visual expression.
 
 Theme selection compares existing expressions. Theme creation or a major visual
 redesign is a different workflow: read `allen-frame-method.md`, render three
@@ -30,4 +31,4 @@ new gallery candidate.
 | Industry Research Deck | Evidence Ledger | Executive Night, Signal Grid |
 | Speech Pitch Deck | Stage Contrast | Executive Night, Artifact Editorial |
 | UX Brand Case Study | Artifact Editorial | Signal Grid, Stage Contrast |
-| Corporate Training Workshop | Learning Canvas | Signal Grid, Artifact Editorial |
+| Corporate Training Workshop | Learning Agent | Learning Canvas, Artifact Editorial |

@@ -1,0 +1,645 @@
+schema_version: "0.1"
+deck:
+  id: learning-agent-0.4.0
+  title: Learning Agent
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: corporate-training-workshop, version: "0.4.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium
+  mode: presenting-first
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: "2026-08-31T00:00:00+08:00"
+    updated_at: "2026-08-31T00:00:00+08:00"
+    source_note: Synthetic Learning Agent reference workshop; no real client, deployment, learner result, or business impact is claimed.
+slides:
+  - id: s01
+    archetype: cover
+    purpose: Connect Agent learning to accountable workplace delegation.
+    grammar: narrative
+    assertion: {text: 把会聊天的 AI，变成能完成工作的协作者, status: provisional}
+    narrative_role: {section: relevance-opening, sequence: opening}
+    layout_variant: cover-indexed
+    permission_profile: content-style
+    speaker_notes: 先询问学员最近一次把工作交给 AI 的经历；不要承诺课程本身会带来业务成果。
+    objects:
+      - id: s01-title
+        type: text
+        role: deck-title
+        content: {text: "LEARNING\nAGENT"}
+        frame: {x: 760, y: 170, w: 1000, h: 270}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 108}}
+        editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}
+      - id: s01-promise
+        type: text
+        role: learning-promise
+        content: {text: "把会聊天的 AI，\n变成能完成工作的协作者。"}
+        frame: {x: 760, y: 485, w: 920, h: 180}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 47}}
+        editable: *edit
+      - id: s01-context
+        type: text
+        role: workshop-context
+        content: {text: 企业员工工作坊 · AI Agent 顾问 · 90 MIN}
+        frame: {x: 760, y: 765, w: 800, h: 58}
+        style: {token: typography.body, variant: null, overrides: {font_size: 20}}
+        editable: *edit
+      - id: s01-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC CONCEPT · 示例内容与图片均为概念项目}
+        frame: {x: 760, y: 950, w: 660, h: 30}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit
+      - id: s01-photo
+        type: image
+        role: workshop-wide-photo
+        content: {src: photos/workshop-wide.webp, alt: 概念工作坊中顾问与企业员工围绕任务卡讨论, fit: cover, position: center center}
+        frame: {x: 0, y: 0, w: 680, h: 1080}
+        style: {token: image.documentary, variant: workshop-wide}
+        constraints: {min_w: 640, min_h: 800, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s01-caption
+        type: text
+        role: photo-caption
+        content: {text: 01 / PRACTICE BEFORE PROMISE}
+        frame: {x: 44, y: 1004, w: 520, h: 32}
+        style: {token: typography.caption, variant: photo-overlay, overrides: {font_size: 12}}
+        editable: *edit
+
+  - id: s02
+    archetype: statement
+    purpose: Establish the performance gap without blaming learners.
+    grammar: assertion
+    assertion: {text: 会聊天，不等于会把工作可靠地交给 Agent, status: provisional}
+    narrative_role: {section: performance-need, sequence: context}
+    layout_variant: statement-bracketed
+    permission_profile: content-style
+    speaker_notes: 请用真实需求访谈替换三个概念性失误模式；若问题来自权限、流程或工具，应同步提出非培训干预。
+    objects:
+      - id: s02-kicker
+        type: text
+        role: section-kicker
+        content: {text: PERFORMANCE NEED}
+        frame: {x: 112, y: 116, w: 600, h: 44}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 17}}
+        editable: *edit
+      - id: s02-title
+        type: text
+        role: slide-assertion
+        content: {text: "会聊天，\n不等于会把工作可靠地交给 Agent。"}
+        frame: {x: 112, y: 195, w: 1500, h: 200}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 61}}
+        editable: *edit
+      - id: s02-patterns
+        type: group
+        role: failure-patterns
+        content: {stages: ["目标模糊\n没有完成条件", "上下文不足\n缺资料与约束", "无人验收\n直接使用输出"]}
+        frame: {x: 112, y: 520, w: 1696, h: 260}
+        style: {token: components.comparison.cards, variant: failure-patterns}
+        editable: *edit
+      - id: s02-note
+        type: text
+        role: evidence-note
+        content: {text: 示例诊断：正式项目必须用需求访谈、工作样本或观察证据替换。}
+        frame: {x: 112, y: 860, w: 1380, h: 72}
+        style: {token: typography.body, variant: null, overrides: {font_size: 22}}
+        editable: *edit
+
+  - id: s03
+    archetype: statement
+    purpose: State observable learning outcomes.
+    grammar: hierarchy
+    assertion: {text: 课程结束时，学员要能完成三项可观察行为, status: provisional}
+    narrative_role: {section: learning-outcomes, sequence: context}
+    layout_variant: statement-left
+    permission_profile: content-style
+    speaker_notes: 请在活动和评估中观察这三项行为，不把“理解”或“知道”作为唯一目标。
+    objects:
+      - id: s03-title
+        type: text
+        role: slide-assertion
+        content: {text: "课程结束时，\n学员要能完成三项可观察行为。"}
+        frame: {x: 112, y: 160, w: 1500, h: 190}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 56}}
+        editable: *edit
+      - id: s03-outcomes
+        type: group
+        role: learning-outcomes
+        content: {stages: ["01 判断\n任务是否适合 Agent", "02 委托\n写出目标、资料与边界", "03 验收\n检查来源、异常与责任"]}
+        frame: {x: 112, y: 475, w: 1696, h: 300}
+        style: {token: components.process.outcomes, variant: observable-outcomes}
+        editable: *edit
+      - id: s03-criterion
+        type: text
+        role: success-evidence
+        content: {text: 成功证据：一张可执行的委托卡 + 一次有依据的人类验收。}
+        frame: {x: 112, y: 850, w: 1450, h: 80}
+        style: {token: typography.body, variant: null, overrides: {font_size: 26, font_weight: 750}}
+        editable: *edit
+
+  - id: s04
+    archetype: timeline
+    purpose: Show the protected practice-led agenda.
+    grammar: process
+    assertion: {text: 90 分钟只讲最小模型，把一半时间留给练习与反馈, status: provisional}
+    narrative_role: {section: workshop-agenda, sequence: context}
+    layout_variant: phased-roadmap
+    permission_profile: content-style
+    speaker_notes: 保留练习和复盘时间；如总时长缩短，优先删减讲解而不是删练习。
+    objects:
+      - id: s04-title
+        type: text
+        role: slide-assertion
+        content: {text: "90 分钟只讲最小模型，\n把一半时间留给练习与反馈。"}
+        frame: {x: 112, y: 150, w: 1480, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 53}}
+        editable: *edit
+      - id: s04-agenda
+        type: group
+        role: agenda-phases
+        content: {stages: ["08 MIN\n相关性", "15 MIN\n最小模型", "12 MIN\n任务判断", "20 MIN\n委托练习", "20 MIN\n验收练习", "15 MIN\n迁移承诺"]}
+        frame: {x: 112, y: 445, w: 1696, h: 300}
+        style: {token: components.timeline.agenda, variant: protected-practice}
+        editable: *edit
+      - id: s04-practice
+        type: text
+        role: practice-time
+        content: {text: 练习、反馈与迁移：55 MIN}
+        frame: {x: 112, y: 845, w: 700, h: 78}
+        style: {token: typography.body, variant: null, overrides: {font_size: 28, font_weight: 800, color: "#164CFF"}}
+        editable: *edit
+
+  - id: s05
+    archetype: comparison
+    purpose: Distinguish chat behavior from bounded Agent work.
+    grammar: comparison
+    assertion: {text: Agent 的区别不是更像人，而是能在边界内持续行动, status: provisional}
+    narrative_role: {section: mental-model, sequence: explanation}
+    layout_variant: split-comparison
+    permission_profile: content-style
+    speaker_notes: 这是概念区分，不代表所有产品都具备相同工具、权限或持续运行能力。
+    objects:
+      - id: s05-title
+        type: text
+        role: slide-assertion
+        content: {text: "Agent 的区别不是更像人，\n而是能在边界内持续行动。"}
+        frame: {x: 112, y: 150, w: 1500, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 54}}
+        editable: *edit
+      - id: s05-table
+        type: table
+        role: agent-chatbot-comparison
+        content:
+          columns: [维度, Chatbot 对话, Agent 工作]
+          rows:
+            - [起点, 一个问题, 一个结果与完成条件]
+            - [上下文, 当前对话, 资料、约束、权限与工具]
+            - [行动, 生成回答, 执行多步任务并报告状态]
+            - [责任, 用户判断答案, 人类保留验收与最终责任]
+        frame: {x: 112, y: 410, w: 1696, h: 440}
+        style: {token: components.comparison.table, variant: agent-chatbot}
+        editable: *edit
+      - id: s05-disclosure
+        type: text
+        role: model-note
+        content: {text: 概念教学模型 · 请按所用产品的真实能力、权限与企业政策校准。}
+        frame: {x: 112, y: 915, w: 1200, h: 44}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 15}}
+        editable: *edit
+
+  - id: s06
+    archetype: process
+    purpose: Explain the smallest useful delegation loop.
+    grammar: process
+    assertion: {text: 一次可靠委托，需要目标、上下文、行动和人类验收, status: provisional}
+    narrative_role: {section: mental-model, sequence: explanation}
+    layout_variant: learning-loop
+    permission_profile: content-style
+    speaker_notes: 用学员熟悉的任务逐步演示四个检查点；不要把流程讲成特定产品的隐藏机制。
+    objects:
+      - id: s06-kicker
+        type: text
+        role: model-kicker
+        content: {text: THE DELEGATION LOOP}
+        frame: {x: 112, y: 112, w: 640, h: 44}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 18}}
+        editable: *edit
+      - id: s06-title
+        type: text
+        role: slide-assertion
+        content: {text: "一次可靠委托，需要目标、上下文、\n行动和人类验收。"}
+        frame: {x: 112, y: 178, w: 1510, h: 180}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 55}}
+        editable: *edit
+      - id: s06-loop
+        type: group
+        role: delegation-stages
+        content: {stages: ["01\n定目标", "02\n给上下文", "03\n让它行动", "04\n人来验收"]}
+        frame: {x: 112, y: 500, w: 1120, h: 260}
+        style: {token: components.process.learning-loop, variant: delegation-loop}
+        editable: *edit
+      - id: s06-photo
+        type: image
+        role: model-demonstration-photo
+        content: {src: photos/model-demonstration.webp, alt: 概念工作坊中顾问用四张蓝色卡片解释委托循环, fit: cover, position: center center}
+        frame: {x: 1290, y: 465, w: 518, h: 390}
+        style: {token: image.documentary, variant: demonstration}
+        constraints: {min_w: 480, min_h: 340, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s06-boundary
+        type: text
+        role: human-boundary
+        content: {text: 人类保留：授权边界 · 来源检查 · 异常处理 · 最终责任}
+        frame: {x: 112, y: 890, w: 1450, h: 70}
+        style: {token: typography.body, variant: null, overrides: {font_size: 24, font_weight: 750}}
+        editable: *edit
+
+  - id: s07
+    archetype: comparison
+    purpose: Give learners a practical task-suitability test.
+    grammar: decision
+    assertion: {text: 不是所有任务都该交给 Agent；先看可验证性与风险, status: provisional}
+    narrative_role: {section: task-fit, sequence: explanation}
+    layout_variant: tradeoff-matrix
+    permission_profile: content-style
+    speaker_notes: 让学员带入一个自己的任务，用企业实际数据等级、权限和审批要求校准判断。
+    objects:
+      - id: s07-title
+        type: text
+        role: slide-assertion
+        content: {text: "不是所有任务都该交给 Agent；\n先看可验证性与风险。"}
+        frame: {x: 112, y: 145, w: 1450, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 54}}
+        editable: *edit
+      - id: s07-tests
+        type: group
+        role: decision-tests
+        content: {stages: ["结果能否\n被人检查？", "资料是否\n允许提供？", "行动是否\n可撤销？", "错误代价是否\n可接受？"]}
+        frame: {x: 112, y: 425, w: 1696, h: 260}
+        style: {token: components.decision.tests, variant: four-tests}
+        editable: *edit
+      - id: s07-guide
+        type: table
+        role: task-fit-guide
+        content:
+          columns: [适合先练, 需要加强控制, 暂不委托]
+          rows:
+            - [整理与准备, 有限外部行动, 高风险不可逆决策]
+            - [可人工核对, 需要审批与日志, 无法验证的专业结论]
+        frame: {x: 112, y: 770, w: 1696, h: 180}
+        style: {token: components.comparison.table, variant: task-fit}
+        editable: *edit
+
+  - id: s08
+    archetype: two-column
+    purpose: Demonstrate the model on one bounded work task.
+    grammar: evidence
+    assertion: {text: 一份好委托，不从提示词开始，而从完成条件开始, status: provisional}
+    narrative_role: {section: worked-example, sequence: explanation}
+    layout_variant: two-column-emphasis
+    permission_profile: content-style
+    speaker_notes: 逐步揭示输入、Agent 工作与人类检查；要求学员指出仍缺失的上下文。
+    objects:
+      - id: s08-title
+        type: text
+        role: slide-assertion
+        content: {text: "一份好委托，不从提示词开始，\n而从完成条件开始。"}
+        frame: {x: 112, y: 145, w: 1500, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 54}}
+        editable: *edit
+      - id: s08-input
+        type: text
+        role: worked-input
+        content: {text: "输入 / 会前准备\n\n目标：形成可供主持人使用的会前简报\n资料：议程、参会人、上次纪要\n约束：不发送消息，不补造缺失事实\n完成：风险、待确认问题和行动清单齐全"}
+        frame: {x: 112, y: 410, w: 760, h: 450}
+        style: {token: typography.body, variant: null, overrides: {font_size: 25, line_height: 1.45}}
+        editable: *edit
+      - id: s08-output
+        type: text
+        role: worked-output
+        content: {text: "Agent 工作\n\n1. 整理背景与会议目标\n2. 标记资料冲突和缺口\n3. 生成简报与问题清单\n4. 报告未完成项，不擅自外发"}
+        frame: {x: 940, y: 410, w: 868, h: 260}
+        style: {token: typography.body, variant: null, overrides: {font_size: 25, line_height: 1.42}}
+        editable: *edit
+      - id: s08-check
+        type: text
+        role: human-check
+        content: {text: "人类验收\n\n来源是否正确？关键人是否遗漏？敏感信息是否越界？哪些内容必须由负责人确认？"}
+        frame: {x: 940, y: 710, w: 868, h: 220}
+        style: {token: typography.body, variant: null, overrides: {font_size: 25, line_height: 1.42}}
+        editable: *edit
+
+  - id: s09
+    archetype: process
+    purpose: Launch the first guided practice.
+    grammar: decision
+    assertion: {text: 把一次会前准备，真正交给 Agent, status: provisional}
+    narrative_role: {section: activity-brief, sequence: decision}
+    layout_variant: linear-process
+    permission_profile: content-style
+    speaker_notes: 12分钟。2人一组；先判断任务，再写委托卡。没有可用 Agent 时使用纸卡模拟。结束前收集一张可展示的委托卡。
+    objects:
+      - id: s09-label
+        type: text
+        role: activity-label
+        content: {text: PRACTICE 01 · 12 MIN · PAIRS}
+        frame: {x: 80, y: 108, w: 620, h: 45}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 17, color: "#164CFF"}}
+        editable: *edit
+      - id: s09-title
+        type: text
+        role: practice-title
+        content: {text: "把一次会前准备，\n真正交给 Agent。"}
+        frame: {x: 80, y: 185, w: 840, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 58}}
+        editable: *edit
+      - id: s09-photo
+        type: image
+        role: practice-detail-photo
+        content: {src: photos/practice-detail.webp, alt: 同一组概念学员在木桌上排列委托步骤卡, fit: cover, position: center center}
+        frame: {x: 990, y: 74, w: 850, h: 650}
+        style: {token: image.documentary, variant: practice-detail}
+        constraints: {min_w: 680, min_h: 480, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s09-steps
+        type: group
+        role: activity-steps
+        content: {stages: ["判断\n是否适合", "写明\n目标与资料", "限定\n权限与边界", "定义\n验收标准"]}
+        frame: {x: 80, y: 480, w: 820, h: 270}
+        style: {token: components.process.activity, variant: practice-steps}
+        editable: *edit
+      - id: s09-output
+        type: text
+        role: expected-output
+        content: {text: 输出 · 一张可执行的 Agent 委托卡}
+        frame: {x: 80, y: 845, w: 820, h: 60}
+        style: {token: typography.body, variant: null, overrides: {font_size: 23}}
+        editable: *edit
+      - id: s09-fallback
+        type: text
+        role: facilitator-fallback
+        content: {text: 无可用 Agent：用纸卡模拟输入、行动、异常和验收。}
+        frame: {x: 990, y: 810, w: 850, h: 88}
+        style: {token: typography.body, variant: null, overrides: {font_size: 20}}
+        editable: *edit
+      - id: s09-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC WORKSHOP SCENE · 非真实项目记录}
+        frame: {x: 990, y: 950, w: 798, h: 30}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit
+
+  - id: s10
+    archetype: quote
+    purpose: Turn practice observations into a transferable rule.
+    grammar: quote
+    assertion: {text: 如果输出无法被验收，这不是委托，只是把不确定性往后推, status: provisional}
+    narrative_role: {section: debrief, sequence: recap}
+    layout_variant: reflection-quote
+    permission_profile: content-style
+    speaker_notes: 依次追问：哪里最难写清？Agent 可能在哪一步越界？验收标准怎样改变了输入？把学员答案写回真实工作语言。
+    objects:
+      - id: s10-prompt
+        type: text
+        role: reflection-prompt
+        content: {text: "如果输出无法被验收，\n这不是委托，\n只是把不确定性往后推。"}
+        frame: {x: 150, y: 180, w: 1500, h: 360}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 74, line_height: 1.14}}
+        editable: *edit
+      - id: s10-questions
+        type: text
+        role: debrief-questions
+        content: {text: "复盘：哪里最难写清？最可能发生什么异常？谁必须做最后判断？"}
+        frame: {x: 150, y: 650, w: 1500, h: 90}
+        style: {token: typography.body, variant: null, overrides: {font_size: 28, color: "#FFFFFF"}}
+        editable: *edit
+      - id: s10-rule
+        type: text
+        role: debrief-rule
+        content: {text: 先定义验收，再设计委托。}
+        frame: {x: 150, y: 830, w: 1100, h: 80}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 42}}
+        editable: *edit
+
+  - id: s11
+    archetype: two-column
+    purpose: Launch independent application and peer review.
+    grammar: narrative
+    assertion: {text: 第二轮不再照抄示例：用自己的任务接受同伴挑战, status: provisional}
+    narrative_role: {section: independent-practice, sequence: decision}
+    layout_variant: two-column-balanced
+    permission_profile: content-style
+    speaker_notes: 20分钟。每人带入一个真实但可分享的任务；同伴按四项标准提出一个澄清问题和一个风险提醒。敏感任务改用匿名或低风险替代案例。
+    objects:
+      - id: s11-title
+        type: text
+        role: slide-assertion
+        content: {text: "第二轮不再照抄示例：\n用自己的任务接受同伴挑战。"}
+        frame: {x: 112, y: 135, w: 1500, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 54}}
+        editable: *edit
+      - id: s11-photo
+        type: image
+        role: paired-practice-photo
+        content: {src: photos/paired-practice.webp, alt: 概念学员两人一组检查委托表并在笔记本电脑上练习, fit: cover, position: center center}
+        frame: {x: 112, y: 380, w: 900, h: 540}
+        style: {token: image.documentary, variant: paired-practice}
+        constraints: {min_w: 760, min_h: 460, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s11-brief
+        type: text
+        role: worked-output
+        content: {text: "个人任务 / 8 MIN\n写出目标、资料、边界和验收。\n\n同伴挑战 / 7 MIN\n提出一个缺失信息和一个越界风险。\n\n修订提交 / 5 MIN\n交付一张可执行委托卡。"}
+        frame: {x: 1080, y: 380, w: 728, h: 330}
+        style: {token: typography.body, variant: null, overrides: {font_size: 26, line_height: 1.48}}
+        editable: *edit
+      - id: s11-safe
+        type: text
+        role: human-check
+        content: {text: 敏感任务：匿名化、降级为低风险案例，或只做纸面模拟。}
+        frame: {x: 1080, y: 760, w: 728, h: 150}
+        style: {token: typography.body, variant: null, overrides: {font_size: 24, line_height: 1.42}}
+        editable: *edit
+      - id: s11-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC WORKSHOP SCENE · 非真实项目记录}
+        frame: {x: 112, y: 950, w: 700, h: 28}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit
+
+  - id: s12
+    archetype: data
+    purpose: Define observable assessment without inventing scores.
+    grammar: hierarchy
+    assertion: {text: 评估的不是“用了 AI”，而是委托是否可执行、可控、可验收, status: provisional}
+    narrative_role: {section: knowledge-check, sequence: evidence}
+    layout_variant: evidence-ledger
+    permission_profile: content-style
+    speaker_notes: 每项使用“未表现／部分表现／清晰表现”的行为描述评分；示例不提供虚构通过率。
+    objects:
+      - id: s12-title
+        type: text
+        role: slide-assertion
+        content: {text: "评估的不是“用了 AI”，\n而是委托是否可执行、可控、可验收。"}
+        frame: {x: 112, y: 145, w: 1550, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 53}}
+        editable: *edit
+      - id: s12-criteria
+        type: group
+        role: assessment-criteria
+        content: {stages: ["目标\n结果与完成条件清楚", "上下文\n资料、约束和权限足够", "行动\n步骤与异常报告可追踪", "验收\n来源、风险和责任明确"]}
+        frame: {x: 112, y: 430, w: 1696, h: 290}
+        style: {token: components.evaluation.rubric, variant: four-criteria}
+        editable: *edit
+      - id: s12-note
+        type: text
+        role: evidence-note
+        content: {text: 证据：委托卡、Agent 工作记录或纸面模拟、同伴反馈、修订后的最终输出。}
+        frame: {x: 112, y: 815, w: 1450, h: 100}
+        style: {token: typography.body, variant: null, overrides: {font_size: 25, line_height: 1.4}}
+        editable: *edit
+
+  - id: s13
+    archetype: comparison
+    purpose: Clarify responsibility and escalation boundaries.
+    grammar: comparison
+    assertion: {text: Agent 可以承担行动，但不能替代授权、判断和责任, status: provisional}
+    narrative_role: {section: responsibility, sequence: explanation}
+    layout_variant: benchmark-table
+    permission_profile: content-style
+    speaker_notes: 用本企业的审批、数据、法务和安全政策替换示例边界；未知规则必须标记并交由责任人确认。
+    objects:
+      - id: s13-title
+        type: text
+        role: slide-assertion
+        content: {text: "Agent 可以承担行动，\n但不能替代授权、判断和责任。"}
+        frame: {x: 112, y: 145, w: 1500, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 55}}
+        editable: *edit
+      - id: s13-table
+        type: table
+        role: responsibility-matrix
+        content:
+          columns: [工作环节, Agent 可以, 人类必须]
+          rows:
+            - [准备, 整理已获授权的资料, 判断资料是否可提供]
+            - [行动, 在限定工具与权限内执行, 审批外部或不可逆动作]
+            - [异常, 标记缺口并停止或请求帮助, 处理例外与冲突]
+            - [交付, 提供结果、来源和未完成项, 验收并承担最终责任]
+        frame: {x: 112, y: 405, w: 1696, h: 455}
+        style: {token: components.comparison.table, variant: responsibility}
+        editable: *edit
+      - id: s13-note
+        type: text
+        role: policy-note
+        content: {text: 示例边界不是企业政策；发布前必须由业务、数据、安全或法务责任人确认。}
+        frame: {x: 112, y: 920, w: 1550, h: 45}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 16}}
+        editable: *edit
+
+  - id: s14
+    archetype: timeline
+    purpose: Plan workplace transfer and delayed evidence.
+    grammar: process
+    assertion: {text: 真正的学习发生在课程之后：一次应用、一次复盘、一次改进, status: provisional}
+    narrative_role: {section: transfer-commitment, sequence: decision}
+    layout_variant: milestone-evidence
+    permission_profile: content-style
+    speaker_notes: 让每位学员写明真实任务、使用时间、证据和复盘伙伴；不得把计划当作已经发生的行为改变。
+    objects:
+      - id: s14-title
+        type: text
+        role: slide-assertion
+        content: {text: "真正的学习发生在课程之后：\n一次应用、一次复盘、一次改进。"}
+        frame: {x: 112, y: 130, w: 1500, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 53}}
+        editable: *edit
+      - id: s14-plan
+        type: group
+        role: transfer-plan
+        content: {stages: ["48 小时内\n选择一个低风险真实任务", "7 天内\n保存委托卡与验收记录", "14 天内\n与同伴复盘一次异常", "30 天内\n更新个人委托模板"]}
+        frame: {x: 112, y: 430, w: 1040, h: 320}
+        style: {token: components.timeline.transfer, variant: milestone-evidence}
+        editable: *edit
+      - id: s14-photo
+        type: image
+        role: transfer-commitment-photo
+        content: {src: photos/transfer-commitment.webp, alt: 概念学员在软木板上张贴蓝色行动承诺卡, fit: cover, position: center center}
+        frame: {x: 1220, y: 390, w: 588, h: 470}
+        style: {token: image.documentary, variant: transfer}
+        constraints: {min_w: 520, min_h: 420, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s14-evidence
+        type: text
+        role: success-evidence
+        content: {text: 迁移证据：真实委托卡、验收记录、异常复盘和模板修订；不是出席或满意度。}
+        frame: {x: 112, y: 845, w: 1040, h: 90}
+        style: {token: typography.body, variant: null, overrides: {font_size: 23, line_height: 1.4}}
+        editable: *edit
+      - id: s14-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC WORKSHOP SCENE · 非真实项目记录}
+        frame: {x: 1220, y: 920, w: 580, h: 28}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit
+
+  - id: s15
+    archetype: closing
+    purpose: Convert learning into one owned next action.
+    grammar: decision
+    assertion: {text: 下一次使用 Agent 前，先写下你准备如何验收, status: provisional}
+    narrative_role: {section: transfer-commitment, sequence: closing}
+    layout_variant: closing-commitment
+    permission_profile: content-style
+    speaker_notes: 请学员完成承诺句并与同伴交换；记录复盘日期。不要以口号或合影替代具体行动。
+    objects:
+      - id: s15-label
+        type: text
+        role: activity-label
+        content: {text: YOUR NEXT DELEGATION}
+        frame: {x: 82, y: 112, w: 620, h: 44}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 17, color: "#164CFF"}}
+        editable: *edit
+      - id: s15-title
+        type: text
+        role: closing-title
+        content: {text: "下一次使用 Agent 前，\n先写下你准备如何验收。"}
+        frame: {x: 82, y: 195, w: 850, h: 220}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 59}}
+        editable: *edit
+      - id: s15-line
+        type: text
+        role: commitment-line
+        content: {text: "我将在＿＿＿＿任务中使用 Agent；\n我会用＿＿＿＿证据验收，并在＿＿＿＿与＿＿＿＿复盘。"}
+        frame: {x: 82, y: 530, w: 850, h: 210}
+        style: {token: typography.body, variant: null, overrides: {font_size: 29, line_height: 1.5}}
+        editable: *edit
+      - id: s15-photo
+        type: image
+        role: closing-photo
+        content: {src: photos/transfer-commitment.webp, alt: 概念学员完成并张贴蓝色行动承诺卡, fit: cover, position: center center}
+        frame: {x: 1010, y: 76, w: 830, h: 820}
+        style: {token: image.documentary, variant: closing}
+        constraints: {min_w: 720, min_h: 700, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s15-owner
+        type: text
+        role: review-date
+        content: {text: 负责人 · 复盘伙伴 · 日期}
+        frame: {x: 82, y: 835, w: 650, h: 50}
+        style: {token: typography.body, variant: null, overrides: {font_size: 22, font_weight: 750}}
+        editable: *edit
+      - id: s15-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: SYNTHETIC REFERENCE DECK · 请用真实项目证据替换示例内容}
+        frame: {x: 82, y: 952, w: 800, h: 28}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 11}}
+        editable: *edit

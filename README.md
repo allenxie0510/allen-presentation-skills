@@ -12,10 +12,48 @@
 - [UX Brand Case Study](skills/ux-brand-case-study/)
 - [Corporate Training Workshop](skills/corporate-training-workshop/)
 
+## 直接交给 AI 使用
+
+把本仓库地址或某个 Skill 目录链接发给能够读取公开 GitHub 仓库的 AI，并明确
+要求它先读取对应的 `SKILL.md`。公开仓库地址：
+
+`https://github.com/allenxie0510/allen-presentation-skills`
+
+调用 Corporate Training Workshop 0.4.0 的推荐提示词：
+
+```text
+请读取并使用这个公开 GitHub Skill：
+https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop
+
+先读取 SKILL.md，并按其中的相对链接继续读取本任务需要的 references、Schema、
+主题和脚本。请使用 $corporate-training-workshop 0.4.0，把我提供的真实项目资料
+制作成可主持、可练习、可评估和可迁移的网页 Workshop。
+
+默认使用已批准的 Learning Agent 主题；不要自动重新做三个 FRAME 方向。
+不要虚构需求、数据、人物、评价或项目成果。生成 Schema-valid Presentation IR，
+渲染自包含 HTML，并逐页检查后再交付。
+
+我的项目资料：[粘贴内容或提供文件]
+```
+
+如果 AI 不支持读取 GitHub，它无法仅凭链接自动获得 Skill；此时先克隆仓库，
+再把本地 `skills/corporate-training-workshop/` 目录提供给它。仓库根链接用于发现
+全部 Skills，具体 Skill 目录链接最适合直接调用。
+
+### 给正在读取本仓库的 AI
+
+1. 根据用户场景选择一个 `skills/<name>/SKILL.md`，先读取该入口文件。
+2. 只继续读取入口为当前模式链接的 references、Schema、主题与脚本。
+3. 相对路径均以该 Skill 目录为根；不要依赖本仓库之外的私有文件。
+4. 保留 Skill 的证据、许可、验证和“不虚构”边界。
+5. 用户要求实际网页演示时，必须返回有效 IR、实际 HTML 和逐页检查结果，
+   不能只返回大纲或假装执行了无法执行的渲染。
+
 ## Presentation Theme Gallery · 演示主题画廊
 
-以下六套主题目前均为**草稿**；Signal Grid 已升级为 `0.5.0`，其余主题仍为
-`0.3.0`。画廊按场景展示 15 组真实渲染结果；
+Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。通用画廊中的
+其余六套主题仍为**草稿**；Signal Grid 为 `0.5.0`，其他通用主题为
+`0.3.0`。通用画廊按场景展示 15 组真实渲染结果；
 每组依次为封面页、核心组件页和收尾页，并使用同一份场景 Presentation IR，
 便于比较主题差异，而不是比较内容差异。
 
@@ -159,7 +197,21 @@
 
 叙事路径：绩效需要 → 可观察目标 → 模型 → 示例 → 练习反馈 → 评估与迁移。
 
-#### [Learning Canvas · 学习画布](skills/presentation-core/themes/learning-canvas/) · 默认主题
+#### [Learning Agent · 学习智能体](skills/corporate-training-workshop/references/themes/learning-agent/) · 已批准默认主题 · 0.4.0
+
+<p>
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/corporate-training-workshop/assets/theme-previews/learning-agent-01-cover.webp" width="32.5%" alt="企业培训与工作坊，Learning Agent 主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/corporate-training-workshop/assets/theme-previews/learning-agent-02-core.webp" width="32.5%" alt="企业培训与工作坊，Learning Agent 主题，四步委托模型页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/corporate-training-workshop/assets/theme-previews/learning-agent-03-closing.webp" width="32.5%" alt="企业培训与工作坊，Learning Agent 主题，迁移承诺页" />
+</p>
+
+> 真实感办公纪实摄影、可验收的 Agent 委托模型与练习—反馈—迁移路径。包含
+> [15页正式参考示例](skills/corporate-training-workshop/assets/examples/learning-agent-0.4.0/)
+> 和完整图片来源记录；示例明确标注为概念项目。
+
+<img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/corporate-training-workshop/assets/examples/learning-agent-0.4.0/previews/contact-sheet.webp" width="100%" alt="Learning Agent 0.4.0 十五页正式参考示例联系表" />
+
+#### [Learning Canvas · 学习画布](skills/presentation-core/themes/learning-canvas/)
 
 <p>
   <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/learning-canvas-01-cover.webp" width="32.5%" alt="企业培训与工作坊，学习画布主题，封面页" />
@@ -192,9 +244,9 @@
 [打开独立画廊索引](skills/presentation-core/gallery/README.md)，可继续查看主题元数据与
 15 张三联对比图。当前画廊共包含 45 张 1920×1080 的真实渲染截图。
 
-可以把任一 Skill 目录链接直接发给支持 GitHub 读取的 AI，也可以克隆整个
-仓库后从本地目录使用。每个场景 Skill 都自带网页渲染器、设计系统、Schema
-和运行资源，不依赖私有仓库。
+每个场景 Skill 都自带网页渲染器、设计系统、Schema 和运行资源，不依赖私有
+仓库。能读取 GitHub 的 AI 可按本页顶部提示直接使用；其他环境可克隆后从本地
+Skill 目录调用。
 
 ## 输出能力
 
@@ -207,8 +259,9 @@
 - 通过 `--theme <theme.yaml> --allow-draft-theme` 生成所选主题的网页幻灯片。
 
 当前不生成原生 `.pptx`，浏览器编辑也不会自动同步回 Presentation IR。
-内置 Allen Signal Grid 设计系统与六套 0.3.0 主题仍为 `draft`，不应被描述为
-已批准品牌系统。
+底层 Allen Signal Grid 设计系统与六套通用主题仍为 `draft`；Learning Agent
+主题已通过15页渲染、硬性门槛和五维评审，作为 Corporate Training Workshop
+0.4.0 的已批准默认主题发布。主题批准不代表概念示例中的客户、能力或成效为真。
 
 ## 发布说明
 

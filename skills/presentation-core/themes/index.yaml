@@ -5,6 +5,18 @@ selection_policy:
   preview_sequence: [cover, core-component, closing]
   disclosure: Read this index first, inspect only shortlisted preview.md files, then load only the selected theme.yaml and theme.css.
 themes:
+  - id: learning-agent
+    name: Learning Agent
+    name_zh: 学习智能体
+    tagline: 让真实学习现场与可验收的 Agent 委托交替出现
+    mood: [editorial, human, assured]
+    tone: [facilitative, contemporary, credible]
+    formality: medium
+    density: medium
+    best_for: [corporate-training-workshop, agent-literacy-workshop]
+    avoid_for: [technical-reference-manual, passive-announcement]
+    preview: learning-agent/preview.md
+    theme: learning-agent/theme.yaml
   - id: signal-grid
     name: Signal Grid
     name_zh: 信号网格

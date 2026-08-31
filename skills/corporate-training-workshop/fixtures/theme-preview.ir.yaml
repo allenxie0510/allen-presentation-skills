@@ -5,7 +5,7 @@ deck:
   language: zh-CN
   aspect_ratio: "16:9"
   canvas: {width: 1920, height: 1080}
-  scenario: {id: corporate-training-workshop, version: "0.3.0"}
+  scenario: {id: corporate-training-workshop, version: "0.4.0"}
   design_system: {id: allen-signal-grid, version: "0.1"}
   density: medium
   mode: presenting-first
