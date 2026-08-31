@@ -48,10 +48,10 @@ routes:
     intent: 以高对比、模块化和酸性色建立最快速、最具会议室判断力的案例结构。
     audience_effect: 让客户和设计负责人迅速看见问题、角色、取舍与证据边界。
     axes:
-      grid: 左侧主叙事与右侧模块区交替，使用不等宽硬边矩形。
-      typography: 高字重无衬线、大幅中文标题、紧凑行距与短标签。
+      grid: 左侧主叙事与右侧模块区交替，使用不等宽、无描边的大圆角色块。
+      typography: 高字重无衬线、大幅中文标题、放大的首行标签与克制正文形成尺度反差。
       imagery: 图片作为大块现场证据，与黑色区域形成强对照。
-      rhythm: 强标题开场，模块化工作页，黑底加酸色反思峰值。
+      rhythm: 松弛封面、紧凑证据页、放大选项的迭代峰值与黑底酸色收束交替出现。
       material_color: 暖白、深黑与单一酸性黄绿，紫色只保留为次级信号。
     changed_axes: [grid, typography, imagery, rhythm, material_color]
     frames:
@@ -67,10 +67,10 @@ routes:
     intent: 将品牌手册的材料感、编号与细线原则转译成能够追溯判断的案例档案。
     audience_effect: 让评审者感受到系统严谨、工艺精度以及对作品物证的尊重。
     axes:
-      grid: 页眉索引加档案式分区，模块沿细线与统一基线组织。
-      typography: 中等字重、宽松标题与克制正文，强调编号和术语层级。
+      grid: 页眉索引加档案式分区，模块沿有证据作用的细线与统一基线组织。
+      typography: 超大判断句、中等字重标题、放大编号和克制正文建立编辑式层级。
       imagery: 降饱和纪实图与材料应用图像并置，裁切更接近品牌规范档案。
-      rhythm: 安静封面、规则化证据页、中心焦点迭代页和低声量反思。
+      rhythm: 安静封面、紧凑证据页、放大的中心迭代物证、系统密页和低声量反思形成疏密波形。
       material_color: 暖纸白、石灰灰、苔绿色与陶土棕，纹理仅作为微弱材料信号。
     changed_axes: [grid, typography, imagery, rhythm, material_color]
     frames:
@@ -87,9 +87,9 @@ routes:
     audience_effect: 让招聘经理和设计领导在人的语境、系统判断与个人反思之间建立更强记忆。
     axes:
       grid: 大图与不对称开放栏位交替，信息沿长水平线和大面积空白定位。
-      typography: 轻至中等字重的超大标题，与极小索引形成尺度反差。
+      typography: 轻至中等字重的超大标题、放大首行判断与极小索引形成强尺度反差。
       imagery: 图片占据主画幅，注释与规则退到边缘而不覆盖人物或关键物证。
-      rhythm: 大图开场、低密度角色页、证据密集页、开放反思页形成呼吸。
+      rhythm: 大图开场、低密度角色页、证据密集页、选项峰值、系统工作页与开放反思页形成呼吸。
       material_color: 近白底、黑字与低饱和陶土色箭头，不依赖大色块制造层级。
     changed_axes: [grid, typography, imagery, rhythm, material_color]
     frames:

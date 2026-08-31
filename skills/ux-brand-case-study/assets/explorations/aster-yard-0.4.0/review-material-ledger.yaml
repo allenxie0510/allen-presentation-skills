@@ -11,12 +11,12 @@ subject:
     - previews/material-ledger-05-system-application.webp
     - previews/material-ledger-06-outcome-reflection.webp
   reviewer: Codex visual QA
-  reviewed_at: "2026-08-31T18:20:00+08:00"
+  reviewed_at: "2026-08-31T21:05:00+08:00"
 concept_gate:
   concept: 用档案编号、纸张材料和应用物证把品牌系统的形成过程变成可追溯的设计账本。
   content_origin: Aster Yard disclosed synthetic concept project and user-provided reference principles.
   replaceability_result: 物证、触点规则与第三空间节奏共同决定材料语言，而非套用品牌手册外观。
-  score: 8.8
+  score: 8.9
   passed: true
 hard_gates:
   bounds: {passed: true, evidence: "Chromium DOM bounds check passed on all six frames."}
@@ -27,22 +27,22 @@ hard_gates:
   provenance: {passed: true, evidence: "SOURCES.md records prompts, hashes, generation mode, and reuse boundary."}
   visual_inspection: {passed: true, evidence: "Six full-size frames and the combined direction board were inspected."}
 dimensions:
-  philosophy_narrative: {score: 8.8, weight: 20, finding: "Archive behavior fits system provenance, iteration, and honest attribution particularly well."}
-  hierarchy_rhythm: {score: 8.8, weight: 25, finding: "Numbering and repeated baselines create a calm sequence with a clear central iteration peak."}
-  craft_system: {score: 9.1, weight: 20, finding: "Hairlines, restrained texture, alignment, and warm material palette feel coherent and precise."}
-  communication_evidence: {score: 8.6, weight: 20, finding: "Evidence remains legible and traceable, though live-room emphasis is softer than Signal Pitch."}
-  authorship_originality: {score: 8.7, weight: 15, finding: "Materiality supports the content rather than serving as generic vintage decoration."}
-weighted_score: 88.05
+  philosophy_narrative: {score: 8.9, weight: 20, finding: "Archive behavior and editorial scale fit system provenance, iteration, and honest attribution particularly well."}
+  hierarchy_rhythm: {score: 9.2, weight: 25, finding: "Oversized assertions, compact evidence, a central iteration artifact, and a quiet closing now create a clear editorial wave."}
+  craft_system: {score: 9.2, weight: 20, finding: "Hairlines, restrained texture, enlarged first-line labels, alignment, and warm material palette feel coherent and precise."}
+  communication_evidence: {score: 8.7, weight: 20, finding: "Evidence remains legible and traceable; increased assertion scale improves live-room emphasis without losing provenance."}
+  authorship_originality: {score: 8.9, weight: 15, finding: "The stronger scale contrast gives the material archive an authored editorial voice instead of generic vintage decoration."}
+weighted_score: 89.95
 verdict: refine
 keep:
   - Preserve the page index, hairline baseline, and warm material evidence treatment.
   - Keep the centered selected iteration as the route's only elevated artifact.
 fix:
   - severity: important
-    issue: Quiet tonal contrast may weaken long-distance presentation performance.
-    action: Define a room-scale emphasis mode that increases selected assertions without abandoning the archive grammar.
+    issue: Quiet tonal contrast can still weaken low-quality projector performance despite the improved type scale.
+    action: Define a projector-safe contrast mode without abandoning the archive grammar.
     verification: Test the selected system on a projector simulation and a dense research appendix.
 quick_wins:
-  - Increase one assertion scale on every section peak.
+  - Preserve one dominant assertion or numbered artifact on every section peak.
   - Add artifact version and date caption recipes.
   - Define a no-texture accessibility fallback for print and low-quality projectors.

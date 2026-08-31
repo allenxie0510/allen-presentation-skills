@@ -11,12 +11,12 @@ subject:
     - previews/signal-pitch-05-system-application.webp
     - previews/signal-pitch-06-outcome-reflection.webp
   reviewer: Codex visual QA
-  reviewed_at: "2026-08-31T18:20:00+08:00"
+  reviewed_at: "2026-08-31T21:05:00+08:00"
 concept_gate:
   concept: 用单一酸性色把停留意图、证据链和暂定选择转译为高辨识度商业信号。
   content_origin: Aster Yard disclosed synthetic concept project and user-provided reference principles.
   replaceability_result: 版式中的节奏信号、场景图片和系统触点共同指向第三空间案例，不是可直接替换行业的卡片模板。
-  score: 8.7
+  score: 8.8
   passed: true
 hard_gates:
   bounds: {passed: true, evidence: "Chromium DOM bounds check passed on all six frames."}
@@ -27,22 +27,22 @@ hard_gates:
   provenance: {passed: true, evidence: "SOURCES.md records prompts, hashes, generation mode, and reuse boundary."}
   visual_inspection: {passed: true, evidence: "Six full-size frames and the combined direction board were inspected."}
 dimensions:
-  philosophy_narrative: {score: 8.7, weight: 20, finding: "Strong contrast makes challenge, evidence, choice, and limitation immediately legible."}
-  hierarchy_rhythm: {score: 9.0, weight: 25, finding: "Clear peaks at cover, iteration, and reflection; modular pages remain fast to scan."}
-  craft_system: {score: 8.7, weight: 20, finding: "Hard-edge alignment, short labels, and controlled acid color remain consistent."}
+  philosophy_narrative: {score: 8.8, weight: 20, finding: "Strong contrast and softened color masses make challenge, evidence, choice, and limitation immediately legible."}
+  hierarchy_rhythm: {score: 9.2, weight: 25, finding: "Quiet cover, dense evidence, enlarged iteration choice, and reflective closing now form a deliberate cadence."}
+  craft_system: {score: 9.0, weight: 20, finding: "Borderless rounded color masses, exact alignment, and controlled acid color remain consistent without looking outlined or boxed-in."}
   communication_evidence: {score: 8.8, weight: 20, finding: "Evidence and concept boundaries survive the graphic treatment without becoming decoration."}
-  authorship_originality: {score: 8.5, weight: 15, finding: "The black and acid system is distinctive enough, but requires restraint to avoid trend-template familiarity."}
-weighted_score: 87.65
+  authorship_originality: {score: 8.7, weight: 15, finding: "The softened color fields and stronger typographic scale feel more authored, while restraint still prevents trend-template familiarity."}
+weighted_score: 89.25
 verdict: refine
 keep:
   - Preserve the single acid-color decision signal and the strong closing contrast.
-  - Keep the asymmetrical module widths that distinguish challenge, role, and team contribution.
+  - Keep the asymmetrical rounded color masses that distinguish challenge, role, and team contribution without strokes.
 fix:
   - severity: important
     issue: The commercial tone may overpower reflective or culturally sensitive cases.
-    action: Add a quiet evidence and reflection cadence to the expanded art-direction contract.
+    action: Preserve the new quiet-to-dense cadence and define when the acid-color peak must be suppressed.
     verification: Test one confidential research frame and one nuanced attribution frame after selection.
 quick_wins:
   - Reserve acid color for one decision-relevant object per slide.
   - Add explicit source labels to every future metric or quote component.
-  - Stress-test a long Chinese project title before promotion.
+  - Stress-test a long Chinese project title and two-line closing assertion before promotion.

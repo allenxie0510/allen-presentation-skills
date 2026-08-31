@@ -45,6 +45,24 @@ These routes differ in grid, typography, image behavior, rhythm, and material
 color—not only palette. All remain draft until the user selects or mixes a
 route and a named reviewer approves the expanded template.
 
+## Rhythm revision after visual review
+
+The second rendered pass applies the user's editorial-rhythm feedback rather
+than treating every slide as equally full:
+
+- covers and closings are quiet, high-scale frames;
+- evidence and system pages carry the highest working density;
+- challenge and iteration pages use one oversized assertion or selected option
+  as a clear peak;
+- labels, sequence numbers, decisions, and first lines have distinct scale roles
+  instead of behaving like uniform body copy;
+- Signal Pitch uses borderless rounded color masses; Material Ledger retains
+  evidence-bearing hairlines; Open Frame reserves long rules for structure.
+
+The rounded Signal Pitch blocks transfer the reference principle of soft,
+fashion-forward color fields. They do not reproduce the reference card count,
+content, proportions, or black-line graphic.
+
 ## Honest evidence boundary
 
 Aster Yard is a synthetic concept project. The research scene, findings,

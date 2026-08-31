@@ -11,12 +11,12 @@ subject:
     - previews/open-frame-05-system-application.webp
     - previews/open-frame-06-outcome-reflection.webp
   reviewer: Codex visual QA
-  reviewed_at: "2026-08-31T18:20:00+08:00"
+  reviewed_at: "2026-08-31T21:05:00+08:00"
 concept_gate:
   concept: 用开放画幅让人物场景、设计判断和系统物证拥有不同尺度的停顿与记忆点。
   content_origin: Aster Yard disclosed synthetic concept project and user-provided reference principles.
   replaceability_result: 大图与留白围绕停留意图、研究现场和触点系统组织，不是任意作品图集。
-  score: 8.5
+  score: 8.7
   passed: true
 hard_gates:
   bounds: {passed: true, evidence: "Chromium DOM bounds check passed on all six frames after the system-page title repair."}
@@ -27,16 +27,16 @@ hard_gates:
   provenance: {passed: true, evidence: "SOURCES.md records prompts, hashes, generation mode, and reuse boundary."}
   visual_inspection: {passed: true, evidence: "Six full-size frames and the combined direction board were inspected."}
 dimensions:
-  philosophy_narrative: {score: 8.5, weight: 20, finding: "Human context and reflective judgment gain strong presence without turning into a beauty gallery."}
-  hierarchy_rhythm: {score: 8.7, weight: 25, finding: "Wide whitespace creates deliberate breathing between image-led, reasoning, and reflection frames."}
-  craft_system: {score: 8.6, weight: 20, finding: "Long rules, asymmetric columns, and restrained typography hold together across density changes."}
-  communication_evidence: {score: 8.4, weight: 20, finding: "Evidence remains functional, but substantially denser studies will require a secondary compact grammar."}
-  authorship_originality: {score: 8.6, weight: 15, finding: "Architectural whitespace and image behavior create a defensible portfolio voice."}
-weighted_score: 85.65
+  philosophy_narrative: {score: 8.7, weight: 20, finding: "Human context, typographic pauses, and reflective judgment gain strong presence without turning into a beauty gallery."}
+  hierarchy_rhythm: {score: 9.1, weight: 25, finding: "Large cover typography, compact evidence, an oversized selected iteration, image-led system work, and open reflection now breathe at visibly different densities."}
+  craft_system: {score: 8.8, weight: 20, finding: "Long rules, asymmetric columns, enlarged first lines, and restrained typography hold together across density changes."}
+  communication_evidence: {score: 8.6, weight: 20, finding: "Evidence remains functional and the image-led system page now balances headline, artifact, rules, and annotation more deliberately."}
+  authorship_originality: {score: 8.9, weight: 15, finding: "Architectural whitespace, typographic scale shifts, and image behavior create a defensible portfolio voice."}
+weighted_score: 88.30
 verdict: refine
 keep:
   - Preserve the large contextual imagery and the clean challenge-role separation.
-  - Keep the low-noise reflection page and restrained terracotta directional cues.
+  - Keep the low-noise reflection page, oversized assertions, and restrained terracotta directional cues.
 fix:
   - severity: important
     issue: High-density research and system appendices may exceed the open frame's capacity.
@@ -45,4 +45,4 @@ fix:
 quick_wins:
   - Define two authored crop families for people and application artifacts.
   - Add a compact annotation rail for dense UX evidence.
-  - Preserve at least one genuinely open frame between two dense pages.
+  - Preserve at least one genuinely open frame between two dense pages and one intentionally dominant text element per section.

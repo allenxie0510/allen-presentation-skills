@@ -11,37 +11,41 @@ body[data-theme="material-ledger"] .object--text[data-role="deck-title"],
 body[data-theme="material-ledger"] .object--text[data-role="slide-assertion"],
 body[data-theme="material-ledger"] .object--text[data-role="decision-statement"] { font-weight:500!important; letter-spacing:-.05em!important; line-height:1.02!important; }
 body[data-theme="material-ledger"] .object--shape { border:1px solid var(--deck-rule); background:rgba(248,245,239,.9); white-space:pre-wrap; }
+body[data-theme="material-ledger"] .object--shape::first-line { font-size:1.28em; font-weight:650; letter-spacing:-.035em; }
 body[data-theme="material-ledger"] .group__stage { border-top:1px solid var(--deck-text); border-right:0; border-bottom:0; border-left:0; background:transparent; font-size:19px; padding:26px 8px; }
+body[data-theme="material-ledger"] .group__stage::first-line { font-size:1.3em; letter-spacing:-.045em; }
 body[data-theme="material-ledger"] .slide--cover { background:#e8e3db; }
 body[data-theme="material-ledger"] .slide--cover .object--text[data-role="project-name"] { left:90px!important; top:116px!important; }
-body[data-theme="material-ledger"] .slide--cover .object--text[data-role="deck-title"] { left:90px!important; top:188px!important; width:900px!important; height:360px!important; font-size:88px!important; }
+body[data-theme="material-ledger"] .slide--cover .object--text[data-role="deck-title"] { left:90px!important; top:188px!important; width:900px!important; height:390px!important; font-size:102px!important; }
 body[data-theme="material-ledger"] .slide--cover .object--text[data-role="role-summary"] { left:90px!important; top:670px!important; width:760px!important; font-size:21px!important; }
 body[data-theme="material-ledger"] .slide--cover .object--text[data-role="concept-disclosure"] { left:90px!important; top:952px!important; }
 body[data-theme="material-ledger"] .slide--cover .object--image { left:1030px!important; top:122px!important; width:800px!important; height:820px!important; filter:saturate(.72) contrast(.98); }
 body[data-theme="material-ledger"] .slide--cover .object--text[data-role="image-caption"] { left:1060px!important; top:886px!important; width:700px!important; color:#fff; }
-body[data-theme="material-ledger"] .slide--comparison .object--text[data-role="slide-assertion"] { left:90px!important; top:130px!important; width:1180px!important; }
+body[data-theme="material-ledger"] .slide--comparison .object--text[data-role="slide-assertion"] { left:90px!important; top:130px!important; width:1380px!important; height:190px!important; font-size:72px!important; }
 body[data-theme="material-ledger"] .slide--comparison .object--shape { top:380px!important; height:388px!important; }
-body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="challenge-panel"] { left:90px!important; width:770px!important; }
-body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="role-panel"] { left:884px!important; width:446px!important; }
-body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="team-panel"] { left:1354px!important; width:476px!important; }
+body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="challenge-panel"] { left:90px!important; width:770px!important; font-size:29px!important; }
+body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="challenge-panel"]::first-line { font-size:1.55em; }
+body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="role-panel"] { left:884px!important; width:446px!important; font-size:21px!important; }
+body[data-theme="material-ledger"] .slide--comparison .object--shape[data-role="team-panel"] { left:1354px!important; width:476px!important; font-size:19px!important; }
 body[data-theme="material-ledger"] .slide--comparison .object--text[data-role="constraint-note"] { left:90px!important; top:836px!important; }
-body[data-theme="material-ledger"] .slide--process .object--text[data-role="slide-assertion"] { left:90px!important; top:128px!important; width:940px!important; }
+body[data-theme="material-ledger"] .slide--process .object--text[data-role="slide-assertion"] { left:90px!important; top:128px!important; width:820px!important; height:172px!important; font-size:48px!important; }
 body[data-theme="material-ledger"] .slide--process .object--image { left:980px!important; top:166px!important; width:850px!important; height:464px!important; filter:saturate(.58); }
 body[data-theme="material-ledger"] .slide--process .object--group { left:90px!important; top:390px!important; width:810px!important; height:236px!important; gap:0!important; }
 body[data-theme="material-ledger"] .slide--process .object--shape[data-role="evidence-method"] { left:90px!important; top:704px!important; width:810px!important; height:220px!important; }
 body[data-theme="material-ledger"] .slide--process .object--shape[data-role="evidence-limitation"] { left:980px!important; top:704px!important; width:850px!important; height:220px!important; }
 body[data-theme="material-ledger"] .slide#s04-iteration .object--shape { border-top:1px solid var(--deck-text); border-right:0; border-bottom:0; border-left:0; background:transparent; }
 body[data-theme="material-ledger"] .slide#s04-iteration .object--shape[data-role="iteration-a"] { left:90px!important; top:350px!important; width:510px!important; height:420px!important; }
-body[data-theme="material-ledger"] .slide#s04-iteration .object--shape[data-role="iteration-b"] { left:644px!important; top:306px!important; width:544px!important; height:510px!important; background:#e8e3db; border:1px solid var(--deck-text); }
+body[data-theme="material-ledger"] .slide#s04-iteration .object--shape::first-line { font-size:1.6em; }
+body[data-theme="material-ledger"] .slide#s04-iteration .object--shape[data-role="iteration-b"] { left:644px!important; top:292px!important; width:544px!important; height:538px!important; background:#e8e3db; border:1px solid var(--deck-text); font-size:29px!important; }
 body[data-theme="material-ledger"] .slide#s04-iteration .object--shape[data-role="iteration-c"] { left:1232px!important; top:350px!important; width:598px!important; height:420px!important; }
-body[data-theme="material-ledger"] .slide--image .object--text[data-role="slide-assertion"] { left:90px!important; top:126px!important; width:930px!important; }
+body[data-theme="material-ledger"] .slide--image .object--text[data-role="slide-assertion"] { left:90px!important; top:126px!important; width:1200px!important; height:190px!important; font-size:72px!important; }
 body[data-theme="material-ledger"] .slide--image .object--image { left:90px!important; top:366px!important; width:780px!important; height:560px!important; filter:saturate(.72); }
 body[data-theme="material-ledger"] .slide--image .object--group { left:930px!important; top:350px!important; width:900px!important; height:250px!important; gap:0!important; }
 body[data-theme="material-ledger"] .slide--image .object--shape[data-role="system-rule-a"] { left:930px!important; top:680px!important; width:430px!important; height:190px!important; }
 body[data-theme="material-ledger"] .slide--image .object--shape[data-role="system-rule-b"] { left:1400px!important; top:680px!important; width:430px!important; height:190px!important; }
 body[data-theme="material-ledger"] .slide--image .object--text[data-role="application-caption"] { left:930px!important; top:918px!important; }
 body[data-theme="material-ledger"] .slide--closing { background:#d8d2c9; }
-body[data-theme="material-ledger"] .slide--closing .object--text[data-role="decision-statement"] { left:90px!important; top:142px!important; width:1640px!important; height:220px!important; font-size:70px!important; }
+body[data-theme="material-ledger"] .slide--closing .object--text[data-role="decision-statement"] { left:90px!important; top:142px!important; width:1640px!important; height:260px!important; font-size:86px!important; }
 body[data-theme="material-ledger"] .slide--closing .object--shape { top:508px!important; height:286px!important; background:transparent; border-top:1px solid var(--deck-text); border-right:0; border-bottom:0; border-left:0; }
 body[data-theme="material-ledger"] .slide--closing .object--shape[data-role="outcome-known"] { left:90px!important; width:510px!important; }
 body[data-theme="material-ledger"] .slide--closing .object--shape[data-role="outcome-next"] { left:650px!important; width:510px!important; }

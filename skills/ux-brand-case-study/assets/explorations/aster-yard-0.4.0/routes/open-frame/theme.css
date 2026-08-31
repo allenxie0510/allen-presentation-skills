@@ -11,37 +11,41 @@ body[data-theme="open-frame"] .object--text[data-role="deck-title"],
 body[data-theme="open-frame"] .object--text[data-role="slide-assertion"],
 body[data-theme="open-frame"] .object--text[data-role="decision-statement"] { font-weight:500!important; letter-spacing:-.06em!important; line-height:.98!important; }
 body[data-theme="open-frame"] .object--shape { background:transparent; border-top:1px solid var(--deck-text); border-right:0; border-bottom:0; border-left:0; white-space:pre-wrap; }
+body[data-theme="open-frame"] .object--shape::first-line { font-size:1.35em; font-weight:650; letter-spacing:-.04em; }
 body[data-theme="open-frame"] .group__stage { border:0; border-left:1px solid var(--deck-rule); background:transparent; font-size:18px; padding:22px; }
+body[data-theme="open-frame"] .group__stage::first-line { font-size:1.35em; letter-spacing:-.05em; }
 body[data-theme="open-frame"] .slide--cover .object--text[data-role="project-name"] { left:76px!important; top:112px!important; }
-body[data-theme="open-frame"] .slide--cover .object--text[data-role="deck-title"] { left:76px!important; top:192px!important; width:760px!important; height:400px!important; font-size:84px!important; }
+body[data-theme="open-frame"] .slide--cover .object--text[data-role="deck-title"] { left:76px!important; top:192px!important; width:790px!important; height:440px!important; font-size:108px!important; }
 body[data-theme="open-frame"] .slide--cover .object--text[data-role="role-summary"] { left:76px!important; top:704px!important; width:700px!important; font-size:20px!important; }
 body[data-theme="open-frame"] .slide--cover .object--text[data-role="concept-disclosure"] { left:76px!important; top:946px!important; }
 body[data-theme="open-frame"] .slide--cover .object--image { left:900px!important; top:118px!important; width:944px!important; height:826px!important; }
 body[data-theme="open-frame"] .slide--cover .object--text[data-role="image-caption"] { left:932px!important; top:886px!important; width:850px!important; color:#fff; }
-body[data-theme="open-frame"] .slide--comparison .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:1180px!important; font-size:60px!important; }
+body[data-theme="open-frame"] .slide--comparison .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:1360px!important; height:194px!important; font-size:74px!important; }
 body[data-theme="open-frame"] .slide--comparison .object--shape[data-role="challenge-panel"] { left:76px!important; top:388px!important; width:820px!important; height:390px!important; font-size:29px!important; }
+body[data-theme="open-frame"] .slide--comparison .object--shape[data-role="challenge-panel"]::first-line { font-size:1.75em; }
 body[data-theme="open-frame"] .slide--comparison .object--shape[data-role="role-panel"] { left:1000px!important; top:388px!important; width:390px!important; height:390px!important; }
 body[data-theme="open-frame"] .slide--comparison .object--shape[data-role="team-panel"] { left:1450px!important; top:388px!important; width:394px!important; height:390px!important; }
 body[data-theme="open-frame"] .slide--comparison .object--text[data-role="constraint-note"] { left:1000px!important; top:850px!important; width:810px!important; font-size:20px!important; }
-body[data-theme="open-frame"] .slide--process .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:820px!important; }
+body[data-theme="open-frame"] .slide--process .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:850px!important; height:192px!important; font-size:72px!important; }
 body[data-theme="open-frame"] .slide--process .object--image { left:1020px!important; top:118px!important; width:824px!important; height:520px!important; }
 body[data-theme="open-frame"] .slide--process .object--group { left:76px!important; top:394px!important; width:820px!important; height:244px!important; gap:0!important; }
 body[data-theme="open-frame"] .slide--process .object--shape[data-role="evidence-method"] { left:76px!important; top:730px!important; width:820px!important; height:220px!important; }
 body[data-theme="open-frame"] .slide--process .object--shape[data-role="evidence-limitation"] { left:1020px!important; top:730px!important; width:824px!important; height:220px!important; }
 body[data-theme="open-frame"] .slide#s04-iteration .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:890px!important; }
 body[data-theme="open-frame"] .slide#s04-iteration .object--shape[data-role="iteration-a"] { left:76px!important; top:390px!important; width:430px!important; height:430px!important; }
-body[data-theme="open-frame"] .slide#s04-iteration .object--shape[data-role="iteration-b"] { left:610px!important; top:316px!important; width:580px!important; height:580px!important; background:#111214; color:#fff; border:0; }
+body[data-theme="open-frame"] .slide#s04-iteration .object--shape::first-line { font-size:1.55em; }
+body[data-theme="open-frame"] .slide#s04-iteration .object--shape[data-role="iteration-b"] { left:610px!important; top:286px!important; width:590px!important; height:620px!important; background:#111214; color:#fff; border:0; font-size:30px!important; }
 body[data-theme="open-frame"] .slide#s04-iteration .object--shape[data-role="iteration-c"] { left:1320px!important; top:390px!important; width:524px!important; height:430px!important; }
 body[data-theme="open-frame"] .slide#s04-iteration .object--text[data-role="iteration-learning"] { left:76px!important; top:930px!important; }
-body[data-theme="open-frame"] .slide--image .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:760px!important; font-size:50px!important; }
-body[data-theme="open-frame"] .slide--image .object--image { left:860px!important; top:118px!important; width:984px!important; height:620px!important; }
-body[data-theme="open-frame"] .slide--image .object--group { left:76px!important; top:470px!important; width:700px!important; height:268px!important; gap:0!important; }
-body[data-theme="open-frame"] .slide--image .object--shape[data-role="system-rule-a"] { left:860px!important; top:820px!important; width:460px!important; height:150px!important; }
-body[data-theme="open-frame"] .slide--image .object--shape[data-role="system-rule-b"] { left:1384px!important; top:820px!important; width:460px!important; height:150px!important; }
+body[data-theme="open-frame"] .slide--image .object--text[data-role="slide-assertion"] { left:76px!important; top:118px!important; width:840px!important; height:172px!important; font-size:58px!important; }
+body[data-theme="open-frame"] .slide--image .object--image { left:960px!important; top:118px!important; width:884px!important; height:620px!important; }
+body[data-theme="open-frame"] .slide--image .object--group { left:76px!important; top:470px!important; width:780px!important; height:268px!important; gap:0!important; }
+body[data-theme="open-frame"] .slide--image .object--shape[data-role="system-rule-a"] { left:960px!important; top:820px!important; width:424px!important; height:150px!important; }
+body[data-theme="open-frame"] .slide--image .object--shape[data-role="system-rule-b"] { left:1420px!important; top:820px!important; width:424px!important; height:150px!important; }
 body[data-theme="open-frame"] .slide--image .object--text[data-role="application-caption"] { left:76px!important; top:900px!important; width:700px!important; }
-body[data-theme="open-frame"] .slide--closing .object--text[data-role="decision-statement"] { left:76px!important; top:148px!important; width:980px!important; height:300px!important; font-size:72px!important; }
+body[data-theme="open-frame"] .slide--closing .object--text[data-role="decision-statement"] { left:76px!important; top:148px!important; width:1020px!important; height:286px!important; font-size:72px!important; }
 body[data-theme="open-frame"] .slide--closing .object--shape { height:260px!important; }
 body[data-theme="open-frame"] .slide--closing .object--shape[data-role="outcome-known"] { left:1130px!important; top:148px!important; width:714px!important; }
 body[data-theme="open-frame"] .slide--closing .object--shape[data-role="outcome-next"] { left:1130px!important; top:466px!important; width:714px!important; }
-body[data-theme="open-frame"] .slide--closing .object--shape[data-role="reflection"] { left:76px!important; top:620px!important; width:980px!important; height:280px!important; font-size:28px!important; }
+body[data-theme="open-frame"] .slide--closing .object--shape[data-role="reflection"] { left:76px!important; top:650px!important; width:980px!important; height:250px!important; font-size:32px!important; }
 body[data-theme="open-frame"] .slide--closing .object--text[data-role="concept-disclosure"] { left:1130px!important; top:886px!important; width:714px!important; }
