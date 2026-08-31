@@ -1,0 +1,19 @@
+{
+  "id": "ahaslope-speech-pitch-0.4.0",
+  "ir": "ahaslope.ir.yaml",
+  "design": "../../../references/allen-signal-grid.yaml",
+  "columns": 3,
+  "slide_labels": [
+    "01-opening-hook",
+    "02-problem-role",
+    "03-evidence-insight",
+    "04-mechanism-options",
+    "05-system-demo",
+    "06-future-ask"
+  ],
+  "routes": [
+    {"id": "signal-ascent", "name": "Signal Ascent / 信号上升", "theme": "routes/signal-ascent/theme.yaml"},
+    {"id": "slope-trace", "name": "Slope Trace / 坡迹", "theme": "routes/slope-trace/theme.yaml"},
+    {"id": "night-relay", "name": "Night Relay / 夜间接力", "theme": "routes/night-relay/theme.yaml"}
+  ]
+}

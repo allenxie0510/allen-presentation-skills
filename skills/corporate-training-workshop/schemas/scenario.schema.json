@@ -103,7 +103,7 @@
         "default": {"$ref": "#/$defs/slug"},
         "alternatives": {
           "type": "array",
-          "minItems": 2,
+          "minItems": 1,
           "maxItems": 2,
           "uniqueItems": true,
           "items": {"$ref": "#/$defs/slug"}

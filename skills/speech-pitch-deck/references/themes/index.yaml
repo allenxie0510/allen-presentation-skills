@@ -65,6 +65,30 @@ themes:
     avoid_for: [dense-research-appendix]
     preview: stage-contrast/preview.md
     theme: stage-contrast/theme.yaml
+  - id: slope-trace
+    name: Slope Trace
+    name_zh: 坡迹
+    tagline: 把目标到迁移的学习坡度变成跨页推进结构
+    mood: [progressive, spacious, authored]
+    tone: [conceptual, precise, optimistic]
+    formality: medium
+    density: medium
+    best_for: [speech-pitch-deck, product-vision-talk]
+    avoid_for: [compliance-report, dense-research-appendix]
+    preview: slope-trace/preview.md
+    theme: slope-trace/theme.yaml
+  - id: night-relay
+    name: Night Relay
+    name_zh: 夜间接力
+    tagline: 让目标、Agent 与学习者责任在深浅交替的舞台中完成接力
+    mood: [dramatic, focused, contemporary]
+    tone: [spoken, technological, responsible]
+    formality: medium
+    density: low
+    best_for: [speech-pitch-deck, live-product-talk]
+    avoid_for: [print-handout, dense-research-appendix]
+    preview: night-relay/preview.md
+    theme: night-relay/theme.yaml
   - id: artifact-editorial
     name: Artifact Editorial
     name_zh: 作品集画册

@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: speech-pitch-deck
   name: Speech and Pitch Deck
-  version: "0.3.0"
+  version: "0.4.0"
 communication_job:
   primary: Move a live audience toward a memorable belief, follow-up, approval, adoption, or investment action.
   success_condition: The audience can state the core idea, recall the strongest proof, and understand the next action after the speaker finishes.
@@ -50,9 +50,9 @@ required_archetypes:
   - explicit-ask
   - closing-callback
 theme_recommendations:
-  default: stage-contrast
-  alternatives: [executive-night, artifact-editorial]
-  selection_note: Use Stage Contrast for live impact, Executive Night for formal business persuasion, and Artifact Editorial for a crafted founder or design-led story.
+  default: slope-trace
+  alternatives: [night-relay]
+  selection_note: Use Slope Trace for an authored progression from goal to action; use Night Relay when a live venue needs dark mechanism peaks and a memorable Agent-to-learner responsibility handoff.
 component_recipes:
   opening-hook: {archetype: cover, layout_variant: cover-offset, purpose: "Open with tension, surprise, or a concrete human moment", required_roles: [deck-title, opening-tension]}
   core-idea: {archetype: statement, layout_variant: statement-left, purpose: State the one memorable proposition, required_roles: [core-idea, qualifier]}

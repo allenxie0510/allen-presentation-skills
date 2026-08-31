@@ -5,9 +5,9 @@ license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
-  maturity: "draft"
+  maturity: "stable"
   risk: "local-write"
-  version: "0.3.0"
+  version: "0.4.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/speech-pitch-deck"
@@ -18,6 +18,19 @@ metadata:
 
 Design for a live speaker and a specific audience response. Slides support the
 spoken argument; they are not the transcript.
+
+## Current release
+
+Version 0.4.0 replaces the former draft gallery recommendations with two
+approved, designer-reviewed themes. Slope Trace is the default: it uses a
+content-born progression rail, quiet/working/peak cadence, orthogonal data axes,
+and documentary learning scenes. Night Relay is the alternative for stronger
+live-stage contrast: dark mechanism peaks alternate with light evidence pages,
+and blue-to-mint nodes show responsibility moving from Agent back to learner.
+
+The bundled AhaSlope example is a disclosed synthetic concept project. Its
+international teenagers and young adults are AI-generated concept scenes, not
+real users, a longitudinal cohort, or evidence of product or learning outcomes.
 
 ## Choose the mode
 
@@ -55,12 +68,14 @@ pacing, a clear future state, speaker notes, and an explicit ask. Keep the spoke
 script out of the audience-facing slides.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
-the three real-render previews in `assets/theme-previews/`, then default to
-Stage Contrast; offer Executive Night and Artifact Editorial when their fit is stronger. Render with
+the two real-render previews in `assets/theme-previews/`, then default to Slope
+Trace; offer Night Relay when a live venue benefits from dark mechanism peaks
+and a memorable human–Agent responsibility handoff. After selection, read the
+theme's `preview.md`, `art-direction.md`, `theme.yaml`, and `theme.css`. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
---allow-draft-design --theme references/themes/stage-contrast/theme.yaml
---allow-draft-theme`, then open and inspect every slide. Repair the IR and
+--allow-draft-design --theme references/themes/slope-trace/theme.yaml`, then open
+and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, under-supported, or visually flat.
 
 The HTML supports navigation, inline text refinement, speaker notes, download,

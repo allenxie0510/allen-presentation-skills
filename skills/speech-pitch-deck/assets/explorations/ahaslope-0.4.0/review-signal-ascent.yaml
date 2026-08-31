@@ -1,0 +1,48 @@
+schema_version: "0.1"
+subject:
+  theme: ahaslope-speech-pitch-theme-family
+  version: "0.4.0"
+  direction: signal-ascent
+  reviewed_artifacts:
+    - previews/signal-ascent-01-opening-hook.webp
+    - previews/signal-ascent-02-problem-role.webp
+    - previews/signal-ascent-03-evidence-insight.webp
+    - previews/signal-ascent-04-mechanism-options.webp
+    - previews/signal-ascent-05-system-demo.webp
+    - previews/signal-ascent-06-future-ask.webp
+  reviewer: Codex visual QA
+  reviewed_at: "2026-09-01T00:20:00+08:00"
+concept_gate:
+  concept: 用超大舞台判断、直接标注和单一上升信号，把个人学习新范式压缩成可记忆的创始人论证。
+  content_origin: User-provided AhaSlope proposition, speech-pitch scenario rules, disclosed concept dossier, and controlled synthetic imagery.
+  replaceability_result: 标题、证据门和试点请求持续围绕从课程目录到目标生成路径的信念转移，不是可替换的科技营销模板。
+  score: 8.6
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: "Chromium DOM bounds and overflow checks passed on all six frames."}
+  readability: {passed: true, evidence: "Room-scale assertions, short labels, and restrained body copy remain legible at full size and contact-sheet scale."}
+  truth: {passed: true, evidence: "No traction, user quote, market, or learning result is invented; all concept and evidence gaps remain explicit."}
+  image_integrity: {passed: true, evidence: "Identity-preserved concept images, authored crop positions, and meaningful learning artifacts were inspected."}
+  accessibility: {passed: true, evidence: "Scale, position, labels, and shape carry hierarchy in addition to cobalt and yellow color."}
+  provenance: {passed: true, evidence: "SOURCES.md records reference boundaries, AI generation status, font license, and proof limitations."}
+  visual_inspection: {passed: true, evidence: "All six full-size frames and the combined three-route board were inspected after the final image replacement."}
+dimensions:
+  philosophy_narrative: {score: 8.4, weight: 20, finding: "The single-signal stage language supports a concise founder belief shift and keeps proof boundaries visible."}
+  hierarchy_rhythm: {score: 8.8, weight: 25, finding: "Quiet hook, dense proof gate, mechanism peak, image-led demonstration, and saturated closing form the clearest live-room cadence."}
+  craft_system: {score: 8.5, weight: 20, finding: "Display type, rounded blocks, direct labels, alignment, and photo slots are consistent without becoming a generic card wall."}
+  communication_evidence: {score: 8.7, weight: 20, finding: "The route communicates what can be shown versus what must be proved especially well, without using false metrics."}
+  authorship_originality: {score: 8.1, weight: 15, finding: "It is polished and memorable, though its white-blue founder language is the most familiar of the three routes."}
+weighted_score: 85.35
+verdict: approval-candidate
+keep:
+  - Preserve the one-signal-per-page discipline and the saturated closing as the primary live-room peak.
+  - Keep the explicit split between concept mechanism and evidence still required.
+fix:
+  - severity: optimization
+    issue: The familiar white-and-cobalt founder language risks resembling conventional launch decks when extended to ten slides.
+    action: Add one AhaSlope-specific slope or handoff behavior to the selected system without reducing baseline clarity.
+    verification: Inspect the ten-slide contact sheet and confirm that at least three silhouettes are unique to the AhaSlope narrative.
+quick_wins:
+  - Reserve yellow for one decision or next action on each section peak.
+  - Add projector-safe contrast tokens for pale evidence notes.
+  - Use one full-bleed image pause in the ten-slide expansion.

@@ -1,0 +1,108 @@
+schema_version: "0.1"
+project:
+  id: ahaslope-learning-pitch
+  theme: ahaslope-speech-pitch-theme-family
+  theme_version: "0.4.0"
+  scenario: speech-pitch-deck
+  status: archived
+foundation:
+  context_status: synthetic-concept
+  concept_thesis: 让“学习坡度”成为个人目标、即时课程、主动练习和真实迁移之间可以被看见的推进关系。
+  visual_motif: 从 AhaSlope 名称和学习进阶机制提炼上升路径、证据节点与接力动作，而不是通用 AI 光球。
+  replaceability_test: 若替换产品和行业后仍只是科技发布会模板，则方向失败；页面必须持续表达从学习意图到迁移验证的逐级推进。
+  principles:
+    - id: scale-as-stage-cue
+      source: 用户参考图 1 的超大标题、编号和不均匀空间结构
+      intent: 让现场观众在三秒内识别每页唯一需要记住的判断。
+      observable_signal: 关键判断、序号或机制名称明显放大，正文退到说明层，页面疏密有刻意差异。
+      failure_case: 所有文字都同等放大，或每页均匀填满导致没有舞台停顿。
+      override_boundary: 证据来源和披露文字必须保持完整时，不以戏剧性覆盖可追溯信息。
+    - id: data-as-claim-shape
+      source: 用户参考图 2 与图 3 的单结论信息图和直接标注
+      intent: 让数据图先表达结论，再呈现定义、来源与限制。
+      observable_signal: 一个主信号、直接标注、明确基线和突出变化点；没有图例猜测成本。
+      failure_case: 使用巨大数字伪装可信度，或把概念流程画成未提供的真实增长数据。
+      override_boundary: 当前项目未提供真实指标，因此探索页只呈现证据状态和机制，不生成成果数字。
+    - id: image-as-transfer-proof
+      source: 用户参考图 1 与图 4 的场景图，以及 Speech Pitch 的人本叙事要求
+      intent: 用连续的学习行为说明从目标到练习再到解释迁移，而不是用通用办公人物填空。
+      observable_signal: 亚洲、欧洲与北美青年分别承担目标、练习、应用三个语义角色；每张图都保留电脑、双手和有效学习物证。
+      failure_case: 把合成照片说成真实用户证据，出现假界面、空白贴纸、乱码或无关团队图。
+      override_boundary: 获得可公开的真实产品与用户资产后，真实资产优先并替换概念图。
+    - id: darkness-as-peak
+      source: 用户参考图 5 的深色信息图语言
+      intent: 在整套演讲中建立峰值与收束，而不是把深色当作全局科技滤镜。
+      observable_signal: 深色只出现在机制峰值、反对意见或行动请求等少数节点，蓝绿信号保持克制。
+      failure_case: 全套发光渐变、霓虹边框和不可读的小字造成模板化 AI 感。
+      override_boundary: 场地投影对深色细节不友好时，改用高对比浅色替代页。
+comparison_control:
+  content_id: ahaslope-six-frame-founder-pitch
+  asset_set_id: ahaslope-international-youth-learning-scenes-v2
+  canvas: {width: 1920, height: 1080}
+  same_content: true
+  same_assets: true
+routes:
+  - id: signal-ascent
+    role: clarity-baseline
+    name: Signal Ascent / 信号上升
+    intent: 以白底、超大黑字、钴蓝主信号和直接标注建立最清晰的创始人现场演讲基线。
+    audience_effect: 让投资人与商业专家迅速记住“课程从目录变成按目标生成的路径”以及下一步试点请求。
+    axes:
+      grid: 12 栏基础上采用不等宽标题区、数据台阶和大圆角单色块，页面由疏到紧再回到疏。
+      typography: 嵌入得意黑用于短标题与数字，正文使用开源黑体类别；超大判断与小型证据说明形成强尺度差。
+      imagery: 纪实照片以宽幅或单一大槽进入，不与多张卡片竞争，重点裁切学习动作。
+      rhythm: 安静封面、紧张问题页、密集证据门、放大机制选择、工作型系统页、单一请求收尾。
+      material_color: 暖白、石墨黑与钴蓝为主，黄色仅用于唯一的决策或下一步信号。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: opening-hook, archetype: cover, validation_goal: 验证超大命题与真实学习场景能否共同建立记忆点, preview: previews/signal-ascent-01-opening-hook.webp}
+      - {id: evidence-insight, archetype: process, validation_goal: 验证没有真实结果数字时证据状态仍可形成清晰证明结构, preview: previews/signal-ascent-03-evidence-insight.webp}
+      - {id: future-ask, archetype: closing, validation_goal: 验证收尾能否明确提出对照试点而不伪造产品成效, preview: previews/signal-ascent-06-future-ask.webp}
+    risks:
+      - 强调色和大字号若重复过多，会退化为营销海报而缺乏论证层次。
+      - 白底需要现场投影测试，避免浅灰说明文字丢失。
+  - id: slope-trace
+    role: authored-leap
+    name: Slope Trace / 坡迹
+    intent: 把学习进阶转化为跨页的上升轨迹，让目标、课程、练习和迁移成为可感知的坡度节点。
+    audience_effect: 让观众不仅理解产品机制，还能记住 AhaSlope 独有的“学习坡度”概念。
+    axes:
+      grid: 斜向上升轨迹穿过大块留白，节点页采用阶梯式不等高模块，照片以切片方式与路径相交。
+      typography: 得意黑标题沿水平基线稳定，序号与短句沿坡度错落，正文坚持水平排版保证可读性。
+      imagery: 同一组纪实图被裁为动作片段并与路径节点配对，不把整页做成产品 Mockup 墙。
+      rhythm: 低位开场、压力积累、证据节点、路径跃升、系统展开、把行动交给观众的开放结尾。
+      material_color: 淡灰蓝画布、深蓝路径、黑字与少量薄荷绿，避免无意义渐变和发光。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: opening-hook, archetype: cover, validation_goal: 验证内容生成的坡度隐喻而非通用上升箭头, preview: previews/slope-trace-01-opening-hook.webp}
+      - {id: evidence-insight, archetype: process, validation_goal: 验证路径节点能否表达证据到主张的可追溯关系, preview: previews/slope-trace-03-evidence-insight.webp}
+      - {id: system-demo, archetype: image, validation_goal: 验证照片动作和五步机制可以在同一坡度系统中共存, preview: previews/slope-trace-05-system-demo.webp}
+    risks:
+      - 斜向构图若影响正文对齐，会牺牲专业度和编辑精度。
+      - 上升形状不能暗示未经验证的增长或学习效果。
+  - id: night-relay
+    role: context-translation
+    name: Night Relay / 夜间接力
+    intent: 将深色信息图语言转译为“人把目标交给 Agent，Agent 把练习交还给人”的接力舞台。
+    audience_effect: 在现场形成最强机制记忆点，并把 AI 的角色界定为课程编排者而非学习替代者。
+    axes:
+      grid: 深色全幅舞台与浅色证据页交替，圆形节点、粗短路径和少量横向仪表构成接力关系。
+      typography: 白色超大短句承担舞台台词，蓝绿数字和节点作为记忆锚，小字只用于披露与来源。
+      imagery: 照片在深色页以大圆角窗口出现，避免蓝色滤镜覆盖肤色；浅色页保留自然摄影。
+      rhythm: 黑场钩子、浅色问题、黑场机制、浅色取舍、黑场系统峰值、浅色行动回扣。
+      material_color: 近黑、白、纯蓝和冷薄荷；不使用玻璃卡片、紫色发光球或多重霓虹描边。
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: opening-hook, archetype: cover, validation_goal: 验证深色开场能否服务主张而不是制造空泛科技感, preview: previews/night-relay-01-opening-hook.webp}
+      - {id: evidence-insight, archetype: process, validation_goal: 验证圆形节点在会议室距离仍可读取证据状态与边界, preview: previews/night-relay-03-evidence-insight.webp}
+      - {id: future-ask, archetype: closing, validation_goal: 验证浅色回扣能否把高能量机制页转化为具体下一步, preview: previews/night-relay-06-future-ask.webp}
+    risks:
+      - 深色页比例过高会造成投影细节损失和连续疲劳。
+      - 圆形与路径必须承载机制含义，不能变成装饰性轨道图。
+selection:
+  status: designer-approved
+  selected_route: slope-trace
+  decided_by: Codex design review with user authorization to publish both routes
+  decision_rationale: Slope Trace provides the most ownable AhaSlope metaphor and becomes the default; Night Relay is promoted as the approved high-contrast alternative for live product stages.
+  user_quote: "优化以下两个方案：Slope Trace · 坡迹 — 85.25；Night Relay · 夜间接力 — 85.60。发布到这里替换以前的草稿。"
+  decided_at: "2026-09-01T12:00:00+08:00"

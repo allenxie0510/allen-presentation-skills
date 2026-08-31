@@ -1,0 +1,44 @@
+schema_version: "0.1"
+subject:
+  theme: ahaslope-speech-pitch-theme-family
+  version: "0.4.0"
+  direction: slope-trace
+  reviewed_artifacts:
+    - previews/slope-trace-01-opening-hook.webp
+    - previews/slope-trace-02-problem-role.webp
+    - previews/slope-trace-03-evidence-insight.webp
+    - previews/slope-trace-04-mechanism-options.webp
+    - previews/slope-trace-05-system-demo.webp
+    - previews/slope-trace-06-future-ask.webp
+  reviewer: Codex visual QA
+  reviewed_at: "2026-09-01T12:30:00+08:00"
+concept_gate:
+  concept: 把 AhaSlope 的学习坡度转化为目标、内容、练习和迁移逐级上升的跨页视觉结构。
+  content_origin: User-provided product name and proposition, speech-pitch narrative, disclosed concept dossier, and controlled synthetic imagery.
+  replaceability_result: 阶梯高度和路径节点对应学习责任的推进，不被解释为未经验证的商业或学习增长。
+  score: 9.1
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: "Chromium checks passed after stage containers were resized instead of shrinking type."}
+  readability: {passed: true, evidence: "All body copy remains horizontal and room-readable while only modules follow the slope."}
+  truth: {passed: true, evidence: "Slope height is labeled as mechanism progression, never as measured learning improvement."}
+  image_integrity: {passed: true, evidence: "The international youth-learning anthology keeps natural skin, varied low-saturation clothing, real computer-learning actions, complete faces and hands, and authored crops."}
+  accessibility: {passed: true, evidence: "Sequence numbers, labels, height, and position preserve meaning without relying on blue and mint alone."}
+  provenance: {passed: true, evidence: "Reference principles, image-generation disclosure, and font license are recorded in SOURCES.md."}
+  visual_inspection: {passed: true, evidence: "All six full-size frames and contact-sheet rhythm were inspected after the overflow repair."}
+dimensions:
+  philosophy_narrative: {score: 8.8, weight: 20, finding: "The content-born slope gives AhaSlope the strongest conceptual ownership while respecting the learning loop."}
+  hierarchy_rhythm: {score: 8.7, weight: 25, finding: "The rising silhouettes create a clear build while the problem and closing frames now provide deliberate quiet pauses."}
+  craft_system: {score: 8.6, weight: 20, finding: "Alignment and object heights are controlled; the production contract now names rail angles, rail-free frames, and orthogonal data axes."}
+  communication_evidence: {score: 8.7, weight: 20, finding: "Mechanism progression reads clearly, international images carry distinct actions, and the route never treats visual ascent as measured outcome."}
+  authorship_originality: {score: 9.0, weight: 15, finding: "The route has the most ownable relationship to the product name and avoids generic AI iconography."}
+weighted_score: 87.45
+verdict: approval-candidate
+keep:
+  - Preserve the distinction between horizontal reading baselines and rising module positions.
+  - Keep the final ADAPT or transfer node as the highest point rather than highlighting every step.
+fix: []
+quick_wins:
+  - Preserve the three allowed rail angles and no-rail problem and closing layouts.
+  - Keep quantitative axes orthogonal and independently sourced.
+  - Replace concept learners with permitted real project photography when available.

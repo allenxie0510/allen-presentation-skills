@@ -53,6 +53,24 @@ Signal Pitch 和 Open Frame 中选择。生成 Schema-valid Presentation IR、
 我的项目资料：[粘贴内容或提供文件]
 ```
 
+调用 Speech Pitch Deck 0.4.0 的推荐提示词：
+
+```text
+请读取并使用这个公开 GitHub Skill：
+https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/speech-pitch-deck
+
+先读取 SKILL.md，并按相对链接继续读取当前任务需要的 scenario、主题、Schema
+和 art-direction。请围绕一个可记忆主张、可信证明、现场口语节奏和明确行动请求
+建立演讲；不要把演讲稿全文放到页面，也不要虚构用户、市场、数据或成果。
+
+如果我没有指定主题，默认使用已批准的 Slope Trace；现场需要更强深色峰值时可选
+Night Relay。生成图片必须承担学习动作或证据语义，标注来源和概念状态。生成
+Schema-valid Presentation IR、自包含 HTML，并逐页检查对齐、溢出、裁切、
+投影可读性和跨页疏密节奏。
+
+我的项目资料：[粘贴内容或提供文件]
+```
+
 如果 AI 不支持读取 GitHub，它无法仅凭链接自动获得 Skill；此时先克隆仓库，
 再把本地 `skills/corporate-training-workshop/` 目录提供给它。仓库根链接用于发现
 全部 Skills，具体 Skill 目录链接最适合直接调用。
@@ -68,9 +86,10 @@ Signal Pitch 和 Open Frame 中选择。生成 Schema-valid Presentation IR、
 
 ## Presentation Theme Gallery · 演示主题画廊
 
-Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。Material Ledger、
+Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。Slope Trace 与
+Night Relay 已正式发布为 Speech Pitch Deck `0.4.0` 主题族。Material Ledger、
 Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主题族。
-其余六套遗留主题仍为**草稿**。通用画廊按场景展示 15 组真实渲染结果；
+其余六套遗留主题仍为**草稿**。通用画廊按场景展示 14 组真实渲染结果；
 每组依次为封面页、核心组件页和收尾页，并使用同一份场景 Presentation IR，
 便于比较主题差异，而不是比较内容差异。
 
@@ -146,35 +165,25 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 
 叙事路径：钩子 → 张力 → 主张 → 证明 → 未来状态 → 行动请求 → 回扣。
 
-#### [Stage Contrast · 舞台对比](skills/presentation-core/themes/stage-contrast/) · 默认主题
+#### [Slope Trace · 坡迹](skills/presentation-core/themes/slope-trace/) · 已批准默认主题 · 0.4.0
 
 <p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/stage-contrast-01-cover.webp" width="32.5%" alt="演讲与路演，舞台对比主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/stage-contrast-02-core.webp" width="32.5%" alt="演讲与路演，舞台对比主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/stage-contrast-03-closing.webp" width="32.5%" alt="演讲与路演，舞台对比主题，收尾页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/slope-trace-01-cover.webp" width="32.5%" alt="演讲与路演，坡迹主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/slope-trace-02-core.webp" width="32.5%" alt="演讲与路演，坡迹主题，系统机制页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/slope-trace-03-closing.webp" width="32.5%" alt="演讲与路演，坡迹主题，行动请求页" />
 </p>
 
-> 深色舞台、大字号与强烈色块，为现场表达和记忆点服务。
+> 淡灰蓝画布、水平阅读基线与内容驱动的上升轨迹，让目标、练习和迁移形成可记忆的推进结构。
 
-#### [Executive Night · 董事会夜幕](skills/presentation-core/themes/executive-night/)
+#### [Night Relay · 夜间接力](skills/presentation-core/themes/night-relay/) · 已批准主题 · 0.4.0
 
 <p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/executive-night-01-cover.webp" width="32.5%" alt="演讲与路演，董事会夜幕主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/executive-night-02-core.webp" width="32.5%" alt="演讲与路演，董事会夜幕主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/executive-night-03-closing.webp" width="32.5%" alt="演讲与路演，董事会夜幕主题，收尾页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/night-relay-01-cover.webp" width="32.5%" alt="演讲与路演，夜间接力主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/night-relay-02-core.webp" width="32.5%" alt="演讲与路演，夜间接力主题，系统机制页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/night-relay-03-closing.webp" width="32.5%" alt="演讲与路演，夜间接力主题，行动请求页" />
 </p>
 
-> 深海军蓝、象牙白与低饱和金色，适合高层审批和正式战略沟通。
-
-#### [Artifact Editorial · 作品集画册](skills/presentation-core/themes/artifact-editorial/)
-
-<p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/artifact-editorial-01-cover.webp" width="32.5%" alt="演讲与路演，作品集画册主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/artifact-editorial-02-core.webp" width="32.5%" alt="演讲与路演，作品集画册主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/artifact-editorial-03-closing.webp" width="32.5%" alt="演讲与路演，作品集画册主题，收尾页" />
-</p>
-
-> 暖纸色与编辑排版，让作品、研究证据和设计判断共同叙事。
+> 黑场机制峰值与浅色证据页交替，蓝—薄荷节点只表达 Agent 与学习者之间的责任接力。
 
 ### UX Brand Case Study · UX 与品牌案例
 
@@ -238,16 +247,6 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 
 > 编号导轨、卡片化步骤与活动区，支持练习、反馈和迁移。
 
-#### [Signal Grid · 信号网格](skills/presentation-core/themes/signal-grid/)
-
-<p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/signal-grid-01-cover.webp" width="32.5%" alt="企业培训与工作坊，信号网格主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/signal-grid-02-core.webp" width="32.5%" alt="企业培训与工作坊，信号网格主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/signal-grid-03-closing.webp" width="32.5%" alt="企业培训与工作坊，信号网格主题，收尾页" />
-</p>
-
-> 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
-
 #### [Artifact Editorial · 作品集画册](skills/presentation-core/themes/artifact-editorial/)
 
 <p>
@@ -259,7 +258,7 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 > 暖纸色与编辑排版，让作品、研究证据和设计判断共同叙事。
 
 [打开独立画廊索引](skills/presentation-core/gallery/README.md)，可继续查看主题元数据与
-15 张三联对比图。当前画廊共包含 45 张 1920×1080 的真实渲染截图。
+14 张三联对比图。当前画廊共包含 42 张 1920×1080 的真实渲染截图。
 
 每个场景 Skill 都自带网页渲染器、设计系统、Schema 和运行资源，不依赖私有
 仓库。能读取 GitHub 的 AI 可按本页顶部提示直接使用；其他环境可克隆后从本地
@@ -272,12 +271,12 @@ Skill 目录调用。
 - 渲染固定 1920×1080、自包含的 HTML 网页幻灯片；
 - 支持翻页、触控、演讲者备注、文字微调、保存和打印/PDF；
 - 检查越界和可预估的文字溢出。
-- 按场景推荐三套主题，并把场景组件映射为可执行 archetype 与 layout variant；
+- 按场景推荐两到三套主题，并把场景组件映射为可执行 archetype 与 layout variant；
 - 通过 `--theme <theme.yaml> --allow-draft-theme` 生成所选主题的网页幻灯片。
 
 当前不生成原生 `.pptx`，浏览器编辑也不会自动同步回 Presentation IR。
-底层 Allen Signal Grid 设计系统仍为 `draft`。Learning Agent 以及 UX Brand
-Case Study 的三套 0.4.0 主题已通过真实渲染、硬性门槛和五维评审并获批准；
+底层 Allen Signal Grid 设计系统仍为 `draft`。Learning Agent、Speech Pitch
+Deck 的两套主题以及 UX Brand Case Study 的三套 0.4.0 主题已通过真实渲染、硬性门槛和五维评审并获批准；
 其余六套遗留主题仍为草稿。主题批准不代表概念示例中的客户、能力或成效为真。
 
 ## 发布说明

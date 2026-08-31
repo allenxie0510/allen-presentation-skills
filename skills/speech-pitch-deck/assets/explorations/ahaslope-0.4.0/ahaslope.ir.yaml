@@ -1,0 +1,337 @@
+schema_version: "0.1"
+deck:
+  id: ahaslope-speech-pitch-0-4-0
+  title: AhaSlope · AI 生成个人学习课程
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: speech-pitch-deck, version: "0.4.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: low
+  mode: presenting-first
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Synthetic concept project for controlled Slope Trace and Night Relay publication; no product or outcome evidence was supplied.
+
+slides:
+  - id: s01-opening-hook
+    archetype: cover
+    purpose: Open with the belief shift and establish the concept-project boundary.
+    grammar: narrative
+    assertion: {text: 学习，不该从找课程开始, status: provisional}
+    narrative_role: {section: opening-hook, sequence: opening}
+    layout_variant: cover-offset
+    permission_profile: content-style
+    speaker_notes: "停顿。先问观众：你最近一次真正想学会一件事，是从搜索课程开始的吗？不要介绍公司历史。"
+    objects:
+      - &title
+        id: s01-title
+        type: text
+        role: deck-title
+        content: {text: "学习，\n不该从\n找课程开始。"}
+        frame: {x: 104, y: 180, w: 900, h: 410}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 108, line_height: 0.98}}
+        editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}
+      - id: s01-name
+        type: text
+        role: project-name
+        content: {text: "AHASLOPE / FOUNDER PITCH"}
+        frame: {x: 108, y: 106, w: 700, h: 40}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 15, letter_spacing: 0.14}}
+        editable: *edit
+      - id: s01-proposition
+        type: text
+        role: opening-tension
+        content: {text: "当目标、时间和已有能力都不同，\n固定课程目录就不是个人学习的起点。"}
+        frame: {x: 108, y: 666, w: 760, h: 120}
+        style: {token: typography.body, variant: null, overrides: {font_size: 28, line_height: 1.42}}
+        editable: *edit
+      - id: s01-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: "SYNTHETIC CONCEPT / 概念项目 · 未提供真实用户、产品、市场或成效证据。"}
+        frame: {x: 108, y: 944, w: 880, h: 34}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 13}}
+        editable: *edit
+      - id: s01-photo
+        type: image
+        role: learner-goal-photo
+        content:
+          src: assets/learner-goal.webp
+          alt: AI 生成概念学习场景，一位亚洲青少年在公共图书馆使用电脑和笔记本明确学习目标
+          fit: cover
+          position: 64% 48%
+        frame: {x: 1070, y: 86, w: 760, h: 900}
+        style: {token: image.documentary, variant: hero-context}
+        constraints: {min_w: 680, min_h: 720, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s01-caption
+        type: text
+        role: image-caption
+        content: {text: "AI-GENERATED CONCEPT IMAGE · 只说明学习语境，不证明需求或成效"}
+        frame: {x: 1102, y: 914, w: 650, h: 34}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 13}}
+        editable: *edit
+
+  - id: s02-problem-role
+    archetype: comparison
+    purpose: Make the current tension visible and define the founder's claim without inventing company facts.
+    grammar: comparison
+    assertion: {text: 课程是固定的，但每个人的问题每天都在变化, status: provisional}
+    narrative_role: {section: problem-stakes, sequence: context}
+    layout_variant: split-comparison
+    permission_profile: content-style
+    speaker_notes: "把问题压缩成一个对比：目录按内容组织；学习者按目标、时间和反馈前进。说明这是待验证产品命题。"
+    objects:
+      - <<: *title
+        id: s02-title
+        role: slide-assertion
+        content: {text: "课程是固定的，\n但每个人的问题每天都在变化。"}
+        frame: {x: 104, y: 130, w: 1260, h: 190}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 70, line_height: 1.06}}
+      - id: s02-current
+        type: shape
+        role: current-state
+        content: {text: "01 / COURSE CATALOG\n按主题、章节和统一顺序组织内容。\n\n学习者必须自己判断：什么与我有关？先学什么？做到什么才算会？"}
+        frame: {x: 104, y: 400, w: 660, h: 402}
+        style: {token: typography.body, variant: null, overrides: {padding: 42, font_size: 26, line_height: 1.45}}
+        editable: *edit
+      - id: s02-shift
+        type: shape
+        role: desired-state
+        content: {text: "02 / GENERATED PATH\n从具体目标、可用时间与已有能力出发。\n\n课程不是终点；练习、检查和迁移决定下一步内容。"}
+        frame: {x: 790, y: 352, w: 738, h: 498}
+        style: {token: typography.body, variant: null, overrides: {padding: 48, font_size: 30, line_height: 1.45}}
+        editable: *edit
+      - id: s02-role
+        type: shape
+        role: founder-role
+        content: {text: "FOUNDER CLAIM\nAhaSlope 产品创始人提出：AI 自主生成学习课程将成为个人学习新范式。\n\nSTATUS\n产品与商业事实待补充。"}
+        frame: {x: 1554, y: 400, w: 270, h: 402}
+        style: {token: typography.body, variant: null, overrides: {padding: 28, font_size: 19, line_height: 1.42}}
+        editable: *edit
+      - id: s02-boundary
+        type: text
+        role: constraint-note
+        content: {text: "边界 · 当前只能验证叙事与机制表达，不能宣称真实需求、产品可用性或学习效果。"}
+        frame: {x: 104, y: 900, w: 1480, h: 54}
+        style: {token: typography.body, variant: null, overrides: {font_size: 21}}
+        editable: *edit
+
+  - id: s03-evidence-insight
+    archetype: process
+    purpose: Show the proof burden that must connect the founder proposition to a credible learning claim.
+    grammar: causality
+    assertion: {text: 生成内容不是新范式；形成可验证的学习闭环才是, status: provisional}
+    narrative_role: {section: insight-and-proof, sequence: evidence}
+    layout_variant: causal-chain
+    permission_profile: content-style
+    speaker_notes: "这页不报假数字。明确说出我们已经能展示什么，以及在进入真实路演前必须获得哪些证据。"
+    evidence:
+      - {id: ev-user-proposition, claim: AI-generated personal courses are proposed as a new learning paradigm, source_type: user-provided, source: 用户本轮产品命题；尚无外部验证}
+    objects:
+      - <<: *title
+        id: s03-title
+        role: slide-assertion
+        content: {text: "生成内容不是新范式；\n形成可验证的学习闭环才是。"}
+        frame: {x: 104, y: 108, w: 1040, h: 172}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 64, line_height: 1.06}}
+      - id: s03-photo
+        type: image
+        role: learner-practice-photo
+        content:
+          src: assets/learner-practice.webp
+          alt: AI 生成概念学习场景，一位欧洲青年在图书馆使用电脑、笔记与纸质模型进行主动练习
+          fit: cover
+          position: 61% 50%
+        frame: {x: 104, y: 346, w: 680, h: 562}
+        style: {token: image.documentary, variant: evidence-context}
+        constraints: {min_w: 620, min_h: 500, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s03-chain
+        type: group
+        role: evidence-chain
+        content:
+          stages:
+            - "INPUT\n真实目标"
+            - "COMPOSE\n课程路径"
+            - "PRACTICE\n主动练习"
+            - "CHECK\n迁移验证"
+        frame: {x: 842, y: 344, w: 974, h: 222}
+        style: {token: components.process.causal, variant: causal-chain}
+        editable: *edit
+      - id: s03-known
+        type: shape
+        role: proof-known
+        content: {text: "WHAT WE CAN SHOW\n概念机制、输入输出边界、可编辑的学习路径和试点设计。"}
+        frame: {x: 842, y: 620, w: 458, h: 272}
+        style: {token: typography.body, variant: null, overrides: {padding: 34, font_size: 23, line_height: 1.45}}
+        editable: *edit
+      - id: s03-missing
+        type: shape
+        role: proof-missing
+        content: {text: "WHAT MUST BE PROVED\n课程质量、来源安全、完成行为、迁移表现，以及与固定课程的可比基线。"}
+        frame: {x: 1324, y: 620, w: 492, h: 272}
+        style: {token: typography.body, variant: null, overrides: {padding: 34, font_size: 23, line_height: 1.45}}
+        editable: *edit
+
+  - id: s04-mechanism-options
+    archetype: comparison
+    purpose: Compare structurally different course-generation mechanisms and make the provisional trade-off explicit.
+    grammar: decision
+    assertion: {text: 真正的迭代，不是换界面，而是选择谁决定下一步, status: provisional}
+    narrative_role: {section: mechanism-iteration, sequence: decision}
+    layout_variant: tradeoff-matrix
+    permission_profile: content-style
+    speaker_notes: "三个方向都是假设，不是产品历史。重点说明比较标准：个性化深度、启动成本、可解释性和风险。"
+    objects:
+      - <<: *title
+        id: s04-title
+        role: slide-assertion
+        content: {text: "真正的迭代，不是换界面，\n而是选择谁决定下一步。"}
+        frame: {x: 104, y: 112, w: 1120, h: 170}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 64, line_height: 1.06}}
+      - id: s04-a
+        type: shape
+        role: iteration-a
+        content: {text: "01 / LIBRARY FIRST\nAI 从现有内容中推荐顺序\n\n优点：可控、易解释\n风险：仍以内容目录为中心"}
+        frame: {x: 104, y: 358, w: 500, h: 430}
+        style: {token: typography.body, variant: null, overrides: {padding: 40, font_size: 24, line_height: 1.48}}
+        editable: *edit
+      - id: s04-b
+        type: shape
+        role: iteration-b
+        content: {text: "02 / GOAL FIRST\nAI 围绕目标生成课程与练习\n\n优点：个人相关性最高\n风险：质量与来源责任最重"}
+        frame: {x: 638, y: 304, w: 574, h: 540}
+        style: {token: typography.body, variant: null, overrides: {padding: 48, font_size: 29, line_height: 1.48}}
+        editable: *edit
+      - id: s04-c
+        type: shape
+        role: iteration-c
+        content: {text: "03 / COACH LOOP\nAI 与人工教练共同调整路径\n\n优点：反馈更强\n风险：规模与成本受限"}
+        frame: {x: 1246, y: 358, w: 570, h: 430}
+        style: {token: typography.body, variant: null, overrides: {padding: 40, font_size: 24, line_height: 1.48}}
+        editable: *edit
+      - id: s04-learning
+        type: text
+        role: iteration-learning
+        content: {text: "PROVISIONAL DIRECTION · Goal First；进入试点前必须先定义质量、来源、安全和迁移检查。"}
+        frame: {x: 104, y: 910, w: 1550, h: 52}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 19}}
+        editable: *edit
+
+  - id: s05-system-demo
+    archetype: image
+    purpose: Demonstrate the learning system as a loop that returns responsibility to the learner.
+    grammar: image-led
+    assertion: {text: Agent 负责生成路径；学习者必须完成行动与解释, status: provisional}
+    narrative_role: {section: system-demonstration, sequence: explanation}
+    layout_variant: annotated-artifact
+    permission_profile: content-style
+    speaker_notes: "用照片说明最后一步：能解释、能应用，才有资格触发下一段课程。产品界面未提供，因此不伪造 UI。"
+    objects:
+      - <<: *title
+        id: s05-title
+        role: slide-assertion
+        content: {text: "Agent 负责生成路径；\n学习者必须完成行动与解释。"}
+        frame: {x: 104, y: 106, w: 1080, h: 174}
+        style: {token: typography.slide_title, variant: null, overrides: {font_size: 64, line_height: 1.06}}
+      - id: s05-photo
+        type: image
+        role: learner-transfer-photo
+        content:
+          src: assets/learner-transfer.webp
+          alt: AI 生成概念学习场景，一位北美青年通过电脑项目和手绘坡度图进行应用与自检
+          fit: cover
+          position: 39% 48%
+        frame: {x: 104, y: 342, w: 900, h: 590}
+        style: {token: image.documentary, variant: application-context}
+        constraints: {min_w: 760, min_h: 520, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s05-system
+        type: group
+        role: system-loop
+        content:
+          stages:
+            - "01\nGOAL"
+            - "02\nMAP"
+            - "03\nLESSON"
+            - "04\nPRACTICE"
+            - "05\nADAPT"
+        frame: {x: 1050, y: 340, w: 766, h: 232}
+        style: {token: components.process.system, variant: learning-loop}
+        editable: *edit
+      - id: s05-agent
+        type: shape
+        role: system-rule-a
+        content: {text: "AGENT OWNS\n编排、解释来源、调整难度、暴露不确定性。"}
+        frame: {x: 1050, y: 622, w: 360, h: 226}
+        style: {token: typography.body, variant: null, overrides: {padding: 30, font_size: 21, line_height: 1.42}}
+        editable: *edit
+      - id: s05-human
+        type: shape
+        role: system-rule-b
+        content: {text: "LEARNER OWNS\n确认目标、完成练习、解释所学、决定是否继续。"}
+        frame: {x: 1436, y: 622, w: 380, h: 226}
+        style: {token: typography.body, variant: null, overrides: {padding: 30, font_size: 21, line_height: 1.42}}
+        editable: *edit
+      - id: s05-caption
+        type: text
+        role: application-caption
+        content: {text: "AI-generated concept image · 只说明迁移行为；产品界面与真实流程待提供。"}
+        frame: {x: 1050, y: 902, w: 730, h: 36}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 14}}
+        editable: *edit
+
+  - id: s06-future-ask
+    archetype: closing
+    purpose: Turn the concept into a bounded next action and return to the opening idea.
+    grammar: decision
+    assertion: {text: 不先找课程；先选择一个必须学会的真实目标, status: provisional}
+    narrative_role: {section: future-state-and-ask, sequence: closing}
+    layout_variant: closing-decision
+    permission_profile: content-style
+    speaker_notes: "明确请求：与一位合作方选择一个真实目标，定义比较基线与成功标准，完成一次小规模试点。不要以‘谢谢’结束。"
+    objects:
+      - <<: *title
+        id: s06-ask
+        role: decision-statement
+        content: {text: "不先找课程。\n先选择一个\n必须学会的真实目标。"}
+        frame: {x: 104, y: 160, w: 1020, h: 344}
+        style: {token: typography.hero, variant: null, overrides: {font_size: 86, line_height: 1.0}}
+      - id: s06-action
+        type: shape
+        role: explicit-ask
+        content: {text: "NEXT ACTION\n共同定义一个对照试点：真实目标、固定课程基线、质量与来源门槛、练习任务、迁移检查。"}
+        frame: {x: 104, y: 610, w: 760, h: 260}
+        style: {token: typography.body, variant: null, overrides: {padding: 38, font_size: 26, line_height: 1.44}}
+        editable: *edit
+      - id: s06-gap
+        type: shape
+        role: evidence-next
+        content: {text: "BEFORE A REAL PITCH\n补充产品 Demo、试点数据、市场定义、商业模式、团队事实和明确合作或投资请求。"}
+        frame: {x: 890, y: 610, w: 620, h: 260}
+        style: {token: typography.body, variant: null, overrides: {padding: 38, font_size: 23, line_height: 1.44}}
+        editable: *edit
+      - id: s06-photo
+        type: image
+        role: closing-photo
+        content:
+          src: assets/learner-transfer.webp
+          alt: AI 生成概念场景，一位北美青年在电脑项目中应用并自检新学概念
+          fit: cover
+          position: 40% 48%
+        frame: {x: 1540, y: 144, w: 276, h: 726}
+        style: {token: image.documentary, variant: closing-context}
+        constraints: {min_w: 240, min_h: 620, snap_to_grid: true, preserve_aspect_ratio: false}
+        editable: *edit
+      - id: s06-disclosure
+        type: text
+        role: concept-disclosure
+        content: {text: "SYNTHETIC CONCEPT / 概念项目 · 本页提出验证请求，不代表已有成果或客户承诺。"}
+        frame: {x: 104, y: 938, w: 1100, h: 36}
+        style: {token: typography.caption, variant: null, overrides: {font_size: 13}}
+        editable: *edit

@@ -1,0 +1,28 @@
+schema_version: "0.1"
+meta:
+  id: night-relay
+  name: Night Relay
+  name_zh: 夜间接力
+  version: "0.4.0"
+  status: approved
+  provenance: designer-reviewed-ai-assisted
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 让目标、Agent 与学习者责任在深浅交替的舞台中完成接力
+  mood: [dramatic, focused, contemporary]
+  tone: [spoken, technological, responsible]
+  formality: medium
+  density: low
+best_for: [speech-pitch-deck, live-product-talk]
+avoid_for: [print-handout, dense-research-appendix]
+colors:
+  canvas: "#06070A"
+  surface: "#11141B"
+  text_primary: "#F7F8FB"
+  text_secondary: "#9AA4B5"
+  accent_primary: "#174CFF"
+  accent_secondary: "#52E2C2"
+  positive: "#52E2C2"
+  negative: "#FF6B65"
+  rule: "rgba(247,248,251,.18)"
+stylesheet: theme.css

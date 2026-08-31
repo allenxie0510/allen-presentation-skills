@@ -1,0 +1,22 @@
+schema_version: "0.1"
+meta: {id: signal-ascent, name: Signal Ascent, name_zh: 信号上升, version: "0.4.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用超大判断、直接标注和单一上升信号服务现场说服
+  mood: [clear, optimistic, editorial]
+  tone: [founder-led, direct, evidence-aware]
+  formality: medium
+  density: low
+best_for: [speech-pitch-deck, founder-keynote]
+avoid_for: [dense-research-appendix, financial-control-room]
+colors:
+  canvas: "#F4F4F1"
+  surface: "#FFFFFF"
+  text_primary: "#0B1018"
+  text_secondary: "#5A6270"
+  accent_primary: "#1557FF"
+  accent_secondary: "#FFD21F"
+  positive: "#138A67"
+  negative: "#C33B32"
+  rule: "rgba(11,16,24,.18)"
+stylesheet: theme.css

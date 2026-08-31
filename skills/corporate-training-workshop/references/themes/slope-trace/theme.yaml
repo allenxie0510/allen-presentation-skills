@@ -1,0 +1,28 @@
+schema_version: "0.1"
+meta:
+  id: slope-trace
+  name: Slope Trace
+  name_zh: 坡迹
+  version: "0.4.0"
+  status: approved
+  provenance: designer-reviewed-ai-assisted
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 把目标到迁移的学习坡度变成跨页推进结构
+  mood: [progressive, spacious, authored]
+  tone: [conceptual, precise, optimistic]
+  formality: medium
+  density: medium
+best_for: [speech-pitch-deck, product-vision-talk]
+avoid_for: [compliance-report, dense-research-appendix]
+colors:
+  canvas: "#E9EEF8"
+  surface: "#F9FBFF"
+  text_primary: "#101625"
+  text_secondary: "#566176"
+  accent_primary: "#164BDF"
+  accent_secondary: "#86E3C3"
+  positive: "#117A62"
+  negative: "#C54444"
+  rule: "rgba(16,22,37,.17)"
+stylesheet: theme.css

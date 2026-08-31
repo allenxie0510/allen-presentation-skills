@@ -1,0 +1,44 @@
+schema_version: "0.1"
+subject:
+  theme: ahaslope-speech-pitch-theme-family
+  version: "0.4.0"
+  direction: night-relay
+  reviewed_artifacts:
+    - previews/night-relay-01-opening-hook.webp
+    - previews/night-relay-02-problem-role.webp
+    - previews/night-relay-03-evidence-insight.webp
+    - previews/night-relay-04-mechanism-options.webp
+    - previews/night-relay-05-system-demo.webp
+    - previews/night-relay-06-future-ask.webp
+  reviewer: Codex visual QA
+  reviewed_at: "2026-09-01T12:30:00+08:00"
+concept_gate:
+  concept: 以深浅舞台交替和责任节点接力，表达学习者给出目标、Agent 编排路径、学习者完成迁移。
+  content_origin: User-provided pitch proposition, selective dark-mode reference principle, disclosed concept dossier, and a disclosed international youth-learning image anthology.
+  replaceability_result: 圆形节点、颜色交接和明暗切换都对应人机责任转移，而非装饰性科技轨道。
+  score: 8.9
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: "Chromium DOM bounds and overflow checks passed on all dark and light frames."}
+  readability: {passed: true, evidence: "High-contrast stage assertions and short node labels remain readable at distance."}
+  truth: {passed: true, evidence: "The relay represents responsibility, not product performance; concept and missing proof remain explicit."}
+  image_integrity: {passed: true, evidence: "Natural skin color and varied low-saturation clothing are preserved; authored wide and narrow crops retain faces, hands, computers, and learning artifacts."}
+  accessibility: {passed: true, evidence: "Node labels, order, arrows, and light-dark sequencing carry meaning beyond hue."}
+  provenance: {passed: true, evidence: "SOURCES.md records generation mode, asset meaning, evidence boundary, and open font license."}
+  visual_inspection: {passed: true, evidence: "Dark evidence and system frames plus the light closing were inspected full size and in the route board."}
+dimensions:
+  philosophy_narrative: {score: 8.7, weight: 20, finding: "The relay makes the responsibility boundary between learner and Agent memorable and pitch-relevant."}
+  hierarchy_rhythm: {score: 9.0, weight: 25, finding: "Alternating dark mechanism peaks and light reasoning pages creates strong emotional pacing; the closing now resolves without decorative circles."}
+  craft_system: {score: 8.8, weight: 20, finding: "Circle scales, image windows, projector-safe contrast, blue-mint handoff, and typography are controlled without glass or glow effects."}
+  communication_evidence: {score: 8.6, weight: 20, finding: "Mechanism and proof gaps remain clear; dense source detail is explicitly routed to light evidence pages."}
+  authorship_originality: {score: 8.8, weight: 15, finding: "The responsibility relay is distinctive and avoids the generic luminous AI orb used by many technology decks."}
+weighted_score: 87.90
+verdict: approval-candidate
+keep:
+  - Preserve dark pages for mechanism peaks and light pages for evidence, trade-offs, and the explicit ask.
+  - Keep blue and mint tied to responsibility handoff rather than decoration.
+fix: []
+quick_wins:
+  - Keep the projector-safe dark token set and light evidence grammar.
+  - Preserve at least one full-black statement page with no nodes or image in full decks.
+  - Reserve mint for the learner-owned return step and final validated action.

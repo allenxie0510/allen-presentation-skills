@@ -70,30 +70,21 @@
       "id": "speech-pitch-deck",
       "themes": [
         {
-          "id": "stage-contrast",
-          "contact_sheet": "speech-pitch-deck/stage-contrast.webp",
+          "id": "slope-trace",
+          "contact_sheet": "speech-pitch-deck/slope-trace.webp",
           "screenshots": [
-            "speech-pitch-deck/stage-contrast-01-cover.webp",
-            "speech-pitch-deck/stage-contrast-02-core.webp",
-            "speech-pitch-deck/stage-contrast-03-closing.webp"
+            "speech-pitch-deck/slope-trace-01-cover.webp",
+            "speech-pitch-deck/slope-trace-02-core.webp",
+            "speech-pitch-deck/slope-trace-03-closing.webp"
           ]
         },
         {
-          "id": "executive-night",
-          "contact_sheet": "speech-pitch-deck/executive-night.webp",
+          "id": "night-relay",
+          "contact_sheet": "speech-pitch-deck/night-relay.webp",
           "screenshots": [
-            "speech-pitch-deck/executive-night-01-cover.webp",
-            "speech-pitch-deck/executive-night-02-core.webp",
-            "speech-pitch-deck/executive-night-03-closing.webp"
-          ]
-        },
-        {
-          "id": "artifact-editorial",
-          "contact_sheet": "speech-pitch-deck/artifact-editorial.webp",
-          "screenshots": [
-            "speech-pitch-deck/artifact-editorial-01-cover.webp",
-            "speech-pitch-deck/artifact-editorial-02-core.webp",
-            "speech-pitch-deck/artifact-editorial-03-closing.webp"
+            "speech-pitch-deck/night-relay-01-cover.webp",
+            "speech-pitch-deck/night-relay-02-core.webp",
+            "speech-pitch-deck/night-relay-03-closing.webp"
           ]
         }
       ]
@@ -134,21 +125,21 @@
       "id": "corporate-training-workshop",
       "themes": [
         {
+          "id": "learning-agent",
+          "contact_sheet": "corporate-training-workshop/learning-agent.webp",
+          "screenshots": [
+            "corporate-training-workshop/learning-agent-01-cover.webp",
+            "corporate-training-workshop/learning-agent-02-core.webp",
+            "corporate-training-workshop/learning-agent-03-closing.webp"
+          ]
+        },
+        {
           "id": "learning-canvas",
           "contact_sheet": "corporate-training-workshop/learning-canvas.webp",
           "screenshots": [
             "corporate-training-workshop/learning-canvas-01-cover.webp",
             "corporate-training-workshop/learning-canvas-02-core.webp",
             "corporate-training-workshop/learning-canvas-03-closing.webp"
-          ]
-        },
-        {
-          "id": "signal-grid",
-          "contact_sheet": "corporate-training-workshop/signal-grid.webp",
-          "screenshots": [
-            "corporate-training-workshop/signal-grid-01-cover.webp",
-            "corporate-training-workshop/signal-grid-02-core.webp",
-            "corporate-training-workshop/signal-grid-03-closing.webp"
           ]
         },
         {

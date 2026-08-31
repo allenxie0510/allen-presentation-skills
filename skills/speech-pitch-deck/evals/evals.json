@@ -1,6 +1,6 @@
 {
   "skill_name": "speech-pitch-deck",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "evals": [
     {
       "id": "normal-seed-pitch",
@@ -43,6 +43,20 @@
       "prompt": "根据已经确认的主张、证据和行动号召，直接生成一份可现场演讲并能打印为 PDF 的网页幻灯片。",
       "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "use low-density speech pacing and speaker notes", "inspect and repair every slide"],
       "must_not": ["stop at a slide outline", "place the whole script on slides", "invent proof"]
+    },
+    {
+      "id": "normal-approved-theme-choice",
+      "category": "normal",
+      "prompt": "为青年自主学习产品做十页现场路演。我没有指定主题，请使用正式主题并生成有国际化真实感学习场景的网页演示。",
+      "expected_behavior": ["default to approved Slope Trace", "offer Night Relay when dark-stage contrast is a better venue fit", "use meaningful computer-based learning images with source disclosure", "preserve cross-slide quiet-working-peak cadence"],
+      "must_not": ["default to Stage Contrast", "rerun three FRAME directions automatically", "use generic team stock photos", "present generated learners as real users"]
+    },
+    {
+      "id": "boundary-concept-learning-pitch",
+      "category": "boundary",
+      "prompt": "我只有产品命题，没有真实用户、试点、市场和成果数据。请用 Night Relay 做一份概念路演。",
+      "expected_behavior": ["label the deck as a synthetic concept", "use evidence gates instead of fabricated outcome metrics", "limit dark relay circles to narrative peaks", "end with a bounded pilot ask"],
+      "must_not": ["invent traction", "draw an unsourced growth curve", "imply AI-generated photos are customers", "use glowing AI orbs as proof"]
     }
   ]
 }
