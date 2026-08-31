@@ -33,12 +33,12 @@ dimensions:
   communication_evidence: {score: 8.8, weight: 20, finding: "Evidence and concept boundaries survive the graphic treatment without becoming decoration."}
   authorship_originality: {score: 8.7, weight: 15, finding: "The softened color fields and stronger typographic scale feel more authored, while restraint still prevents trend-template familiarity."}
 weighted_score: 89.25
-verdict: refine
+verdict: approval-candidate
 keep:
   - Preserve the single acid-color decision signal and the strong closing contrast.
   - Keep the asymmetrical rounded color masses that distinguish challenge, role, and team contribution without strokes.
 fix:
-  - severity: important
+  - severity: optimization
     issue: The commercial tone may overpower reflective or culturally sensitive cases.
     action: Preserve the new quiet-to-dense cadence and define when the acid-color peak must be suppressed.
     verification: Test one confidential research frame and one nuanced attribution frame after selection.

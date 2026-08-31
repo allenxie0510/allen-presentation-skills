@@ -1,0 +1,28 @@
+schema_version: "0.1"
+meta:
+  id: open-frame
+  name: Open Frame
+  name_zh: 开放画幅
+  version: "0.4.0"
+  status: approved
+  provenance: designer-reviewed-ai-assisted
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用纪实大图、建筑感留白和尺度变化呈现设计判断
+  mood: [spacious, human, authored]
+  tone: [portfolio, reflective, contemporary]
+  formality: medium
+  density: medium
+best_for: [ux-brand-case-study, portfolio-interview, design-award-review]
+avoid_for: [dense-research-appendix, operational-dashboard]
+colors:
+  canvas: "#F6F6F3"
+  surface: "#FFFFFF"
+  text_primary: "#111214"
+  text_secondary: "#6C6D6A"
+  accent_primary: "#C65E3B"
+  accent_secondary: "#4D6757"
+  positive: "#4D6757"
+  negative: "#A44735"
+  rule: "rgba(17,18,20,.18)"
+stylesheet: theme.css

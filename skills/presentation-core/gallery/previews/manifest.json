@@ -102,30 +102,30 @@
       "id": "ux-brand-case-study",
       "themes": [
         {
-          "id": "artifact-editorial",
-          "contact_sheet": "ux-brand-case-study/artifact-editorial.webp",
+          "id": "material-ledger",
+          "contact_sheet": "ux-brand-case-study/material-ledger.webp",
           "screenshots": [
-            "ux-brand-case-study/artifact-editorial-01-cover.webp",
-            "ux-brand-case-study/artifact-editorial-02-core.webp",
-            "ux-brand-case-study/artifact-editorial-03-closing.webp"
+            "ux-brand-case-study/material-ledger-01-cover.webp",
+            "ux-brand-case-study/material-ledger-02-core.webp",
+            "ux-brand-case-study/material-ledger-03-closing.webp"
           ]
         },
         {
-          "id": "signal-grid",
-          "contact_sheet": "ux-brand-case-study/signal-grid.webp",
+          "id": "signal-pitch",
+          "contact_sheet": "ux-brand-case-study/signal-pitch.webp",
           "screenshots": [
-            "ux-brand-case-study/signal-grid-01-cover.webp",
-            "ux-brand-case-study/signal-grid-02-core.webp",
-            "ux-brand-case-study/signal-grid-03-closing.webp"
+            "ux-brand-case-study/signal-pitch-01-cover.webp",
+            "ux-brand-case-study/signal-pitch-02-core.webp",
+            "ux-brand-case-study/signal-pitch-03-closing.webp"
           ]
         },
         {
-          "id": "stage-contrast",
-          "contact_sheet": "ux-brand-case-study/stage-contrast.webp",
+          "id": "open-frame",
+          "contact_sheet": "ux-brand-case-study/open-frame.webp",
           "screenshots": [
-            "ux-brand-case-study/stage-contrast-01-cover.webp",
-            "ux-brand-case-study/stage-contrast-02-core.webp",
-            "ux-brand-case-study/stage-contrast-03-closing.webp"
+            "ux-brand-case-study/open-frame-01-cover.webp",
+            "ux-brand-case-study/open-frame-02-core.webp",
+            "ux-brand-case-study/open-frame-03-closing.webp"
           ]
         }
       ]

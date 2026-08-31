@@ -1,6 +1,6 @@
 {
   "skill_name": "ux-brand-case-study",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "evals": [
     {
       "id": "normal-enterprise-redesign",
@@ -43,6 +43,13 @@
       "prompt": "根据已获许可的项目材料、设计推理和成果，直接生成一份可浏览并能打印为 PDF 的案例网页幻灯片。",
       "expected_behavior": ["produce schema-valid Presentation IR", "render a self-contained HTML deck", "show annotated artifacts, attribution, and consequential iterations", "inspect and repair every slide"],
       "must_not": ["stop at a slide outline", "expose restricted assets", "invent impact"]
+    },
+    {
+      "id": "visual-rhythm-theme-selection",
+      "category": "normal",
+      "prompt": "用这个 GitHub Skill 生成一份 15 页 UX 与品牌整合案例。先让我从三套正式主题中选择；页面要有松紧节奏，重要标题、序号、参数和判断应有明显字号对比。",
+      "expected_behavior": ["show Material Ledger, Signal Pitch, and Open Frame previews", "default to Material Ledger only when no theme is selected", "vary quiet, working, and peak slide density", "preserve the fixed evidence-led narrative path"],
+      "must_not": ["offer the deprecated UX draft shortlist", "make every slide equally full", "use uniform type scale", "invent evidence or outcomes"]
     }
   ]
 }

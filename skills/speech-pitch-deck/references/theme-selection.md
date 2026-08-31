@@ -10,13 +10,16 @@ evidence, conclusion, or scenario narrative.
    closing slide, so the comparison is fair.
 4. Read only the shortlisted themes' `preview.md` files.
 5. Ask the user to select a theme or accept the scenario default.
-6. Load only the selected `theme.yaml` and `theme.css`, then render with
-   `--theme <path>/theme.yaml --allow-draft-theme`.
+6. Load only the selected `theme.yaml`, `theme.css`, and linked art-direction
+   contract. Render approved themes directly; add `--allow-draft-theme` only
+   when the selected theme is explicitly marked draft or review.
 
-Learning Agent 0.4.0 is the approved Corporate Training Workshop default. The
-other six bundled themes remain draft and must not be described as approved or
-as copied from another presentation system. All share the Allen Presentation
-Design System contract while keeping independent visual expression.
+Learning Agent 0.4.0 is the approved Corporate Training Workshop default.
+Material Ledger, Signal Pitch, and Open Frame 0.4.0 are the approved UX Brand
+Case Study theme family; Material Ledger is the default. The six legacy bundled
+themes remain draft and must not be described as approved. All themes share the
+Allen Presentation Design System contract while keeping independent visual
+expression.
 
 Theme selection compares existing expressions. Theme creation or a major visual
 redesign is a different workflow: read `allen-frame-method.md`, render three
@@ -30,5 +33,5 @@ new gallery candidate.
 | Product Roadmap Review | Signal Grid | Executive Night, Evidence Ledger |
 | Industry Research Deck | Evidence Ledger | Executive Night, Signal Grid |
 | Speech Pitch Deck | Stage Contrast | Executive Night, Artifact Editorial |
-| UX Brand Case Study | Artifact Editorial | Signal Grid, Stage Contrast |
+| UX Brand Case Study | Material Ledger | Signal Pitch, Open Frame |
 | Corporate Training Workshop | Learning Agent | Learning Canvas, Artifact Editorial |

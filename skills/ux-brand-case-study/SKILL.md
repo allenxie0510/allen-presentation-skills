@@ -5,9 +5,9 @@ license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
-  maturity: "draft"
+  maturity: "stable"
   risk: "local-write"
-  version: "0.3.0"
+  version: "0.4.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/ux-brand-case-study"
@@ -19,6 +19,17 @@ metadata:
 Show why a design decision was made, how it was tested or applied, and what
 changed. A case study is evidence of judgment and impact, not a gallery of final
 screens or identity assets.
+
+## Current release
+
+Version 0.4.0 formalizes the fixed narrative path challenge and role → evidence
+→ insight → iteration → system and application → outcome and reflection. It
+adds three Allen Xie-approved themes: Material Ledger as the default, with
+Signal Pitch and Open Frame as alternatives. All three use explicit cross-slide
+density, typographic scale contrast, meaningful image slots, source disclosure,
+and render-based quality gates. The bundled Aster Yard example is a disclosed
+synthetic concept project and is not evidence of a real client or measured
+outcome.
 
 ## Establish the case-study job
 
@@ -56,11 +67,14 @@ assets so the result remains self-contained.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
 the three real-render previews in `assets/theme-previews/`, then default to
-Artifact Editorial; offer Signal Grid and Stage Contrast when their fit is stronger. Render with
+Material Ledger. Offer Signal Pitch when a client or design leader needs faster
+room-scale decisions; offer Open Frame when image-led portfolio pacing and human
+context matter more. After selection, read that theme's `preview.md`,
+`art-direction.md`, `theme.yaml`, and `theme.css`. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
---allow-draft-design --theme references/themes/artifact-editorial/theme.yaml
---allow-draft-theme`, then open and inspect every slide. Repair the IR and
+--allow-draft-design --theme references/themes/material-ledger/theme.yaml`, then
+open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, weakly annotated, or visually
 repetitive.
 

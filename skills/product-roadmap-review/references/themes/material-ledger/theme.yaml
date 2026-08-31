@@ -1,0 +1,28 @@
+schema_version: "0.1"
+meta:
+  id: material-ledger
+  name: Material Ledger
+  name_zh: 材质档案
+  version: "0.4.0"
+  status: approved
+  provenance: designer-reviewed-ai-assisted
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent:
+  tagline: 用档案编号、材料感和应用物证建立可追溯的设计判断
+  mood: [tactile, editorial, assured]
+  tone: [crafted, reflective, evidence-led]
+  formality: medium
+  density: medium
+best_for: [ux-brand-case-study, brand-system-review, portfolio-interview]
+avoid_for: [financial-control-room, high-energy-keynote]
+colors:
+  canvas: "#E8E3DB"
+  surface: "#F8F5EF"
+  text_primary: "#23221F"
+  text_secondary: "#706B63"
+  accent_primary: "#7B8064"
+  accent_secondary: "#B27454"
+  positive: "#59705A"
+  negative: "#A84B3C"
+  rule: "rgba(35,34,31,.26)"
+stylesheet: theme.css

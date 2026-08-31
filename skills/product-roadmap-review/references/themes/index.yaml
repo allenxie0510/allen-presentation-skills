@@ -77,6 +77,42 @@ themes:
     avoid_for: [financial-control-room]
     preview: artifact-editorial/preview.md
     theme: artifact-editorial/theme.yaml
+  - id: material-ledger
+    name: Material Ledger
+    name_zh: 材质档案
+    tagline: 用档案编号、材料感和应用物证建立可追溯的设计判断
+    mood: [tactile, editorial, assured]
+    tone: [crafted, reflective, evidence-led]
+    formality: medium
+    density: medium
+    best_for: [ux-brand-case-study, brand-system-review, portfolio-interview]
+    avoid_for: [financial-control-room, high-energy-keynote]
+    preview: material-ledger/preview.md
+    theme: material-ledger/theme.yaml
+  - id: signal-pitch
+    name: Signal Pitch
+    name_zh: 信号提案
+    tagline: 用无描边色块把挑战、证据、选择与反思转译为高辨识度信号
+    mood: [graphic, confident, contemporary]
+    tone: [commercial, decisive, evidence-led]
+    formality: medium
+    density: medium
+    best_for: [ux-brand-case-study, client-case-review, design-leadership-review]
+    avoid_for: [sensitive-research-readout, dense-research-appendix]
+    preview: signal-pitch/preview.md
+    theme: signal-pitch/theme.yaml
+  - id: open-frame
+    name: Open Frame
+    name_zh: 开放画幅
+    tagline: 用纪实大图、建筑感留白和尺度变化呈现设计判断
+    mood: [spacious, human, authored]
+    tone: [portfolio, reflective, contemporary]
+    formality: medium
+    density: medium
+    best_for: [ux-brand-case-study, portfolio-interview, design-award-review]
+    avoid_for: [dense-research-appendix, operational-dashboard]
+    preview: open-frame/preview.md
+    theme: open-frame/theme.yaml
   - id: learning-canvas
     name: Learning Canvas
     name_zh: 学习画布

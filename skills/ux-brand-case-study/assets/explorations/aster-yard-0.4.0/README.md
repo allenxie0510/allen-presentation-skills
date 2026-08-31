@@ -1,7 +1,8 @@
 # Aster Yard 0.4.0 direction study
 
-Status: three rendered FRAME directions; selection pending. This is not a
-released or approved theme.
+Status: release provenance for the three approved UX Brand Case Study 0.4.0
+themes. Allen Xie requested publication on 2026-08-31. Material Ledger is the
+default; Signal Pitch and Open Frame are approved alternatives.
 
 The same disclosed synthetic UX + brand case, six narrative frames, three image
 assets, 1920 × 1080 canvas, evidence boundary, and text content are used across
@@ -42,8 +43,9 @@ insight, iteration, system and application, and outcome and reflection.
    strongest for portfolio interviews and human context.
 
 These routes differ in grid, typography, image behavior, rhythm, and material
-color—not only palette. All remain draft until the user selects or mixes a
-route and a named reviewer approves the expanded template.
+color—not only palette. Their release status is recorded in the formal theme
+packs under `references/themes/`; this directory preserves the controlled FRAME
+comparison, synthetic assets, reviews, and source boundaries.
 
 ## Rhythm revision after visual review
 
@@ -86,9 +88,8 @@ The validator renders each route in Chromium and checks all 18 frames for DOM
 bounds, text overflow, image size, alternative text, authored crop position,
 and concept disclosure.
 
-## Selection question
+## Release decision
 
-Choose Signal Pitch, Material Ledger, Open Frame, or name a precise mix such as
-“Material Ledger foundation + Open Frame image rhythm + Signal Pitch closing.”
-Only then should the selected route become a complete art-direction contract and
-full reusable template.
+Material Ledger is the scenario default because it received the strongest
+evidence, craft, and rhythm review. Signal Pitch and Open Frame remain separately
+selectable formal themes rather than being merged into one universal skin.

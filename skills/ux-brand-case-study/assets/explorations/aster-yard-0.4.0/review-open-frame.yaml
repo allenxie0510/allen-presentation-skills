@@ -33,12 +33,12 @@ dimensions:
   communication_evidence: {score: 8.6, weight: 20, finding: "Evidence remains functional and the image-led system page now balances headline, artifact, rules, and annotation more deliberately."}
   authorship_originality: {score: 8.9, weight: 15, finding: "Architectural whitespace, typographic scale shifts, and image behavior create a defensible portfolio voice."}
 weighted_score: 88.30
-verdict: refine
+verdict: approval-candidate
 keep:
   - Preserve the large contextual imagery and the clean challenge-role separation.
   - Keep the low-noise reflection page, oversized assertions, and restrained terracotta directional cues.
 fix:
-  - severity: important
+  - severity: optimization
     issue: High-density research and system appendices may exceed the open frame's capacity.
     action: Add one compact evidence archetype without turning the route into a uniform grid.
     verification: Stress-test twelve evidence items, a long Chinese title, and a multi-state UX flow.

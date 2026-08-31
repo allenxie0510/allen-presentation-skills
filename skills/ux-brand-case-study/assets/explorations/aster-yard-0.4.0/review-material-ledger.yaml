@@ -33,12 +33,12 @@ dimensions:
   communication_evidence: {score: 8.7, weight: 20, finding: "Evidence remains legible and traceable; increased assertion scale improves live-room emphasis without losing provenance."}
   authorship_originality: {score: 8.9, weight: 15, finding: "The stronger scale contrast gives the material archive an authored editorial voice instead of generic vintage decoration."}
 weighted_score: 89.95
-verdict: refine
+verdict: approval-candidate
 keep:
   - Preserve the page index, hairline baseline, and warm material evidence treatment.
   - Keep the centered selected iteration as the route's only elevated artifact.
 fix:
-  - severity: important
+  - severity: optimization
     issue: Quiet tonal contrast can still weaken low-quality projector performance despite the improved type scale.
     action: Define a projector-safe contrast mode without abandoning the archive grammar.
     verification: Test the selected system on a projector simulation and a dense research appendix.

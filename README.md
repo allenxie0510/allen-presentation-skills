@@ -36,6 +36,23 @@ https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corpo
 我的项目资料：[粘贴内容或提供文件]
 ```
 
+调用 UX Brand Case Study 0.4.0 的推荐提示词：
+
+```text
+请读取并使用这个公开 GitHub Skill：
+https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/ux-brand-case-study
+
+先读取 SKILL.md，并按相对链接继续读取当前任务需要的 scenario、主题、Schema
+和 art-direction。请沿“挑战与角色 → 证据 → 洞察 → 迭代 → 系统与应用 →
+成效与反思”建立案例，不得虚构研究、用户引语、团队贡献或项目成果。
+
+如果我没有指定主题，默认使用已批准的 Material Ledger；也可以让我从
+Signal Pitch 和 Open Frame 中选择。生成 Schema-valid Presentation IR、
+自包含 HTML，并逐页检查对齐、溢出、裁切、文字尺度和跨页疏密节奏。
+
+我的项目资料：[粘贴内容或提供文件]
+```
+
 如果 AI 不支持读取 GitHub，它无法仅凭链接自动获得 Skill；此时先克隆仓库，
 再把本地 `skills/corporate-training-workshop/` 目录提供给它。仓库根链接用于发现
 全部 Skills，具体 Skill 目录链接最适合直接调用。
@@ -51,9 +68,9 @@ https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corpo
 
 ## Presentation Theme Gallery · 演示主题画廊
 
-Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。通用画廊中的
-其余六套主题仍为**草稿**；Signal Grid 为 `0.5.0`，其他通用主题为
-`0.3.0`。通用画廊按场景展示 15 组真实渲染结果；
+Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。Material Ledger、
+Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主题族。
+其余六套遗留主题仍为**草稿**。通用画廊按场景展示 15 组真实渲染结果；
 每组依次为封面页、核心组件页和收尾页，并使用同一份场景 Presentation IR，
 便于比较主题差异，而不是比较内容差异。
 
@@ -163,35 +180,35 @@ Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。通�
 
 叙事路径：挑战与角色 → 证据 → 洞察 → 迭代 → 系统与应用 → 成效与反思。
 
-#### [Artifact Editorial · 作品集画册](skills/presentation-core/themes/artifact-editorial/) · 默认主题
+#### [Material Ledger · 材质档案](skills/presentation-core/themes/material-ledger/) · 已批准默认主题 · 0.4.0
 
 <p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/artifact-editorial-01-cover.webp" width="32.5%" alt="UX 与品牌案例，作品集画册主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/artifact-editorial-02-core.webp" width="32.5%" alt="UX 与品牌案例，作品集画册主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/artifact-editorial-03-closing.webp" width="32.5%" alt="UX 与品牌案例，作品集画册主题，收尾页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/material-ledger-01-cover.webp" width="32.5%" alt="UX 与品牌案例，材质档案主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/material-ledger-02-core.webp" width="32.5%" alt="UX 与品牌案例，材质档案主题，系统与应用页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/material-ledger-03-closing.webp" width="32.5%" alt="UX 与品牌案例，材质档案主题，成效与反思页" />
 </p>
 
-> 暖纸色与编辑排版，让作品、研究证据和设计判断共同叙事。
+> 暖纸色、档案编号、应用物证与编辑式尺度，适合可追溯的 UX 与品牌系统案例。
 
-#### [Signal Grid · 信号网格](skills/presentation-core/themes/signal-grid/)
+#### [Signal Pitch · 信号提案](skills/presentation-core/themes/signal-pitch/) · 已批准主题 · 0.4.0
 
 <p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-grid-01-cover.webp" width="32.5%" alt="UX 与品牌案例，信号网格主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-grid-02-core.webp" width="32.5%" alt="UX 与品牌案例，信号网格主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-grid-03-closing.webp" width="32.5%" alt="UX 与品牌案例，信号网格主题，收尾页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-pitch-01-cover.webp" width="32.5%" alt="UX 与品牌案例，信号提案主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-pitch-02-core.webp" width="32.5%" alt="UX 与品牌案例，信号提案主题，系统与应用页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/signal-pitch-03-closing.webp" width="32.5%" alt="UX 与品牌案例，信号提案主题，成效与反思页" />
 </p>
 
-> 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
+> 无描边大圆角色块、高对比标题与单一酸性色，适合客户和设计领导快速判断。
 
-#### [Stage Contrast · 舞台对比](skills/presentation-core/themes/stage-contrast/)
+#### [Open Frame · 开放画幅](skills/presentation-core/themes/open-frame/) · 已批准主题 · 0.4.0
 
 <p>
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/stage-contrast-01-cover.webp" width="32.5%" alt="UX 与品牌案例，舞台对比主题，封面页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/stage-contrast-02-core.webp" width="32.5%" alt="UX 与品牌案例，舞台对比主题，核心组件页" />
-  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/stage-contrast-03-closing.webp" width="32.5%" alt="UX 与品牌案例，舞台对比主题，收尾页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/open-frame-01-cover.webp" width="32.5%" alt="UX 与品牌案例，开放画幅主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/open-frame-02-core.webp" width="32.5%" alt="UX 与品牌案例，开放画幅主题，系统与应用页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/open-frame-03-closing.webp" width="32.5%" alt="UX 与品牌案例，开放画幅主题，成效与反思页" />
 </p>
 
-> 深色舞台、大字号与强烈色块，为现场表达和记忆点服务。
+> 纪实大图、建筑感留白与尺度变化，适合作品集面试和设计奖项案例。
 
 ### Corporate Training Workshop · 企业培训与工作坊
 
@@ -259,9 +276,9 @@ Skill 目录调用。
 - 通过 `--theme <theme.yaml> --allow-draft-theme` 生成所选主题的网页幻灯片。
 
 当前不生成原生 `.pptx`，浏览器编辑也不会自动同步回 Presentation IR。
-底层 Allen Signal Grid 设计系统与六套通用主题仍为 `draft`；Learning Agent
-主题已通过15页渲染、硬性门槛和五维评审，作为 Corporate Training Workshop
-0.4.0 的已批准默认主题发布。主题批准不代表概念示例中的客户、能力或成效为真。
+底层 Allen Signal Grid 设计系统仍为 `draft`。Learning Agent 以及 UX Brand
+Case Study 的三套 0.4.0 主题已通过真实渲染、硬性门槛和五维评审并获批准；
+其余六套遗留主题仍为草稿。主题批准不代表概念示例中的客户、能力或成效为真。
 
 ## 发布说明
 

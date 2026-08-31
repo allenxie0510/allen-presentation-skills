@@ -100,9 +100,9 @@ routes:
       - 高密度研究内容可能突破开放画幅的阅读容量。
       - 留白必须承载节奏和层级，不能成为信息不足的掩饰。
 selection:
-  status: pending
-  selected_route: null
-  decided_by: null
-  decision_rationale: null
-  user_quote: null
-  decided_at: null
+  status: user-approved
+  selected_route: material-ledger
+  decided_by: Allen Xie
+  decision_rationale: Material Ledger becomes the default because it achieved the strongest controlled review; Signal Pitch and Open Frame are also published as explicit alternatives rather than collapsed into one style.
+  user_quote: 发布到这里替换以前的草稿
+  decided_at: "2026-08-31T21:15:00+08:00"
