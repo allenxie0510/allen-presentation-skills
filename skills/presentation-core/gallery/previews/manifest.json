@@ -15,6 +15,15 @@
           ]
         },
         {
+          "id": "silent-spectrum",
+          "contact_sheet": "product-roadmap-review/silent-spectrum.webp",
+          "screenshots": [
+            "product-roadmap-review/silent-spectrum-01-cover.webp",
+            "product-roadmap-review/silent-spectrum-02-core.webp",
+            "product-roadmap-review/silent-spectrum-03-closing.webp"
+          ]
+        },
+        {
           "id": "executive-night",
           "contact_sheet": "product-roadmap-review/executive-night.webp",
           "screenshots": [
@@ -44,6 +53,15 @@
             "industry-research-deck/evidence-ledger-01-cover.webp",
             "industry-research-deck/evidence-ledger-02-core.webp",
             "industry-research-deck/evidence-ledger-03-closing.webp"
+          ]
+        },
+        {
+          "id": "silent-spectrum",
+          "contact_sheet": "industry-research-deck/silent-spectrum.webp",
+          "screenshots": [
+            "industry-research-deck/silent-spectrum-01-cover.webp",
+            "industry-research-deck/silent-spectrum-02-core.webp",
+            "industry-research-deck/silent-spectrum-03-closing.webp"
           ]
         },
         {
@@ -79,6 +97,15 @@
           ]
         },
         {
+          "id": "silent-spectrum",
+          "contact_sheet": "speech-pitch-deck/silent-spectrum.webp",
+          "screenshots": [
+            "speech-pitch-deck/silent-spectrum-01-cover.webp",
+            "speech-pitch-deck/silent-spectrum-02-core.webp",
+            "speech-pitch-deck/silent-spectrum-03-closing.webp"
+          ]
+        },
+        {
           "id": "night-relay",
           "contact_sheet": "speech-pitch-deck/night-relay.webp",
           "screenshots": [
@@ -99,6 +126,15 @@
             "ux-brand-case-study/material-ledger-01-cover.webp",
             "ux-brand-case-study/material-ledger-02-core.webp",
             "ux-brand-case-study/material-ledger-03-closing.webp"
+          ]
+        },
+        {
+          "id": "silent-spectrum",
+          "contact_sheet": "ux-brand-case-study/silent-spectrum.webp",
+          "screenshots": [
+            "ux-brand-case-study/silent-spectrum-01-cover.webp",
+            "ux-brand-case-study/silent-spectrum-02-core.webp",
+            "ux-brand-case-study/silent-spectrum-03-closing.webp"
           ]
         },
         {
@@ -131,6 +167,15 @@
             "corporate-training-workshop/learning-agent-01-cover.webp",
             "corporate-training-workshop/learning-agent-02-core.webp",
             "corporate-training-workshop/learning-agent-03-closing.webp"
+          ]
+        },
+        {
+          "id": "silent-spectrum",
+          "contact_sheet": "corporate-training-workshop/silent-spectrum.webp",
+          "screenshots": [
+            "corporate-training-workshop/silent-spectrum-01-cover.webp",
+            "corporate-training-workshop/silent-spectrum-02-core.webp",
+            "corporate-training-workshop/silent-spectrum-03-closing.webp"
           ]
         },
         {

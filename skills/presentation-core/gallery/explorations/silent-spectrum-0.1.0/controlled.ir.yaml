@@ -1,0 +1,52 @@
+schema_version: "0.1"
+deck:
+  id: silent-spectrum-controlled-content
+  title: Silent Spectrum Mother System
+  language: zh-CN
+  aspect_ratio: "16:9"
+  canvas: {width: 1920, height: 1080}
+  scenario: {id: speech-pitch-deck, version: "0.4.0"}
+  design_system: {id: allen-signal-grid, version: "0.1"}
+  density: medium
+  mode: hybrid
+  metadata: {author: Allen Skill Hub, confidential: false, created_at: null, updated_at: null, source_note: "Synthetic concept content for controlled visual comparison; no outcome claim."}
+slides:
+  - id: ss01-identity
+    archetype: cover
+    purpose: Prove identity, whitespace, hierarchy, and tonal restraint.
+    grammar: narrative
+    assertion: {text: 让复杂信息以安静的秩序显形, status: provisional}
+    narrative_role: {section: design-thesis, sequence: opening}
+    layout_variant: cover-indexed
+    permission_profile: content-style
+    objects:
+      - {id: ss01-title, type: text, role: deck-title, content: {text: "安静，\n不是平均。"}, frame: {x: 120, y: 220, w: 1320, h: 350}, style: {token: typography.hero, variant: null, overrides: {font_size: 124}}, editable: &edit {content: true, image_replace: true, data: true, style: limited, position: false, resize: false, delete: false, unlock_required: true}}
+      - {id: ss01-context, type: text, role: design-context, content: {text: "Silent Spectrum · 静谱\n通过尺度、间距和灰阶组织复杂信息。"}, frame: {x: 126, y: 710, w: 820, h: 130}, style: {token: typography.body, variant: null, overrides: {font_size: 24, line_height: 1.5}}, editable: *edit}
+      - {id: ss01-disclosure, type: text, role: concept-disclosure, content: {text: "SYNTHETIC CONCEPT / 概念视觉系统测试，不代表真实项目或成果。"}, frame: {x: 126, y: 970, w: 1040, h: 36}, style: {token: typography.caption, variant: null, overrides: {font_size: 14}}, editable: *edit}
+  - id: ss02-reasoning
+    archetype: comparison
+    purpose: Prove the system under denser reasoning and structured comparison.
+    grammar: comparison
+    assertion: {text: 三种信息密度，需要三种不同的阅读距离, status: provisional}
+    narrative_role: {section: information-spectrum, sequence: explanation}
+    layout_variant: tradeoff-matrix
+    permission_profile: content-style
+    objects:
+      - {id: ss02-title, type: text, role: slide-assertion, content: {text: "三种信息密度，\n需要三种阅读距离。"}, frame: {x: 110, y: 120, w: 1160, h: 210}, style: {token: typography.slide_title, variant: null, overrides: {font_size: 62}}, editable: *edit}
+      - {id: ss02-a, type: shape, role: spectrum-a, content: {text: "01  SIGNAL\n一眼识别主张\n只保留一个视觉峰值"}, frame: {x: 110, y: 420, w: 500, h: 360}, style: {token: typography.body, variant: null, overrides: {padding: 40, font_size: 24}}, editable: *edit}
+      - {id: ss02-b, type: shape, role: spectrum-b, content: {text: "02  STRUCTURE\n沿栅格比较证据\n细线只解释关系"}, frame: {x: 710, y: 360, w: 500, h: 420}, style: {token: typography.body, variant: null, overrides: {padding: 40, font_size: 24}}, editable: *edit}
+      - {id: ss02-c, type: shape, role: spectrum-c, content: {text: "03  DETAIL\n把来源留在判断旁边\n不把密度伪装成卡片墙"}, frame: {x: 1310, y: 300, w: 500, h: 480}, style: {token: typography.body, variant: null, overrides: {padding: 40, font_size: 24}}, editable: *edit}
+      - {id: ss02-note, type: text, role: method-note, content: {text: "示意内容只用于测试层级、节奏与组件承载能力。"}, frame: {x: 1110, y: 900, w: 700, h: 48}, style: {token: typography.caption, variant: null, overrides: {font_size: 16}}, editable: *edit}
+  - id: ss03-decision
+    archetype: closing
+    purpose: Prove a quiet closing frame with one strong decision and a temporal structure.
+    grammar: decision
+    assertion: {text: 用疏密变化建立节奏，不用装饰填满页面, status: provisional}
+    narrative_role: {section: system-decision, sequence: closing}
+    layout_variant: closing-decision
+    permission_profile: content-style
+    objects:
+      - {id: ss03-label, type: text, role: decision-title, content: {text: "SYSTEM DECISION / 01"}, frame: {x: 110, y: 112, w: 560, h: 52}, style: {token: typography.caption, variant: null}, editable: *edit}
+      - {id: ss03-title, type: text, role: decision-statement, content: {text: "让页面呼吸，\n让证据靠近判断。"}, frame: {x: 110, y: 230, w: 1460, h: 300}, style: {token: typography.hero, variant: null, overrides: {font_size: 90}}, editable: *edit}
+      - {id: ss03-arc, type: group, role: cadence-timeline, content: {stages: [安静页, 工作页, 证据峰值, 决策页]}, frame: {x: 110, y: 700, w: 1580, h: 160}, style: {token: components.process.linear-process, variant: linear-process}, editable: *edit}
+      - {id: ss03-disclosure, type: text, role: concept-disclosure, content: {text: "CONCEPT SYSTEM / 概念系统，等待用户选择或混合方向后再形成正式模板。"}, frame: {x: 110, y: 970, w: 1080, h: 36}, style: {token: typography.caption, variant: null, overrides: {font_size: 14}}, editable: *edit}

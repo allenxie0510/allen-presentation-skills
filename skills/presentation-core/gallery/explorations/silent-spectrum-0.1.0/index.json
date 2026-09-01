@@ -1,0 +1,11 @@
+{
+  "id": "silent-spectrum-mother-system",
+  "ir": "controlled.ir.yaml",
+  "design": "../../../fixtures/design-systems/allen-signal-grid.yaml",
+  "slide_labels": ["identity", "reasoning", "decision"],
+  "routes": [
+    {"id": "silent-index", "name": "Silent Index / 静默索引", "theme": "routes/silent-index/theme.yaml"},
+    {"id": "tonal-ledger", "name": "Tonal Ledger / 色调档案", "theme": "routes/tonal-ledger/theme.yaml"},
+    {"id": "spectral-pulse", "name": "Spectral Pulse / 谱域脉冲", "theme": "routes/spectral-pulse/theme.yaml"}
+  ]
+}

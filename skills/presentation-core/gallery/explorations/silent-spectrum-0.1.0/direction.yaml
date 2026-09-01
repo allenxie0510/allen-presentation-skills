@@ -1,0 +1,102 @@
+schema_version: "0.1"
+project:
+  id: silent-spectrum-mother-system
+  theme: silent-spectrum
+  theme_version: "0.3.0"
+  scenario: presentation-family
+  status: approved
+foundation:
+  context_status: partial
+  concept_thesis: Silent Spectrum uses controlled differences in scale, spacing, tone, and line density to make evidence and decisions visible without visual noise.
+  visual_motif: A quiet spectrum that moves from sparse assertion to structured evidence and back to a decisive pause.
+  replaceability_test: The spectrum changes with information density and scenario evidence; removing this behavior would reduce the system to generic minimalism.
+  principles:
+    - id: editorial-breath
+      source: User references 01, 03, 07, and 09 plus the request for breathing room and editorial hierarchy.
+      intent: Give important ideas enough spatial authority while keeping supporting information legible.
+      observable_signal: Quiet margins, asymmetric large type, and visibly different sparse, working, and peak frames.
+      failure_case: Every slide becomes equally empty or equally oversized, producing mannered minimalism.
+      override_boundary: Evidence-heavy research and facilitation instructions may increase density while preserving the grid.
+    - id: tonal-spectrum
+      source: User references 05 and 08 plus the requested advanced gray with a color inclination.
+      intent: Create depth and family identity without decorative gradients or low-contrast text.
+      observable_signal: Warm, mineral, sage, and blue-gray fields with dark primary and charcoal secondary text.
+      failure_case: Similar gray values collapse hierarchy or white text appears on a light field.
+      override_boundary: A verified brand palette may replace the tones if the same contrast roles remain.
+    - id: semantic-linework
+      source: User references 05 and 06 and the request for lightweight explanatory vector forms.
+      intent: Let lines, ticks, and nodes explain sequence, range, dependency, or evidence flow.
+      observable_signal: Hairlines and nodes terminate at labels and encode an actual relationship.
+      failure_case: Decorative grids, random constellations, and diagrams that carry no decision meaning.
+      override_boundary: Documentary evidence or an annotated artifact should replace linework when it proves the claim better.
+    - id: scale-cadence
+      source: User references 02 and 09 plus the request for strong size contrast on selected pages.
+      intent: Build deck-level rhythm and memory by reserving extreme scale for a few peaks.
+      observable_signal: One hero word, number, or decision dominates a peak page while working pages return to moderate scale.
+      failure_case: Every page shouts, or all typography stays within one narrow size band.
+      override_boundary: Dense appendices and participant instructions prioritize room readability over spectacle.
+comparison_control:
+  content_id: silent-spectrum-controlled-content
+  asset_set_id: silent-spectrum-vector-only
+  canvas: {width: 1920, height: 1080}
+  same_content: true
+  same_assets: true
+routes:
+  - id: silent-index
+    role: clarity-baseline
+    name: Silent Index / 静默索引
+    intent: Use strict vertical indexing and restrained type to prove clarity without a visual effect.
+    audience_effect: Calm, exact, archival, and immediately scannable.
+    axes:
+      grid: Four visible editorial columns with rules tied to content alignment.
+      typography: Neutral sans with moderate scale and pale index numerals.
+      imagery: Vector-free baseline; only text, rules, and structured fields.
+      rhythm: Consistent left edge with quiet pauses between content bands.
+      material_color: Warm paper gray, graphite, and one muted sage signal.
+    changed_axes: [grid, typography, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: Prove index identity and whitespace, preview: previews/silent-index-identity.webp}
+      - {id: reasoning, archetype: comparison, validation_goal: Prove dense comparison without cards, preview: previews/silent-index-reasoning.webp}
+      - {id: decision, archetype: closing, validation_goal: Prove quiet timeline and closure, preview: previews/silent-index-decision.webp}
+    risks: [May feel too archival for a live pitch unless scale contrast increases.]
+  - id: tonal-ledger
+    role: context-translation
+    name: Tonal Ledger / 色调档案
+    intent: Translate the references into layered high-gray fields and elegant editorial blocks without copying page compositions.
+    audience_effect: Refined, tactile, and premium while remaining evidence-led.
+    axes:
+      grid: Horizontal ledger bands with offset text and compact annotations.
+      typography: Serif display moments paired with neutral sans supporting text.
+      imagery: Abstract tonal fields replace photography and decorative mockups.
+      rhythm: Alternates centered calm frames with denser ledger pages.
+      material_color: Mineral gray, warm stone, and desaturated blue-gray.
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: Prove elegance without fashion imitation, preview: previews/tonal-ledger-identity.webp}
+      - {id: reasoning, archetype: comparison, validation_goal: Prove tonal blocks retain hierarchy, preview: previews/tonal-ledger-reasoning.webp}
+      - {id: decision, archetype: closing, validation_goal: Prove restrained sequence and closure, preview: previews/tonal-ledger-decision.webp}
+    risks: [Tonal similarity can weaken hierarchy if secondary gray becomes too light.]
+  - id: spectral-pulse
+    role: authored-leap
+    name: Spectral Pulse / 谱域脉冲
+    intent: Turn information density into a content-born spectrum of scale, vertical displacement, and semantic linework.
+    audience_effect: Quiet at first glance, memorable at the peak, and adaptable across five scenarios.
+    axes:
+      grid: Twelve-column field with deliberate breaks and one dominant alignment per page.
+      typography: Extreme scale contrast reserved for identity and decision peaks.
+      imagery: Lightweight vectors, spectral ticks, and scenario artifacts instead of generic photography.
+      rhythm: Sparse identity, compressed evidence, then an expanded decision pause.
+      material_color: Color-inclined gray fields with graphite and a muted moss accent.
+    changed_axes: [grid, typography, imagery, rhythm, material_color]
+    frames:
+      - {id: identity, archetype: cover, validation_goal: Prove the strongest scale contrast and concept ownership, preview: previews/spectral-pulse-identity.webp}
+      - {id: reasoning, archetype: comparison, validation_goal: Prove staggered density and semantic structure, preview: previews/spectral-pulse-reasoning.webp}
+      - {id: decision, archetype: closing, validation_goal: Prove a quiet but memorable decision cadence, preview: previews/spectral-pulse-decision.webp}
+    risks: [Oversized type can become a style signature unless limited to genuine narrative peaks.]
+selection:
+  status: user-approved
+  selected_route: spectral-pulse
+  decided_by: Allen Xie
+  decision_rationale: Use Spectral Pulse as the primary language and mix in the strict alignment discipline of Silent Index. Increase title authority and line spacing, introduce semantic English and numeric composition, strengthen cross-slide cadence, and add scenario-specific abstract line drawings.
+  user_quote: "以谱域脉冲为主体，混合静默索引的严格对齐纪律。"
+  decided_at: "2026-09-01T13:10:00+08:00"

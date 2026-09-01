@@ -1,0 +1,8 @@
+schema_version: "0.1"
+meta: {id: tonal-ledger, name: Tonal Ledger, name_zh: 色调档案, version: "0.1.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent: {tagline: 用高级灰色域和编辑式档案节奏承载证据, mood: [elegant, tactile, calm], tone: [editorial, premium], formality: high, density: medium}
+best_for: [presentation-family]
+avoid_for: [control-room-dashboard]
+colors: {canvas: "#E8E7E2", surface: "#DCE0DE", text_primary: "#151719", text_secondary: "#4B5052", accent_primary: "#596762", accent_secondary: "#C6C8C3", positive: "#48685C", negative: "#8A5752", rule: "rgba(21,23,25,.18)"}
+stylesheet: theme.css

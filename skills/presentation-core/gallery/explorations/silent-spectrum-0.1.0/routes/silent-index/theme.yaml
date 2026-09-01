@@ -1,0 +1,8 @@
+schema_version: "0.1"
+meta: {id: silent-index, name: Silent Index, name_zh: 静默索引, version: "0.1.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent: {tagline: 用严格索引和呼吸留白建立清晰基线, mood: [quiet, archival, precise], tone: [editorial, disciplined], formality: high, density: medium}
+best_for: [presentation-family]
+avoid_for: [high-energy-keynote]
+colors: {canvas: "#F0EFEA", surface: "#E5E6E2", text_primary: "#121416", text_secondary: "#4A4F52", accent_primary: "#667267", accent_secondary: "#B8BDB8", positive: "#48685C", negative: "#8A5752", rule: "rgba(18,20,22,.18)"}
+stylesheet: theme.css

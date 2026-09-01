@@ -1,0 +1,1036 @@
+schema_version: '0.1'
+deck:
+  id: silent-spectrum-product-roadmap-review
+  title: 激活优先：Q3 产品路线图评审
+  language: zh-CN
+  aspect_ratio: '16:9'
+  canvas:
+    width: 1920
+    height: 1080
+  scenario:
+    id: product-roadmap-review
+    version: 0.4.0
+  design_system:
+    id: allen-signal-grid
+    version: '0.1'
+  density: high
+  mode: hybrid
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Silent Spectrum concept template. All project facts, evidence, and results are illustrative placeholders until replaced by verified
+      user material.
+slides:
+- id: pr01
+  archetype: cover
+  purpose: Frame the scenario, decision, and disclosure boundary.
+  grammar: narrative
+  assertion:
+    text: 下一季度， 我们优先解决激活
+    status: provisional
+  narrative_role:
+    section: decision-frame
+    sequence: opening
+  layout_variant: cover-indexed
+  permission_profile: content-style
+  objects:
+  - id: pr01-title
+    type: text
+    role: deck-title
+    content:
+      text: '下一季度，
+
+        我们优先解决激活'
+    frame:
+      x: 76
+      y: 180
+      w: 1450
+      h: 410
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 110
+        line_height: 1.1
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr01-context
+    type: text
+    role: decision-context
+    content:
+      text: '概念项目 · B2B 协作产品
+
+        决策：容量应投入哪个客户机会？'
+    frame:
+      x: 76
+      y: 770
+      w: 920
+      h: 120
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 22
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr01-accent
+    type: text
+    role: composition-index
+    content:
+      text: Q3
+    frame:
+      x: 1120
+      y: 145
+      w: 700
+      h: 250
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 190
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr01-disclosure
+    type: text
+    role: concept-disclosure
+    content:
+      text: SYNTHETIC CONCEPT / 明确标注的概念项目；不代表真实客户、研究或项目成果。
+    frame:
+      x: 76
+      y: 958
+      w: 1350
+      h: 34
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 14
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr02
+  archetype: data
+  purpose: Stress the visual system with asymmetrical outcome evidence.
+  grammar: evidence
+  assertion:
+    text: 激活率是增长链路中唯一持续恶化的关键环节
+    status: provisional
+  narrative_role:
+    section: outcome-health
+    sequence: evidence
+  layout_variant: kpi-scorecard
+  permission_profile: content-style
+  evidence:
+  - id: ev-pr02
+    claim: Illustrative concept-project metrics
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: pr02-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 激活率是增长链路中唯一持续恶化的关键环节
+    frame:
+      x: 76
+      y: 110
+      w: 1500
+      h: 190
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 66
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr02-m1
+    type: metric
+    role: risk-metric
+    content:
+      label: 激活率
+      value: 41%
+      period: 本季度
+      delta: −8pp
+    frame:
+      x: 76
+      y: 390
+      w: 620
+      h: 430
+    style:
+      token: components.metric.hero-number
+      variant: hero-number
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr02-m2
+    type: metric
+    role: primary-metric
+    content:
+      label: 次月留存
+      value: 72%
+      period: 本季度
+      delta: +2pp
+    frame:
+      x: 840
+      y: 485
+      w: 390
+      h: 335
+    style:
+      token: components.metric.hero-number
+      variant: hero-number
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr02-m3
+    type: metric
+    role: positive-metric
+    content:
+      label: 扩展收入
+      value: 18%
+      period: 同比
+      delta: +5pp
+    frame:
+      x: 1390
+      y: 580
+      w: 330
+      h: 240
+    style:
+      token: components.metric.hero-number
+      variant: hero-number
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr03
+  archetype: data
+  purpose: High-density stress page for source, risk, or traceability review.
+  grammar: evidence
+  assertion:
+    text: 三类机会中，只有首次协作同时获得行为与访谈证据
+    status: provisional
+  narrative_role:
+    section: opportunity-evidence
+    sequence: evidence
+  layout_variant: evidence-ledger
+  permission_profile: content-style
+  evidence:
+  - id: ev-pr03
+    claim: Illustrative ledger content; not verified project evidence
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: pr03-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 三类机会中，只有首次协作同时获得行为与访谈证据
+    frame:
+      x: 76
+      y: 100
+      w: 1500
+      h: 165
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 58
+        line_height: 1.18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr03-table
+    type: table
+    role: source-ledger
+    content:
+      columns:
+      - 机会
+      - 行为信号
+      - 研究证据
+      - 信心
+      - 决策含义
+      rows:
+      - - 首次协作
+        - 首周邀请率 34%
+        - 8/12 访谈重复出现
+        - 中高
+        - 优先验证
+      - - 模板发现
+        - 搜索退出率 22%
+        - 4/12 提及
+        - 中
+        - 继续探索
+      - - 高级报表
+        - 使用率 9%
+        - 2/12 提及
+        - 低
+        - 暂缓
+      - - 移动端
+        - 会话占比 14%
+        - 需求相互冲突
+        - 低
+        - 不承诺
+    frame:
+      x: 76
+      y: 330
+      w: 1680
+      h: 500
+    style:
+      token: components.table.evidence-ledger
+      variant: evidence-ledger
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr03-note
+    type: text
+    role: limitation
+    content:
+      text: 样本、周期和埋点口径均为概念占位；真实使用时必须替换并保留局限。
+    frame:
+      x: 76
+      y: 880
+      w: 1680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 16
+        line_height: 1.4
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr04
+  archetype: process
+  purpose: Explain relationships and decision gates without decorative arrows.
+  grammar: process
+  assertion:
+    text: 先把结果连到机会，再讨论解决方案
+    status: provisional
+  narrative_role:
+    section: opportunity-tree
+    sequence: explanation
+  layout_variant: causal-chain
+  permission_profile: content-style
+  objects:
+  - id: pr04-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 先把结果连到机会，再讨论解决方案
+    frame:
+      x: 76
+      y: 105
+      w: 1510
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 64
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr04-stages
+    type: group
+    role: model-stages
+    content:
+      stages:
+      - '业务结果
+
+        提高扩展收入'
+      - '产品结果
+
+        提升首周协作'
+      - '客户机会
+
+        更快邀请同事'
+      - '候选方案
+
+        引导 / 模板 / 权限'
+    frame:
+      x: 76
+      y: 420
+      w: 1680
+      h: 210
+    style:
+      token: components.process.linear-process
+      variant: causal-chain
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr04-note
+    type: text
+    role: method-note
+    content:
+      text: 每条候选方案都必须有风险最高的假设与验证方法。
+    frame:
+      x: 940
+      y: 790
+      w: 820
+      h: 110
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr05
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 两个方案解决同一机会，但学习速度与依赖成本不同
+    status: provisional
+  narrative_role:
+    section: tradeoffs
+    sequence: explanation
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: pr05-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 两个方案解决同一机会，但学习速度与依赖成本不同
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr05-left
+    type: shape
+    role: comparison-left
+    content:
+      text: 'A / 引导式协作
+
+
+        低工程依赖；两周可验证行为变化；品牌表达较弱'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr05-right
+    type: shape
+    role: comparison-right
+    content:
+      text: 'B / 行业模板库
+
+
+        价值感更强；内容与权限依赖高；六周后才有信号'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr05-note
+    type: text
+    role: comparison-note
+    content:
+      text: 建议：先 A 后 B；若邀请率未提升，则停止扩展模板。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr06
+  archetype: timeline
+  purpose: Sequence work with explicit confidence boundaries.
+  grammar: decision
+  assertion:
+    text: 承诺、探索与方向要用不同时间语言
+    status: provisional
+  narrative_role:
+    section: sequencing
+    sequence: decision
+  layout_variant: now-next-later
+  permission_profile: content-style
+  objects:
+  - id: pr06-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 承诺、探索与方向要用不同时间语言
+    frame:
+      x: 76
+      y: 105
+      w: 1530
+      h: 170
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr06-stages
+    type: group
+    role: roadmap-phases
+    content:
+      stages:
+      - 'NOW / 承诺
+
+        激活引导 + 邀请闭环'
+      - 'NEXT / 探索
+
+        两类行业模板'
+      - 'LATER / 方向
+
+        跨组织协作生态'
+    frame:
+      x: 76
+      y: 390
+      w: 1680
+      h: 280
+    style:
+      token: components.process.linear-process
+      variant: linear-process
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr06-note
+    type: text
+    role: confidence-label
+    content:
+      text: NOW 有容量与依赖确认；NEXT 只承诺下一证据；LATER 不承诺日期。
+    frame:
+      x: 76
+      y: 820
+      w: 1350
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr07
+  archetype: data
+  purpose: High-density stress page for source, risk, or traceability review.
+  grammar: evidence
+  assertion:
+    text: 60% 容量选择成立的前提，是三项依赖按时解除
+    status: provisional
+  narrative_role:
+    section: dependency-capacity
+    sequence: evidence
+  layout_variant: evidence-ledger
+  permission_profile: content-style
+  evidence:
+  - id: ev-pr07
+    claim: Illustrative ledger content; not verified project evidence
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: pr07-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 60% 容量选择成立的前提，是三项依赖按时解除
+    frame:
+      x: 76
+      y: 100
+      w: 1500
+      h: 165
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 58
+        line_height: 1.18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr07-table
+    type: table
+    role: source-ledger
+    content:
+      columns:
+      - 工作流
+      - 容量
+      - 关键依赖
+      - 风险触发
+      - Owner
+      rows:
+      - - 激活主线
+        - 60%
+        - 身份与权限 API
+        - 9/15 未冻结
+        - Product + IAM
+      - - 可靠性
+        - 20%
+        - 观察性改造
+        - 错误率 >1.2%
+        - Platform
+      - - 客户承诺
+        - 10%
+        - 两家设计伙伴
+        - 试点延期
+        - CS
+      - - 保留探索
+        - 10%
+        - 无
+        - 主线超支
+        - Research
+    frame:
+      x: 76
+      y: 330
+      w: 1680
+      h: 500
+    style:
+      token: components.table.evidence-ledger
+      variant: evidence-ledger
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr07-note
+    type: text
+    role: limitation
+    content:
+      text: 容量分配必须与关键依赖、风险触发条件和责任人一起审批。
+    frame:
+      x: 76
+      y: 880
+      w: 1680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 16
+        line_height: 1.4
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr08
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 冻结的不是想法，而是低证据承诺
+    status: provisional
+  narrative_role:
+    section: risk-boundary
+    sequence: decision
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: pr08-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 冻结的不是想法，而是低证据承诺
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr08-left
+    type: shape
+    role: comparison-left
+    content:
+      text: '继续
+
+
+        激活引导；权限前置；两家设计伙伴试点'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr08-right
+    type: shape
+    role: comparison-right
+    content:
+      text: '停止 / 延后
+
+
+        高级报表；移动端重构；全行业模板铺开'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr08-note
+    type: text
+    role: comparison-note
+    content:
+      text: 被移出的工作必须记录重新进入的证据门槛。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: pr09
+  archetype: closing
+  purpose: End with an explicit decision, owner, next evidence, or commitment.
+  grammar: decision
+  assertion:
+    text: 批准 60% 容量投入激活， 冻结两个低证据项目
+    status: provisional
+  narrative_role:
+    section: leadership-decision
+    sequence: closing
+  layout_variant: closing-decision
+  permission_profile: content-style
+  objects:
+  - id: pr09-label
+    type: text
+    role: decision-title
+    content:
+      text: LEADERSHIP DECISION
+    frame:
+      x: 76
+      y: 110
+      w: 680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr09-title
+    type: text
+    role: decision-statement
+    content:
+      text: '批准 60% 容量投入激活，
+
+        冻结两个低证据项目'
+    frame:
+      x: 76
+      y: 225
+      w: 1480
+      h: 450
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 104
+        line_height: 1.1
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr09-meta
+    type: text
+    role: next-evidence
+    content:
+      text: Owner · VP Product / 下一证据 · 6 周行为实验 / Review · 2026-10-15
+    frame:
+      x: 76
+      y: 855
+      w: 1100
+      h: 75
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: pr09-accent
+    type: text
+    role: composition-index
+    content:
+      text: 60%
+    frame:
+      x: 1210
+      y: 690
+      w: 560
+      h: 180
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 150
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true

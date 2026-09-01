@@ -5,9 +5,9 @@ license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
-  maturity: "draft"
+  maturity: "stable"
   risk: "local-write"
-  version: "0.3.0"
+  version: "0.4.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/product-roadmap-review"
@@ -19,6 +19,14 @@ metadata:
 Make product leadership decisions visible. Treat a roadmap as a set of outcome,
 opportunity, evidence, and sequencing choices under uncertainty—not as a feature
 calendar.
+
+## Current release
+
+Version 0.4.0 adds the approved Silent Spectrum complete template: nine slides
+from outcome and opportunity evidence through trade-offs, Now/Next/Later,
+dependency/capacity review, commitment boundary, and explicit leadership
+decision. `fixtures/silent-spectrum.ir.yaml` is a disclosed concept project and
+must be populated with verified product evidence before real use.
 
 ## Establish the decision job
 
@@ -60,13 +68,19 @@ When the user asks for an actual presentation, read
    dependency map, and explicit decision close where the evidence supports them.
 2. Read `references/theme-selection.md` and `references/themes/index.yaml`, then
    compare the three real-render previews in `assets/theme-previews/`. Default
-   to Signal Grid; offer Executive Night and Evidence Ledger when their fit is stronger.
+   to Signal Grid; offer Silent Spectrum for the complete editorial decision arc,
+   Executive Night for board approval, and Evidence Ledger when traceability dominates.
 3. Render with `python scripts/render-html.py <deck>.ir.yaml --design
    references/allen-signal-grid.yaml --output <deck>.html
    --allow-draft-design --theme references/themes/signal-grid/theme.yaml
    --allow-draft-theme`.
 4. Open and inspect every slide. Repair the IR and render again if anything is
    clipped, crowded, ambiguous, or visually repetitive.
+
+To start from the complete Silent Spectrum template, copy
+`fixtures/silent-spectrum.ir.yaml`, replace every concept claim and source, then
+render with `--theme references/themes/silent-spectrum/theme.yaml`. Do not treat
+the concept values as product evidence.
 
 The HTML supports navigation, inline text refinement, notes, download, and
 print/PDF. It does not produce native PPTX or automatically write browser edits

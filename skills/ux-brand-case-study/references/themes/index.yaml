@@ -5,6 +5,18 @@ selection_policy:
   preview_sequence: [cover, core-component, closing]
   disclosure: Read this index first, inspect only shortlisted preview.md files, then load only the selected theme.yaml and theme.css.
 themes:
+  - id: silent-spectrum
+    name: Silent Spectrum
+    name_zh: 静谱
+    tagline: 用尺度、留白、高级灰与语义谱线组织不同场景的证据和决策
+    mood: [quiet, editorial, rhythmic]
+    tone: [precise, elegant, authored]
+    formality: high
+    density: medium
+    best_for: [product-roadmap-review, industry-research-deck, speech-pitch-deck, ux-brand-case-study, corporate-training-workshop]
+    avoid_for: [celebration-event, dense-appendix]
+    preview: silent-spectrum/preview.md
+    theme: silent-spectrum/theme.yaml
   - id: learning-agent
     name: Learning Agent
     name_zh: 学习智能体

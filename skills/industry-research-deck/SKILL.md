@@ -5,9 +5,9 @@ license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
-  maturity: "draft"
+  maturity: "stable"
   risk: "local-write"
-  version: "0.3.0"
+  version: "0.4.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/industry-research-deck"
@@ -18,6 +18,14 @@ metadata:
 
 Produce a defensible view of an industry that supports a real decision. Define
 the market and the evidence method before collecting attractive statistics.
+
+## Current release
+
+Version 0.4.0 adds the approved Silent Spectrum complete template: nine slides
+covering question and scope, market definition, source ledger, sizing range,
+value chain, competition, scenarios, implications, and a named decision.
+`fixtures/silent-spectrum.ir.yaml` contains only concept evidence and cannot be
+used as a market conclusion until every source and definition is replaced.
 
 ## Establish the research decision
 
@@ -56,12 +64,18 @@ on the relevant slides.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
 the three real-render previews in `assets/theme-previews/`, then default to
-Evidence Ledger; offer Executive Night and Signal Grid when their fit is stronger. Render with
+Evidence Ledger; offer Silent Spectrum for the complete editorial research arc,
+Executive Night for senior decisions, and Signal Grid for working sessions. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
 --allow-draft-design --theme references/themes/evidence-ledger/theme.yaml
 --allow-draft-theme`, then open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, misleading, or visually repetitive.
+
+To use the complete Silent Spectrum template, copy
+`fixtures/silent-spectrum.ir.yaml`, replace the concept source ledger, definitions,
+models, and implications, then render with
+`--theme references/themes/silent-spectrum/theme.yaml`.
 
 The HTML supports navigation, inline text refinement, notes, download, and
 print/PDF. It does not produce native PPTX or automatically write browser edits

@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: product-roadmap-review
   name: Product Roadmap Review
-  version: "0.3.0"
+  version: "0.4.0"
 communication_job:
   primary: Help product leadership choose outcomes, opportunities, priorities, sequencing, and commitments under uncertainty.
   success_condition: The audience can approve, change, stop, or sequence work with the evidence, trade-offs, dependencies, and confidence visible.
@@ -50,8 +50,8 @@ required_archetypes:
   - decision-required
 theme_recommendations:
   default: signal-grid
-  alternatives: [executive-night, evidence-ledger]
-  selection_note: Use Signal Grid for operating reviews, Executive Night for board-level approval, and Evidence Ledger when evidence traceability dominates.
+  alternatives: [silent-spectrum, executive-night]
+  selection_note: Use Signal Grid for operating reviews, Silent Spectrum for a complete editorial decision arc with dense dependency pages, and Executive Night for board-level approval.
 component_recipes:
   decision-summary: {archetype: closing, layout_variant: closing-decision, purpose: Make the leadership choice explicit, required_roles: [decision-statement, decision-owner]}
   outcome-scorecard: {archetype: data, layout_variant: kpi-scorecard, purpose: Separate outcomes from shipped output, required_roles: [slide-assertion, primary-metric, supporting-metric]}

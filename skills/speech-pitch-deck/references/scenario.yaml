@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: speech-pitch-deck
   name: Speech and Pitch Deck
-  version: "0.4.0"
+  version: "0.5.0"
 communication_job:
   primary: Move a live audience toward a memorable belief, follow-up, approval, adoption, or investment action.
   success_condition: The audience can state the core idea, recall the strongest proof, and understand the next action after the speaker finishes.
@@ -51,8 +51,8 @@ required_archetypes:
   - closing-callback
 theme_recommendations:
   default: slope-trace
-  alternatives: [night-relay]
-  selection_note: Use Slope Trace for an authored progression from goal to action; use Night Relay when a live venue needs dark mechanism peaks and a memorable Agent-to-learner responsibility handoff.
+  alternatives: [silent-spectrum, night-relay]
+  selection_note: Use Slope Trace for an authored progression from goal to action; use Silent Spectrum when the talk needs sparse stage peaks plus a legible proof ledger; use Night Relay when a live venue needs dark mechanism peaks and a memorable Agent-to-learner responsibility handoff.
 component_recipes:
   opening-hook: {archetype: cover, layout_variant: cover-offset, purpose: "Open with tension, surprise, or a concrete human moment", required_roles: [deck-title, opening-tension]}
   core-idea: {archetype: statement, layout_variant: statement-left, purpose: State the one memorable proposition, required_roles: [core-idea, qualifier]}

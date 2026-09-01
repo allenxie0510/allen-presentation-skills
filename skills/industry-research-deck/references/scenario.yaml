@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: industry-research-deck
   name: Industry Research Deck
-  version: "0.3.0"
+  version: "0.4.0"
 communication_job:
   primary: Build a defensible view of an industry so leaders can choose where, whether, and how to act.
   success_condition: The audience can trace material claims to compatible evidence, understand uncertainty and market structure, and choose a strategic response.
@@ -52,8 +52,8 @@ required_archetypes:
   - source-notes
 theme_recommendations:
   default: evidence-ledger
-  alternatives: [executive-night, signal-grid]
-  selection_note: Use Evidence Ledger for source-dense research, Executive Night for senior decisions, and Signal Grid for faster strategic working sessions.
+  alternatives: [silent-spectrum, executive-night]
+  selection_note: Use Evidence Ledger for source-dense research, Silent Spectrum for a full editorial path from source ledger to scenarios and action, and Executive Night for senior decisions.
 component_recipes:
   research-question: {archetype: cover, layout_variant: cover-indexed, purpose: "State the decision question, scope, and as-of date", required_roles: [deck-title, decision-context, as-of-date]}
   market-definition: {archetype: two-column, layout_variant: two-column-emphasis, purpose: "Define inclusions, exclusions, geography, customer, and unit", required_roles: [definition, inclusions, exclusions]}

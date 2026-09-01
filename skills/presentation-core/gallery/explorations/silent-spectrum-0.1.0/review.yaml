@@ -1,0 +1,67 @@
+schema_version: "0.1"
+subject:
+  theme: silent-spectrum
+  version: "0.3.0"
+  direction: spectral-pulse
+  reviewed_artifacts:
+    - gallery/explorations/silent-spectrum-0.1.0/previews/direction-board.webp
+    - gallery/explorations/silent-spectrum-0.1.0/family-previews/family-board.webp
+    - gallery/explorations/silent-spectrum-0.1.0/direction.yaml
+    - gallery/explorations/silent-spectrum-0.1.0/family-previews/product-roadmap-review-contact-sheet.webp
+    - gallery/explorations/silent-spectrum-0.1.0/family-previews/industry-research-deck-contact-sheet.webp
+    - gallery/explorations/silent-spectrum-0.1.0/family-previews/speech-pitch-deck-contact-sheet.webp
+    - gallery/explorations/silent-spectrum-0.1.0/family-previews/ux-brand-case-study-contact-sheet.webp
+    - gallery/explorations/silent-spectrum-0.1.0/family-previews/corporate-training-workshop-contact-sheet.webp
+    - themes/silent-spectrum/art-direction.md
+  reviewer: Allen FRAME design lead
+  reviewed_at: "2026-09-01T13:45:00+08:00"
+concept_gate:
+  concept: 静谱把演示中不断变化的信息密度转译为尺度、灰阶、留白和语义谱线，让证据与决策在安静秩序中显形。
+  content_origin: 来自用户九张参考图中的编辑留白、强弱尺度、高级灰、时间线与轻量线描要求，以及五个场景各自的叙事语法。
+  replaceability_result: 移除主题名称后，仍可从谱域式尺度节奏、索引式严格对齐、场景化标题字体、五类语义线描和安静页—工作页—证据峰值—决策停顿的跨页节奏识别系统。
+  score: 9.3
+  passed: true
+hard_gates:
+  bounds: {passed: true, evidence: 三条方向及五套完整模板共 48 张 1920×1080 页面已通过自动边界与内容溢出检查。}
+  readability: {passed: true, evidence: 五张完整接触表与代表性单页已检查；标题、正文、表格、注释和数据层级均保持可读。}
+  truth: {passed: true, evidence: 当前内容明确标注为合成概念预览，示意数字不得作为真实项目成果使用。}
+  image_integrity: {passed: true, evidence: 本轮采用排版、数据和语义矢量表达，没有引入无来源图片或 AI 图片瑕疵。}
+  accessibility: {passed: true, evidence: 所有页面通过 4.5 比 1 的表面感知文字对比度检查，浅色底未使用白字。}
+  provenance: {passed: true, evidence: 参考图仅作为设计证据分析，没有复制或重新分发品牌、原图、标识与专有组件。}
+  visual_inspection: {passed: true, evidence: 三方向对照板、五套完整接触表、五场景总览及高密度关键单页均已完成人工视觉检查。}
+dimensions:
+  philosophy_narrative:
+    score: 9.3
+    weight: 20
+    finding: 视觉概念与内容密度直接关联，并能跨五个叙事场景保持一致的设计理由。
+  hierarchy_rhythm:
+    score: 9.2
+    weight: 25
+    finding: 封面峰值、工作证据与决策停顿形成更明显节奏；标题行距放松，大号英文和数字只出现在叙事峰值。
+  craft_system:
+    score: 9.1
+    weight: 20
+    finding: 栅格、基线、灰阶、线描和对齐稳定；思源黑体、思源宋体与 Smiley Sans 已作为开放字体打包并嵌入网页输出。
+  communication_evidence:
+    score: 9.3
+    weight: 20
+    finding: 汇聚路径、范围弧线、信号脉冲、系统关系和练习闭环分别承担场景语义，不再只是同一组件换文字。
+  authorship_originality:
+    score: 9.0
+    weight: 15
+    finding: 谱域脉冲与静默索引的混合形成了可识别的母系统，五个场景也具备不同字体、尺度峰值与线描语汇。
+weighted_score: 91.9
+verdict: approval-candidate
+keep:
+  - 保留黑色主文字、深灰次级文字和绝不在浅底使用白字的硬规则。
+  - 保留静默索引的严格对齐与谱域脉冲的强弱尺度节奏。
+  - 保留各场景用证据任务决定组件，而不是以通用卡片填充页面的原则。
+fix:
+  - severity: optimization
+    issue: 当前正式发布范围是自包含网页，尚未验证原生可编辑 PPTX 投影的一致性。
+    action: 只有用户明确请求 PPTX 且存在兼容渲染器时，建立字体映射、可编辑对象和逐页回归测试。
+    verification: 对原生 PPTX 逐页渲染并对照网页基线，检查换行、字宽、行距、图表与编辑性。
+quick_wins:
+  - 保持谱域脉冲为主、静默索引负责对齐与基线纪律。
+  - 使用真实项目时先替换概念证据、数字、来源与结果，并保留披露边界。
+  - 需要 PPTX 时单独调用兼容的原生渲染器，不把网页输出误称为原生 PPTX。

@@ -1,0 +1,1163 @@
+schema_version: '0.1'
+deck:
+  id: silent-spectrum-ux-brand-case-study
+  title: 把信任做成可操作的系统
+  language: zh-CN
+  aspect_ratio: '16:9'
+  canvas:
+    width: 1920
+    height: 1080
+  scenario:
+    id: ux-brand-case-study
+    version: 0.5.0
+  design_system:
+    id: allen-signal-grid
+    version: '0.1'
+  density: medium-high
+  mode: hybrid
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Silent Spectrum concept template. All project facts, evidence, and results are illustrative placeholders until replaced by verified
+      user material.
+slides:
+- id: ux01
+  archetype: cover
+  purpose: Frame the scenario, decision, and disclosure boundary.
+  grammar: narrative
+  assertion:
+    text: 把企业采购中的信任， 做成可操作的系统
+    status: provisional
+  narrative_role:
+    section: case-summary
+    sequence: opening
+  layout_variant: cover-indexed
+  permission_profile: content-style
+  objects:
+  - id: ux01-title
+    type: text
+    role: deck-title
+    content:
+      text: '把企业采购中的信任，
+
+        做成可操作的系统'
+    frame:
+      x: 76
+      y: 180
+      w: 1450
+      h: 410
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 110
+        line_height: 1.1
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux01-context
+    type: text
+    role: decision-context
+    content:
+      text: '概念案例 · 企业服务 UX × 品牌整合
+
+        角色：Lead designer / 周期：12 周'
+    frame:
+      x: 76
+      y: 770
+      w: 920
+      h: 120
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 22
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux01-accent
+    type: text
+    role: composition-index
+    content:
+      text: CASE 01
+    frame:
+      x: 1120
+      y: 145
+      w: 700
+      h: 250
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 130
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux01-disclosure
+    type: text
+    role: concept-disclosure
+    content:
+      text: SYNTHETIC CONCEPT / 明确标注的概念项目；不代表真实客户、研究或项目成果。
+    frame:
+      x: 76
+      y: 958
+      w: 1350
+      h: 34
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 14
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux02
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 问题不是界面陈旧，而是用户无法判断下一步是否安全
+    status: provisional
+  narrative_role:
+    section: challenge-role
+    sequence: context
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: ux02-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 问题不是界面陈旧，而是用户无法判断下一步是否安全
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux02-left
+    type: shape
+    role: comparison-left
+    content:
+      text: '挑战
+
+
+        审批、权限和风险语言分散；关键动作缺少后果提示'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux02-right
+    type: shape
+    role: comparison-right
+    content:
+      text: '我的角色
+
+
+        研究综合、体验策略、关键流程与品牌表达；工程与合规共同决策'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux02-note
+    type: text
+    role: comparison-note
+    content:
+      text: 成功标准：提高关键任务清晰度；不以视觉焕新作为结果。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux03
+  archetype: data
+  purpose: High-density stress page for source, risk, or traceability review.
+  grammar: evidence
+  assertion:
+    text: 只保留真正改变设计决策的证据
+    status: provisional
+  narrative_role:
+    section: research-evidence
+    sequence: evidence
+  layout_variant: evidence-ledger
+  permission_profile: content-style
+  evidence:
+  - id: ev-ux03
+    claim: Illustrative ledger content; not verified project evidence
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: ux03-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 只保留真正改变设计决策的证据
+    frame:
+      x: 76
+      y: 100
+      w: 1500
+      h: 165
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 58
+        line_height: 1.18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux03-table
+    type: table
+    role: source-ledger
+    content:
+      columns:
+      - 证据
+      - 方法 / 样本
+      - 观察
+      - 改变的决定
+      - 局限
+      rows:
+      - - 任务回放
+        - 8 次概念访谈
+        - 权限后果不透明
+        - 前置风险解释
+        - 非真实用户
+      - - 支持工单
+        - 合成样例
+        - 术语不一致
+        - 统一语言层
+        - 不可作统计
+      - - 流程审计
+        - 3 条关键路径
+        - 审批状态断裂
+        - 可追溯状态
+        - 需工程验证
+      - - 品牌审计
+        - 12 触点
+        - 承诺与产品语气冲突
+        - 共用信任原则
+        - 概念资产
+    frame:
+      x: 76
+      y: 330
+      w: 1680
+      h: 500
+    style:
+      token: components.table.evidence-ledger
+      variant: evidence-ledger
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux03-note
+    type: text
+    role: limitation
+    content:
+      text: 正式案例需替换为真实方法、样本、日期、权限与披露边界。
+    frame:
+      x: 76
+      y: 880
+      w: 1680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 16
+        line_height: 1.4
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux04
+  archetype: process
+  purpose: Explain relationships and decision gates without decorative arrows.
+  grammar: process
+  assertion:
+    text: 证据必须经过洞察与原则，才能成为设计决定
+    status: provisional
+  narrative_role:
+    section: insight-decision
+    sequence: explanation
+  layout_variant: causal-chain
+  permission_profile: content-style
+  objects:
+  - id: ux04-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 证据必须经过洞察与原则，才能成为设计决定
+    frame:
+      x: 76
+      y: 105
+      w: 1510
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 64
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux04-stages
+    type: group
+    role: model-stages
+    content:
+      stages:
+      - '证据
+
+        后果不透明'
+      - '洞察
+
+        信任来自可预期'
+      - '原则
+
+        先解释再行动'
+      - '决定
+
+        风险前置 + 可撤销'
+    frame:
+      x: 76
+      y: 420
+      w: 1680
+      h: 210
+    style:
+      token: components.process.linear-process
+      variant: causal-chain
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux04-note
+    type: text
+    role: method-note
+    content:
+      text: 每个应用页都要标注它证明了哪条原则。
+    frame:
+      x: 940
+      y: 790
+      w: 820
+      h: 110
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux05
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 迭代不是润色同一方案，而是比较不同的信任机制
+    status: provisional
+  narrative_role:
+    section: iteration
+    sequence: explanation
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: ux05-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 迭代不是润色同一方案，而是比较不同的信任机制
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux05-left
+    type: shape
+    role: comparison-left
+    content:
+      text: '方向 A / 强提示
+
+
+        高可见性；打断任务；复杂度上升'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux05-right
+    type: shape
+    role: comparison-right
+    content:
+      text: '方向 B / 渐进披露
+
+
+        保留节奏；需要明确触发条件；更适合高频操作'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux05-note
+    type: text
+    role: comparison-note
+    content:
+      text: 选择 B，并为不可逆操作保留 A 的强提示。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux06
+  archetype: data
+  purpose: High-density stress page for source, risk, or traceability review.
+  grammar: evidence
+  assertion:
+    text: 系统必须让原则、组件、状态和证据可追溯
+    status: provisional
+  narrative_role:
+    section: decision-traceability
+    sequence: evidence
+  layout_variant: evidence-ledger
+  permission_profile: content-style
+  evidence:
+  - id: ev-ux06
+    claim: Illustrative ledger content; not verified project evidence
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: ux06-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 系统必须让原则、组件、状态和证据可追溯
+    frame:
+      x: 76
+      y: 100
+      w: 1500
+      h: 165
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 58
+        line_height: 1.18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux06-table
+    type: table
+    role: source-ledger
+    content:
+      columns:
+      - 原则
+      - 组件 / 状态
+      - 触点
+      - 验证方式
+      - Owner
+      rows:
+      - - 先解释
+        - 风险摘要
+        - 授权页
+        - 理解测试
+        - Content
+      - - 可撤销
+        - 回退状态
+        - 批量操作
+        - 任务测试
+        - UX
+      - - 可追溯
+        - 事件记录
+        - 审批中心
+        - 日志审计
+        - Platform
+      - - 一致语言
+        - 术语 token
+        - 全产品
+        - 内容审计
+        - Brand
+    frame:
+      x: 76
+      y: 330
+      w: 1680
+      h: 500
+    style:
+      token: components.table.evidence-ledger
+      variant: evidence-ledger
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux06-note
+    type: text
+    role: limitation
+    content:
+      text: 高密度系统页：避免重复 Mockup；每行必须说明系统属性和验证方式。
+    frame:
+      x: 76
+      y: 880
+      w: 1680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 16
+        line_height: 1.4
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux07
+  archetype: process
+  purpose: Explain relationships and decision gates without decorative arrows.
+  grammar: process
+  assertion:
+    text: 同一套信任语法跨越语言、状态、行为和品牌触点
+    status: provisional
+  narrative_role:
+    section: system-application
+    sequence: explanation
+  layout_variant: learning-loop
+  permission_profile: content-style
+  objects:
+  - id: ux07-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 同一套信任语法跨越语言、状态、行为和品牌触点
+    frame:
+      x: 76
+      y: 105
+      w: 1510
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 64
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux07-stages
+    type: group
+    role: model-stages
+    content:
+      stages:
+      - '策略
+
+        可预期'
+      - '语言
+
+        具体后果'
+      - '视觉
+
+        层级与状态'
+      - '行为
+
+        确认与回退'
+      - '治理
+
+        Owner + 审计'
+    frame:
+      x: 76
+      y: 420
+      w: 1680
+      h: 210
+    style:
+      token: components.process.linear-process
+      variant: learning-loop
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux07-note
+    type: text
+    role: method-note
+    content:
+      text: 应用不是画廊：每个触点都要证明一致性与合理变化。
+    frame:
+      x: 940
+      y: 790
+      w: 820
+      h: 110
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux08
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 前后对比必须保持任务、内容和尺度等价
+    status: provisional
+  narrative_role:
+    section: before-after
+    sequence: evidence
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: ux08-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 前后对比必须保持任务、内容和尺度等价
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux08-left
+    type: shape
+    role: comparison-left
+    content:
+      text: 'BEFORE
+
+
+        术语分散；结果隐藏；只有成功状态'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux08-right
+    type: shape
+    role: comparison-right
+    content:
+      text: 'AFTER
+
+
+        后果前置；状态可追溯；支持撤销与恢复'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux08-note
+    type: text
+    role: comparison-note
+    content:
+      text: 概念对比仅验证系统逻辑，不代表上线或业务成效。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux09
+  archetype: data
+  purpose: Stress the visual system with asymmetrical outcome evidence.
+  grammar: evidence
+  assertion:
+    text: 结果页先区分可验证代理指标与尚未测量的业务影响
+    status: provisional
+  narrative_role:
+    section: outcome-boundary
+    sequence: recap
+  layout_variant: kpi-scorecard
+  permission_profile: content-style
+  evidence:
+  - id: ev-ux09
+    claim: Illustrative concept-project metrics
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: ux09-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 结果页先区分可验证代理指标与尚未测量的业务影响
+    frame:
+      x: 76
+      y: 110
+      w: 1500
+      h: 190
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 66
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux09-m1
+    type: metric
+    role: risk-metric
+    content:
+      label: 任务清晰度
+      value: 待测
+      period: 概念原型
+      delta: 无基线
+    frame:
+      x: 76
+      y: 390
+      w: 620
+      h: 430
+    style:
+      token: components.metric.hero-number
+      variant: hero-number
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux09-m2
+    type: metric
+    role: primary-metric
+    content:
+      label: 错误恢复
+      value: 待测
+      period: 可用性
+      delta: 无样本
+    frame:
+      x: 840
+      y: 485
+      w: 390
+      h: 335
+    style:
+      token: components.metric.hero-number
+      variant: hero-number
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux09-m3
+    type: metric
+    role: positive-metric
+    content:
+      label: 业务影响
+      value: 未知
+      period: 未上线
+      delta: 不可归因
+    frame:
+      x: 1390
+      y: 580
+      w: 330
+      h: 240
+    style:
+      token: components.metric.hero-number
+      variant: hero-number
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ux10
+  archetype: closing
+  purpose: End with an explicit decision, owner, next evidence, or commitment.
+  grammar: decision
+  assertion:
+    text: 把信任从品牌主张， 变成每个关键动作的行为规则
+    status: provisional
+  narrative_role:
+    section: reflection
+    sequence: closing
+  layout_variant: closing-decision
+  permission_profile: content-style
+  objects:
+  - id: ux10-label
+    type: text
+    role: decision-title
+    content:
+      text: REFLECTION
+    frame:
+      x: 76
+      y: 110
+      w: 680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux10-title
+    type: text
+    role: decision-statement
+    content:
+      text: '把信任从品牌主张，
+
+        变成每个关键动作的行为规则'
+    frame:
+      x: 76
+      y: 225
+      w: 1480
+      h: 450
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 104
+        line_height: 1.1
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux10-meta
+    type: text
+    role: next-evidence
+    content:
+      text: 未解决 · 长期使用下提示是否疲劳 / 下一步 · 真实任务测试 + 合规审查
+    frame:
+      x: 76
+      y: 855
+      w: 1100
+      h: 75
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ux10-accent
+    type: text
+    role: composition-index
+    content:
+      text: '03'
+    frame:
+      x: 1210
+      y: 690
+      w: 560
+      h: 180
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 150
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true

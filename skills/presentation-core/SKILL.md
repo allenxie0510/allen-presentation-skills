@@ -5,9 +5,9 @@ license: MIT
 metadata:
   owner: "allenxie"
   category: "presentation"
-  maturity: "draft"
+  maturity: "stable"
   risk: "local-write"
-  version: "0.5.1"
+  version: "0.6.0"
   origin: "personal"
   importance: "flagship"
   visibility: "public"
@@ -23,12 +23,11 @@ PPTX, or other output is a projection of that model, never the canonical state.
 
 ## Current release boundary
 
-Version 0.5.1 adds a renderer-neutral native PPTX production contract, a
-schema-valid production profile, asset-first image handling, cross-slide cadence,
-room-scale typography, editable-object requirements, and render-based release
-gates. It also requires slot-ratio-aware image generation, meaningful work
-artifacts, and explicit cast, workplace, clothing, and cultural-continuity QA for
-international team photography. The bundled runtime still renders self-contained HTML; native PPTX requires
+Version 0.6.0 publishes Silent Spectrum 0.3.0 as an approved cross-scenario
+mother system. It adds five complete canonical IR templates (48 slides total),
+scenario-specific narrative paths, high-density evidence and decision frames,
+bundled open-source Chinese fonts, semantic line art, cross-slide cadence,
+surface-aware contrast, and render-based release gates. The bundled runtime still renders self-contained HTML; native PPTX requires
 a compatible editable-PPTX renderer and is a projection of the canonical IR.
 Browser edits do not automatically round-trip into IR. Do not imply a standalone
 PPTX renderer is bundled when it is not.
@@ -60,6 +59,10 @@ systems, renderer/editor work, or changes that affect more than one schema.
   `preview.md` files, then the selected `theme.yaml`, `theme.css`, and its
   `design-system.md` when present. Do not read every full theme before the
   scenario and shortlist are known.
+- When Silent Spectrum is selected, begin from
+  `gallery/ir/<scenario>--silent-spectrum.yaml` rather than rebuilding the
+  sequence from a three-frame preview. Replace every concept fact, source,
+  metric, and outcome before using the deck for a real decision.
 - For Allen design-system anatomy and scenario expression profiles, read
   [references/allen-design-system.md](references/allen-design-system.md).
 - For an actual browser deck, read

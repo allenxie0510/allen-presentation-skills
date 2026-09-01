@@ -5,8 +5,9 @@ evidence, conclusion, or scenario narrative.
 
 1. Read `themes/index.yaml` for compact metadata only.
 2. Use the scenario profile's `theme_recommendations` to shortlist its approved
-   theme family; most scenarios have three choices and Speech Pitch Deck 0.4.0
-   has two.
+   theme family. Silent Spectrum is an approved cross-scenario option when the
+   project benefits from a complete editorial narrative, strong scale cadence,
+   and explicit high-density evidence frames.
 3. Show each shortlisted contact sheet from `gallery/previews/<scenario>/<theme>.webp`.
    Each sheet contains the same content rendered as cover, core component, and
    closing slide, so the comparison is fair.
@@ -20,8 +21,9 @@ Learning Agent 0.4.0 is the approved Corporate Training Workshop default.
 Slope Trace and Night Relay 0.4.0 are the approved Speech Pitch Deck family;
 Slope Trace is the default and Night Relay is the alternative.
 Material Ledger, Signal Pitch, and Open Frame 0.4.0 are the approved UX Brand
-Case Study theme family; Material Ledger is the default. The six legacy bundled
-themes remain draft and must not be described as approved. All themes share the
+Case Study theme family; Material Ledger is the default. Silent Spectrum 0.3.0
+is approved for all five scenarios and includes a complete IR fixture for each.
+The remaining legacy bundled themes remain draft and must not be described as approved. All themes share the
 Allen Presentation Design System contract while keeping independent visual
 expression.
 
@@ -34,8 +36,8 @@ new gallery candidate.
 
 | Scenario | Default | Alternatives |
 |---|---|---|
-| Product Roadmap Review | Signal Grid | Executive Night, Evidence Ledger |
-| Industry Research Deck | Evidence Ledger | Executive Night, Signal Grid |
-| Speech Pitch Deck | Slope Trace | Night Relay |
-| UX Brand Case Study | Material Ledger | Signal Pitch, Open Frame |
-| Corporate Training Workshop | Learning Agent | Learning Canvas, Artifact Editorial |
+| Product Roadmap Review | Signal Grid | Silent Spectrum, Executive Night, Evidence Ledger |
+| Industry Research Deck | Evidence Ledger | Silent Spectrum, Executive Night, Signal Grid |
+| Speech Pitch Deck | Slope Trace | Silent Spectrum, Night Relay |
+| UX Brand Case Study | Material Ledger | Silent Spectrum, Signal Pitch, Open Frame |
+| Corporate Training Workshop | Learning Agent | Silent Spectrum, Learning Canvas, Artifact Editorial |

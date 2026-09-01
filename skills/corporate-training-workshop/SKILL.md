@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "stable"
   risk: "local-write"
-  version: "0.5.1"
+  version: "0.6.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop"
@@ -22,7 +22,7 @@ aids, and transfer support are first-class outputs.
 
 ## Current release
 
-Version 0.5.1 adds native editable-PPTX production, a validated Learning Agent
+Version 0.6.0 retains native editable-PPTX production, a validated Learning Agent
 PPTX profile, asset-first documentary image handling, explicit cross-slide
 cadence, render-based quality gates, and a repaired 12-slide OPC system-thinking
 reference package. The Learning Agent native PPTX profile is approved by Allen
@@ -30,6 +30,9 @@ Xie for final delivery. Its revised international-team photo system preserves ca
 office, clothing, light, role agency, meaningful work artifacts, and slot-safe
 crops across six images. The OPC example and its photographs are disclosed synthetic
 concept material, not evidence of a real client or measured outcome.
+It adds Silent Spectrum 0.3.0 as a complete ten-slide web template with explicit
+outcomes, protected practice time, worked example, high-density activity brief,
+debrief, evaluation, action plan, and transfer commitment.
 
 ## Confirm training is the right intervention
 
@@ -103,13 +106,20 @@ participant-facing slides.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
 the three real-render previews in `assets/theme-previews/`, then default to
-Learning Agent; offer Learning Canvas and Artifact Editorial when their fit is stronger. Render with
+Learning Agent; offer Silent Spectrum for an editorial workshop with dense
+activity and transfer pages, Learning Canvas for simpler facilitation, and
+Artifact Editorial for reflective work. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
 references/allen-signal-grid.yaml --output <deck>.html
 --allow-draft-design --theme references/themes/learning-agent/theme.yaml`, then
 open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, unclear during facilitation, or
 visually repetitive.
+
+To use the complete Silent Spectrum workshop, copy
+`fixtures/silent-spectrum.ir.yaml`, replace the performance need and evidence,
+then render with `--theme references/themes/silent-spectrum/theme.yaml`. Keep
+facilitator timing, fallback, and recovery prompts in notes.
 
 The HTML supports navigation, inline text refinement, facilitator notes,
 download, and print/PDF. It does not automatically write browser edits back into

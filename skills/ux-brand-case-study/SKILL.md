@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "stable"
   risk: "local-write"
-  version: "0.4.0"
+  version: "0.5.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/ux-brand-case-study"
@@ -22,7 +22,7 @@ screens or identity assets.
 
 ## Current release
 
-Version 0.4.0 formalizes the fixed narrative path challenge and role → evidence
+Version 0.5.0 retains the fixed narrative path challenge and role → evidence
 → insight → iteration → system and application → outcome and reflection. It
 adds three Allen Xie-approved themes: Material Ledger as the default, with
 Signal Pitch and Open Frame as alternatives. All three use explicit cross-slide
@@ -30,6 +30,9 @@ density, typographic scale contrast, meaningful image slots, source disclosure,
 and render-based quality gates. The bundled Aster Yard example is a disclosed
 synthetic concept project and is not evidence of a real client or measured
 outcome.
+It adds Silent Spectrum 0.3.0 as a complete ten-slide alternative with evidence
+and decision ledgers, consequential iteration, system/application logic, fair
+before/after comparison, outcome boundaries, and reflection.
 
 ## Establish the case-study job
 
@@ -67,7 +70,8 @@ assets so the result remains self-contained.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
 the three real-render previews in `assets/theme-previews/`, then default to
-Material Ledger. Offer Signal Pitch when a client or design leader needs faster
+Material Ledger. Offer Silent Spectrum when the full case needs quiet editorial
+cadence plus dense traceability pages. Offer Signal Pitch when a client or design leader needs faster
 room-scale decisions; offer Open Frame when image-led portfolio pacing and human
 context matter more. After selection, read that theme's `preview.md`,
 `art-direction.md`, `theme.yaml`, and `theme.css`. Render with
@@ -77,6 +81,10 @@ references/allen-signal-grid.yaml --output <deck>.html
 open and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, weakly annotated, or visually
 repetitive.
+
+To use the complete Silent Spectrum case template, copy
+`fixtures/silent-spectrum.ir.yaml`, replace the concept artifacts, evidence, and
+outcomes, then render with `--theme references/themes/silent-spectrum/theme.yaml`.
 
 The HTML supports navigation, inline text refinement, notes, download, and
 print/PDF. It does not produce native PPTX or automatically write browser edits

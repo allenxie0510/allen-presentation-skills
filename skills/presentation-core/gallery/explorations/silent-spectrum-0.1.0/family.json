@@ -1,0 +1,13 @@
+{
+  "id": "silent-spectrum-scenario-family",
+  "design": "../../../fixtures/design-systems/allen-signal-grid.yaml",
+  "theme": "../../../themes/silent-spectrum/theme.yaml",
+  "output": "family-previews",
+  "scenarios": [
+    {"id": "product-roadmap-review", "name": "Product Roadmap Review", "ir": "../../ir/product-roadmap-review--silent-spectrum.yaml", "slide_labels": ["01-cover", "02-outcomes", "03-opportunities", "04-tree", "05-tradeoffs", "06-sequence", "07-dependencies", "08-boundary", "09-decision"], "board_indexes": [0, 6, 8]},
+    {"id": "industry-research-deck", "name": "Industry Research Deck", "ir": "../../ir/industry-research-deck--silent-spectrum.yaml", "slide_labels": ["01-cover", "02-definition", "03-sources", "04-sizing", "05-value-chain", "06-competition", "07-scenarios", "08-implications", "09-decision"], "board_indexes": [0, 2, 8]},
+    {"id": "speech-pitch-deck", "name": "Speech Pitch Deck", "ir": "../../ir/speech-pitch-deck--silent-spectrum.yaml", "slide_labels": ["01-cover", "02-tension", "03-contrast", "04-mechanism", "05-idea", "06-proof", "07-objection", "08-future", "09-ask", "10-callback"], "board_indexes": [0, 5, 9]},
+    {"id": "ux-brand-case-study", "name": "UX Brand Case Study", "ir": "../../ir/ux-brand-case-study--silent-spectrum.yaml", "slide_labels": ["01-cover", "02-challenge", "03-evidence", "04-insight", "05-iteration", "06-system-ledger", "07-system", "08-before-after", "09-outcomes", "10-reflection"], "board_indexes": [0, 5, 9]},
+    {"id": "corporate-training-workshop", "name": "Corporate Training Workshop", "ir": "../../ir/corporate-training-workshop--silent-spectrum.yaml", "slide_labels": ["01-cover", "02-outcomes", "03-agenda", "04-model", "05-example", "06-activity", "07-debrief", "08-evaluation", "09-action", "10-commitment"], "board_indexes": [0, 5, 9]}
+  ]
+}

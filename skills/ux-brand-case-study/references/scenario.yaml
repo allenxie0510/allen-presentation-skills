@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: ux-brand-case-study
   name: UX and Brand Case Study
-  version: "0.4.0"
+  version: "0.5.0"
 communication_job:
   primary: Demonstrate design judgment, system thinking, collaboration, and credible impact so an audience can trust, hire, approve, or select the work.
   success_condition: The audience can connect the challenge and evidence to design choices, distinguish individual and team contributions, and judge outcomes with limitations visible.
@@ -53,8 +53,8 @@ required_archetypes:
   - reflection
 theme_recommendations:
   default: material-ledger
-  alternatives: [signal-pitch, open-frame]
-  selection_note: Use Material Ledger for traceable UX and brand-system cases, Signal Pitch for fast client or design-lead decisions, and Open Frame for image-led portfolio interviews or award reviews.
+  alternatives: [silent-spectrum, open-frame]
+  selection_note: Use Material Ledger for traceable UX and brand-system cases, Silent Spectrum for a complete evidence-to-system narrative with dense traceability pages, and Open Frame for image-led portfolio interviews or award reviews.
 component_recipes:
   case-summary: {archetype: cover, layout_variant: cover-offset, purpose: "Establish challenge, role, outcome, and disclosure boundary", required_roles: [deck-title, role-summary, outcome-summary]}
   challenge-and-stakes: {archetype: comparison, layout_variant: split-comparison, purpose: Show the before-state and why it mattered, required_roles: [challenge, stakes, baseline]}

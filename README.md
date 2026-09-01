@@ -19,14 +19,14 @@
 
 `https://github.com/allenxie0510/allen-presentation-skills`
 
-调用 Corporate Training Workshop 0.4.0 的推荐提示词：
+调用 Corporate Training Workshop 0.6.0 的推荐提示词：
 
 ```text
 请读取并使用这个公开 GitHub Skill：
 https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop
 
 先读取 SKILL.md，并按其中的相对链接继续读取本任务需要的 references、Schema、
-主题和脚本。请使用 $corporate-training-workshop 0.4.0，把我提供的真实项目资料
+主题和脚本。请使用 $corporate-training-workshop 0.6.0，把我提供的真实项目资料
 制作成可主持、可练习、可评估和可迁移的网页 Workshop。
 
 默认使用已批准的 Learning Agent 主题；不要自动重新做三个 FRAME 方向。
@@ -36,7 +36,7 @@ https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corpo
 我的项目资料：[粘贴内容或提供文件]
 ```
 
-调用 UX Brand Case Study 0.4.0 的推荐提示词：
+调用 UX Brand Case Study 0.5.0 的推荐提示词：
 
 ```text
 请读取并使用这个公开 GitHub Skill：
@@ -47,13 +47,13 @@ https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/ux-br
 成效与反思”建立案例，不得虚构研究、用户引语、团队贡献或项目成果。
 
 如果我没有指定主题，默认使用已批准的 Material Ledger；也可以让我从
-Signal Pitch 和 Open Frame 中选择。生成 Schema-valid Presentation IR、
+Silent Spectrum、Signal Pitch 和 Open Frame 中选择。生成 Schema-valid Presentation IR、
 自包含 HTML，并逐页检查对齐、溢出、裁切、文字尺度和跨页疏密节奏。
 
 我的项目资料：[粘贴内容或提供文件]
 ```
 
-调用 Speech Pitch Deck 0.4.0 的推荐提示词：
+调用 Speech Pitch Deck 0.5.0 的推荐提示词：
 
 ```text
 请读取并使用这个公开 GitHub Skill：
@@ -64,7 +64,7 @@ https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/speec
 建立演讲；不要把演讲稿全文放到页面，也不要虚构用户、市场、数据或成果。
 
 如果我没有指定主题，默认使用已批准的 Slope Trace；现场需要更强深色峰值时可选
-Night Relay。生成图片必须承担学习动作或证据语义，标注来源和概念状态。生成
+Night Relay；需要完整编辑叙事与证据压力页时可选 Silent Spectrum。生成图片必须承担学习动作或证据语义，标注来源和概念状态。生成
 Schema-valid Presentation IR、自包含 HTML，并逐页检查对齐、溢出、裁切、
 投影可读性和跨页疏密节奏。
 
@@ -89,7 +89,9 @@ Schema-valid Presentation IR、自包含 HTML，并逐页检查对齐、溢出�
 Learning Agent 已正式发布为已批准的 `0.4.0` 企业培训主题。Slope Trace 与
 Night Relay 已正式发布为 Speech Pitch Deck `0.4.0` 主题族。Material Ledger、
 Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主题族。
-其余六套遗留主题仍为**草稿**。通用画廊按场景展示 14 组真实渲染结果；
+Silent Spectrum · 静谱 `0.3.0` 已作为五场景共同母系统发布，包含 48 页完整
+叙事模板、每场景至少两张高密度证据或决策页，以及内嵌开源中文字体。
+其余遗留主题仍为**草稿**。通用画廊按场景展示 19 组真实渲染结果；
 每组依次为封面页、核心组件页和收尾页，并使用同一份场景 Presentation IR，
 便于比较主题差异，而不是比较内容差异。
 
@@ -106,6 +108,16 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 </p>
 
 > 灰白编辑网格、Signal Lime 行动信号与紫蓝结构，适合产品和经营判断。
+
+#### [Silent Spectrum · 静谱](skills/presentation-core/themes/silent-spectrum/) · 已批准完整模板 · 0.3.0
+
+<p>
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/product-roadmap-review/silent-spectrum-01-cover.webp" width="32.5%" alt="产品路线图评审，静谱主题，封面页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/product-roadmap-review/silent-spectrum-02-core.webp" width="32.5%" alt="产品路线图评审，静谱主题，依赖容量压力页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/product-roadmap-review/silent-spectrum-03-closing.webp" width="32.5%" alt="产品路线图评审，静谱主题，领导决策页" />
+</p>
+
+> 九页完整路径：结果、机会证据、取舍、顺序、依赖与明确决策。
 
 #### [Executive Night · 董事会夜幕](skills/presentation-core/themes/executive-night/)
 
@@ -141,6 +153,16 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 
 > 纸张底、墨色文字与钴蓝索引，强调定义、来源、范围和不确定性。
 
+#### [Silent Spectrum · 静谱](skills/presentation-core/themes/silent-spectrum/) · 已批准完整模板 · 0.3.0
+
+<p>
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/industry-research-deck/silent-spectrum-01-cover.webp" width="32.5%" alt="行业研究演示，静谱主题，研究问题页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/industry-research-deck/silent-spectrum-02-core.webp" width="32.5%" alt="行业研究演示，静谱主题，来源账本页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/industry-research-deck/silent-spectrum-03-closing.webp" width="32.5%" alt="行业研究演示，静谱主题，战略决策页" />
+</p>
+
+> 九页完整路径：定义、来源、规模、结构、竞争、情景与战略行动。
+
 #### [Executive Night · 董事会夜幕](skills/presentation-core/themes/executive-night/)
 
 <p>
@@ -175,6 +197,16 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 
 > 淡灰蓝画布、水平阅读基线与内容驱动的上升轨迹，让目标、练习和迁移形成可记忆的推进结构。
 
+#### [Silent Spectrum · 静谱](skills/presentation-core/themes/silent-spectrum/) · 已批准完整模板 · 0.3.0
+
+<p>
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/silent-spectrum-01-cover.webp" width="32.5%" alt="演讲与路演，静谱主题，开场钩子页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/silent-spectrum-02-core.webp" width="32.5%" alt="演讲与路演，静谱主题，证据账本页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/speech-pitch-deck/silent-spectrum-03-closing.webp" width="32.5%" alt="演讲与路演，静谱主题，回扣页" />
+</p>
+
+> 十页完整路径：钩子、张力、主张、机制、证明、反对意见、未来状态与行动请求。
+
 #### [Night Relay · 夜间接力](skills/presentation-core/themes/night-relay/) · 已批准主题 · 0.4.0
 
 <p>
@@ -198,6 +230,16 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 </p>
 
 > 暖纸色、档案编号、应用物证与编辑式尺度，适合可追溯的 UX 与品牌系统案例。
+
+#### [Silent Spectrum · 静谱](skills/presentation-core/themes/silent-spectrum/) · 已批准完整模板 · 0.3.0
+
+<p>
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/silent-spectrum-01-cover.webp" width="32.5%" alt="UX 与品牌案例，静谱主题，案例摘要页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/silent-spectrum-02-core.webp" width="32.5%" alt="UX 与品牌案例，静谱主题，系统追踪页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/ux-brand-case-study/silent-spectrum-03-closing.webp" width="32.5%" alt="UX 与品牌案例，静谱主题，反思页" />
+</p>
+
+> 十页完整路径：挑战、证据、洞察、迭代、系统应用、结果边界与反思。
 
 #### [Signal Pitch · 信号提案](skills/presentation-core/themes/signal-pitch/) · 已批准主题 · 0.4.0
 
@@ -236,6 +278,16 @@ Signal Pitch 和 Open Frame 已正式发布为 UX Brand Case Study `0.4.0` 主�
 > 和完整图片来源记录；示例明确标注为概念项目。
 
 <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/corporate-training-workshop/assets/examples/learning-agent-0.4.0/previews/contact-sheet.webp" width="100%" alt="Learning Agent 0.4.0 十五页正式参考示例联系表" />
+
+#### [Silent Spectrum · 静谱](skills/presentation-core/themes/silent-spectrum/) · 已批准完整模板 · 0.3.0
+
+<p>
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/silent-spectrum-01-cover.webp" width="32.5%" alt="企业培训与工作坊，静谱主题，绩效需要页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/silent-spectrum-02-core.webp" width="32.5%" alt="企业培训与工作坊，静谱主题，活动说明页" />
+  <img src="https://raw.githubusercontent.com/allenxie0510/allen-presentation-skills/main/skills/presentation-core/gallery/previews/corporate-training-workshop/silent-spectrum-03-closing.webp" width="32.5%" alt="企业培训与工作坊，静谱主题，迁移承诺页" />
+</p>
+
+> 十页完整路径：绩效需要、目标、模型、示例、练习、反馈、评估与迁移。
 
 #### [Learning Canvas · 学习画布](skills/presentation-core/themes/learning-canvas/)
 

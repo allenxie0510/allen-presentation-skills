@@ -1,0 +1,1013 @@
+schema_version: '0.1'
+deck:
+  id: silent-spectrum-industry-research-deck
+  title: 企业 AI Agent 市场研究
+  language: zh-CN
+  aspect_ratio: '16:9'
+  canvas:
+    width: 1920
+    height: 1080
+  scenario:
+    id: industry-research-deck
+    version: 0.4.0
+  design_system:
+    id: allen-signal-grid
+    version: '0.1'
+  density: high
+  mode: reading-first
+  metadata:
+    author: Allen Skill Hub
+    confidential: false
+    created_at: null
+    updated_at: null
+    source_note: Silent Spectrum concept template. All project facts, evidence, and results are illustrative placeholders until replaced by verified
+      user material.
+slides:
+- id: ir01
+  archetype: cover
+  purpose: Frame the scenario, decision, and disclosure boundary.
+  grammar: narrative
+  assertion:
+    text: 企业 AI Agent 市场 是否进入规模化采购阶段？
+    status: provisional
+  narrative_role:
+    section: research-question
+    sequence: opening
+  layout_variant: cover-indexed
+  permission_profile: content-style
+  objects:
+  - id: ir01-title
+    type: text
+    role: deck-title
+    content:
+      text: '企业 AI Agent 市场
+
+        是否进入规模化采购阶段？'
+    frame:
+      x: 76
+      y: 180
+      w: 1450
+      h: 410
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 110
+        line_height: 1.1
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir01-context
+    type: text
+    role: decision-context
+    content:
+      text: '概念研究 · 中国中大型企业
+
+        范围：2026–2028 / 截至 2026 Q2'
+    frame:
+      x: 76
+      y: 770
+      w: 920
+      h: 120
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 22
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir01-accent
+    type: text
+    role: composition-index
+    content:
+      text: '01'
+    frame:
+      x: 1120
+      y: 145
+      w: 700
+      h: 250
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 190
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir01-disclosure
+    type: text
+    role: concept-disclosure
+    content:
+      text: SYNTHETIC CONCEPT / 明确标注的概念项目；不代表真实客户、研究或项目成果。
+    frame:
+      x: 76
+      y: 958
+      w: 1350
+      h: 34
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 14
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir02
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 先限定市场，才有可比较的规模与竞争结论
+    status: provisional
+  narrative_role:
+    section: market-definition
+    sequence: context
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: ir02-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 先限定市场，才有可比较的规模与竞争结论
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir02-left
+    type: shape
+    role: comparison-left
+    content:
+      text: '纳入
+
+
+        面向企业任务执行的可配置 Agent 软件；中国；年收入亿元以上企业'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir02-right
+    type: shape
+    role: comparison-right
+    content:
+      text: '排除
+
+
+        纯聊天助手、外包人力、消费级 Agent、未进入生产环境的 PoC'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir02-note
+    type: text
+    role: comparison-note
+    content:
+      text: 单位：年软件与实施支出；货币：人民币；预测期：2026–2028。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir03
+  archetype: data
+  purpose: High-density stress page for source, risk, or traceability review.
+  grammar: evidence
+  assertion:
+    text: 关键判断必须能从结论追溯到口径、时间与局限
+    status: provisional
+  narrative_role:
+    section: source-ledger
+    sequence: evidence
+  layout_variant: evidence-ledger
+  permission_profile: content-style
+  evidence:
+  - id: ev-ir03
+    claim: Illustrative ledger content; not verified project evidence
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: ir03-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 关键判断必须能从结论追溯到口径、时间与局限
+    frame:
+      x: 76
+      y: 100
+      w: 1500
+      h: 165
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 58
+        line_height: 1.18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir03-table
+    type: table
+    role: source-ledger
+    content:
+      columns:
+      - Claim
+      - 来源类型
+      - 口径 / 时间
+      - 证据状态
+      - 局限
+      rows:
+      - - 采购进入扩散期
+        - 内部访谈
+        - 12 家 / 2026 Q2
+        - 占位
+        - 样本偏大企业
+      - - 安全审查为瓶颈
+        - 专家访谈
+        - 6 位 / 2026 Q2
+        - 占位
+        - 需交叉验证
+      - - 服务占比下降
+        - 公司披露
+        - 2025–26
+        - 占位
+        - 定义不一致
+      - - 市场规模范围
+        - 两种模型
+        - '2028'
+        - 占位
+        - 部署边界敏感
+    frame:
+      x: 76
+      y: 330
+      w: 1680
+      h: 500
+    style:
+      token: components.table.evidence-ledger
+      variant: evidence-ledger
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir03-note
+    type: text
+    role: limitation
+    content:
+      text: 当前来源均为概念占位；只有补齐来源、访问日期与反证后，结论才能用于决策。
+    frame:
+      x: 76
+      y: 880
+      w: 1680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 16
+        line_height: 1.4
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir04
+  archetype: chart
+  purpose: Show a range or trend with the uncertainty next to the evidence.
+  grammar: evidence
+  assertion:
+    text: 可服务市场存在 2.4× 口径差，不能用单点预测决策
+    status: provisional
+  narrative_role:
+    section: market-sizing
+    sequence: evidence
+  layout_variant: range-bars
+  permission_profile: content-style
+  evidence:
+  - id: ev-ir04
+    claim: Illustrative concept-project chart values
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: ir04-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 可服务市场存在 2.4× 口径差，不能用单点预测决策
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 170
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir04-chart
+    type: chart
+    role: range-chart
+    content:
+      categories:
+      - 窄口径
+      - 基准口径
+      - 宽口径
+      series:
+      - name: 概念值
+        values:
+        - 48
+        - 76
+        - 116
+    frame:
+      x: 76
+      y: 355
+      w: 1120
+      h: 500
+    style:
+      token: components.chart.range-bars
+      variant: range-bars
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir04-note
+    type: text
+    role: method-note
+    content:
+      text: 差异来自部署模式、软件/服务边界与企业规模门槛。使用范围与触发条件，不平均不兼容估计。
+    frame:
+      x: 1340
+      y: 400
+      w: 390
+      h: 300
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 22
+        line_height: 1.55
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir05
+  archetype: process
+  purpose: Explain relationships and decision gates without decorative arrows.
+  grammar: process
+  assertion:
+    text: 利润池正在从一次性交付移向可治理的运行层
+    status: provisional
+  narrative_role:
+    section: value-chain
+    sequence: explanation
+  layout_variant: causal-chain
+  permission_profile: content-style
+  objects:
+  - id: ir05-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 利润池正在从一次性交付移向可治理的运行层
+    frame:
+      x: 76
+      y: 105
+      w: 1510
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 64
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir05-stages
+    type: group
+    role: model-stages
+    content:
+      stages:
+      - 模型 / 基础设施
+      - Agent 平台
+      - 集成与治理
+      - 业务场景
+      - 持续运营
+    frame:
+      x: 76
+      y: 420
+      w: 1680
+      h: 210
+    style:
+      token: components.process.linear-process
+      variant: causal-chain
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir05-note
+    type: text
+    role: method-note
+    content:
+      text: 需要验证：治理工具是否独立付费，以及服务毛利改善的速度。
+    frame:
+      x: 940
+      y: 790
+      w: 820
+      h: 110
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir06
+  archetype: data
+  purpose: High-density stress page for source, risk, or traceability review.
+  grammar: evidence
+  assertion:
+    text: 竞争不只看模型能力，还看部署、治理与持续运营
+    status: provisional
+  narrative_role:
+    section: competition
+    sequence: evidence
+  layout_variant: evidence-ledger
+  permission_profile: content-style
+  evidence:
+  - id: ev-ir06
+    claim: Illustrative ledger content; not verified project evidence
+    source_type: placeholder
+    source: 概念项目示例；替换为真实来源后再用于决策
+  objects:
+  - id: ir06-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 竞争不只看模型能力，还看部署、治理与持续运营
+    frame:
+      x: 76
+      y: 100
+      w: 1500
+      h: 165
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 58
+        line_height: 1.18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir06-table
+    type: table
+    role: source-ledger
+    content:
+      columns:
+      - 类型
+      - 优势
+      - 短板
+      - 购买者
+      - 战略含义
+      rows:
+      - - 云平台
+        - 基础设施与分发
+        - 场景深度
+        - IT
+        - 合作优先
+      - - Agent 平台
+        - 编排与治理
+        - 交付能力
+        - 数字化
+        - 直接竞争
+      - - 垂直厂商
+        - 流程知识
+        - 通用性
+        - 业务部门
+        - 场景进入
+      - - 咨询集成
+        - 组织落地
+        - 产品复用
+        - 管理层
+        - 渠道 / 替代
+    frame:
+      x: 76
+      y: 330
+      w: 1680
+      h: 500
+    style:
+      token: components.table.evidence-ledger
+      variant: evidence-ledger
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir06-note
+    type: text
+    role: limitation
+    content:
+      text: 所有比较轴必须使用同一时期与可比定义；品牌知名度不能替代经营证据。
+    frame:
+      x: 76
+      y: 880
+      w: 1680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 16
+        line_height: 1.4
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir07
+  archetype: comparison
+  purpose: Compare consequential alternatives using equivalent context.
+  grammar: comparison
+  assertion:
+    text: 未来两年最关键的不确定性，是治理成熟度与业务复用速度
+    status: provisional
+  narrative_role:
+    section: scenario-matrix
+    sequence: explanation
+  layout_variant: split-comparison
+  permission_profile: content-style
+  objects:
+  - id: ir07-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 未来两年最关键的不确定性，是治理成熟度与业务复用速度
+    frame:
+      x: 76
+      y: 105
+      w: 1500
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 62
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir07-left
+    type: shape
+    role: comparison-left
+    content:
+      text: '受控扩散
+
+
+        治理标准成形；跨场景复用慢；高合规垂直优先'
+    frame:
+      x: 76
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir07-right
+    type: shape
+    role: comparison-right
+    content:
+      text: '平台跃迁
+
+
+        治理与复用同时加速；平台型供应商获得规模优势'
+    frame:
+      x: 1000
+      y: 365
+      w: 760
+      h: 400
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        padding: 48
+        font_size: 30
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir07-note
+    type: text
+    role: comparison-note
+    content:
+      text: 领先指标：安全审查周期、重复部署率、运营人力/Agent 数。
+    frame:
+      x: 1000
+      y: 830
+      w: 760
+      h: 80
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir08
+  archetype: process
+  purpose: Explain relationships and decision gates without decorative arrows.
+  grammar: process
+  assertion:
+    text: 证据指向窄入口：高合规、高重复、可量化任务
+    status: provisional
+  narrative_role:
+    section: implication-chain
+    sequence: decision
+  layout_variant: causal-chain
+  permission_profile: content-style
+  objects:
+  - id: ir08-title
+    type: text
+    role: slide-assertion
+    content:
+      text: 证据指向窄入口：高合规、高重复、可量化任务
+    frame:
+      x: 76
+      y: 105
+      w: 1510
+      h: 180
+    style:
+      token: typography.slide_title
+      variant: null
+      overrides:
+        font_size: 64
+        line_height: 1.16
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir08-stages
+    type: group
+    role: model-stages
+    content:
+      stages:
+      - '结构事实
+
+        审查成本高'
+      - '客户约束
+
+        需要可追责'
+      - '进入原则
+
+        先窄后宽'
+      - '初始场景
+
+        审计 / 运营'
+    frame:
+      x: 76
+      y: 420
+      w: 1680
+      h: 210
+    style:
+      token: components.process.linear-process
+      variant: causal-chain
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir08-note
+    type: text
+    role: method-note
+    content:
+      text: 反证门槛：若采购权持续分散且复用率低，则不建设通用平台。
+    frame:
+      x: 940
+      y: 790
+      w: 820
+      h: 110
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.5
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+- id: ir09
+  archetype: closing
+  purpose: End with an explicit decision, owner, next evidence, or commitment.
+  grammar: decision
+  assertion:
+    text: 先进入两个高合规场景， 用付费试点验证复用与治理
+    status: provisional
+  narrative_role:
+    section: strategic-decision
+    sequence: closing
+  layout_variant: closing-decision
+  permission_profile: content-style
+  objects:
+  - id: ir09-label
+    type: text
+    role: decision-title
+    content:
+      text: STRATEGIC DECISION
+    frame:
+      x: 76
+      y: 110
+      w: 680
+      h: 55
+    style:
+      token: typography.caption
+      variant: null
+      overrides:
+        font_size: 18
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir09-title
+    type: text
+    role: decision-statement
+    content:
+      text: '先进入两个高合规场景，
+
+        用付费试点验证复用与治理'
+    frame:
+      x: 76
+      y: 225
+      w: 1480
+      h: 450
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 104
+        line_height: 1.1
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir09-meta
+    type: text
+    role: next-evidence
+    content:
+      text: 下一证据 · 10 家设计伙伴 / 付费率 / 安全审查周期 / 90 天复盘
+    frame:
+      x: 76
+      y: 855
+      w: 1100
+      h: 75
+    style:
+      token: typography.body
+      variant: null
+      overrides:
+        font_size: 20
+        line_height: 1.45
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true
+  - id: ir09-accent
+    type: text
+    role: composition-index
+    content:
+      text: '02'
+    frame:
+      x: 1210
+      y: 690
+      w: 560
+      h: 180
+    style:
+      token: typography.hero
+      variant: null
+      overrides:
+        font_size: 150
+    editable:
+      content: true
+      image_replace: true
+      data: true
+      style: limited
+      position: false
+      resize: false
+      delete: false
+      unlock_required: true

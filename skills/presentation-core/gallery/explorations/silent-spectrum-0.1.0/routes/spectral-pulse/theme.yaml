@@ -1,0 +1,8 @@
+schema_version: "0.1"
+meta: {id: spectral-pulse, name: Spectral Pulse, name_zh: 谱域脉冲, version: "0.1.0", status: draft, provenance: designer-reviewed-ai-assisted}
+design_system: {id: allen-signal-grid, minimum_version: "0.1"}
+intent: {tagline: 把信息密度变成尺度位移和语义谱线, mood: [quiet, distinctive, rhythmic], tone: [editorial, authored], formality: high, density: medium}
+best_for: [presentation-family]
+avoid_for: [dense-appendix]
+colors: {canvas: "#ECEDE9", surface: "#DDE1DE", text_primary: "#121416", text_secondary: "#484E50", accent_primary: "#667267", accent_secondary: "#B9C0BC", positive: "#48685C", negative: "#8A5752", rule: "rgba(18,20,22,.18)"}
+stylesheet: theme.css

@@ -1,0 +1,190 @@
+@font-face{font-family:"SS Smiley";src:url("assets/fonts/SmileySans-Oblique.woff2") format("woff2");font-style:normal;font-weight:300 900;font-display:swap}
+@font-face{font-family:"SS Source Han Sans";src:url("assets/fonts/SourceHanSansCN-Regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"SS Source Han Sans";src:url("assets/fonts/SourceHanSansCN-Bold.woff2") format("woff2");font-style:normal;font-weight:700 900;font-display:swap}
+@font-face{font-family:"SS Source Han Serif";src:url("assets/fonts/SourceHanSerifSC-VF.woff2") format("woff2");font-style:normal;font-weight:200 900;font-display:swap}
+body[data-theme="silent-spectrum"]{font-family:"SS Source Han Sans","Source Han Sans CN","Source Han Sans SC","Noto Sans CJK SC","PingFang SC",sans-serif;color:#121416;--ss-ink:#121416;--ss-muted:#484e50;--ss-warm:#efeee9;--ss-mineral:#dfe2df;--ss-bluegray:#dce2e4;--ss-moss:#667267;--ss-rule:rgba(18,20,22,.22);--ss-title-sans:"SS Source Han Sans","Source Han Sans CN","Source Han Sans SC","Noto Sans CJK SC",sans-serif;--ss-title-serif:"SS Source Han Serif","Source Han Serif SC","Noto Serif CJK SC",serif}
+body[data-theme="silent-spectrum"] .deck-stage,body[data-theme="silent-spectrum"] .slide{background:var(--ss-warm)}
+body[data-theme="silent-spectrum"] .slide{background-image:linear-gradient(var(--ss-rule),var(--ss-rule));background-repeat:no-repeat;background-position:74px 84px;background-size:1772px 1px}
+body[data-theme="silent-spectrum"] .slide:nth-child(2){background-color:var(--ss-mineral)}
+body[data-theme="silent-spectrum"] .slide:nth-child(3){background-color:#e4e2dd}
+body[data-theme="silent-spectrum"] .slide::before{content:"";background:none}
+body[data-theme="silent-spectrum"] .slide::after{right:76px;top:45px;color:var(--ss-muted);font-size:13px;letter-spacing:.14em}
+body[data-theme="silent-spectrum"] .slide__eyebrow{left:76px;top:43px;color:var(--ss-muted);font-size:12px;letter-spacing:.18em}
+body[data-theme="silent-spectrum"] .slide__source{left:76px;bottom:30px;color:var(--ss-muted);font-size:13px}
+body[data-theme="silent-spectrum"] .object--text[data-role="deck-title"],body[data-theme="silent-spectrum"] .object--text[data-role="decision-statement"]{font-family:var(--ss-title-sans)!important;font-weight:700!important;letter-spacing:-.045em!important;line-height:1.07!important}
+body[data-theme="silent-spectrum"] .object--text[data-role="slide-assertion"]{font-family:var(--ss-title-sans)!important;font-weight:700!important;letter-spacing:-.025em!important;line-height:1.14!important}
+body[data-theme="silent-spectrum"] .object--shape{border:0;border-radius:0;background:#d6dad7;box-shadow:none}
+body[data-theme="silent-spectrum"] .object--shape::first-line{font-size:1.35em;font-weight:650;letter-spacing:-.035em}
+body[data-theme="silent-spectrum"] .object--metric{border:0;border-top:1px solid var(--ss-ink);border-radius:0;background:transparent;padding:26px 0;box-shadow:none}
+body[data-theme="silent-spectrum"] .metric__label,body[data-theme="silent-spectrum"] .metric__meta{color:var(--ss-muted)}
+body[data-theme="silent-spectrum"] .metric__value{color:var(--ss-ink);font-weight:520;letter-spacing:-.07em}
+body[data-theme="silent-spectrum"] .object--chart{border-left:1px solid var(--ss-rule);border-bottom:1px solid var(--ss-ink);padding:26px 20px 42px}
+body[data-theme="silent-spectrum"] .chart__bar{background:#aeb8b0;width:32px}
+body[data-theme="silent-spectrum"] .chart__value{color:var(--ss-ink)!important;font-size:15px}
+body[data-theme="silent-spectrum"] .chart__category{color:var(--ss-muted)!important;font-size:14px}
+body[data-theme="silent-spectrum"] .group__stage{border:0;border-top:1px solid var(--ss-ink);border-radius:0;background:transparent;padding:34px 0;text-align:left;place-items:start;font-size:20px}
+body[data-theme="silent-spectrum"] .group__stage::before{content:"";position:absolute;left:0;top:-6px;width:11px;height:11px;border-radius:50%;background:var(--ss-moss)}
+body[data-theme="silent-spectrum"] .group__stage:not(:last-child)::after{content:""}
+
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s01 [data-role="deck-title"]{left:76px!important;top:200px!important;width:1510px!important;height:330px!important;font-size:112px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s01 [data-role="decision-context"]{left:1180px!important;top:720px!important;width:590px!important;color:var(--ss-muted)!important;font-size:22px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="slide-assertion"]{left:76px!important;top:112px!important;width:1320px!important;height:170px!important;font-size:62px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 .object--metric{top:400px!important;width:470px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="risk-metric"]{left:76px!important;height:430px!important;background:#c9ceca;padding:34px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="primary-metric"]{left:660px!important;top:490px!important;height:340px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="positive-metric"]{left:1244px!important;top:550px!important;height:280px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s03 [data-role="decision-title"]{left:76px!important;top:120px!important;color:var(--ss-muted)!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s03 [data-role="decision-statement"]{left:76px!important;top:250px!important;width:1650px!important;height:340px!important;font-size:92px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s03 [data-role="decision-owner"]{left:1120px!important;top:790px!important;width:650px!important;color:var(--ss-muted)!important;font-size:20px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s01 [data-role="deck-title"]{left:76px!important;top:210px!important;width:1680px!important;height:310px!important;font-size:96px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s01 [data-role="as-of-date"]{left:76px!important;top:760px!important;color:var(--ss-muted)!important;font-size:21px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02 [data-role="slide-assertion"]{left:76px!important;top:108px!important;width:1380px!important;height:160px!important;font-size:58px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02 [data-role="range-chart"]{left:76px!important;top:370px!important;width:1160px!important;height:470px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02 [data-role="method-note"]{left:1370px!important;top:420px!important;width:400px!important;height:260px!important;color:var(--ss-muted)!important;font-size:23px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03 [data-role="decision-title"]{left:76px!important;top:120px!important;color:var(--ss-muted)!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03 [data-role="decision-statement"]{left:76px!important;top:260px!important;width:1640px!important;height:330px!important;font-size:88px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03 [data-role="next-evidence"]{left:1080px!important;top:790px!important;width:700px!important;color:var(--ss-muted)!important;font-size:20px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s01 [data-role="deck-title"]{left:70px!important;top:170px!important;width:1720px!important;height:410px!important;font-size:138px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s01 [data-role="opening-tension"]{left:1130px!important;top:760px!important;width:660px!important;color:var(--ss-muted)!important;font-size:24px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="slide-assertion"]{left:76px!important;top:110px!important;width:1300px!important;height:170px!important;font-size:62px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="primary-metric"]{left:76px!important;top:390px!important;width:720px!important;height:390px!important;background:#c8ceca;padding:40px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="evidence-context"]{left:990px!important;top:470px!important;width:700px!important;height:230px!important;color:var(--ss-ink)!important;font-size:34px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s03 [data-role="callback"]{left:76px!important;top:120px!important;color:var(--ss-muted)!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s03 [data-role="decision-statement"]{left:76px!important;top:230px!important;width:1710px!important;height:380px!important;font-size:104px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s03 [data-role="commitment"]{left:76px!important;top:810px!important;width:900px!important;color:var(--ss-muted)!important;font-size:24px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s01 [data-role="deck-title"]{left:76px!important;top:190px!important;width:1650px!important;height:350px!important;font-family:"Noto Serif CJK SC","Source Han Serif SC",serif!important;font-size:94px!important;line-height:1.05!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s01 [data-role="role-summary"]{left:1070px!important;top:760px!important;width:700px!important;color:var(--ss-muted)!important;font-size:20px!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="slide-assertion"]{left:76px!important;top:110px!important;width:1420px!important;height:160px!important;font-family:"Noto Serif CJK SC","Source Han Serif SC",serif!important;font-size:56px!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="before-state"]{left:76px!important;top:360px!important;width:760px!important;height:390px!important;background:#c8cdca;color:var(--ss-ink)!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="after-state"]{left:1000px!important;top:360px!important;width:760px!important;height:390px!important;background:#d8d5cf;color:var(--ss-ink)!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="learning"]{left:1060px!important;top:830px!important;width:700px!important;color:var(--ss-muted)!important;font-size:20px!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03 [data-role="reflection"]{left:76px!important;top:120px!important;color:var(--ss-muted)!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03 [data-role="decision-statement"]{left:76px!important;top:250px!important;width:1650px!important;height:350px!important;font-family:"Noto Serif CJK SC","Source Han Serif SC",serif!important;font-size:88px!important;line-height:1.05!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03 [data-role="unresolved-question"]{left:990px!important;top:800px!important;width:770px!important;color:var(--ss-muted)!important;font-size:20px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s01::before{content:"90′";left:1320px;top:180px;width:auto;height:auto;background:none;color:#cfd3cf;font-size:210px;font-weight:650;line-height:.8}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s01 [data-role="deck-title"]{left:76px!important;top:220px!important;width:1300px!important;height:330px!important;font-size:104px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s01 [data-role="performance-need"]{left:76px!important;top:760px!important;color:var(--ss-muted)!important;font-size:22px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02 [data-role="slide-assertion"]{left:76px!important;top:110px!important;width:1450px!important;height:160px!important;font-size:58px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02 [data-role="model-stages"]{left:76px!important;top:430px!important;width:1690px!important;height:180px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02 [data-role="timer"]{left:1080px!important;top:790px!important;width:690px!important;color:var(--ss-muted)!important;font-size:20px!important;text-align:left!important;justify-content:flex-start}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s03 [data-role="commitment"]{left:76px!important;top:120px!important;color:var(--ss-muted)!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s03 [data-role="decision-statement"]{left:76px!important;top:250px!important;width:1580px!important;height:360px!important;font-size:104px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s03 [data-role="success-evidence"]{left:950px!important;top:810px!important;width:820px!important;color:var(--ss-muted)!important;font-size:20px!important}
+
+/* 0.3.0 selected synthesis: Spectral Pulse cadence + Silent Index alignment. */
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s01{background-image:url("assets/roadmap-trace.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 88px top 430px,74px 84px;background-size:620px 482px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s01::before{content:"Q3";left:1350px;top:150px;width:auto;height:auto;color:#c7ccc8;font-family:var(--ss-title-sans);font-size:230px;font-weight:700;line-height:.82;letter-spacing:-.08em}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s01 [data-role="deck-title"]{left:76px!important;top:180px!important;width:1210px!important;height:370px!important;font-family:var(--ss-title-sans)!important;font-size:132px!important;font-weight:750!important;line-height:1.09!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s01 [data-role="decision-context"]{left:76px!important;top:800px!important;width:760px!important;font-size:22px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="slide-assertion"]{left:76px!important;top:116px!important;width:1420px!important;height:190px!important;font-size:72px!important;line-height:1.14!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="risk-metric"]{left:76px!important;top:390px!important;width:620px!important;height:430px!important;background:#c8cfca!important;padding:42px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="risk-metric"] .metric__value{font-size:118px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="primary-metric"]{left:840px!important;top:485px!important;width:390px!important;height:335px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s02 [data-role="positive-metric"]{left:1390px!important;top:580px!important;width:330px!important;height:240px!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s03::before{content:"60%";left:1170px;top:640px;width:auto;height:auto;color:#c8c7c1;font-family:var(--ss-title-sans);font-size:220px;font-weight:700;line-height:.8;letter-spacing:-.08em}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s03 [data-role="decision-statement"]{left:76px!important;top:225px!important;width:1480px!important;height:420px!important;font-size:112px!important;line-height:1.1!important}
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #s03 [data-role="decision-owner"]{left:76px!important;top:870px!important;width:900px!important;font-size:18px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s01::before{content:"01";left:1430px;top:140px;width:auto;height:auto;color:#c7ccc8;font-family:var(--ss-title-serif);font-size:250px;font-weight:600;line-height:.82;letter-spacing:-.08em}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s01 [data-role="deck-title"]{left:76px!important;top:190px!important;width:1450px!important;height:390px!important;font-family:var(--ss-title-serif)!important;font-size:112px!important;font-weight:650!important;line-height:1.14!important;letter-spacing:-.035em!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s01 [data-role="as-of-date"]{left:76px!important;top:820px!important;width:900px!important;font-size:20px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02::before{content:"2.4×";left:1370px;top:690px;width:auto;height:auto;color:#bac2bd;font-family:var(--ss-title-serif);font-size:158px;font-weight:600;line-height:.82;letter-spacing:-.07em}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02 [data-role="slide-assertion"]{left:76px!important;top:112px!important;width:1420px!important;height:180px!important;font-family:var(--ss-title-serif)!important;font-size:68px!important;line-height:1.16!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02 [data-role="range-chart"]{left:76px!important;top:400px!important;width:1100px!important;height:470px!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s02 [data-role="method-note"]{left:1340px!important;top:350px!important;width:390px!important;height:250px!important;font-size:22px!important;line-height:1.55!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03{background-image:url("assets/industry-range.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 80px top 420px,74px 84px;background-size:650px 506px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03::before{content:"02";left:1450px;top:150px;width:auto;height:auto;color:#cbc8c2;font-family:var(--ss-title-serif);font-size:230px;font-weight:600;line-height:.8}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03 [data-role="decision-statement"]{left:76px!important;top:240px!important;width:1220px!important;height:430px!important;font-family:var(--ss-title-serif)!important;font-size:104px!important;font-weight:650!important;line-height:1.14!important}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #s03 [data-role="next-evidence"]{left:76px!important;top:870px!important;width:930px!important;font-size:18px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s01{background-image:url("assets/speech-pulse.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 55px top 465px,74px 84px;background-size:650px 506px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s01::before{content:"AI";left:1430px;top:145px;width:auto;height:auto;color:#c7ccc8;font-family:"SS Smiley",var(--ss-title-sans);font-size:240px;font-weight:700;line-height:.82;letter-spacing:-.08em}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s01 [data-role="deck-title"]{left:70px!important;top:175px!important;width:1450px!important;height:430px!important;font-family:"SS Smiley",var(--ss-title-sans)!important;font-size:154px!important;font-weight:650!important;line-height:1.06!important;letter-spacing:-.045em!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s01 [data-role="opening-tension"]{left:76px!important;top:830px!important;width:720px!important;font-size:23px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="slide-assertion"]{left:76px!important;top:112px!important;width:1460px!important;height:190px!important;font-family:"SS Smiley",var(--ss-title-sans)!important;font-size:76px!important;font-weight:650!important;line-height:1.12!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="primary-metric"]{left:76px!important;top:400px!important;width:760px!important;height:420px!important;background:#c5cdc7!important;padding:44px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="primary-metric"] .metric__value{font-size:144px!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s02 [data-role="evidence-context"]{left:1050px!important;top:500px!important;width:650px!important;height:250px!important;font-size:36px!important;line-height:1.48!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s03::before{content:"ONE";left:1190px;top:690px;width:auto;height:auto;color:#cbc8c2;font-family:"SS Smiley",var(--ss-title-sans);font-size:200px;font-weight:650;line-height:.8;letter-spacing:-.05em}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s03 [data-role="decision-statement"]{left:76px!important;top:220px!important;width:1500px!important;height:470px!important;font-family:"SS Smiley",var(--ss-title-sans)!important;font-size:126px!important;font-weight:650!important;line-height:1.08!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #s03 [data-role="commitment"]{left:76px!important;top:860px!important;width:700px!important;font-size:24px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s01::before{content:"CASE 01";left:1280px;top:150px;width:auto;height:auto;color:#c7ccc8;font-family:var(--ss-title-serif);font-size:138px;font-weight:500;line-height:.85;letter-spacing:-.06em}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s01 [data-role="deck-title"]{left:76px!important;top:185px!important;width:1400px!important;height:430px!important;font-family:var(--ss-title-serif)!important;font-size:116px!important;font-weight:650!important;line-height:1.16!important;letter-spacing:-.035em!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s01 [data-role="role-summary"]{left:76px!important;top:830px!important;width:900px!important;font-size:18px!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="slide-assertion"]{left:76px!important;top:112px!important;width:1460px!important;height:190px!important;font-family:var(--ss-title-serif)!important;font-size:68px!important;font-weight:650!important;line-height:1.18!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="before-state"],body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s02 [data-role="after-state"]{top:385px!important;height:380px!important;padding:52px!important;font-size:40px!important;line-height:1.42!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03{background-image:url("assets/ux-system.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 75px top 440px,74px 84px;background-size:620px 482px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03::before{content:"03";left:1460px;top:150px;width:auto;height:auto;color:#cbc8c2;font-family:var(--ss-title-serif);font-size:230px;font-weight:500;line-height:.8}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03 [data-role="decision-statement"]{left:76px!important;top:235px!important;width:1240px!important;height:430px!important;font-family:var(--ss-title-serif)!important;font-size:100px!important;font-weight:650!important;line-height:1.16!important}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #s03 [data-role="unresolved-question"]{left:76px!important;top:870px!important;width:930px!important;font-size:18px!important}
+
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s01::before{content:"90′";left:1370px;top:155px;width:auto;height:auto;color:#c7ccc8;font-family:var(--ss-title-sans);font-size:230px;font-weight:700;line-height:.82;letter-spacing:-.07em}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s01 [data-role="deck-title"]{left:76px!important;top:190px!important;width:1330px!important;height:410px!important;font-family:var(--ss-title-sans)!important;font-size:128px!important;font-weight:750!important;line-height:1.1!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s01 [data-role="performance-need"]{left:76px!important;top:835px!important;width:820px!important;font-size:21px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02{background-image:url("assets/training-loop.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 80px top 390px,74px 84px;background-size:560px 436px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02 [data-role="slide-assertion"]{left:76px!important;top:112px!important;width:1460px!important;height:190px!important;font-size:72px!important;line-height:1.15!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02 [data-role="model-stages"]{left:76px!important;top:440px!important;width:1080px!important;height:190px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s02 [data-role="timer"]{left:76px!important;top:820px!important;width:980px!important;font-size:20px!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s03::before{content:"48H";left:1190px;top:680px;width:auto;height:auto;color:#cbc8c2;font-family:var(--ss-title-sans);font-size:210px;font-weight:700;line-height:.8;letter-spacing:-.06em}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s03 [data-role="decision-statement"]{left:76px!important;top:225px!important;width:1450px!important;height:450px!important;font-size:126px!important;font-weight:750!important;line-height:1.1!important}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #s03 [data-role="success-evidence"]{left:76px!important;top:870px!important;width:950px!important;font-size:18px!important}
+
+/* Complete scenario templates: shared cadence, stress-page discipline, and light-surface contrast. */
+body[data-theme="silent-spectrum"] .slide:nth-child(4n+2){background-color:#dfe2df}
+body[data-theme="silent-spectrum"] .slide:nth-child(4n+3){background-color:#e8e6e1}
+body[data-theme="silent-spectrum"] .slide:nth-child(4n){background-color:#dce2e4}
+body[data-theme="silent-spectrum"] .slide:nth-child(5){background-color:#282d2c;background-image:linear-gradient(rgba(238,240,235,.3),rgba(238,240,235,.3));--ss-rule:rgba(238,240,235,.24)}
+body[data-theme="silent-spectrum"] .slide:nth-child(5)>.slide__eyebrow,
+body[data-theme="silent-spectrum"] .slide:nth-child(5)>.slide__source,
+body[data-theme="silent-spectrum"] .slide:nth-child(5)>.object--text,
+body[data-theme="silent-spectrum"] .slide:nth-child(5)>.object--table,
+body[data-theme="silent-spectrum"] .slide:nth-child(5)>.object--group,
+body[data-theme="silent-spectrum"] .slide:nth-child(5)>.object--metric{color:#f0f1ed!important}
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .metric__label,
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .metric__meta{color:#c9ceca!important}
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .metric__value{color:#f0f1ed!important}
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .object--shape{color:var(--ss-ink)!important;background:#d9dcd8!important}
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .table__row--head{background:rgba(255,255,255,.08)}
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .table__row{border-color:rgba(240,241,237,.24)}
+body[data-theme="silent-spectrum"] .slide:nth-child(5) .group__stage{border-color:rgba(240,241,237,.55)}
+
+body[data-theme="silent-spectrum"] [data-role="composition-index"]{color:#5c6460!important;font-weight:650!important;letter-spacing:-.07em!important;line-height:.82!important}
+body[data-theme="silent-spectrum"] .slide--cover [data-role="deck-title"],
+body[data-theme="silent-spectrum"] .slide--closing [data-role="decision-statement"]{font-size:104px!important;font-weight:750!important;line-height:1.1!important}
+body[data-theme="silent-spectrum"] .slide--statement [data-role="slide-assertion"]{font-size:82px!important;line-height:1.15!important}
+body[data-theme="silent-spectrum"] .slide--data [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"] .slide--comparison [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"] .slide--process [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"] .slide--timeline [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"] .slide--chart [data-role="slide-assertion"]{font-size:62px!important;line-height:1.16!important}
+body[data-theme="silent-spectrum"] .object--table{border-top:1px solid currentColor;font-size:18px;line-height:1.35}
+body[data-theme="silent-spectrum"] .table__cell{padding:16px 14px}
+body[data-theme="silent-spectrum"] .table__row--head{background:rgba(18,20,22,.05)}
+body[data-theme="silent-spectrum"] .slide--data[data-layout="evidence-ledger"] [data-role="limitation"]{color:var(--ss-muted)!important}
+body[data-theme="silent-spectrum"] .slide--comparison .object--shape{border-radius:2px}
+body[data-theme="silent-spectrum"] .slide--process .group__stage,
+body[data-theme="silent-spectrum"] .slide--timeline .group__stage{font-size:21px;line-height:1.45}
+
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"]{--ss-title-sans:"SS Source Han Sans","Source Han Sans CN","Source Han Sans SC","Noto Sans CJK SC","PingFang SC",sans-serif}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"],
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"]{--ss-title-sans:"SS Source Han Serif","Source Han Serif SC","Noto Serif CJK SC","Songti SC",serif}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] [data-role="deck-title"],
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] [data-role="decision-statement"],
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] [data-role="deck-title"],
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] [data-role="decision-statement"]{font-family:var(--ss-title-sans)!important;font-weight:650!important;letter-spacing:-.035em!important}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] [data-role="deck-title"],
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] [data-role="slide-assertion"],
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] [data-role="decision-statement"]{font-family:"SS Smiley",var(--ss-title-sans)!important;font-weight:650!important}
+
+body[data-theme="silent-spectrum"][data-scenario="product-roadmap-review"] #pr04{background-image:url("assets/roadmap-trace.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 70px bottom 55px,74px 84px;background-size:430px 334px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="industry-research-deck"] #ir08{background-image:url("assets/industry-range.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 70px bottom 55px,74px 84px;background-size:430px 334px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="speech-pitch-deck"] #sp04{background-image:url("assets/speech-pulse.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 70px bottom 55px,74px 84px;background-size:430px 334px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="ux-brand-case-study"] #ux07{background-image:url("assets/ux-system.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 70px bottom 55px,74px 84px;background-size:430px 334px,1772px 1px}
+body[data-theme="silent-spectrum"][data-scenario="corporate-training-workshop"] #tr04{background-image:url("assets/training-loop.svg"),linear-gradient(var(--ss-rule),var(--ss-rule));background-position:right 70px bottom 55px,74px 84px;background-size:430px 334px,1772px 1px}

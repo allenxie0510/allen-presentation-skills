@@ -2,7 +2,7 @@ schema_version: "0.2"
 scenario:
   id: corporate-training-workshop
   name: Corporate Training Workshop
-  version: "0.5.1"
+  version: "0.6.0"
 communication_job:
   primary: Enable adult learners to perform a defined workplace behavior through relevant explanation, practice, feedback, and transfer support.
   success_condition: Learners can demonstrate the target capability, plan workplace application, and generate evidence for learning and transfer evaluation.
@@ -52,8 +52,8 @@ required_archetypes:
   - evaluation
 theme_recommendations:
   default: learning-agent
-  alternatives: [learning-canvas, artifact-editorial]
-  selection_note: Use the approved Learning Agent theme for human, practice-led capability building; Learning Canvas for simpler facilitation systems; and Artifact Editorial for reflective or creative workshops.
+  alternatives: [silent-spectrum, learning-canvas]
+  selection_note: Use the approved Learning Agent theme for human, practice-led capability building; Silent Spectrum for an editorial workshop with dense activity and transfer pages; and Learning Canvas for simpler facilitation systems.
 component_recipes:
   relevance-opening: {archetype: cover, layout_variant: cover-indexed, purpose: Connect the workshop to a real performance need, required_roles: [deck-title, performance-need, relevance]}
   learning-outcomes: {archetype: statement, layout_variant: statement-bracketed, purpose: State observable learner performance, required_roles: [observable-outcomes, success-evidence]}

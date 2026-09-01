@@ -7,7 +7,7 @@ metadata:
   category: "presentation"
   maturity: "stable"
   risk: "local-write"
-  version: "0.4.0"
+  version: "0.5.0"
   origin: "personal"
   visibility: "public"
   public_url: "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/speech-pitch-deck"
@@ -21,12 +21,15 @@ spoken argument; they are not the transcript.
 
 ## Current release
 
-Version 0.4.0 replaces the former draft gallery recommendations with two
+Version 0.5.0 retains the two
 approved, designer-reviewed themes. Slope Trace is the default: it uses a
 content-born progression rail, quiet/working/peak cadence, orthogonal data axes,
 and documentary learning scenes. Night Relay is the alternative for stronger
 live-stage contrast: dark mechanism peaks alternate with light evidence pages,
 and blue-to-mint nodes show responsibility moving from Agent back to learner.
+It also adds Silent Spectrum 0.3.0 as a complete ten-slide alternative, pairing
+sparse stage peaks with a high-density proof ledger, objection handling, future
+state, explicit ask, and closing callback.
 
 The bundled AhaSlope example is a disclosed synthetic concept project. Its
 international teenagers and young adults are AI-generated concept scenes, not
@@ -69,7 +72,8 @@ script out of the audience-facing slides.
 
 Read `references/theme-selection.md` and `references/themes/index.yaml`, compare
 the two real-render previews in `assets/theme-previews/`, then default to Slope
-Trace; offer Night Relay when a live venue benefits from dark mechanism peaks
+Trace; offer Silent Spectrum when the talk needs stronger editorial contrast and
+a room-readable proof ledger, or Night Relay when a live venue benefits from dark mechanism peaks
 and a memorable human–Agent responsibility handoff. After selection, read the
 theme's `preview.md`, `art-direction.md`, `theme.yaml`, and `theme.css`. Render with
 `python scripts/render-html.py <deck>.ir.yaml --design
@@ -77,6 +81,11 @@ references/allen-signal-grid.yaml --output <deck>.html
 --allow-draft-design --theme references/themes/slope-trace/theme.yaml`, then open
 and inspect every slide. Repair the IR and
 render again if anything is clipped, crowded, under-supported, or visually flat.
+
+To start from the complete Silent Spectrum talk, copy
+`fixtures/silent-spectrum.ir.yaml`, replace all proof-status placeholders, then
+render with `--theme references/themes/silent-spectrum/theme.yaml`. Keep the
+speaker notes separate from audience-facing copy.
 
 The HTML supports navigation, inline text refinement, speaker notes, download,
 and print/PDF. It does not produce native PPTX or automatically write browser
