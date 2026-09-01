@@ -42,6 +42,9 @@ Required outputs:
 7. Open or screenshot the HTML and inspect every slide for overflow, overlap,
    weak contrast, tiny text, misleading charts, hidden sources, and broken image
    paths. Fix the IR or design tokens, not the generated HTML, then rerender.
+   Treat white text on a light surface as a release blocker. Use the primary dark
+   text token or secondary dark-gray token instead; reserve light text for an
+   explicit, stable dark surface that passes 4.5:1 contrast.
 
 ## Runtime behavior
 

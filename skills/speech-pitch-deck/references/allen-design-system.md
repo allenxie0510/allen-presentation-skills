@@ -41,6 +41,15 @@ reduced-motion behavior, minimum readable sizes, contrast target, non-color
 signals, and DOM reading order. Motion reveals narrative order; it must not hide
 evidence or imply causality.
 
+Treat text color as a surface role. On a light canvas or light component, use the
+primary dark text token for assertions and a secondary dark-gray token for
+supporting copy; white or near-white text is prohibited. Light text is allowed
+only when the same text element or a stable ancestor owns a sufficiently dark,
+opaque surface. Do not rely on a crossing line, image crop, gradient highlight,
+or decorative pseudo-element to provide contrast. Require at least 4.5:1 for all
+audience-facing text so layout movement and responsive stage scaling cannot turn
+an apparent overlay into low-contrast text.
+
 ### 6. Runtime and governance
 
 Specify the fixed-stage scaling model, self-contained output, offline behavior,
@@ -76,5 +85,6 @@ approval candidate.
 - Is body text at least the design system's minimum size?
 - Does the slide fit at 1920 × 1080 without overlap or overflow?
 - Does it remain interpretable without color?
+- Does every text element retain at least 4.5:1 contrast against its owned surface, with no white text on light surfaces?
 - Does reduced-motion mode preserve all information?
 - Is the output labeled draft until a designer approves the rendered system?

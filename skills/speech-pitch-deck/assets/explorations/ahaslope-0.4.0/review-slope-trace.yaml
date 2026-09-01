@@ -23,9 +23,9 @@ hard_gates:
   readability: {passed: true, evidence: "All body copy remains horizontal and room-readable while only modules follow the slope."}
   truth: {passed: true, evidence: "Slope height is labeled as mechanism progression, never as measured learning improvement."}
   image_integrity: {passed: true, evidence: "The international youth-learning anthology keeps natural skin, varied low-saturation clothing, real computer-learning actions, complete faces and hands, and authored crops."}
-  accessibility: {passed: true, evidence: "Sequence numbers, labels, height, and position preserve meaning without relying on blue and mint alone."}
+  accessibility: {passed: true, evidence: "Sequence numbers, labels, height, and position preserve meaning without relying on blue and mint alone; every audience-facing text element passes the surface-aware 4.5:1 contrast audit."}
   provenance: {passed: true, evidence: "Reference principles, image-generation disclosure, and font license are recorded in SOURCES.md."}
-  visual_inspection: {passed: true, evidence: "All six full-size frames and contact-sheet rhythm were inspected after the overflow repair."}
+  visual_inspection: {passed: true, evidence: "All six full-size frames and contact-sheet rhythm were inspected after the overflow and light-surface typography repairs."}
 dimensions:
   philosophy_narrative: {score: 8.8, weight: 20, finding: "The content-born slope gives AhaSlope the strongest conceptual ownership while respecting the learning loop."}
   hierarchy_rhythm: {score: 8.7, weight: 25, finding: "The rising silhouettes create a clear build while the problem and closing frames now provide deliberate quiet pauses."}
@@ -39,6 +39,7 @@ keep:
   - Keep the final ADAPT or transfer node as the highest point rather than highlighting every step.
 fix: []
 quick_wins:
+  - Keep light-canvas supporting copy on the dark-gray secondary token; never return it to white.
   - Preserve the three allowed rail angles and no-rail problem and closing layouts.
   - Keep quantitative axes orthogonal and independently sourced.
   - Replace concept learners with permitted real project photography when available.

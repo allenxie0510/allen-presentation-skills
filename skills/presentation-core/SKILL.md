@@ -113,6 +113,10 @@ claim or audience job that can be evaluated.
 - Treat a slot as design-authored and protected. Treat a user-added object as
   freeform refinement content.
 - Preserve stable deck, slide, and object IDs across edit/save/load cycles.
+- On light canvases and light components, use dark primary or dark-gray secondary
+  text. Permit white or near-white text only on a stable, owned dark surface that
+  passes 4.5:1 contrast; decorative lines, images, and pseudo-elements do not
+  count as owned text surfaces.
 - Explicit brand rules override the approved design system, which overrides
   industry convention and generic visual preference.
 - Never claim an exact font match without evidence. Record its class,

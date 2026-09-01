@@ -1,5 +1,5 @@
 @font-face{font-family:"Aha Display";src:url("./assets/fonts/SmileySans-Oblique.woff2") format("woff2");font-style:normal;font-weight:400;font-display:block}
-body[data-theme="slope-trace"]{font-family:"Noto Sans CJK SC","Source Han Sans SC","PingFang SC",sans-serif;--slope-blue:#164bdf;--slope-mint:#86e3c3;--slope-ink:#101625;--slope-paper:#e9eef8}
+body[data-theme="slope-trace"]{font-family:"Noto Sans CJK SC","Source Han Sans SC","PingFang SC",sans-serif;--slope-blue:#164bdf;--slope-mint:#86e3c3;--slope-ink:#101625;--slope-secondary:#465064;--slope-paper:#e9eef8}
 body[data-theme="slope-trace"] .deck-stage,body[data-theme="slope-trace"] .slide{background:var(--slope-paper)}
 body[data-theme="slope-trace"] .slide::before{left:-140px;top:812px;width:2250px;height:18px;border-radius:999px;background:var(--slope-blue);transform:rotate(-7deg);transform-origin:left center}
 body[data-theme="slope-trace"] .slide::after{right:70px;top:42px;color:var(--slope-ink);font-size:14px}
@@ -19,7 +19,7 @@ body[data-theme="slope-trace"] .group__stage:not(:last-child)::after{color:var(-
 body[data-theme="slope-trace"] #s01-opening-hook::before{top:690px;height:170px;background:var(--slope-blue);border-radius:0;transform:rotate(-8deg)}
 body[data-theme="slope-trace"] #s01-opening-hook [data-role="project-name"]{left:70px!important;top:106px!important}
 body[data-theme="slope-trace"] #s01-opening-hook [data-role="deck-title"]{left:70px!important;top:168px!important;width:1020px!important;height:400px!important;font-size:118px!important}
-body[data-theme="slope-trace"] #s01-opening-hook [data-role="opening-tension"]{left:74px!important;top:824px!important;width:800px!important;color:#fff;font-size:27px!important;z-index:2}
+body[data-theme="slope-trace"] #s01-opening-hook [data-role="opening-tension"]{left:74px!important;top:824px!important;width:800px!important;color:var(--slope-secondary)!important;font-size:27px!important;z-index:2}
 body[data-theme="slope-trace"] #s01-opening-hook [data-role="concept-disclosure"]{left:74px!important;top:980px!important;width:900px!important}
 body[data-theme="slope-trace"] #s01-opening-hook [data-role="learner-goal-photo"]{left:1120px!important;top:116px!important;width:714px!important;height:680px!important;border-radius:28px!important}
 body[data-theme="slope-trace"] #s01-opening-hook [data-role="image-caption"]{left:1150px!important;top:736px!important}

@@ -99,6 +99,10 @@ failure patterns into regression cases.
 
 ## Guardrails
 
+- On light canvases and light modules, use black/dark primary text or the
+  dark-gray secondary token. White text requires a stable dark surface and at
+  least 4.5:1 contrast; never use a crossing band or image crop as its only
+  contrast support.
 - Do not fabricate traction, customer quotes, market facts, credentials, or
   scientific claims.
 - Do not use personal stories as proof for a general factual claim.
