@@ -11,6 +11,42 @@
 - [Speech Pitch Deck](skills/speech-pitch-deck/)
 - [UX Brand Case Study](skills/ux-brand-case-study/)
 - [Corporate Training Workshop](skills/corporate-training-workshop/)
+- [原研哉 · 设计视角（Kenya Hara Perspective）](skills/kenya-hara-perspective/)
+
+## 原研哉 · 专属设计顾问
+
+新增 `kenya-hara-perspective` 0.1.0：依据 [女娲·Skill造人术](https://github.com/alchaincyf/nuwa-skill)
+完成六维公开材料研究，提炼四个模型、八条决策启发式，以及品牌、视觉、产品和演示文稿应用流程。
+它帮助做出具体取舍，不要求所有设计采用白底或少字；保留品牌约束、必要信息和作品归属。
+
+- [技能入口](skills/kenya-hara-perspective/SKILL.md)
+- [22 个来源与提炼依据](skills/kenya-hara-perspective/references/synthesis.md)
+- [应用指南](skills/kenya-hara-perspective/references/application-playbook.md)
+- [验证与局限](skills/kenya-hara-perspective/references/validation.md)
+
+直接把下面提示词交给能够读取 GitHub 的 AI：
+
+```text
+请读取并使用这个 Skill：
+https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/kenya-hara-perspective
+
+先读取 SKILL.md，按需读取相对链接中的参考文件。
+请使用 $kenya-hara-perspective 审视我的设计，给出核心判断、具体改动和验证办法。
+保留我指定的品牌色与输出格式。区分来源事实和框架推断，不把建议冒充原研哉本人观点。
+
+我的资料：[粘贴内容或提供文件]
+```
+
+安装到支持 Agent Skills 的工具时，复制完整的 `skills/kenya-hara-perspective/` 目录到该工具的 skills 目录；
+Codex 的默认位置为 `~/.codex/skills/kenya-hara-perspective/`。不要只复制 `SKILL.md`，研究和应用参考随包使用。
+安装后可用 `$kenya-hara-perspective` 调用，例如：
+
+- “用原研哉视角审查这份 PPT，保留蓝色品牌和所有数据，直接修改后交付文件。”
+- “用原研哉的方法，为这个茶品牌做包装方向，说明感受、材料与验证方式。”
+- “请判断这张海报哪些应该保留、哪些应该改变，给出可定位的改动。”
+
+本技能可以独立使用，无需安装女娲或本仓库的演示技能；具体文件制作使用运行环境已有能力。
+原研哉及其机构未授权或背书本项目。调研截止 2026-10-13；书籍部分是官方简介研究，非全书精读。
 
 ## 直接交给 AI 使用
 

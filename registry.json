@@ -42,6 +42,13 @@
       "version": "0.6.0",
       "license": "MIT",
       "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/corporate-training-workshop"
+    },
+    {
+      "name": "kenya-hara-perspective",
+      "path": "skills/kenya-hara-perspective",
+      "version": "0.1.0",
+      "license": "MIT",
+      "url": "https://github.com/allenxie0510/allen-presentation-skills/tree/main/skills/kenya-hara-perspective"
     }
   ]
 }
